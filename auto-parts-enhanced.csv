@@ -1,0 +1,401 @@
+category,part_name,price,sku,description,date,vendor
+Engine Components,Spark Plug,10.5,2OHUSWKKX,Spark Plug-2OHUSWKKX,2023-07-16,AutoZone
+Engine Components,Ignition Coil,84.0,9XCVBX3BU,Ignition Coil-9XCVBX3BU,2020-02-20,RockAuto
+Engine Components,Distributor Cap,36.75,6LVY01POC,Distributor Cap-6LVY01POC,2021-07-10,Pep Boys
+Engine Components,Timing Belt,105.0,GUIRDYNIZ,Timing Belt-GUIRDYNIZ,2021-03-27,RockAuto
+Engine Components,Serpentine Belt,52.5,BT1GH8NQ9,Serpentine Belt-BT1GH8NQ9,2024-01-29,Pep Boys
+Engine Components,Piston,73.5,DBFD2RZ7J,Piston-DBFD2RZ7J,2023-09-30,RockAuto
+Engine Components,Cylinder Head,892.5,9N4OHNWUP,Cylinder Head-9N4OHNWUP,2024-12-08,Summit Racing
+Engine Components,Head Gasket,210.0,RXZY2OAYG,Head Gasket-RXZY2OAYG,2020-06-24,CarQuest
+Engine Components,Oil Pan,288.75,IXAHXKQH8,Oil Pan-IXAHXKQH8,2022-05-03,NAPA Auto Parts
+Engine Components,Crankshaft,630.0,86E1GIHL7,Crankshaft-86E1GIHL7,2020-03-01,Pep Boys
+Fuel & Air System,Fuel Pump,288.75,6WX8V08A8,Fuel Pump-6WX8V08A8,2021-03-18,Summit Racing
+Fuel & Air System,Fuel Injector,105.0,NCAEZN0IO,Fuel Injector-NCAEZN0IO,2022-10-18,Pep Boys
+Fuel & Air System,Carburetor,367.5,OZM55D3WO,Carburetor-OZM55D3WO,2020-02-23,RockAuto
+Fuel & Air System,Air Filter,23.625,29M5GV1BF,Air Filter-29M5GV1BF,2021-02-06,AutoZone
+Fuel & Air System,Mass Air Flow Sensor,183.75,11T3K1Y6A,Mass Air Flow Sensor-11T3K1Y6A,2023-08-07,Pep Boys
+Fuel & Air System,Throttle Body,367.5,0MCFH0I6X,Throttle Body-0MCFH0I6X,2023-01-06,Summit Racing
+Fuel & Air System,Gas Cap,15.75,O55XLBCQB,Gas Cap-O55XLBCQB,2021-03-21,RockAuto
+Fuel & Air System,Oxygen Sensor,105.0,B1W56ASBZ,Oxygen Sensor-B1W56ASBZ,2023-04-06,Advanced Auto Parts
+Fuel & Air System,EGR Valve,183.75,5F5DKQXE7,EGR Valve-5F5DKQXE7,2024-06-24,RockAuto
+Fuel & Air System,PCV Valve,18.375,FVKP6IFP2,PCV Valve-FVKP6IFP2,2020-01-14,CarQuest
+Cooling & Heating,Radiator,525.0,CT9SZCST5,Radiator-CT9SZCST5,2024-06-17,NAPA Auto Parts
+Cooling & Heating,Thermostat,36.75,G6RAK1YW4,Thermostat-G6RAK1YW4,2023-11-12,Advanced Auto Parts
+Cooling & Heating,Water Pump,210.0,38GPZBALE,Water Pump-38GPZBALE,2021-11-18,CarQuest
+Cooling & Heating,Heater Core,367.5,5I8SPCTX6,Heater Core-5I8SPCTX6,2020-11-10,CarQuest
+Cooling & Heating,AC Compressor,472.5,XKH9T8Y8Y,AC Compressor-XKH9T8Y8Y,2025-04-19,CarQuest
+Cooling & Heating,AC Condenser,315.0,2RRB8P96D,AC Condenser-2RRB8P96D,2021-11-11,AutoZone
+Cooling & Heating,AC Evaporator,393.75,6NUTHGCQ6,AC Evaporator-6NUTHGCQ6,2020-07-06,CarQuest
+Cooling & Heating,Cooling Fan,183.75,LVV3H007U,Cooling Fan-LVV3H007U,2020-07-14,AutoZone
+Cooling & Heating,Radiator Hose,28.875,3616ESD8Q,Radiator Hose-3616ESD8Q,2024-09-09,CarQuest
+Cooling & Heating,Expansion Tank,105.0,132F8X248,Expansion Tank-132F8X248,2023-05-05,O'Reilly Auto Parts
+Transmission & Drivetrain,Clutch Kit,577.5,6U5W6CRY4,Clutch Kit-6U5W6CRY4,2024-06-20,Summit Racing
+Transmission & Drivetrain,Flywheel,367.5,CX5VWB0BZ,Flywheel-CX5VWB0BZ,2024-01-15,Advanced Auto Parts
+Transmission & Drivetrain,Transmission Assembly,2625.0,Q6I2Z8YXM,Transmission Assembly-Q6I2Z8YXM,2022-12-20,O'Reilly Auto Parts
+Transmission & Drivetrain,CV Axle,210.0,G9TAHPNLW,CV Axle-G9TAHPNLW,2025-05-21,CarQuest
+Transmission & Drivetrain,Driveshaft,630.0,O17B5WVYV,Driveshaft-O17B5WVYV,2022-02-04,Advanced Auto Parts
+Transmission & Drivetrain,Differential,1207.5,VFO6HEDF5,Differential-VFO6HEDF5,2023-01-21,Advanced Auto Parts
+Transmission & Drivetrain,U-Joint,36.75,38PM3SQS1,U-Joint-38PM3SQS1,2024-08-04,Pep Boys
+Transmission & Drivetrain,Transfer Case,1837.5,ZZWILAA75,Transfer Case-ZZWILAA75,2023-06-04,NAPA Auto Parts
+Transmission & Drivetrain,Gear Shifter,210.0,YAPEV2CLZ,Gear Shifter-YAPEV2CLZ,2024-10-08,O'Reilly Auto Parts
+Transmission & Drivetrain,Transmission Filter,36.75,PV2N1E3EL,Transmission Filter-PV2N1E3EL,2023-03-13,NAPA Auto Parts
+Suspension & Steering,Shock Absorber,105.0,PZZU963WJ,Shock Absorber-PZZU963WJ,2023-11-25,Advanced Auto Parts
+Suspension & Steering,Strut Assembly,236.25,E974JS5AE,Strut Assembly-E974JS5AE,2020-04-02,AutoZone
+Suspension & Steering,Coil Spring,183.75,DPXPB150T,Coil Spring-DPXPB150T,2021-04-05,Advanced Auto Parts
+Suspension & Steering,Control Arm,210.0,XL866LCA6,Control Arm-XL866LCA6,2021-08-08,NAPA Auto Parts
+Suspension & Steering,Ball Joint,57.75,J2ML4B8WQ,Ball Joint-J2ML4B8WQ,2020-06-10,O'Reilly Auto Parts
+Suspension & Steering,Tie Rod End,52.5,ZH2ZJZ7GD,Tie Rod End-ZH2ZJZ7GD,2021-04-15,CarQuest
+Suspension & Steering,Steering Rack,892.5,K29YU9JIX,Steering Rack-K29YU9JIX,2020-07-23,Pep Boys
+Suspension & Steering,Power Steering Pump,288.75,889R5XW5L,Power Steering Pump-889R5XW5L,2021-07-16,Pep Boys
+Suspension & Steering,Sway Bar Link,42.0,MWY83QTYV,Sway Bar Link-MWY83QTYV,2023-07-09,Pep Boys
+Suspension & Steering,Wheel Bearing,105.0,MS9LSLIG1,Wheel Bearing-MS9LSLIG1,2022-01-07,CarQuest
+Brakes,Brake Pads (set),73.5,N4SPE8LYU,Brake Pads (set)-N4SPE8LYU,2022-01-18,Pep Boys
+Brakes,Brake Rotors (each),105.0,9WPN4E8W2,Brake Rotors (each)-9WPN4E8W2,2021-02-27,O'Reilly Auto Parts
+Brakes,Brake Caliper,183.75,KRLIJQGMI,Brake Caliper-KRLIJQGMI,2021-06-23,CarQuest
+Brakes,Brake Master Cylinder,288.75,0BE2SHAVQ,Brake Master Cylinder-0BE2SHAVQ,2025-03-08,Pep Boys
+Brakes,Brake Booster,367.5,GYD9F4S0J,Brake Booster-GYD9F4S0J,2023-08-03,CarQuest
+Brakes,ABS Sensor,105.0,ZSCM1T1HA,ABS Sensor-ZSCM1T1HA,2023-05-16,NAPA Auto Parts
+Brakes,Brake Hose,36.75,CM1Y6F5UP,Brake Hose-CM1Y6F5UP,2020-12-12,Summit Racing
+Brakes,Parking Brake Cable,57.75,UK98STRNO,Parking Brake Cable-UK98STRNO,2024-01-14,Summit Racing
+Brakes,Drum Brake Shoe,73.5,4ACPWKLJ5,Drum Brake Shoe-4ACPWKLJ5,2020-11-26,O'Reilly Auto Parts
+Brakes,Wheel Cylinder,52.5,PHLX1H19Z,Wheel Cylinder-PHLX1H19Z,2022-02-06,RockAuto
+Electrical,Alternator,315.0,H1190QI6T,Alternator-H1190QI6T,2025-06-23,AutoZone
+Electrical,Starter Motor,262.5,M12M8FREY,Starter Motor-M12M8FREY,2023-07-18,Pep Boys
+Electrical,Battery,183.75,BJ3E6AR5K,Battery-BJ3E6AR5K,2023-01-31,AutoZone
+Electrical,Fuse Box,105.0,UZYV0M678,Fuse Box-UZYV0M678,2023-10-16,CarQuest
+Electrical,Relay,21.0,AUF1QE4EC,Relay-AUF1QE4EC,2024-08-31,AutoZone
+Electrical,Ignition Switch,105.0,WJJSQUNIA,Ignition Switch-WJJSQUNIA,2024-04-18,O'Reilly Auto Parts
+Electrical,Wiring Harness,420.0,MDA5714HZ,Wiring Harness-MDA5714HZ,2021-04-08,O'Reilly Auto Parts
+Electrical,ECU (Engine Control Unit),1050.0,7CLAE33QW,ECU (Engine Control Unit)-7CLAE33QW,2020-03-05,Advanced Auto Parts
+Electrical,Light Bulb,13.125,OUNBK77R3,Light Bulb-OUNBK77R3,2021-09-29,Summit Racing
+Electrical,Horn,36.75,O076XO3QE,Horn-O076XO3QE,2021-06-25,Pep Boys
+Lighting,Headlight Assembly,210.0,2DJQJQTXE,Headlight Assembly-2DJQJQTXE,2021-03-02,Advanced Auto Parts
+Lighting,Taillight Assembly,147.0,7FBMKWP4K,Taillight Assembly-7FBMKWP4K,2025-03-21,AutoZone
+Lighting,Fog Light,105.0,PHDDYC5C0,Fog Light-PHDDYC5C0,2024-11-07,RockAuto
+Lighting,Turn Signal Light,57.75,25SUER1VU,Turn Signal Light-25SUER1VU,2021-09-28,Advanced Auto Parts
+Lighting,Brake Light Bulb,10.5,FAELZ7NZ0,Brake Light Bulb-FAELZ7NZ0,2023-08-18,Advanced Auto Parts
+Lighting,Interior Dome Light,18.375,IZV3QZ9AH,Interior Dome Light-IZV3QZ9AH,2022-03-10,O'Reilly Auto Parts
+Lighting,License Plate Light,10.5,8OVNZ1WNX,License Plate Light-8OVNZ1WNX,2025-01-23,RockAuto
+Lighting,LED Conversion Kit,105.0,BZNGCWR8O,LED Conversion Kit-BZNGCWR8O,2022-07-16,CarQuest
+Lighting,HID Ballast,183.75,Y1JQVZYQM,HID Ballast-Y1JQVZYQM,2021-06-19,AutoZone
+Lighting,Side Marker Light,36.75,TYDJCR9V7,Side Marker Light-TYDJCR9V7,2021-05-13,Advanced Auto Parts
+Body & Interior,Side Mirror,183.75,HSFZ7F6VU,Side Mirror-HSFZ7F6VU,2023-02-09,RockAuto
+Body & Interior,Rearview Mirror,105.0,FFD3K34XI,Rearview Mirror-FFD3K34XI,2021-06-15,Summit Racing
+Body & Interior,Door Handle,42.0,C49X4FBT1,Door Handle-C49X4FBT1,2023-03-28,Pep Boys
+Body & Interior,Window Regulator,183.75,KDOF3BOKH,Window Regulator-KDOF3BOKH,2024-12-20,RockAuto
+Body & Interior,Seat Belt,105.0,ZEFZDST6T,Seat Belt-ZEFZDST6T,2022-03-18,Summit Racing
+Body & Interior,Dashboard,892.5,LAZNK9MC6,Dashboard-LAZNK9MC6,2021-03-19,AutoZone
+Body & Interior,Glove Box,105.0,FJEWJBMBT,Glove Box-FJEWJBMBT,2025-07-10,RockAuto
+Body & Interior,Sun Visor,57.75,AIQIKOX83,Sun Visor-AIQIKOX83,2022-10-27,Summit Racing
+Body & Interior,Carpet Kit,367.5,4ENKI7L88,Carpet Kit-4ENKI7L88,2020-07-02,RockAuto
+Body & Interior,Seat Cushion,210.0,AV2HKN38U,Seat Cushion-AV2HKN38U,2020-04-05,RockAuto
+Maintenance Items,Oil Filter,15.75,ESNZDYYRH,Oil Filter-ESNZDYYRH,2020-08-09,Pep Boys
+Maintenance Items,Cabin Air Filter,23.625,N56WO6YQ6,Cabin Air Filter-N56WO6YQ6,2023-06-22,Summit Racing
+Maintenance Items,Windshield Wipers,28.875,BNFFCGHO2,Windshield Wipers-BNFFCGHO2,2024-05-20,Summit Racing
+Maintenance Items,Engine Oil (5 qt),47.25,63092606D,Engine Oil (5 qt)-63092606D,2022-05-03,Advanced Auto Parts
+Maintenance Items,Transmission Fluid,36.75,VBJEJ6M49,Transmission Fluid-VBJEJ6M49,2020-05-08,AutoZone
+Maintenance Items,Coolant,23.625,XO2HE2DLB,Coolant-XO2HE2DLB,2022-02-10,Pep Boys
+Maintenance Items,Brake Fluid,15.75,0499Z0ETK,Brake Fluid-0499Z0ETK,2025-07-07,RockAuto
+Maintenance Items,Power Steering Fluid,15.75,JFHWZLZMR,Power Steering Fluid-JFHWZLZMR,2022-12-05,RockAuto
+Maintenance Items,Grease,10.5,Y6L9DEH14,Grease-Y6L9DEH14,2025-05-17,Advanced Auto Parts
+Maintenance Items,Tire (each),183.75,I2NVKWAUZ,Tire (each)-I2NVKWAUZ,2024-10-06,AutoZone
+Exhaust,Muffler,183.75,9WAOUIIJZ,Muffler-9WAOUIIJZ,2020-01-24,O'Reilly Auto Parts
+Exhaust,Catalytic Converter,1207.5,8YZKBGR07,Catalytic Converter-8YZKBGR07,2023-12-28,Pep Boys
+Exhaust,Exhaust Manifold,525.0,0QXYGFX62,Exhaust Manifold-0QXYGFX62,2023-10-10,Advanced Auto Parts
+Exhaust,Exhaust Pipe,105.0,VZ1UGQTTV,Exhaust Pipe-VZ1UGQTTV,2022-12-21,AutoZone
+Exhaust,Resonator,183.75,1GA5M3WS5,Resonator-1GA5M3WS5,2021-06-23,Pep Boys
+Exhaust,O2 Sensor Bung,18.375,3223PSRAN,O2 Sensor Bung-3223PSRAN,2023-07-20,RockAuto
+Exhaust,Exhaust Gasket,21.0,B13DAH2C5,Exhaust Gasket-B13DAH2C5,2020-08-13,AutoZone
+Exhaust,Exhaust Hanger,10.5,JJS76W15G,Exhaust Hanger-JJS76W15G,2022-05-29,AutoZone
+Exhaust,Turbocharger,1837.5,2HACXWHC6,Turbocharger-2HACXWHC6,2022-07-06,CarQuest
+Exhaust,Supercharger,3937.5,1H785XN5P,Supercharger-1H785XN5P,2025-04-12,AutoZone
+Sensors,MAP Sensor,105.0,DUN4RGJG6,MAP Sensor-DUN4RGJG6,2024-11-05,O'Reilly Auto Parts
+Sensors,Knock Sensor,73.5,WUSS92RBA,Knock Sensor-WUSS92RBA,2021-06-16,AutoZone
+Sensors,Coolant Temperature Sensor,36.75,ETKBCWLTE,Coolant Temperature Sensor-ETKBCWLTE,2022-10-09,O'Reilly Auto Parts
+Sensors,Crankshaft Position Sensor,105.0,3I78VXQJ3,Crankshaft Position Sensor-3I78VXQJ3,2020-12-27,RockAuto
+Sensors,Camshaft Position Sensor,105.0,W5QQNIBYI,Camshaft Position Sensor-W5QQNIBYI,2025-01-19,O'Reilly Auto Parts
+Sensors,ABS Wheel Speed Sensor,105.0,VDZ27WKFR,ABS Wheel Speed Sensor-VDZ27WKFR,2024-10-26,Pep Boys
+Sensors,Throttle Position Sensor,73.5,U97QYLWVU,Throttle Position Sensor-U97QYLWVU,2021-08-26,RockAuto
+Sensors,Manifold Air Pressure Sensor,105.0,04F07LGJQ,Manifold Air Pressure Sensor-04F07LGJQ,2023-07-15,RockAuto
+Sensors,Intake Air Temperature Sensor,36.75,ZU1BA9Z2U,Intake Air Temperature Sensor-ZU1BA9Z2U,2023-05-16,O'Reilly Auto Parts
+Sensors,Fuel Pressure Sensor,105.0,KK987XVE6,Fuel Pressure Sensor-KK987XVE6,2020-11-05,Summit Racing
+Specialty Electronics,Alternator Regulator,105.0,9TS8Q7IZB,Alternator Regulator-9TS8Q7IZB,2024-03-21,Advanced Auto Parts
+Specialty Electronics,Voltage Regulator,73.5,IIQAYY8C3,Voltage Regulator-IIQAYY8C3,2022-12-26,NAPA Auto Parts
+Specialty Electronics,Ignition Module,183.75,7LSQJLPXS,Ignition Module-7LSQJLPXS,2024-04-23,Summit Racing
+Specialty Electronics,Starter Solenoid,57.75,H4UQWPFHY,Starter Solenoid-H4UQWPFHY,2022-12-08,AutoZone
+Specialty Electronics,Instrument Cluster,630.0,RYLOZZ5JP,Instrument Cluster-RYLOZZ5JP,2020-01-02,CarQuest
+Specialty Electronics,Speedometer,210.0,GQWZUVGNO,Speedometer-GQWZUVGNO,2021-10-17,NAPA Auto Parts
+Specialty Electronics,Tachometer,210.0,GIHW2R438,Tachometer-GIHW2R438,2020-02-09,AutoZone
+Specialty Electronics,Amplifier,288.75,RQN4X87CZ,Amplifier-RQN4X87CZ,2025-02-21,Summit Racing
+Specialty Electronics,Car Stereo Head Unit,367.5,WOD2VYMR6,Car Stereo Head Unit-WOD2VYMR6,2024-11-11,Summit Racing
+Specialty Electronics,Navigation System,1050.0,PB873MMR5,Navigation System-PB873MMR5,2024-08-08,AutoZone
+Exhaust & Emissions,DPF (Diesel Particulate Filter),1837.5,5822PJ3YT,DPF (Diesel Particulate Filter)-5822PJ3YT,2021-09-13,RockAuto
+Exhaust & Emissions,NOx Sensor,367.5,EA3CN3DRY,NOx Sensor-EA3CN3DRY,2020-04-27,AutoZone
+Exhaust & Emissions,Air Pump,288.75,AOIOXDLFX,Air Pump-AOIOXDLFX,2024-11-10,CarQuest
+Exhaust & Emissions,Charcoal Canister,183.75,KM7YGDHT2,Charcoal Canister-KM7YGDHT2,2025-03-29,Summit Racing
+Exhaust & Emissions,Evaporative Emission Valve,105.0,J7ZCFEEWI,Evaporative Emission Valve-J7ZCFEEWI,2020-06-22,AutoZone
+Exhaust & Emissions,Exhaust Heat Shield,105.0,8T8RQXC58,Exhaust Heat Shield-8T8RQXC58,2022-09-09,O'Reilly Auto Parts
+Exhaust & Emissions,Exhaust Clamp,21.0,MYIDN7KC1,Exhaust Clamp-MYIDN7KC1,2020-05-19,NAPA Auto Parts
+Exhaust & Emissions,Exhaust Tip,57.75,2ICY7LIOY,Exhaust Tip-2ICY7LIOY,2024-03-17,O'Reilly Auto Parts
+Exhaust & Emissions,Exhaust Flex Pipe,105.0,EK7XOHEZR,Exhaust Flex Pipe-EK7XOHEZR,2024-03-28,CarQuest
+Exhaust & Emissions,Exhaust Mount,18.375,FM1EMQ52C,Exhaust Mount-FM1EMQ52C,2020-09-16,AutoZone
+Safety & Restraints,Airbag Module,1050.0,70M6FXSP1,Airbag Module-70M6FXSP1,2022-08-19,Pep Boys
+Safety & Restraints,Airbag Sensor,210.0,6MY90GE4W,Airbag Sensor-6MY90GE4W,2023-01-16,CarQuest
+Safety & Restraints,Seat Belt Pretensioner,288.75,J534R9BNM,Seat Belt Pretensioner-J534R9BNM,2021-06-19,RockAuto
+Safety & Restraints,Child Seat Anchor,36.75,2LB5M0Q47,Child Seat Anchor-2LB5M0Q47,2024-10-30,O'Reilly Auto Parts
+Safety & Restraints,Crash Sensor,183.75,X8FS3GJ57,Crash Sensor-X8FS3GJ57,2022-05-05,O'Reilly Auto Parts
+Safety & Restraints,Steering Wheel Airbag,630.0,1O32VDT59,Steering Wheel Airbag-1O32VDT59,2021-03-04,Advanced Auto Parts
+Safety & Restraints,Side Curtain Airbag,787.5,D0QLVQJAV,Side Curtain Airbag-D0QLVQJAV,2022-12-26,AutoZone
+Safety & Restraints,Passenger Airbag,787.5,ZRN2L98LG,Passenger Airbag-ZRN2L98LG,2024-01-15,RockAuto
+Safety & Restraints,Driver Airbag,787.5,2K6FO5KWZ,Driver Airbag-2K6FO5KWZ,2021-02-10,Pep Boys
+Safety & Restraints,Airbag Control Module,892.5,772DQ8MO2,Airbag Control Module-772DQ8MO2,2021-09-22,O'Reilly Auto Parts
+Body & Exterior,Fender,367.5,2K5BNTVK0,Fender-2K5BNTVK0,2025-07-05,O'Reilly Auto Parts
+Body & Exterior,Hood,525.0,CQ12UPTFS,Hood-CQ12UPTFS,2023-08-07,RockAuto
+Body & Exterior,Bumper,525.0,ECAO78YXL,Bumper-ECAO78YXL,2022-06-04,CarQuest
+Body & Exterior,Grille,210.0,ROP0HYQ2H,Grille-ROP0HYQ2H,2022-11-12,CarQuest
+Body & Exterior,Trunk Lid,630.0,O0GC2XCTO,Trunk Lid-O0GC2XCTO,2020-09-01,AutoZone
+Body & Exterior,Roof Panel,892.5,Y3NGQT9IV,Roof Panel-Y3NGQT9IV,2021-03-30,Summit Racing
+Body & Exterior,Quarter Panel,630.0,BXHKMQHUR,Quarter Panel-BXHKMQHUR,2021-11-14,Advanced Auto Parts
+Body & Exterior,Door,892.5,3R45KY6HK,Door-3R45KY6HK,2023-04-04,O'Reilly Auto Parts
+Body & Exterior,Running Board,367.5,VXQL5OPV1,Running Board-VXQL5OPV1,2021-04-10,Summit Racing
+Body & Exterior,Spoiler,288.75,T6J56B66M,Spoiler-T6J56B66M,2021-03-21,Summit Racing
+Interior & Comfort,Steering Wheel,288.75,36MZVBZO7,Steering Wheel-36MZVBZO7,2020-05-23,Advanced Auto Parts
+Interior & Comfort,Shift Knob,42.0,KCFIFI45L,Shift Knob-KCFIFI45L,2023-06-30,Summit Racing
+Interior & Comfort,Pedal Assembly,183.75,HH1TGKTPD,Pedal Assembly-HH1TGKTPD,2021-04-07,Summit Racing
+Interior & Comfort,Center Console,367.5,FVZCNKRLW,Center Console-FVZCNKRLW,2025-01-04,CarQuest
+Interior & Comfort,Armrest,105.0,LMYS9H25R,Armrest-LMYS9H25R,2024-10-04,CarQuest
+Interior & Comfort,Seat Frame,367.5,FRSV5C1J8,Seat Frame-FRSV5C1J8,2020-05-23,NAPA Auto Parts
+Interior & Comfort,Seat Cover,105.0,2O6GL3U4X,Seat Cover-2O6GL3U4X,2021-04-26,Pep Boys
+Interior & Comfort,Headrest,105.0,TD1TX5979,Headrest-TD1TX5979,2023-09-14,AutoZone
+Interior & Comfort,Floor Mat Set,105.0,BO79FLCRU,Floor Mat Set-BO79FLCRU,2021-03-09,Summit Racing
+Interior & Comfort,Door Panel,367.5,O68ZH93WN,Door Panel-O68ZH93WN,2020-09-24,NAPA Auto Parts
+Glass & Mirrors,Windshield,525.0,NBENYTBFQ,Windshield-NBENYTBFQ,2025-03-06,Pep Boys
+Glass & Mirrors,Rear Window,367.5,Y1B8EAL9W,Rear Window-Y1B8EAL9W,2023-02-28,NAPA Auto Parts
+Glass & Mirrors,Side Window,288.75,4KJCNPJ2J,Side Window-4KJCNPJ2J,2022-08-13,NAPA Auto Parts
+Glass & Mirrors,Window Motor,183.75,L3AETHLAT,Window Motor-L3AETHLAT,2024-05-05,AutoZone
+Glass & Mirrors,Mirror Glass,105.0,1L1OFTNBI,Mirror Glass-1L1OFTNBI,2024-06-20,AutoZone
+Glass & Mirrors,Mirror Motor,183.75,TZ2A8FE6N,Mirror Motor-TZ2A8FE6N,2021-01-20,RockAuto
+Glass & Mirrors,Mirror Housing,183.75,LTX7Y24WT,Mirror Housing-LTX7Y24WT,2020-07-14,Advanced Auto Parts
+Glass & Mirrors,Sunroof Glass,630.0,WPHUAH25E,Sunroof Glass-WPHUAH25E,2022-05-21,Advanced Auto Parts
+Glass & Mirrors,Sunroof Motor,367.5,V7AZJ3RQZ,Sunroof Motor-V7AZJ3RQZ,2022-05-06,RockAuto
+Glass & Mirrors,Sunroof Seal,105.0,HL0HYD6AS,Sunroof Seal-HL0HYD6AS,2022-08-02,RockAuto
+Wheels & Tires,Alloy Wheel,288.75,4PNEZ1BFI,Alloy Wheel-4PNEZ1BFI,2024-01-14,CarQuest
+Wheels & Tires,Steel Wheel,147.0,6YMIM4KD7,Steel Wheel-6YMIM4KD7,2023-09-23,Pep Boys
+Wheels & Tires,Hubcap,42.0,DSF7RMWSK,Hubcap-DSF7RMWSK,2025-06-12,NAPA Auto Parts
+Wheels & Tires,Lug Nut,3.675,AXGYUOALG,Lug Nut-AXGYUOALG,2020-07-18,Summit Racing
+Wheels & Tires,Wheel Stud,10.5,OUS2Y658Z,Wheel Stud-OUS2Y658Z,2022-03-25,RockAuto
+Wheels & Tires,Wheel Spacer,105.0,K8HNJBICU,Wheel Spacer-K8HNJBICU,2021-11-17,O'Reilly Auto Parts
+Wheels & Tires,Wheel Hub,183.75,ZHBF12ZYL,Wheel Hub-ZHBF12ZYL,2024-10-08,Advanced Auto Parts
+Wheels & Tires,Tire Pressure Sensor,105.0,E7O9OWFUW,Tire Pressure Sensor-E7O9OWFUW,2021-05-17,RockAuto
+Wheels & Tires,Tire Valve Stem,10.5,POY9KODUM,Tire Valve Stem-POY9KODUM,2021-01-19,O'Reilly Auto Parts
+Wheels & Tires,Tire Repair Kit,36.75,VS7ND0218,Tire Repair Kit-VS7ND0218,2022-06-26,O'Reilly Auto Parts
+Drivetrain Extras,Axle Shaft,288.75,HP93RBMDZ,Axle Shaft-HP93RBMDZ,2022-05-03,O'Reilly Auto Parts
+Drivetrain Extras,Axle Bearing,105.0,Y3KG4JM4G,Axle Bearing-Y3KG4JM4G,2021-07-17,CarQuest
+Drivetrain Extras,Axle Seal,36.75,9TDGAMVUV,Axle Seal-9TDGAMVUV,2021-05-20,CarQuest
+Drivetrain Extras,Propeller Shaft,630.0,1IZIOJXHX,Propeller Shaft-1IZIOJXHX,2025-02-09,Summit Racing
+Drivetrain Extras,Half Shaft,288.75,PZ0DXS9JY,Half Shaft-PZ0DXS9JY,2022-06-15,Summit Racing
+Drivetrain Extras,Pinion Gear,183.75,RS9J6E876,Pinion Gear-RS9J6E876,2024-10-07,O'Reilly Auto Parts
+Drivetrain Extras,Ring Gear,236.25,UQVO81G5K,Ring Gear-UQVO81G5K,2023-01-17,Pep Boys
+Drivetrain Extras,Clutch Slave Cylinder,105.0,JINMYB8GU,Clutch Slave Cylinder-JINMYB8GU,2020-04-12,CarQuest
+Drivetrain Extras,Clutch Master Cylinder,183.75,RCKXSDZ59,Clutch Master Cylinder-RCKXSDZ59,2025-07-13,NAPA Auto Parts
+Drivetrain Extras,Throwout Bearing,57.75,69CIH6FDM,Throwout Bearing-69CIH6FDM,2024-08-17,O'Reilly Auto Parts
+Specialty Maintenance,Timing Chain,210.0,BE05UHHCC,Timing Chain-BE05UHHCC,2025-05-13,NAPA Auto Parts
+Specialty Maintenance,Timing Chain Tensioner,105.0,VFBWBQ87W,Timing Chain Tensioner-VFBWBQ87W,2025-02-16,NAPA Auto Parts
+Specialty Maintenance,Valve Cover,183.75,3HV9EM24P,Valve Cover-3HV9EM24P,2024-09-12,O'Reilly Auto Parts
+Specialty Maintenance,Valve Cover Gasket,36.75,3PLQPLHTC,Valve Cover Gasket-3PLQPLHTC,2020-12-02,Advanced Auto Parts
+Specialty Maintenance,Intake Manifold,525.0,P3W1ETA3U,Intake Manifold-P3W1ETA3U,2022-09-08,Pep Boys
+Specialty Maintenance,Intake Manifold Gasket,36.75,TFVRH56PL,Intake Manifold Gasket-TFVRH56PL,2021-03-08,O'Reilly Auto Parts
+Specialty Maintenance,Exhaust Manifold Gasket,36.75,7N96WBUB0,Exhaust Manifold Gasket-7N96WBUB0,2022-03-21,Summit Racing
+Specialty Maintenance,Oil Pump,288.75,IAKCWZDRF,Oil Pump-IAKCWZDRF,2020-04-28,O'Reilly Auto Parts
+Specialty Maintenance,Oil Pressure Sensor,105.0,8VOVLR83X,Oil Pressure Sensor-8VOVLR83X,2022-02-05,CarQuest
+Specialty Maintenance,Oil Cooler,367.5,3NFCPGNIO,Oil Cooler-3NFCPGNIO,2025-06-15,O'Reilly Auto Parts
+Hardware & Fasteners,Bolt Set,42.0,U8B0B8RNT,Bolt Set-U8B0B8RNT,2021-06-20,Advanced Auto Parts
+Hardware & Fasteners,Nut Set,21.0,RJYBY694N,Nut Set-RJYBY694N,2024-05-04,CarQuest
+Hardware & Fasteners,Washer Set,21.0,APC8FYM7H,Washer Set-APC8FYM7H,2022-07-09,Summit Racing
+Hardware & Fasteners,Stud Kit,36.75,U7DYODL55,Stud Kit-U7DYODL55,2022-05-05,AutoZone
+Hardware & Fasteners,Retaining Clip,10.5,1M4NTR2F5,Retaining Clip-1M4NTR2F5,2025-04-19,AutoZone
+Hardware & Fasteners,Spring Clip,10.5,2BWS4ES7J,Spring Clip-2BWS4ES7J,2025-07-05,NAPA Auto Parts
+Hardware & Fasteners,Cotter Pin,3.1500000000000004,YBK4OIWSI,Cotter Pin-YBK4OIWSI,2023-01-28,Pep Boys
+Hardware & Fasteners,Hose Clamp,10.5,8UI1GPP6D,Hose Clamp-8UI1GPP6D,2023-12-23,NAPA Auto Parts
+Hardware & Fasteners,Exhaust Clamp,21.0,DQ298G01V,Exhaust Clamp-DQ298G01V,2020-11-08,Advanced Auto Parts
+Hardware & Fasteners,Brake Line Fitting,18.375,NGVEB0UOU,Brake Line Fitting-NGVEB0UOU,2021-08-22,RockAuto
+Performance Parts,Cold Air Intake Kit,367.5,JWEAMUZUR,Cold Air Intake Kit-JWEAMUZUR,2025-05-12,Summit Racing
+Performance Parts,Performance Exhaust,892.5,59Q8KUZD7,Performance Exhaust-59Q8KUZD7,2023-03-17,Pep Boys
+Performance Parts,Performance Camshaft,525.0,R822UMQIA,Performance Camshaft-R822UMQIA,2023-01-01,Summit Racing
+Performance Parts,Performance Piston,183.75,B26JU1K7H,Performance Piston-B26JU1K7H,2024-02-21,AutoZone
+Performance Parts,Performance Crankshaft,787.5,VHOQWXSE5,Performance Crankshaft-VHOQWXSE5,2020-04-25,NAPA Auto Parts
+Performance Parts,Performance ECU Tune,577.5,AWHMHWAX8,Performance ECU Tune-AWHMHWAX8,2023-03-27,Summit Racing
+Performance Parts,Performance Suspension Kit,1207.5,XQETU49KO,Performance Suspension Kit-XQETU49KO,2022-10-13,AutoZone
+Performance Parts,Performance Brake Kit,1207.5,SG1EE35HJ,Performance Brake Kit-SG1EE35HJ,2024-09-20,Advanced Auto Parts
+Performance Parts,Performance Clutch Kit,787.5,51Q4HYIBO,Performance Clutch Kit-51Q4HYIBO,2020-11-14,Advanced Auto Parts
+Performance Parts,Performance Turbo Kit,3675.0,C9DNYJU9L,Performance Turbo Kit-C9DNYJU9L,2025-04-26,RockAuto
+Fluids & Chemicals,Engine Oil Additive,21.0,0BM54P557,Engine Oil Additive-0BM54P557,2020-06-10,Summit Racing
+Fluids & Chemicals,Fuel Additive,21.0,KJOQRIYNY,Fuel Additive-KJOQRIYNY,2021-01-10,RockAuto
+Fluids & Chemicals,Coolant Additive,21.0,V3TU5U853,Coolant Additive-V3TU5U853,2023-04-18,CarQuest
+Fluids & Chemicals,Brake Cleaner,10.5,LRUMUHGW5,Brake Cleaner-LRUMUHGW5,2023-09-27,Pep Boys
+Fluids & Chemicals,Degreaser,15.75,KVVYV12MR,Degreaser-KVVYV12MR,2021-04-20,Summit Racing
+Fluids & Chemicals,Thread Locker,10.5,B2UO04OWX,Thread Locker-B2UO04OWX,2020-08-30,Advanced Auto Parts
+Fluids & Chemicals,Anti-Seize Compound,10.5,MV6CSW23Y,Anti-Seize Compound-MV6CSW23Y,2024-12-05,NAPA Auto Parts
+Fluids & Chemicals,Silicone Sealant,10.5,HPHAECAD8,Silicone Sealant-HPHAECAD8,2021-05-12,AutoZone
+Fluids & Chemicals,Grease Gun,36.75,57YJU00BM,Grease Gun-57YJU00BM,2023-04-17,O'Reilly Auto Parts
+Fluids & Chemicals,Shop Towels,15.75,I9VZLQNN7,Shop Towels-I9VZLQNN7,2023-06-06,RockAuto
+Tools & Equipment,Jack,105.0,TKP4FSDDT,Jack-TKP4FSDDT,2022-04-27,O'Reilly Auto Parts
+Tools & Equipment,Jack Stand,57.75,JX8ZUUJDT,Jack Stand-JX8ZUUJDT,2023-03-26,Summit Racing
+Tools & Equipment,Lug Wrench,36.75,QGD2NCXPD,Lug Wrench-QGD2NCXPD,2022-11-23,NAPA Auto Parts
+Tools & Equipment,Torque Wrench,105.0,X73RS4SSV,Torque Wrench-X73RS4SSV,2025-03-04,RockAuto
+Tools & Equipment,Socket Set,105.0,XL349S936,Socket Set-XL349S936,2021-02-17,O'Reilly Auto Parts
+Tools & Equipment,Screwdriver Set,42.0,R1K6QFDT0,Screwdriver Set-R1K6QFDT0,2023-12-19,Pep Boys
+Tools & Equipment,Pliers Set,42.0,OFNKIZPEJ,Pliers Set-OFNKIZPEJ,2021-04-27,NAPA Auto Parts
+Tools & Equipment,Hammer,21.0,CM3FQS8ZE,Hammer-CM3FQS8ZE,2022-03-11,AutoZone
+Tools & Equipment,Impact Wrench,288.75,2TUJE9FZD,Impact Wrench-2TUJE9FZD,2023-09-20,Pep Boys
+Tools & Equipment,Air Compressor,420.0,8AX9F4TXY,Air Compressor-8AX9F4TXY,2021-08-29,NAPA Auto Parts
+Miscellaneous,License Plate Frame,21.0,9U3X3V1G8,License Plate Frame-9U3X3V1G8,2021-10-01,CarQuest
+Miscellaneous,Key Fob,105.0,1NJPP4YMF,Key Fob-1NJPP4YMF,2024-02-29,RockAuto
+Miscellaneous,Remote Starter,367.5,I9TRUD60G,Remote Starter-I9TRUD60G,2020-05-26,Advanced Auto Parts
+Miscellaneous,Alarm System,367.5,FOR5KTXOG,Alarm System-FOR5KTXOG,2022-07-15,AutoZone
+Miscellaneous,Dash Camera,210.0,UZNURECWZ,Dash Camera-UZNURECWZ,2025-07-11,Summit Racing
+Miscellaneous,Backup Camera,210.0,XSYUL6DGV,Backup Camera-XSYUL6DGV,2025-07-07,Pep Boys
+Miscellaneous,Parking Sensor,105.0,6QX71VQ7F,Parking Sensor-6QX71VQ7F,2020-05-28,Pep Boys
+Miscellaneous,Trailer Hitch,367.5,F7AJUEBVB,Trailer Hitch-F7AJUEBVB,2021-03-06,O'Reilly Auto Parts
+Miscellaneous,Trailer Wiring Harness,105.0,J7PVLXJ85,Trailer Wiring Harness-J7PVLXJ85,2021-06-20,RockAuto
+Miscellaneous,Roof Rack,367.5,GUTZDVOUO,Roof Rack-GUTZDVOUO,2025-03-02,Summit Racing
+Advanced Electronics,ECU Reprogramming Kit,577.5,V1N01ZBYC,ECU Reprogramming Kit-V1N01ZBYC,2024-11-16,Advanced Auto Parts
+Advanced Electronics,OBD-II Scanner,105.0,H68FWYSEK,OBD-II Scanner-H68FWYSEK,2024-11-12,NAPA Auto Parts
+Advanced Electronics,Diagnostic Tool,420.0,LJHX19UHI,Diagnostic Tool-LJHX19UHI,2022-01-17,Advanced Auto Parts
+Advanced Electronics,Telematics Module,525.0,ORTFLBGPC,Telematics Module-ORTFLBGPC,2020-11-14,RockAuto
+Advanced Electronics,Heads-Up Display,630.0,C061AH5D3,Heads-Up Display-C061AH5D3,2024-08-12,RockAuto
+Advanced Electronics,Infotainment Screen,892.5,FS5ILKPAU,Infotainment Screen-FS5ILKPAU,2023-11-23,CarQuest
+Advanced Electronics,Amplifier Module,288.75,3M7D140EY,Amplifier Module-3M7D140EY,2023-05-21,CarQuest
+Advanced Electronics,Bluetooth Module,183.75,C6DYT7ZE8,Bluetooth Module-C6DYT7ZE8,2025-06-19,Advanced Auto Parts
+Advanced Electronics,Wi-Fi Hotspot Module,367.5,12IFSKBIU,Wi-Fi Hotspot Module-12IFSKBIU,2023-08-15,NAPA Auto Parts
+Advanced Electronics,Dash Wiring Harness,420.0,X7VCL13ZU,Dash Wiring Harness-X7VCL13ZU,2020-01-16,Advanced Auto Parts
+Hybrid/EV Components,High-Voltage Battery Pack,5250.0,1Z6U87RKW,High-Voltage Battery Pack-1Z6U87RKW,2024-07-10,RockAuto
+Hybrid/EV Components,Battery Cooling System,892.5,VQEK3O086,Battery Cooling System-VQEK3O086,2021-08-28,RockAuto
+Hybrid/EV Components,Inverter,1837.5,TP7B81FIT,Inverter-TP7B81FIT,2023-09-03,O'Reilly Auto Parts
+Hybrid/EV Components,DC-DC Converter,892.5,AHWCDYOU8,DC-DC Converter-AHWCDYOU8,2025-03-13,CarQuest
+Hybrid/EV Components,Onboard Charger,1837.5,N9LQI8MOR,Onboard Charger-N9LQI8MOR,2020-09-28,Summit Racing
+Hybrid/EV Components,Charging Port,525.0,6F0W07N9H,Charging Port-6F0W07N9H,2020-08-21,Summit Racing
+Hybrid/EV Components,Electric Motor,3675.0,8S3NTYXNZ,Electric Motor-8S3NTYXNZ,2020-08-04,Summit Racing
+Hybrid/EV Components,Motor Controller,1837.5,WVSCSI1TG,Motor Controller-WVSCSI1TG,2023-01-23,O'Reilly Auto Parts
+Hybrid/EV Components,Regenerative Braking Module,892.5,NISN9Q3I6,Regenerative Braking Module-NISN9Q3I6,2021-07-04,AutoZone
+Hybrid/EV Components,Power Distribution Unit,1470.0,YNK8N3DD1,Power Distribution Unit-YNK8N3DD1,2023-05-07,Summit Racing
+Specialty Body Parts,Convertible Top Motor,525.0,HBVP23L8K,Convertible Top Motor-HBVP23L8K,2023-12-22,RockAuto
+Specialty Body Parts,Convertible Top Fabric,1050.0,UUETC6IID,Convertible Top Fabric-UUETC6IID,2021-02-15,O'Reilly Auto Parts
+Specialty Body Parts,Door Seal,105.0,8Q7X5AHWL,Door Seal-8Q7X5AHWL,2023-07-06,Advanced Auto Parts
+Specialty Body Parts,Weatherstrip,42.0,LOSZ2VUT2,Weatherstrip-LOSZ2VUT2,2021-06-17,CarQuest
+Specialty Body Parts,Body Molding,105.0,DG11DVLCV,Body Molding-DG11DVLCV,2022-09-14,CarQuest
+Specialty Body Parts,Rock Panel,367.5,BX70AHWFV,Rock Panel-BX70AHWFV,2025-01-04,NAPA Auto Parts
+Specialty Body Parts,Wheel Arch Trim,183.75,YRQLFZ0HS,Wheel Arch Trim-YRQLFZ0HS,2024-09-06,Advanced Auto Parts
+Specialty Body Parts,Door Sill Plate,105.0,A28N8TMHT,Door Sill Plate-A28N8TMHT,2020-07-05,NAPA Auto Parts
+Specialty Body Parts,Roof Rail,367.5,6ZUIXQXUM,Roof Rail-6ZUIXQXUM,2022-05-06,O'Reilly Auto Parts
+Specialty Body Parts,Body Panel Reinforcement,525.0,KSKMASLHH,Body Panel Reinforcement-KSKMASLHH,2021-07-13,Pep Boys
+Glass & Visibility,Rain Sensor,183.75,L6Z1EHY0W,Rain Sensor-L6Z1EHY0W,2020-01-08,Summit Racing
+Glass & Visibility,Automatic Wiper Motor,288.75,3WTRRBD36,Automatic Wiper Motor-3WTRRBD36,2024-04-08,AutoZone
+Glass & Visibility,Defroster Grid,183.75,9RS1T6LOB,Defroster Grid-9RS1T6LOB,2023-07-12,Advanced Auto Parts
+Glass & Visibility,Heated Mirror,236.25,2JBKMJNRI,Heated Mirror-2JBKMJNRI,2021-06-13,Advanced Auto Parts
+Glass & Visibility,Rear Window Defroster Switch,105.0,1CTF0B2CP,Rear Window Defroster Switch-1CTF0B2CP,2024-02-07,Advanced Auto Parts
+Glass & Visibility,Windshield Washer Pump,36.75,3BQL8AOZU,Windshield Washer Pump-3BQL8AOZU,2023-01-20,NAPA Auto Parts
+Glass & Visibility,Windshield Washer Reservoir,105.0,4YWX1UR98,Windshield Washer Reservoir-4YWX1UR98,2022-05-14,O'Reilly Auto Parts
+Glass & Visibility,Headlight Washer Nozzle,36.75,I375CC1OW,Headlight Washer Nozzle-I375CC1OW,2020-01-20,Advanced Auto Parts
+Glass & Visibility,Headlight Washer Pump,105.0,K596X71GD,Headlight Washer Pump-K596X71GD,2020-06-01,Pep Boys
+Glass & Visibility,Sunroof Drain Tube,36.75,AATS2JR18,Sunroof Drain Tube-AATS2JR18,2024-11-20,Advanced Auto Parts
+Comfort & Convenience,Power Seat Motor,288.75,40KEH7LA4,Power Seat Motor-40KEH7LA4,2025-01-01,CarQuest
+Comfort & Convenience,Seat Heater Element,183.75,DE3XCKDZ0,Seat Heater Element-DE3XCKDZ0,2023-01-08,Summit Racing
+Comfort & Convenience,Seat Ventilation Fan,183.75,0FO38WFDR,Seat Ventilation Fan-0FO38WFDR,2024-08-14,AutoZone
+Comfort & Convenience,Climate Control Module,525.0,I2MQ5VDEM,Climate Control Module-I2MQ5VDEM,2023-03-23,Summit Racing
+Comfort & Convenience,Heated Steering Wheel,367.5,7VWC75UUK,Heated Steering Wheel-7VWC75UUK,2020-10-26,CarQuest
+Comfort & Convenience,Power Window Switch,105.0,DA1X8M7K9,Power Window Switch-DA1X8M7K9,2020-09-14,CarQuest
+Comfort & Convenience,Power Door Lock Actuator,183.75,Q8RVXSUH1,Power Door Lock Actuator-Q8RVXSUH1,2021-09-15,AutoZone
+Comfort & Convenience,Keyless Entry Module,367.5,EQ9S07KLU,Keyless Entry Module-EQ9S07KLU,2024-12-22,Pep Boys
+Comfort & Convenience,Remote Key Receiver,183.75,K1EQTLFQS,Remote Key Receiver-K1EQTLFQS,2024-05-28,O'Reilly Auto Parts
+Comfort & Convenience,Trunk Release Actuator,183.75,Z5F9K6XWO,Trunk Release Actuator-Z5F9K6XWO,2024-10-06,CarQuest
+Safety Systems,Blind Spot Sensor,367.5,0KQN0R1DG,Blind Spot Sensor-0KQN0R1DG,2024-12-22,O'Reilly Auto Parts
+Safety Systems,Lane Departure Sensor,525.0,8IHQQ65HS,Lane Departure Sensor-8IHQQ65HS,2021-02-28,CarQuest
+Safety Systems,Adaptive Cruise Control Module,892.5,CEM4P5V2V,Adaptive Cruise Control Module-CEM4P5V2V,2021-05-19,RockAuto
+Safety Systems,Collision Avoidance Sensor,892.5,CJUPLBX83,Collision Avoidance Sensor-CJUPLBX83,2020-07-26,AutoZone
+Safety Systems,Parking Assist Camera,210.0,38SHZG3GC,Parking Assist Camera-38SHZG3GC,2024-04-26,CarQuest
+Safety Systems,360-Degree Camera System,1207.5,A9YAOMHEI,360-Degree Camera System-A9YAOMHEI,2024-11-22,RockAuto
+Safety Systems,Driver Monitoring Camera,787.5,A98BWI7ND,Driver Monitoring Camera-A98BWI7ND,2022-04-01,Summit Racing
+Safety Systems,Pedestrian Detection Sensor,892.5,34K8HCNM5,Pedestrian Detection Sensor-34K8HCNM5,2023-06-08,NAPA Auto Parts
+Safety Systems,Automatic Emergency Braking Module,1207.5,7SPBQ7PBB,Automatic Emergency Braking Module-7SPBQ7PBB,2020-11-08,RockAuto
+Safety Systems,Electronic Stability Control Module,892.5,ZM47CHWN0,Electronic Stability Control Module-ZM47CHWN0,2025-02-23,Advanced Auto Parts
+Lighting (Advanced),LED Headlight,525.0,2AQ3MUSSY,LED Headlight-2AQ3MUSSY,2024-10-14,CarQuest
+Lighting (Advanced),Matrix LED Headlight,1207.5,V4QW5JJ9H,Matrix LED Headlight-V4QW5JJ9H,2025-05-27,RockAuto
+Lighting (Advanced),Adaptive Headlight,892.5,T5N1XOV3D,Adaptive Headlight-T5N1XOV3D,2024-06-27,O'Reilly Auto Parts
+Lighting (Advanced),Daytime Running Light Module,183.75,MWHRL4N7R,Daytime Running Light Module-MWHRL4N7R,2024-11-17,NAPA Auto Parts
+Lighting (Advanced),Sequential Turn Signal,367.5,7KLO42ZR5,Sequential Turn Signal-7KLO42ZR5,2020-02-20,Pep Boys
+Lighting (Advanced),Laser Headlight,2362.5,VQWXHFE21,Laser Headlight-VQWXHFE21,2024-01-29,CarQuest
+Lighting (Advanced),Cornering Light,367.5,KASI07D9R,Cornering Light-KASI07D9R,2021-11-02,Advanced Auto Parts
+Lighting (Advanced),Interior Ambient Lighting Kit,210.0,OMSFLQWZ2,Interior Ambient Lighting Kit-OMSFLQWZ2,2025-02-25,Pep Boys
+Lighting (Advanced),Underbody Lighting Kit,367.5,60YJWUUM6,Underbody Lighting Kit-60YJWUUM6,2024-06-10,RockAuto
+Lighting (Advanced),Third Brake Light,105.0,XKQDY3IUT,Third Brake Light-XKQDY3IUT,2024-10-13,Pep Boys
+Tools & Garage,Engine Hoist,525.0,SSLQ18RN8,Engine Hoist-SSLQ18RN8,2024-06-27,Pep Boys
+Tools & Garage,Engine Stand,210.0,GMRM94BPI,Engine Stand-GMRM94BPI,2021-06-23,NAPA Auto Parts
+Tools & Garage,Transmission Jack,367.5,IKV69W7IX,Transmission Jack-IKV69W7IX,2024-05-11,Summit Racing
+Tools & Garage,Brake Bleeder Kit,105.0,HG9RC1FU1,Brake Bleeder Kit-HG9RC1FU1,2020-08-06,Pep Boys
+Tools & Garage,Vacuum Pump,105.0,A9U8MJJMX,Vacuum Pump-A9U8MJJMX,2024-10-29,Pep Boys
+Tools & Garage,Compression Tester,57.75,BVQ9NJ8YC,Compression Tester-BVQ9NJ8YC,2024-10-02,CarQuest
+Tools & Garage,Fuel Pressure Tester,57.75,QLX2Y9ZAT,Fuel Pressure Tester-QLX2Y9ZAT,2021-03-25,Summit Racing
+Tools & Garage,Cooling System Pressure Tester,105.0,1PQ1L037F,Cooling System Pressure Tester-1PQ1L037F,2024-07-09,NAPA Auto Parts
+Tools & Garage,Timing Light,57.75,G55Y6GLPP,Timing Light-G55Y6GLPP,2022-07-19,Advanced Auto Parts
+Tools & Garage,Multimeter,42.0,9MG9I5KH6,Multimeter-9MG9I5KH6,2021-09-09,RockAuto
+Accessories,Floor Mats,105.0,WYHVDC227,Floor Mats-WYHVDC227,2024-05-27,NAPA Auto Parts
+Accessories,Seat Covers,105.0,71MOWZDZI,Seat Covers-71MOWZDZI,2021-04-05,NAPA Auto Parts
+Accessories,Steering Wheel Cover,42.0,E5TKO51VQ,Steering Wheel Cover-E5TKO51VQ,2020-02-17,AutoZone
+Accessories,Shift Boot,36.75,ZGZYJSKMH,Shift Boot-ZGZYJSKMH,2021-01-25,NAPA Auto Parts
+Accessories,Sunshade,36.75,D41KAX4ZE,Sunshade-D41KAX4ZE,2021-10-25,Summit Racing
+Accessories,Cargo Net,36.75,TK607O5UE,Cargo Net-TK607O5UE,2024-10-13,AutoZone
+Accessories,Trunk Organizer,57.75,FVRNJM43C,Trunk Organizer-FVRNJM43C,2025-05-09,RockAuto
+Accessories,Roof Cargo Box,630.0,3F2H6QKMK,Roof Cargo Box-3F2H6QKMK,2021-07-18,Pep Boys
+Accessories,Bike Rack,367.5,41FPD8ZLK,Bike Rack-41FPD8ZLK,2023-07-21,CarQuest
+Accessories,Ski Rack,367.5,YRSWRZFD2,Ski Rack-YRSWRZFD2,2022-03-19,CarQuest
+Rare Components,Limited Slip Differential,1837.5,7QPB7HMH3,Limited Slip Differential-7QPB7HMH3,2025-06-06,RockAuto
+Rare Components,Performance Driveshaft,787.5,593AQTXV2,Performance Driveshaft-593AQTXV2,2022-12-20,RockAuto
+Rare Components,Carbon Fiber Hood,1207.5,VIJ911UXB,Carbon Fiber Hood-VIJ911UXB,2025-03-14,Summit Racing
+Rare Components,Carbon Fiber Spoiler,892.5,H0V02CMJ9,Carbon Fiber Spoiler-H0V02CMJ9,2020-08-21,O'Reilly Auto Parts
+Rare Components,Carbon Fiber Fender,630.0,I07A5Y2GC,Carbon Fiber Fender-I07A5Y2GC,2025-05-16,Pep Boys
+Rare Components,Carbon Fiber Roof,2362.5,TT3880ZNQ,Carbon Fiber Roof-TT3880ZNQ,2020-12-27,RockAuto
+Rare Components,Carbon Fiber Trunk Lid,1207.5,R2T0RDAAZ,Carbon Fiber Trunk Lid-R2T0RDAAZ,2025-04-30,NAPA Auto Parts
+Rare Components,Carbon Fiber Mirror Caps,367.5,TWJKEAQV7,Carbon Fiber Mirror Caps-TWJKEAQV7,2021-06-20,Summit Racing
+Rare Components,Carbon Fiber Side Skirts,892.5,2DEKU8LZS,Carbon Fiber Side Skirts-2DEKU8LZS,2020-08-07,CarQuest
+Rare Components,Carbon Fiber Diffuser,1207.5,GGZEUNDWT,Carbon Fiber Diffuser-GGZEUNDWT,2022-05-28,Advanced Auto Parts
+Aftermarket Extras,Body Kit,2100.0,O2HS10DO8,Body Kit-O2HS10DO8,2024-01-13,Summit Racing
+Aftermarket Extras,Widebody Kit,3675.0,ACX0972XX,Widebody Kit-ACX0972XX,2021-09-26,CarQuest
+Aftermarket Extras,Lowering Springs,367.5,DC7WWE4FJ,Lowering Springs-DC7WWE4FJ,2023-05-10,AutoZone
+Aftermarket Extras,Coilover Suspension,1207.5,GUTCVD1L9,Coilover Suspension-GUTCVD1L9,2022-10-31,Summit Racing
+Aftermarket Extras,Big Brake Kit,2362.5,EMW3Y0N9P,Big Brake Kit-EMW3Y0N9P,2022-02-17,CarQuest
+Aftermarket Extras,Performance Exhaust Tip,210.0,VUUHP4J57,Performance Exhaust Tip-VUUHP4J57,2023-03-11,O'Reilly Auto Parts
+Aftermarket Extras,Performance Intake Manifold,892.5,IQK5JVQDY,Performance Intake Manifold-IQK5JVQDY,2021-05-30,Summit Racing
+Aftermarket Extras,Performance Fuel Rail,367.5,UAY9QXBO5,Performance Fuel Rail-UAY9QXBO5,2023-12-04,Summit Racing
+Aftermarket Extras,Performance Intercooler,892.5,FAWQ72IMF,Performance Intercooler-FAWQ72IMF,2020-01-04,Pep Boys
+Aftermarket Extras,Performance Radiator,630.0,FTCQLAQCZ,Performance Radiator-FTCQLAQCZ,2025-02-14,RockAuto
+Specialty Lighting,LED Light Bar,367.5,O955DRS8N,LED Light Bar-O955DRS8N,2022-12-24,Pep Boys
+Specialty Lighting,Off-Road Fog Lights,288.75,6N7DX2SF6,Off-Road Fog Lights-6N7DX2SF6,2023-12-25,Summit Racing
+Specialty Lighting,Underbody Neon Kit,367.5,SAE0PFM8S,Underbody Neon Kit-SAE0PFM8S,2024-02-09,RockAuto
+Specialty Lighting,Interior LED Kit,210.0,LPJYT4DWB,Interior LED Kit-LPJYT4DWB,2023-09-18,CarQuest
+Specialty Lighting,Projector Headlights,630.0,VHGNCPSRP,Projector Headlights-VHGNCPSRP,2022-01-06,Advanced Auto Parts
+Specialty Lighting,Halogen Headlights,183.75,H6LKE0LQF,Halogen Headlights-H6LKE0LQF,2020-05-21,Advanced Auto Parts
+Specialty Lighting,LED Taillights,367.5,6E1NE6SVE,LED Taillights-6E1NE6SVE,2023-09-05,Summit Racing
+Specialty Lighting,Sequential LED Taillights,525.0,B3D6MTGOW,Sequential LED Taillights-B3D6MTGOW,2021-10-29,O'Reilly Auto Parts
+Specialty Lighting,Third Brake Light LED,105.0,NWS2T2XRJ,Third Brake Light LED-NWS2T2XRJ,2021-09-26,AutoZone
+Specialty Lighting,License Plate LED,36.75,HZ2JQBFE1,License Plate LED-HZ2JQBFE1,2024-09-10,CarQuest
+Specialty Electronics,Dash Cam,210.0,ERZT0LGCJ,Dash Cam-ERZT0LGCJ,2023-12-26,RockAuto
+Specialty Electronics,Backup Camera Kit,210.0,7Y8PBXJVZ,Backup Camera Kit-7Y8PBXJVZ,2021-08-30,Summit Racing
+Specialty Electronics,Parking Sensor Kit,183.75,02T0TST8B,Parking Sensor Kit-02T0TST8B,2021-09-17,CarQuest
+Specialty Electronics,Alarm System,367.5,37VCFO0JI,Alarm System-37VCFO0JI,2022-04-05,Summit Racing
+Specialty Electronics,Remote Start Kit,367.5,65F9B2DAS,Remote Start Kit-65F9B2DAS,2022-03-24,O'Reilly Auto Parts
+Specialty Electronics,Keyless Entry Kit,367.5,ZYJOVUV97,Keyless Entry Kit-ZYJOVUV97,2021-08-20,NAPA Auto Parts
+Specialty Electronics,Heads-Up Display Kit,630.0,3Y1ADGI9S,Heads-Up Display Kit-3Y1ADGI9S,2020-09-14,NAPA Auto Parts
+Specialty Electronics,Infotainment Upgrade,892.5,AJ9I55FQJ,Infotainment Upgrade-AJ9I55FQJ,2022-04-30,O'Reilly Auto Parts
+Specialty Electronics,Amplifier Upgrade,367.5,08UY1OD2I,Amplifier Upgrade-08UY1OD2I,2025-03-16,RockAuto
+Specialty Electronics,Subwoofer,288.75,0ZS1QTW56,Subwoofer-0ZS1QTW56,2023-10-01,Pep Boys
+Miscellaneous,Trailer Hitch Ball,36.75,E7KC6KPR3,Trailer Hitch Ball-E7KC6KPR3,2024-12-30,O'Reilly Auto Parts
+Miscellaneous,Trailer Hitch Mount,105.0,JRS9MCJA0,Trailer Hitch Mount-JRS9MCJA0,2023-05-29,Summit Racing
+Miscellaneous,Trailer Brake Controller,288.75,HQIFY16IR,Trailer Brake Controller-HQIFY16IR,2021-08-31,RockAuto
+Miscellaneous,Winch,892.5,UB9O1R7VK,Winch-UB9O1R7VK,2023-01-12,Advanced Auto Parts
+Miscellaneous,Tow Strap,36.75,MDVGXD1OA,Tow Strap-MDVGXD1OA,2020-01-01,O'Reilly Auto Parts
+Miscellaneous,Tow Hook,105.0,CNAU2EJ1U,Tow Hook-CNAU2EJ1U,2021-08-03,RockAuto
+Miscellaneous,Roof Tent,1837.5,GCTS8DEAD,Roof Tent-GCTS8DEAD,2022-05-19,O'Reilly Auto Parts
+Miscellaneous,Portable Fridge,892.5,L0WYUXY55,Portable Fridge-L0WYUXY55,2023-03-18,O'Reilly Auto Parts
+Miscellaneous,Jump Starter,183.75,E9P6UIF8V,Jump Starter-E9P6UIF8V,2023-08-16,Pep Boys
+Miscellaneous,Battery Charger,183.75,EWQLWPC3V,Battery Charger-EWQLWPC3V,2022-07-29,Pep Boys

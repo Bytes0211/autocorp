@@ -1,0 +1,401 @@
+category,part_name,price
+Engine Components,Spark Plug,10.5
+Engine Components,Ignition Coil,84.0
+Engine Components,Distributor Cap,36.75
+Engine Components,Timing Belt,105.0
+Engine Components,Serpentine Belt,52.5
+Engine Components,Piston,73.5
+Engine Components,Cylinder Head,892.5
+Engine Components,Head Gasket,210.0
+Engine Components,Oil Pan,288.75
+Engine Components,Crankshaft,630.0
+Fuel & Air System,Fuel Pump,288.75
+Fuel & Air System,Fuel Injector,105.0
+Fuel & Air System,Carburetor,367.5
+Fuel & Air System,Air Filter,23.625
+Fuel & Air System,Mass Air Flow Sensor,183.75
+Fuel & Air System,Throttle Body,367.5
+Fuel & Air System,Gas Cap,15.75
+Fuel & Air System,Oxygen Sensor,105.0
+Fuel & Air System,EGR Valve,183.75
+Fuel & Air System,PCV Valve,18.375
+Cooling & Heating,Radiator,525.0
+Cooling & Heating,Thermostat,36.75
+Cooling & Heating,Water Pump,210.0
+Cooling & Heating,Heater Core,367.5
+Cooling & Heating,AC Compressor,472.5
+Cooling & Heating,AC Condenser,315.0
+Cooling & Heating,AC Evaporator,393.75
+Cooling & Heating,Cooling Fan,183.75
+Cooling & Heating,Radiator Hose,28.875
+Cooling & Heating,Expansion Tank,105.0
+Transmission & Drivetrain,Clutch Kit,577.5
+Transmission & Drivetrain,Flywheel,367.5
+Transmission & Drivetrain,Transmission Assembly,2625.0
+Transmission & Drivetrain,CV Axle,210.0
+Transmission & Drivetrain,Driveshaft,630.0
+Transmission & Drivetrain,Differential,1207.5
+Transmission & Drivetrain,U-Joint,36.75
+Transmission & Drivetrain,Transfer Case,1837.5
+Transmission & Drivetrain,Gear Shifter,210.0
+Transmission & Drivetrain,Transmission Filter,36.75
+Suspension & Steering,Shock Absorber,105.0
+Suspension & Steering,Strut Assembly,236.25
+Suspension & Steering,Coil Spring,183.75
+Suspension & Steering,Control Arm,210.0
+Suspension & Steering,Ball Joint,57.75
+Suspension & Steering,Tie Rod End,52.5
+Suspension & Steering,Steering Rack,892.5
+Suspension & Steering,Power Steering Pump,288.75
+Suspension & Steering,Sway Bar Link,42.0
+Suspension & Steering,Wheel Bearing,105.0
+Brakes,Brake Pads (set),73.5
+Brakes,Brake Rotors (each),105.0
+Brakes,Brake Caliper,183.75
+Brakes,Brake Master Cylinder,288.75
+Brakes,Brake Booster,367.5
+Brakes,ABS Sensor,105.0
+Brakes,Brake Hose,36.75
+Brakes,Parking Brake Cable,57.75
+Brakes,Drum Brake Shoe,73.5
+Brakes,Wheel Cylinder,52.5
+Electrical,Alternator,315.0
+Electrical,Starter Motor,262.5
+Electrical,Battery,183.75
+Electrical,Fuse Box,105.0
+Electrical,Relay,21.0
+Electrical,Ignition Switch,105.0
+Electrical,Wiring Harness,420.0
+Electrical,ECU (Engine Control Unit),1050.0
+Electrical,Light Bulb,13.125
+Electrical,Horn,36.75
+Lighting,Headlight Assembly,210.0
+Lighting,Taillight Assembly,147.0
+Lighting,Fog Light,105.0
+Lighting,Turn Signal Light,57.75
+Lighting,Brake Light Bulb,10.5
+Lighting,Interior Dome Light,18.375
+Lighting,License Plate Light,10.5
+Lighting,LED Conversion Kit,105.0
+Lighting,HID Ballast,183.75
+Lighting,Side Marker Light,36.75
+Body & Interior,Side Mirror,183.75
+Body & Interior,Rearview Mirror,105.0
+Body & Interior,Door Handle,42.0
+Body & Interior,Window Regulator,183.75
+Body & Interior,Seat Belt,105.0
+Body & Interior,Dashboard,892.5
+Body & Interior,Glove Box,105.0
+Body & Interior,Sun Visor,57.75
+Body & Interior,Carpet Kit,367.5
+Body & Interior,Seat Cushion,210.0
+Maintenance Items,Oil Filter,15.75
+Maintenance Items,Cabin Air Filter,23.625
+Maintenance Items,Windshield Wipers,28.875
+Maintenance Items,Engine Oil (5 qt),47.25
+Maintenance Items,Transmission Fluid,36.75
+Maintenance Items,Coolant,23.625
+Maintenance Items,Brake Fluid,15.75
+Maintenance Items,Power Steering Fluid,15.75
+Maintenance Items,Grease,10.5
+Maintenance Items,Tire (each),183.75
+Exhaust,Muffler,183.75
+Exhaust,Catalytic Converter,1207.5
+Exhaust,Exhaust Manifold,525.0
+Exhaust,Exhaust Pipe,105.0
+Exhaust,Resonator,183.75
+Exhaust,O2 Sensor Bung,18.375
+Exhaust,Exhaust Gasket,21.0
+Exhaust,Exhaust Hanger,10.5
+Exhaust,Turbocharger,1837.5
+Exhaust,Supercharger,3937.5
+Sensors,MAP Sensor,105.0
+Sensors,Knock Sensor,73.5
+Sensors,Coolant Temperature Sensor,36.75
+Sensors,Crankshaft Position Sensor,105.0
+Sensors,Camshaft Position Sensor,105.0
+Sensors,ABS Wheel Speed Sensor,105.0
+Sensors,Throttle Position Sensor,73.5
+Sensors,Manifold Air Pressure Sensor,105.0
+Sensors,Intake Air Temperature Sensor,36.75
+Sensors,Fuel Pressure Sensor,105.0
+Specialty Electronics,Alternator Regulator,105.0
+Specialty Electronics,Voltage Regulator,73.5
+Specialty Electronics,Ignition Module,183.75
+Specialty Electronics,Starter Solenoid,57.75
+Specialty Electronics,Instrument Cluster,630.0
+Specialty Electronics,Speedometer,210.0
+Specialty Electronics,Tachometer,210.0
+Specialty Electronics,Amplifier,288.75
+Specialty Electronics,Car Stereo Head Unit,367.5
+Specialty Electronics,Navigation System,1050.0
+Exhaust & Emissions,DPF (Diesel Particulate Filter),1837.5
+Exhaust & Emissions,NOx Sensor,367.5
+Exhaust & Emissions,Air Pump,288.75
+Exhaust & Emissions,Charcoal Canister,183.75
+Exhaust & Emissions,Evaporative Emission Valve,105.0
+Exhaust & Emissions,Exhaust Heat Shield,105.0
+Exhaust & Emissions,Exhaust Clamp,21.0
+Exhaust & Emissions,Exhaust Tip,57.75
+Exhaust & Emissions,Exhaust Flex Pipe,105.0
+Exhaust & Emissions,Exhaust Mount,18.375
+Safety & Restraints,Airbag Module,1050.0
+Safety & Restraints,Airbag Sensor,210.0
+Safety & Restraints,Seat Belt Pretensioner,288.75
+Safety & Restraints,Child Seat Anchor,36.75
+Safety & Restraints,Crash Sensor,183.75
+Safety & Restraints,Steering Wheel Airbag,630.0
+Safety & Restraints,Side Curtain Airbag,787.5
+Safety & Restraints,Passenger Airbag,787.5
+Safety & Restraints,Driver Airbag,787.5
+Safety & Restraints,Airbag Control Module,892.5
+Body & Exterior,Fender,367.5
+Body & Exterior,Hood,525.0
+Body & Exterior,Bumper,525.0
+Body & Exterior,Grille,210.0
+Body & Exterior,Trunk Lid,630.0
+Body & Exterior,Roof Panel,892.5
+Body & Exterior,Quarter Panel,630.0
+Body & Exterior,Door,892.5
+Body & Exterior,Running Board,367.5
+Body & Exterior,Spoiler,288.75
+Interior & Comfort,Steering Wheel,288.75
+Interior & Comfort,Shift Knob,42.0
+Interior & Comfort,Pedal Assembly,183.75
+Interior & Comfort,Center Console,367.5
+Interior & Comfort,Armrest,105.0
+Interior & Comfort,Seat Frame,367.5
+Interior & Comfort,Seat Cover,105.0
+Interior & Comfort,Headrest,105.0
+Interior & Comfort,Floor Mat Set,105.0
+Interior & Comfort,Door Panel,367.5
+Glass & Mirrors,Windshield,525.0
+Glass & Mirrors,Rear Window,367.5
+Glass & Mirrors,Side Window,288.75
+Glass & Mirrors,Window Motor,183.75
+Glass & Mirrors,Mirror Glass,105.0
+Glass & Mirrors,Mirror Motor,183.75
+Glass & Mirrors,Mirror Housing,183.75
+Glass & Mirrors,Sunroof Glass,630.0
+Glass & Mirrors,Sunroof Motor,367.5
+Glass & Mirrors,Sunroof Seal,105.0
+Wheels & Tires,Alloy Wheel,288.75
+Wheels & Tires,Steel Wheel,147.0
+Wheels & Tires,Hubcap,42.0
+Wheels & Tires,Lug Nut,3.6750000000000003
+Wheels & Tires,Wheel Stud,10.5
+Wheels & Tires,Wheel Spacer,105.0
+Wheels & Tires,Wheel Hub,183.75
+Wheels & Tires,Tire Pressure Sensor,105.0
+Wheels & Tires,Tire Valve Stem,10.5
+Wheels & Tires,Tire Repair Kit,36.75
+Drivetrain Extras,Axle Shaft,288.75
+Drivetrain Extras,Axle Bearing,105.0
+Drivetrain Extras,Axle Seal,36.75
+Drivetrain Extras,Propeller Shaft,630.0
+Drivetrain Extras,Half Shaft,288.75
+Drivetrain Extras,Pinion Gear,183.75
+Drivetrain Extras,Ring Gear,236.25
+Drivetrain Extras,Clutch Slave Cylinder,105.0
+Drivetrain Extras,Clutch Master Cylinder,183.75
+Drivetrain Extras,Throwout Bearing,57.75
+Specialty Maintenance,Timing Chain,210.0
+Specialty Maintenance,Timing Chain Tensioner,105.0
+Specialty Maintenance,Valve Cover,183.75
+Specialty Maintenance,Valve Cover Gasket,36.75
+Specialty Maintenance,Intake Manifold,525.0
+Specialty Maintenance,Intake Manifold Gasket,36.75
+Specialty Maintenance,Exhaust Manifold Gasket,36.75
+Specialty Maintenance,Oil Pump,288.75
+Specialty Maintenance,Oil Pressure Sensor,105.0
+Specialty Maintenance,Oil Cooler,367.5
+Hardware & Fasteners,Bolt Set,42.0
+Hardware & Fasteners,Nut Set,21.0
+Hardware & Fasteners,Washer Set,21.0
+Hardware & Fasteners,Stud Kit,36.75
+Hardware & Fasteners,Retaining Clip,10.5
+Hardware & Fasteners,Spring Clip,10.5
+Hardware & Fasteners,Cotter Pin,3.1500000000000004
+Hardware & Fasteners,Hose Clamp,10.5
+Hardware & Fasteners,Exhaust Clamp,21.0
+Hardware & Fasteners,Brake Line Fitting,18.375
+Performance Parts,Cold Air Intake Kit,367.5
+Performance Parts,Performance Exhaust,892.5
+Performance Parts,Performance Camshaft,525.0
+Performance Parts,Performance Piston,183.75
+Performance Parts,Performance Crankshaft,787.5
+Performance Parts,Performance ECU Tune,577.5
+Performance Parts,Performance Suspension Kit,1207.5
+Performance Parts,Performance Brake Kit,1207.5
+Performance Parts,Performance Clutch Kit,787.5
+Performance Parts,Performance Turbo Kit,3675.0
+Fluids & Chemicals,Engine Oil Additive,21.0
+Fluids & Chemicals,Fuel Additive,21.0
+Fluids & Chemicals,Coolant Additive,21.0
+Fluids & Chemicals,Brake Cleaner,10.5
+Fluids & Chemicals,Degreaser,15.75
+Fluids & Chemicals,Thread Locker,10.5
+Fluids & Chemicals,Anti-Seize Compound,10.5
+Fluids & Chemicals,Silicone Sealant,10.5
+Fluids & Chemicals,Grease Gun,36.75
+Fluids & Chemicals,Shop Towels,15.75
+Tools & Equipment,Jack,105.0
+Tools & Equipment,Jack Stand,57.75
+Tools & Equipment,Lug Wrench,36.75
+Tools & Equipment,Torque Wrench,105.0
+Tools & Equipment,Socket Set,105.0
+Tools & Equipment,Screwdriver Set,42.0
+Tools & Equipment,Pliers Set,42.0
+Tools & Equipment,Hammer,21.0
+Tools & Equipment,Impact Wrench,288.75
+Tools & Equipment,Air Compressor,420.0
+Miscellaneous,License Plate Frame,21.0
+Miscellaneous,Key Fob,105.0
+Miscellaneous,Remote Starter,367.5
+Miscellaneous,Alarm System,367.5
+Miscellaneous,Dash Camera,210.0
+Miscellaneous,Backup Camera,210.0
+Miscellaneous,Parking Sensor,105.0
+Miscellaneous,Trailer Hitch,367.5
+Miscellaneous,Trailer Wiring Harness,105.0
+Miscellaneous,Roof Rack,367.5
+Advanced Electronics,ECU Reprogramming Kit,577.5
+Advanced Electronics,OBD-II Scanner,105.0
+Advanced Electronics,Diagnostic Tool,420.0
+Advanced Electronics,Telematics Module,525.0
+Advanced Electronics,Heads-Up Display,630.0
+Advanced Electronics,Infotainment Screen,892.5
+Advanced Electronics,Amplifier Module,288.75
+Advanced Electronics,Bluetooth Module,183.75
+Advanced Electronics,Wi-Fi Hotspot Module,367.5
+Advanced Electronics,Dash Wiring Harness,420.0
+Hybrid/EV Components,High-Voltage Battery Pack,5250.0
+Hybrid/EV Components,Battery Cooling System,892.5
+Hybrid/EV Components,Inverter,1837.5
+Hybrid/EV Components,DC-DC Converter,892.5
+Hybrid/EV Components,Onboard Charger,1837.5
+Hybrid/EV Components,Charging Port,525.0
+Hybrid/EV Components,Electric Motor,3675.0
+Hybrid/EV Components,Motor Controller,1837.5
+Hybrid/EV Components,Regenerative Braking Module,892.5
+Hybrid/EV Components,Power Distribution Unit,1470.0
+Specialty Body Parts,Convertible Top Motor,525.0
+Specialty Body Parts,Convertible Top Fabric,1050.0
+Specialty Body Parts,Door Seal,105.0
+Specialty Body Parts,Weatherstrip,42.0
+Specialty Body Parts,Body Molding,105.0
+Specialty Body Parts,Rock Panel,367.5
+Specialty Body Parts,Wheel Arch Trim,183.75
+Specialty Body Parts,Door Sill Plate,105.0
+Specialty Body Parts,Roof Rail,367.5
+Specialty Body Parts,Body Panel Reinforcement,525.0
+Glass & Visibility,Rain Sensor,183.75
+Glass & Visibility,Automatic Wiper Motor,288.75
+Glass & Visibility,Defroster Grid,183.75
+Glass & Visibility,Heated Mirror,236.25
+Glass & Visibility,Rear Window Defroster Switch,105.0
+Glass & Visibility,Windshield Washer Pump,36.75
+Glass & Visibility,Windshield Washer Reservoir,105.0
+Glass & Visibility,Headlight Washer Nozzle,36.75
+Glass & Visibility,Headlight Washer Pump,105.0
+Glass & Visibility,Sunroof Drain Tube,36.75
+Comfort & Convenience,Power Seat Motor,288.75
+Comfort & Convenience,Seat Heater Element,183.75
+Comfort & Convenience,Seat Ventilation Fan,183.75
+Comfort & Convenience,Climate Control Module,525.0
+Comfort & Convenience,Heated Steering Wheel,367.5
+Comfort & Convenience,Power Window Switch,105.0
+Comfort & Convenience,Power Door Lock Actuator,183.75
+Comfort & Convenience,Keyless Entry Module,367.5
+Comfort & Convenience,Remote Key Receiver,183.75
+Comfort & Convenience,Trunk Release Actuator,183.75
+Safety Systems,Blind Spot Sensor,367.5
+Safety Systems,Lane Departure Sensor,525.0
+Safety Systems,Adaptive Cruise Control Module,892.5
+Safety Systems,Collision Avoidance Sensor,892.5
+Safety Systems,Parking Assist Camera,210.0
+Safety Systems,360-Degree Camera System,1207.5
+Safety Systems,Driver Monitoring Camera,787.5
+Safety Systems,Pedestrian Detection Sensor,892.5
+Safety Systems,Automatic Emergency Braking Module,1207.5
+Safety Systems,Electronic Stability Control Module,892.5
+Lighting (Advanced),LED Headlight,525.0
+Lighting (Advanced),Matrix LED Headlight,1207.5
+Lighting (Advanced),Adaptive Headlight,892.5
+Lighting (Advanced),Daytime Running Light Module,183.75
+Lighting (Advanced),Sequential Turn Signal,367.5
+Lighting (Advanced),Laser Headlight,2362.5
+Lighting (Advanced),Cornering Light,367.5
+Lighting (Advanced),Interior Ambient Lighting Kit,210.0
+Lighting (Advanced),Underbody Lighting Kit,367.5
+Lighting (Advanced),Third Brake Light,105.0
+Tools & Garage,Engine Hoist,525.0
+Tools & Garage,Engine Stand,210.0
+Tools & Garage,Transmission Jack,367.5
+Tools & Garage,Brake Bleeder Kit,105.0
+Tools & Garage,Vacuum Pump,105.0
+Tools & Garage,Compression Tester,57.75
+Tools & Garage,Fuel Pressure Tester,57.75
+Tools & Garage,Cooling System Pressure Tester,105.0
+Tools & Garage,Timing Light,57.75
+Tools & Garage,Multimeter,42.0
+Accessories,Floor Mats,105.0
+Accessories,Seat Covers,105.0
+Accessories,Steering Wheel Cover,42.0
+Accessories,Shift Boot,36.75
+Accessories,Sunshade,36.75
+Accessories,Cargo Net,36.75
+Accessories,Trunk Organizer,57.75
+Accessories,Roof Cargo Box,630.0
+Accessories,Bike Rack,367.5
+Accessories,Ski Rack,367.5
+Rare Components,Limited Slip Differential,1837.5
+Rare Components,Performance Driveshaft,787.5
+Rare Components,Carbon Fiber Hood,1207.5
+Rare Components,Carbon Fiber Spoiler,892.5
+Rare Components,Carbon Fiber Fender,630.0
+Rare Components,Carbon Fiber Roof,2362.5
+Rare Components,Carbon Fiber Trunk Lid,1207.5
+Rare Components,Carbon Fiber Mirror Caps,367.5
+Rare Components,Carbon Fiber Side Skirts,892.5
+Rare Components,Carbon Fiber Diffuser,1207.5
+Aftermarket Extras,Body Kit,2100.0
+Aftermarket Extras,Widebody Kit,3675.0
+Aftermarket Extras,Lowering Springs,367.5
+Aftermarket Extras,Coilover Suspension,1207.5
+Aftermarket Extras,Big Brake Kit,2362.5
+Aftermarket Extras,Performance Exhaust Tip,210.0
+Aftermarket Extras,Performance Intake Manifold,892.5
+Aftermarket Extras,Performance Fuel Rail,367.5
+Aftermarket Extras,Performance Intercooler,892.5
+Aftermarket Extras,Performance Radiator,630.0
+Specialty Lighting,LED Light Bar,367.5
+Specialty Lighting,Off-Road Fog Lights,288.75
+Specialty Lighting,Underbody Neon Kit,367.5
+Specialty Lighting,Interior LED Kit,210.0
+Specialty Lighting,Projector Headlights,630.0
+Specialty Lighting,Halogen Headlights,183.75
+Specialty Lighting,LED Taillights,367.5
+Specialty Lighting,Sequential LED Taillights,525.0
+Specialty Lighting,Third Brake Light LED,105.0
+Specialty Lighting,License Plate LED,36.75
+Specialty Electronics,Dash Cam,210.0
+Specialty Electronics,Backup Camera Kit,210.0
+Specialty Electronics,Parking Sensor Kit,183.75
+Specialty Electronics,Alarm System,367.5
+Specialty Electronics,Remote Start Kit,367.5
+Specialty Electronics,Keyless Entry Kit,367.5
+Specialty Electronics,Heads-Up Display Kit,630.0
+Specialty Electronics,Infotainment Upgrade,892.5
+Specialty Electronics,Amplifier Upgrade,367.5
+Specialty Electronics,Subwoofer,288.75
+Miscellaneous,Trailer Hitch Ball,36.75
+Miscellaneous,Trailer Hitch Mount,105.0
+Miscellaneous,Trailer Brake Controller,288.75
+Miscellaneous,Winch,892.5
+Miscellaneous,Tow Strap,36.75
+Miscellaneous,Tow Hook,105.0
+Miscellaneous,Roof Tent,1837.5
+Miscellaneous,Portable Fridge,892.5
+Miscellaneous,Jump Starter,183.75
+Miscellaneous,Battery Charger,183.75
