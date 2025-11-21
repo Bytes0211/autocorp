@@ -1,3 +1,0 @@
-Execute a sql file:
-psql -U username -d database_name -f /path/to/file.sql
-
