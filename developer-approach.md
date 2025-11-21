@@ -9,26 +9,32 @@
 
 ## 1. Overview
 
-Create an AWS-based data pipeline that ingests data from a PostgreSQL database and CSV files into a data lake, enabling analytics and querying through open table formats (Apache Hudi and Delta Lake).
+The AutoCorp project is a comprehensive cloud-based data architecture that extends beyond a traditional database system. It encompasses a complete data lifecycle from operational database to data lake, data warehouse, and analytics platform. The finished project implements a modern AWS data lakehouse architecture enabling scalable analytics, real-time querying, and business intelligence capabilities across the organization's sales and service data.
 
 ### Goals
-- **Primary:** Establish a scalable data lake architecture for AutoCorp's operational data
-- **Secondary:** Enable real-time analytics and historical data queries using open table formats
-- **Tertiary:** Implement automated data quality checks and transformation pipelines
+- **Primary:** Build an end-to-end cloud data platform integrating data lake, data warehouse, and analytics capabilities
+- **Secondary:** Enable enterprise-wide data accessibility through SQL querying (AWS Athena) and BI tools
+- **Tertiary:** Implement open table formats (Apache Hudi) for ACID transactions and time-travel capabilities
+- **Quaternary:** Establish automated data pipelines with quality checks and governance
 
 ### Success Criteria
-- All PostgreSQL tables successfully replicated to S3 data lake via AWS DMS
-- CSV files (sales orders, customers) automatically synced to S3 via AWS DataSync
-- Data cataloged and queryable via AWS Athena
-- Apache Hudi and Delta Lake tables created for time-travel and ACID transactions
-- End-to-end pipeline running with <15 minute data freshness
+- **Data Ingestion:** PostgreSQL database replicated to S3 data lake via AWS DMS with CDC enabled
+- **File Integration:** Large CSV files (customers, sales orders) automatically synced via AWS DataSync
+- **Data Catalog:** All data sources cataloged in AWS Glue Data Catalog with automated schema discovery
+- **Open Table Formats:** Apache Hudi tables operational for transactional data with upsert capabilities
+- **Query Layer:** AWS Athena configured as primary query engine with sub-30 second query performance
+- **Data Freshness:** End-to-end pipeline delivering <15 minute data latency from source to analytics layer
+- **Scalability:** Architecture handles considerable CSV file sizes (multi-GB) efficiently
 
 ---
 
 ## 2. Background & Context
 
 ### Current State
-- **PostgreSQL Database:** `autocorp` database on-premises with 7 tables:
+
+The AutoCorp project begins with an operational PostgreSQL database and large-scale CSV exports, but evolves into a comprehensive data platform:
+
+- **PostgreSQL Database (Source):** `autocorp` database on-premises with 7 tables:
   - `auto_parts` (400 rows) - Parts inventory
   - `customers` (1,149 rows) - Customer information
   - `service` (110 rows) - Service catalog
@@ -37,11 +43,23 @@ Create an AWS-based data pipeline that ingests data from a PostgreSQL database a
   - `sales_order_parts` (2,135 rows) - Parts line items
   - `sales_order_services` (644 rows) - Service line items
 
-- **CSV Files:** 
-  - `customers.csv` (1.2M records) - Full customer dataset
-  - Sales order CSV files (generated periodically)
+- **CSV Files (Large-Scale Data):** 
+  - `customers.csv` (1.2M records, considerable file size) - Full customer dataset
+  - Sales order CSV files (multi-GB exports generated periodically)
+  - Historical data archives requiring efficient transfer mechanisms
+
+### Project Scope: Beyond Database Management
+
+This is **not just a database system**. The complete AutoCorp data platform delivers:
+
+1. **AWS Data Lake:** Centralized S3-based repository for all raw and processed data
+2. **Data Warehouse Capabilities:** Curated, analytics-ready datasets in open table formats
+3. **Query Engine:** AWS Athena providing SQL interface to data lake without moving data
+4. **Data Catalog:** AWS Glue metadata management for all data assets
+5. **Automated Pipelines:** Continuous data extraction, transformation, and loading
 
 ### Requirements
+
 - **R1:** Migrate all database tables to AWS data lake without data loss
 - **R2:** Establish continuous replication for database changes (CDC)
 - **R3:** Automate CSV file ingestion with scheduling flexibility
@@ -51,6 +69,7 @@ Create an AWS-based data pipeline that ingests data from a PostgreSQL database a
 - **R7:** Implement open table formats for advanced analytics
 
 ### Constraints
+
 - **Technical:** Must maintain ACID properties for critical tables
 - **Business:** Minimal disruption to operational database
 - **Cost:** AWS resources must be optimized for cost-effectiveness
@@ -63,12 +82,32 @@ Create an AWS-based data pipeline that ingests data from a PostgreSQL database a
 
 ### High-Level Approach
 
-Implement a multi-layer data architecture:
-1. **Ingestion Layer:** AWS DMS (database) + AWS DataSync (CSV files)
-2. **Raw Storage Layer:** S3 buckets organized by source and date
-3. **Processing Layer:** AWS Glue for ETL and data quality
-4. **Curated Layer:** Apache Hudi and Delta Lake tables
-5. **Query Layer:** AWS Athena for SQL analytics
+Implement a modern data lakehouse architecture with distinct functional layers:
+
+1. **Ingestion Layer:** 
+   - **AWS DMS:** Continuous database extraction with Change Data Capture (CDC)
+   - **AWS DataSync:** Efficient transfer of considerable-size CSV files from on-premises to cloud
+
+2. **Raw Storage Layer (Data Lake):** 
+   - **AWS S3:** Scalable, durable object storage organized by source and date partitions
+   - Landing zone for all raw data before transformation
+
+3. **Catalog & Metadata Layer:**
+   - **AWS Glue Data Catalog:** Centralized metadata repository
+   - **AWS Glue Crawlers:** Automated schema discovery and catalog updates
+
+4. **Processing Layer (ETL):**
+   - **AWS Glue ETL Jobs:** PySpark-based data cleaning, transformation, and quality validation
+   - Data deduplication, standardization, and business rule application
+
+5. **Curated Layer (Data Warehouse):**
+   - **Apache Hudi Tables:** Open table format providing ACID transactions, upserts, and time-travel
+   - Analytics-ready datasets optimized for query performance
+
+6. **Query & Analytics Layer:**
+   - **AWS Athena:** Serverless SQL query engine directly on S3 data
+   - No data movement required, pay-per-query model
+   - Compatible with standard BI tools (Tableau, PowerBI, etc.)
 
 ### Architecture Diagram
 
@@ -200,12 +239,13 @@ On-Premises CSV → DataSync → S3 Raw (CSV)
 
 ### Design Decisions
 
-- **Decision:** Use both Apache Hudi and Delta Lake
+- **Decision:** Standardize on Apache Hudi for open table format
   - **Rationale:** 
-    - Hudi excels at upsert workloads (sales orders)
-    - Delta Lake better for batch analytics (reference data)
-    - Evaluate both for future standardization
-  - **Trade-offs:** Additional operational complexity
+    - Hudi excels at upsert workloads (sales orders, customer updates)
+    - Strong AWS integration and Athena support
+    - Mature CDC and incremental processing capabilities
+    - Meets project needs for ACID transactions and time-travel
+  - **Trade-offs:** Single format simplifies operations and reduces complexity
 
 - **Decision:** Parquet format for raw zone
   - **Rationale:** Columnar format, excellent compression, AWS native support
@@ -224,22 +264,41 @@ On-Premises CSV → DataSync → S3 Raw (CSV)
 ## 4. Implementation Details
 
 ### Technology Stack
-- **AWS DMS:** Database migration and CDC - Managed service, no code required
-- **AWS DataSync:** File transfer - Automated, optimized bandwidth usage
-- **AWS S3:** Data lake storage - Scalable, durable, cost-effective
-- **AWS Glue:** ETL and data catalog - Serverless, PySpark-based
-- **Apache Hudi 0.14+:** Transactional data lake - Upsert support, time-travel
-- **Delta Lake 3.0+:** ACID transactions - Schema evolution, DML operations
-- **AWS Athena:** Query engine - Serverless SQL, pay-per-query
-- **AWS IAM:** Access control - Fine-grained permissions
-- **AWS CloudWatch:** Monitoring - Logs, metrics, alarms
+**Data Ingestion & Extraction:**
+- **AWS DMS:** Database migration and continuous data capture (CDC) - Managed service for PostgreSQL replication
+- **AWS DataSync:** High-performance file transfer - Handles considerable CSV file sizes with optimization
+
+**Data Lake & Storage:**
+- **AWS S3:** Object storage foundation - Scalable, durable (99.999999999% durability), cost-effective
+- **S3 Lifecycle Policies:** Automated data tiering for cost optimization
+
+**Data Catalog & Metadata:**
+- **AWS Glue Data Catalog:** Centralized metadata repository - Apache Hive Metastore compatible
+- **AWS Glue Crawlers:** Automated schema discovery - Keeps catalog synchronized with data
+
+**ETL & Processing:**
+- **AWS Glue ETL:** Serverless PySpark execution - Auto-scaling, managed infrastructure
+- **Apache Hudi 0.14+:** Open table format - ACID transactions, upserts, time-travel, incremental processing
+
+**Query & Analytics:**
+- **AWS Athena:** Serverless SQL query engine - Pay-per-query, direct S3 querying, Hudi-native support
+- **Presto/Trino Engine:** Powers Athena with distributed query execution
+
+**Security & Governance:**
+- **AWS IAM:** Identity and access management - Fine-grained permissions, service roles
+- **AWS Secrets Manager:** Secure credential storage - Database passwords, API keys
+- **S3 Encryption:** SSE-S3/SSE-KMS for data at rest
+
+**Observability & Operations:**
+- **AWS CloudWatch:** Centralized logging and metrics - Dashboards, alarms, log insights
+- **CloudTrail:** Audit logging for all AWS API calls
 
 ### S3 Bucket Structure
 
 ```
 s3://autocorp-datalake/
 ├── raw/
-│   ├── database/
+│   ├── database/                    # DMS destination - database CDC data
 │   │   ├── auto_parts/
 │   │   │   └── year=2024/month=11/day=21/
 │   │   ├── customers/
@@ -248,23 +307,24 @@ s3://autocorp-datalake/
 │   │   ├── sales_order/
 │   │   ├── sales_order_parts/
 │   │   └── sales_order_services/
-│   └── csv/
+│   └── csv/                         # DataSync destination - large CSV files
 │       ├── customers/
-│       │   └── customers-20241121.csv
+│       │   └── customers-20241121.csv  # Considerable size (multi-GB)
 │       └── sales_orders/
 │           └── sales_orders-20241121.csv
-├── curated/
-│   ├── hudi/
-│   │   ├── sales_order/
-│   │   └── customers/
-│   └── delta/
-│       ├── auto_parts/
-│       ├── service/
-│       └── service_parts/
-└── logs/
-    ├── dms/
-    ├── glue/
-    └── datasync/
+├── curated/                         # Analytics-ready data warehouse layer
+│   └── hudi/                        # Apache Hudi open table format
+│       ├── sales_order/             # Transactional data with upserts
+│       ├── customers/               # Customer master data
+│       ├── auto_parts/              # Parts inventory
+│       ├── service/                 # Service catalog
+│       ├── service_parts/           # Service-parts relationships
+│       ├── sales_order_parts/       # Sales line items
+│       └── sales_order_services/    # Service line items
+└── logs/                            # Pipeline execution logs
+    ├── dms/                         # DMS task logs
+    ├── glue/                        # ETL job execution logs
+    └── datasync/                    # DataSync transfer logs
 ```
 
 ### Key Implementation Areas
@@ -341,35 +401,42 @@ df_clean.write \
     .save("s3://autocorp-datalake/curated/hudi/sales_order/")
 ```
 
-#### AWS Glue ETL Job for Delta Lake
+#### AWS Glue ETL Job for Reference Data (Batch)
 
-**PySpark Script:**
+**PySpark Script for auto_parts (lower update frequency):**
 ```python
-from delta import *
 from pyspark.sql import SparkSession
+from pyspark.sql.functions import *
 
-# Initialize Spark with Delta Lake
+# Initialize Spark with Hudi
 spark = SparkSession.builder \
-    .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
-    .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog") \
+    .config("spark.serializer", "org.apache.spark.serializer.KryoSerializer") \
     .getOrCreate()
 
 # Read from raw zone
 df = spark.read.parquet("s3://autocorp-datalake/raw/database/auto_parts/")
 
-# Write to Delta Lake
-df.write \
-    .format("delta") \
-    .mode("overwrite") \
-    .option("mergeSchema", "true") \
-    .save("s3://autocorp-datalake/curated/delta/auto_parts/")
+# Data quality and transformations
+df_clean = df \
+    .dropDuplicates(["part_id"]) \
+    .filter(col("price") > 0) \
+    .withColumn("etl_timestamp", current_timestamp())
 
-# Create Delta table in Glue Catalog
-spark.sql("""
-    CREATE TABLE IF NOT EXISTS autocorp_catalog.auto_parts
-    USING DELTA
-    LOCATION 's3://autocorp-datalake/curated/delta/auto_parts/'
-""")
+# Write to Hudi (merge-on-read for batch updates)
+hudi_options = {
+    'hoodie.table.name': 'auto_parts',
+    'hoodie.datasource.write.recordkey.field': 'part_id',
+    'hoodie.datasource.write.precombine.field': 'updated_at',
+    'hoodie.datasource.write.operation': 'upsert',
+    'hoodie.datasource.write.table.type': 'MERGE_ON_READ',
+    'hoodie.datasource.write.hive_style_partitioning': 'true'
+}
+
+df_clean.write \
+    .format("hudi") \
+    .options(**hudi_options) \
+    .mode("append") \
+    .save("s3://autocorp-datalake/curated/hudi/auto_parts/")
 ```
 
 ### Migration Strategy
@@ -392,11 +459,12 @@ spark.sql("""
 - Deploy Glue ETL jobs (triggered by crawler)
 - Test end-to-end pipeline
 
-**Phase 4: Open Table Formats (Week 4)**
-- Create Hudi tables for transactional data
-- Create Delta Lake tables for reference data
-- Configure Athena to query both formats
-- Performance tuning and optimization
+**Phase 4: Open Table Formats & Query Layer (Week 4)**
+- Create Hudi tables for all data entities (transactional and reference)
+- Configure Athena workgroups and query result locations
+- Implement query performance optimizations (partitioning, compression)
+- Validate time-travel and incremental query capabilities
+- Test Athena integration with BI tools
 
 ---
 
@@ -414,16 +482,17 @@ spark.sql("""
   - Need to handle failure scenarios
 - **Why not chosen:** Higher operational overhead, DMS is proven and managed
 
-### Alternative 2: Single Table Format (Hudi or Delta only)
-- **Description:** Standardize on one table format instead of both
+### Alternative 2: Delta Lake Instead of Hudi
+- **Description:** Use Delta Lake as the open table format
 - **Pros:** 
-  - Simpler architecture
-  - Single set of tools/skills
-  - Easier to troubleshoot
+  - Strong Databricks ecosystem integration
+  - Rich DML support (DELETE, UPDATE, MERGE)
+  - Schema evolution capabilities
 - **Cons:** 
-  - Miss benefits of specialized formats
-  - May not be optimal for all use cases
-- **Why not chosen:** Want to evaluate both in production workloads before standardizing
+  - Less mature AWS Athena integration compared to Hudi
+  - Weaker CDC and streaming ingestion support
+  - Additional connector requirements for Athena
+- **Why not chosen:** Hudi provides better AWS-native integration and stronger CDC capabilities for this use case
 
 ### Alternative 3: AWS Lake Formation for Governance
 - **Description:** Use Lake Formation for fine-grained access control
@@ -453,9 +522,10 @@ spark.sql("""
 - **CDC Test:** Insert/update/delete operations replicated within 5 minutes
 - **CSV Ingestion:** 1.2M customer records loaded and cataloged
 - **Query Performance:** Athena queries return <30 seconds for aggregations
-- **Hudi Upsert:** Update existing sales_order, verify latest version
-- **Delta Time-Travel:** Query auto_parts as of yesterday
-- **Schema Evolution:** Add column to service table, ETL adapts
+- **Hudi Upsert:** Update existing sales_order, verify latest version retrieved
+- **Hudi Time-Travel:** Query auto_parts as of yesterday using Hudi's timestamp-based queries
+- **Schema Evolution:** Add column to service table, Hudi and Glue ETL adapt automatically
+- **Incremental Queries:** Use Hudi's incremental query feature for changed records only
 
 ### Edge Cases
 - **Duplicate Records:** ETL deduplicates based on primary key
@@ -501,9 +571,10 @@ spark.sql("""
   - Glue: 100 DPUs (can scale to 1000+)
   - Athena: Scans up to PB scale
 - **Scaling Strategy:**
-  - Horizontal: Add more Glue workers
-  - Partitioning: Increase granularity as data grows
-  - Compaction: Regular Hudi/Delta compaction
+  - Horizontal: Add more Glue workers (DPUs)
+  - Partitioning: Increase granularity as data grows (daily → hourly)
+  - Compaction: Regular Hudi compaction to optimize small files
+  - DataSync: Parallel file transfers for large CSV batches
 
 ### Observability
 - **Logging:**
@@ -568,14 +639,15 @@ spark.sql("""
   - End-to-end testing complete
   - Documentation updated
 
-### Phase 4: Open Table Formats (Week 4)
+### Phase 4: Open Table Formats & Analytics (Week 4)
 - **Duration:** 5 days
 - **Deliverables:**
-  - Hudi tables for sales_order, customers
-  - Delta Lake tables for reference data
-  - Athena queries validated
-  - Performance benchmarks documented
-  - Handoff to operations team
+  - Hudi tables operational for all entities
+  - Athena workgroups configured with query result buckets
+  - Query performance validated (<30s for aggregations)
+  - Time-travel and incremental query examples documented
+  - BI tool integration tested (if applicable)
+  - Complete documentation and handoff to operations team
 
 ---
 
@@ -584,11 +656,13 @@ spark.sql("""
 - [ ] Should we implement Lake Formation for governance in Phase 1 or defer?
 - [ ] What is the retention policy for raw zone data? (30/60/90 days?)
 - [ ] Do we need cross-region replication for disaster recovery?
-- [ ] Should DataSync run hourly or triggered by file arrival?
-- [ ] What BI tools will query Athena? (affects query optimization)
-- [ ] Do we need real-time dashboards or batch is sufficient?
-- [ ] Should we use Glue DataBrew for data profiling?
-- [ ] What's the backup strategy for Hudi/Delta tables?
+- [ ] Should DataSync run hourly, daily, or triggered by file arrival?
+- [ ] What BI tools will query Athena? (Tableau, PowerBI, QuickSight?) - affects optimization
+- [ ] Do we need real-time dashboards or is batch analytics sufficient?
+- [ ] Should we use Glue DataBrew for data profiling and quality rules?
+- [ ] What's the backup strategy for Hudi tables and Glue Catalog?
+- [ ] Should we partition Hudi tables by date, region, or other dimensions?
+- [ ] How do we handle very large CSV files (>10GB)? Split before DataSync?
 
 ---
 
@@ -600,10 +674,11 @@ spark.sql("""
 - [AWS Glue Developer Guide](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html)
 - [Amazon Athena User Guide](https://docs.aws.amazon.com/athena/latest/ug/what-is.html)
 
-### Open Table Formats
+### Open Table Formats & Data Lakehouse
 - [Apache Hudi Documentation](https://hudi.apache.org/docs/overview)
-- [Delta Lake Documentation](https://docs.delta.io/latest/index.html)
-- [Hudi vs Delta Lake Comparison](https://www.onehouse.ai/blog/apache-hudi-vs-delta-lake-transparent-tpc-ds-lakehouse-performance-benchmarks)
+- [Using Apache Hudi with AWS Glue](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-hudi-on-aws/welcome.html)
+- [Querying Hudi Tables with Athena](https://docs.aws.amazon.com/athena/latest/ug/querying-hudi.html)
+- [Data Lakehouse Architecture Patterns](https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/)
 
 ### Internal Documentation
 - `DATABASE_STATUS.md` - Current database schema and statistics

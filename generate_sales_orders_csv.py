@@ -1,30 +1,30 @@
 #!/usr/bin/env python3
 """
-Generate sales orders for AutoCorp database.
+Generate sales orders for AutoCorp and export to CSV files.
 Uses generators for memory efficiency.
 Configurable hyperparameters for order distribution.
 """
 
 import random
+import csv
+import os
 from datetime import datetime, timedelta
 from decimal import Decimal
-import psycopg2
-from psycopg2.extras import execute_batch
+from collections import defaultdict
 
 # ============================================================================
 # HYPERPARAMETERS
 # ============================================================================
 
 # Order generation settings
-TOTAL_ORDERS = 117031  # Total number of sales orders to generate
-BATCH_SIZE = 100  # Insert orders in batches for performance
-INVOICE_START_OFFSET = None  # Will be determined from existing orders at runtime
+TOTAL_ORDERS = 791532  # Total number of sales orders to generate
+OUTPUT_DIR = "."  # Directory for CSV output files
 
 # Order type distribution (must sum to 1.0)
 ORDER_TYPE_DISTRIBUTION = {
-    'Parts': 0.45,      # 45% parts-only orders
-    'Service': 0.15,    # 15% service-only orders
-    'Mixed': 0.40       # 40% mixed (parts + service) orders
+    'Parts': 0.82,      # 82% parts-only orders
+    'Service': 0.09,    # 9% service-only orders
+    'Mixed': 0.09       # 9% mixed (parts + service) orders
 }
 
 # Line items per order (min, max)
@@ -46,13 +46,6 @@ PAYMENT_METHODS = {
     'Cash': 0.20,
     'Debit Card': 0.20,
     'Bank Transfer': 0.10
-}
-
-# Database connection
-DB_CONFIG = {
-    'dbname': 'autocorp',
-    'user': 'scotton',
-    'host': 'localhost'
 }
 
 # ============================================================================
@@ -77,43 +70,36 @@ def calculate_line_total(quantity, unit_price):
     return Decimal(str(quantity)) * Decimal(str(unit_price))
 
 # ============================================================================
-# DATA FETCHERS
+# MOCK DATA GENERATORS
 # ============================================================================
 
-def fetch_customer_ids(cursor):
-    """Fetch all customer IDs."""
-    cursor.execute("SELECT customer_id FROM customers")
-    return [row[0] for row in cursor.fetchall()]
+def generate_mock_customers():
+    """Generate mock customer IDs."""
+    return list(range(1, 1150))  # 1149 customers
 
-def fetch_parts(cursor):
-    """Fetch all parts with SKU and price."""
-    cursor.execute("SELECT sku, name, price FROM auto_parts")
-    return [{'sku': row[0], 'name': row[1], 'price': float(row[2])} for row in cursor.fetchall()]
+def generate_mock_parts():
+    """Generate mock parts data."""
+    parts = []
+    for i in range(1, 401):  # 400 parts
+        parts.append({
+            'sku': f'PART-{i:04d}',
+            'name': f'Auto Part {i}',
+            'price': round(random.uniform(5.0, 500.0), 2)
+        })
+    return parts
 
-def fetch_services(cursor):
-    """Fetch all services with details."""
-    cursor.execute("""
-        SELECT serviceid, service, labor_minutes, labor_cost
-        FROM service
-    """)
-    return [{
-        'serviceid': row[0],
-        'service': row[1],
-        'labor_minutes': row[2],
-        'labor_cost': float(row[3].replace('$', '').replace(',', ''))
-    } for row in cursor.fetchall()]
-
-def get_max_invoice_numbers_by_year(cursor):
-    """Get the maximum invoice number for each year from existing orders."""
-    cursor.execute("""
-        SELECT 
-            CAST(SUBSTRING(invoice_number FROM 5 FOR 4) AS INTEGER) AS year,
-            MAX(CAST(SUBSTRING(invoice_number FROM 10) AS INTEGER)) AS max_num
-        FROM sales_order
-        GROUP BY year
-    """)
-    result = {row[0]: row[1] for row in cursor.fetchall()}
-    return result
+def generate_mock_services():
+    """Generate mock services data."""
+    services = []
+    for i in range(1, 111):  # 110 services
+        labor_cost = round(random.uniform(50.0, 500.0), 2)
+        services.append({
+            'serviceid': f'SVC-{i:03d}',
+            'service': f'Service {i}',
+            'labor_minutes': random.randint(30, 480),
+            'labor_cost': labor_cost
+        })
+    return services
 
 # ============================================================================
 # ORDER GENERATORS
@@ -125,7 +111,7 @@ def generate_invoice_number(year_counters, order_date):
     year_counters[year] += 1
     return f"INV-{year}-{year_counters[year]:06d}"
 
-def generate_parts_order(customer_ids, parts, year_counters):
+def generate_parts_order(order_id, customer_ids, parts, year_counters):
     """Generate a parts-only order."""
     num_parts = random.randint(*PARTS_PER_ORDER)
     selected_parts = random.sample(parts, min(num_parts, len(parts)))
@@ -140,6 +126,7 @@ def generate_parts_order(customer_ids, parts, year_counters):
         subtotal += line_total
         
         line_items.append({
+            'order_id': order_id,
             'sku': part['sku'],
             'part_description': part['name'],
             'quantity': quantity,
@@ -152,6 +139,7 @@ def generate_parts_order(customer_ids, parts, year_counters):
     
     order_date = random_date(ORDER_DATE_START, ORDER_DATE_END)
     order = {
+        'order_id': order_id,
         'customer_id': random.choice(customer_ids),
         'order_date': order_date,
         'invoice_number': generate_invoice_number(year_counters, order_date),
@@ -160,13 +148,14 @@ def generate_parts_order(customer_ids, parts, year_counters):
         'tax': tax,
         'total_amount': total,
         'order_type': 'Parts',
+        'status': 'Completed',
         'parts': line_items,
         'services': []
     }
     
     return order
 
-def generate_service_order(customer_ids, services, year_counters):
+def generate_service_order(order_id, customer_ids, services, year_counters):
     """Generate a service-only order."""
     num_services = random.randint(*SERVICES_PER_ORDER)
     selected_services = random.sample(services, min(num_services, len(services)))
@@ -183,6 +172,7 @@ def generate_service_order(customer_ids, services, year_counters):
         subtotal += line_total
         
         line_items.append({
+            'order_id': order_id,
             'serviceid': service['serviceid'],
             'service_description': service['service'],
             'quantity': quantity,
@@ -191,7 +181,8 @@ def generate_service_order(customer_ids, services, year_counters):
             'parts_cost': parts_cost,
             'line_total': line_total,
             'vehicle_id': random.randint(10000, 99999),
-            'technician_id': random.randint(1, 50)
+            'technician_id': random.randint(1, 50),
+            'service_status': 'Completed'
         })
     
     tax = subtotal * Decimal(str(TAX_RATE))
@@ -199,6 +190,7 @@ def generate_service_order(customer_ids, services, year_counters):
     
     order_date = random_date(ORDER_DATE_START, ORDER_DATE_END)
     order = {
+        'order_id': order_id,
         'customer_id': random.choice(customer_ids),
         'order_date': order_date,
         'invoice_number': generate_invoice_number(year_counters, order_date),
@@ -207,13 +199,14 @@ def generate_service_order(customer_ids, services, year_counters):
         'tax': tax,
         'total_amount': total,
         'order_type': 'Service',
+        'status': 'Completed',
         'parts': [],
         'services': line_items
     }
     
     return order
 
-def generate_mixed_order(customer_ids, parts, services, year_counters):
+def generate_mixed_order(order_id, customer_ids, parts, services, year_counters):
     """Generate a mixed order (parts + services)."""
     num_parts = random.randint(*MIXED_PARTS_PER_ORDER)
     num_services = random.randint(*MIXED_SERVICES_PER_ORDER)
@@ -233,6 +226,7 @@ def generate_mixed_order(customer_ids, parts, services, year_counters):
         subtotal += line_total
         
         parts_items.append({
+            'order_id': order_id,
             'sku': part['sku'],
             'part_description': part['name'],
             'quantity': quantity,
@@ -249,6 +243,7 @@ def generate_mixed_order(customer_ids, parts, services, year_counters):
         subtotal += line_total
         
         service_items.append({
+            'order_id': order_id,
             'serviceid': service['serviceid'],
             'service_description': service['service'],
             'quantity': quantity,
@@ -257,7 +252,8 @@ def generate_mixed_order(customer_ids, parts, services, year_counters):
             'parts_cost': parts_cost,
             'line_total': line_total,
             'vehicle_id': random.randint(10000, 99999),
-            'technician_id': random.randint(1, 50)
+            'technician_id': random.randint(1, 50),
+            'service_status': 'Completed'
         })
     
     tax = subtotal * Decimal(str(TAX_RATE))
@@ -265,6 +261,7 @@ def generate_mixed_order(customer_ids, parts, services, year_counters):
     
     order_date = random_date(ORDER_DATE_START, ORDER_DATE_END)
     order = {
+        'order_id': order_id,
         'customer_id': random.choice(customer_ids),
         'order_date': order_date,
         'invoice_number': generate_invoice_number(year_counters, order_date),
@@ -273,6 +270,7 @@ def generate_mixed_order(customer_ids, parts, services, year_counters):
         'tax': tax,
         'total_amount': total,
         'order_type': 'Mixed',
+        'status': 'Completed',
         'parts': parts_items,
         'services': service_items
     }
@@ -300,75 +298,88 @@ def order_generator(customer_ids, parts, services, total_orders, year_counters):
     random.shuffle(order_types)
     
     # Generate orders
-    for order_type in order_types:
+    for order_id, order_type in enumerate(order_types, start=1):
         if order_type == 'Parts':
-            yield generate_parts_order(customer_ids, parts, year_counters)
+            yield generate_parts_order(order_id, customer_ids, parts, year_counters)
         elif order_type == 'Service':
-            yield generate_service_order(customer_ids, services, year_counters)
+            yield generate_service_order(order_id, customer_ids, services, year_counters)
         else:  # Mixed
-            yield generate_mixed_order(customer_ids, parts, services, year_counters)
+            yield generate_mixed_order(order_id, customer_ids, parts, services, year_counters)
 
 # ============================================================================
-# DATABASE OPERATIONS
+# CSV EXPORT FUNCTIONS
 # ============================================================================
 
-def insert_order_batch(cursor, orders):
-    """Insert a batch of orders with their line items."""
-    # Prepare order headers
-    order_sql = """
-        INSERT INTO sales_order (customer_id, order_date, invoice_number, payment_method,
-                                 subtotal, tax, total_amount, order_type, status)
-        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
-        RETURNING order_id
-    """
-    
-    parts_sql = """
-        INSERT INTO sales_order_parts (order_id, sku, part_description, quantity,
-                                        unit_price, line_total)
-        VALUES (%s, %s, %s, %s, %s, %s)
-    """
-    
-    services_sql = """
-        INSERT INTO sales_order_services (order_id, serviceid, service_description, quantity,
-                                          labor_minutes, labor_cost, parts_cost, line_total,
-                                          vehicle_id, technician_id, service_status)
-        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-    """
-    
-    for order in orders:
-        # Insert order header
-        cursor.execute(order_sql, (
-            order['customer_id'],
-            order['order_date'],
-            order['invoice_number'],
-            order['payment_method'],
-            order['subtotal'],
-            order['tax'],
-            order['total_amount'],
-            order['order_type'],
-            'Completed'
-        ))
+def write_orders_to_csv(orders, output_file):
+    """Write orders to CSV file (append mode)."""
+    file_exists = os.path.isfile(output_file)
+    with open(output_file, 'a', newline='') as csvfile:
+        fieldnames = ['order_id', 'customer_id', 'order_date', 'invoice_number', 
+                      'payment_method', 'subtotal', 'tax', 'total_amount', 
+                      'order_type', 'status']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        if not file_exists:
+            writer.writeheader()
         
-        order_id = cursor.fetchone()[0]
+        for order in orders:
+            writer.writerow({
+                'order_id': order['order_id'],
+                'customer_id': order['customer_id'],
+                'order_date': order['order_date'].strftime('%Y-%m-%d %H:%M:%S'),
+                'invoice_number': order['invoice_number'],
+                'payment_method': order['payment_method'],
+                'subtotal': f"{order['subtotal']:.2f}",
+                'tax': f"{order['tax']:.2f}",
+                'total_amount': f"{order['total_amount']:.2f}",
+                'order_type': order['order_type'],
+                'status': order['status']
+            })
+
+def write_parts_to_csv(parts_items, output_file):
+    """Write parts line items to CSV file (append mode)."""
+    file_exists = os.path.isfile(output_file)
+    with open(output_file, 'a', newline='') as csvfile:
+        fieldnames = ['order_id', 'sku', 'part_description', 'quantity', 
+                      'unit_price', 'line_total']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        if not file_exists:
+            writer.writeheader()
         
-        # Insert parts line items
-        if order['parts']:
-            parts_data = [
-                (order_id, item['sku'], item['part_description'], item['quantity'],
-                 item['unit_price'], item['line_total'])
-                for item in order['parts']
-            ]
-            execute_batch(cursor, parts_sql, parts_data)
+        for item in parts_items:
+            writer.writerow({
+                'order_id': item['order_id'],
+                'sku': item['sku'],
+                'part_description': item['part_description'],
+                'quantity': item['quantity'],
+                'unit_price': f"{item['unit_price']:.2f}",
+                'line_total': f"{item['line_total']:.2f}"
+            })
+
+def write_services_to_csv(service_items, output_file):
+    """Write service line items to CSV file (append mode)."""
+    file_exists = os.path.isfile(output_file)
+    with open(output_file, 'a', newline='') as csvfile:
+        fieldnames = ['order_id', 'serviceid', 'service_description', 'quantity',
+                      'labor_minutes', 'labor_cost', 'parts_cost', 'line_total',
+                      'vehicle_id', 'technician_id', 'service_status']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        if not file_exists:
+            writer.writeheader()
         
-        # Insert service line items
-        if order['services']:
-            services_data = [
-                (order_id, item['serviceid'], item['service_description'], item['quantity'],
-                 item['labor_minutes'], item['labor_cost'], item['parts_cost'], item['line_total'],
-                 item['vehicle_id'], item['technician_id'], 'Completed')
-                for item in order['services']
-            ]
-            execute_batch(cursor, services_sql, services_data)
+        for item in service_items:
+            writer.writerow({
+                'order_id': item['order_id'],
+                'serviceid': item['serviceid'],
+                'service_description': item['service_description'],
+                'quantity': item['quantity'],
+                'labor_minutes': item['labor_minutes'],
+                'labor_cost': f"{item['labor_cost']:.2f}",
+                'parts_cost': f"{item['parts_cost']:.2f}",
+                'line_total': f"{item['line_total']:.2f}",
+                'vehicle_id': item['vehicle_id'],
+                'technician_id': item['technician_id'],
+                'service_status': item['service_status']
+            })
 
 # ============================================================================
 # MAIN EXECUTION
@@ -377,7 +388,7 @@ def insert_order_batch(cursor, orders):
 def main():
     """Main execution function."""
     print("=" * 70)
-    print("Sales Order Generator")
+    print("Sales Order Generator (CSV Export)")
     print("=" * 70)
     print(f"\nConfiguration:")
     print(f"  Total Orders: {TOTAL_ORDERS:,}")
@@ -387,105 +398,91 @@ def main():
         print(f"    {order_type:12s}: {pct:5.1%} ({count:,} orders)")
     print(f"  Date Range: {ORDER_DATE_START.date()} to {ORDER_DATE_END.date()}")
     print(f"  Tax Rate: {TAX_RATE:.1%}")
-    print(f"  Batch Size: {BATCH_SIZE}")
+    print(f"  Output Directory: {OUTPUT_DIR}")
     
     try:
-        # Connect to database
+        # Generate mock reference data
         print("\n" + "-" * 70)
-        print("Connecting to database...")
-        conn = psycopg2.connect(**DB_CONFIG)
-        cursor = conn.cursor()
-        print("✓ Connected to autocorp database")
+        print("Generating reference data...")
+        customer_ids = generate_mock_customers()
+        parts = generate_mock_parts()
+        services = generate_mock_services()
+        print(f"✓ Generated {len(customer_ids)} customer IDs")
+        print(f"✓ Generated {len(parts)} parts")
+        print(f"✓ Generated {len(services)} services")
         
-        # Fetch reference data
-        print("\nFetching reference data...")
-        customer_ids = fetch_customer_ids(cursor)
-        parts = fetch_parts(cursor)
-        services = fetch_services(cursor)
-        print(f"✓ Loaded {len(customer_ids)} customers")
-        print(f"✓ Loaded {len(parts)} parts")
-        print(f"✓ Loaded {len(services)} services")
+        # Initialize year counters (starting from 0 for new data)
+        year_counters = defaultdict(int)
+        print(f"✓ Starting invoice numbers from scratch")
         
-        # Determine starting invoice counters per year
-        from collections import defaultdict
-        max_invoice_by_year = get_max_invoice_numbers_by_year(cursor)
-        year_counters = defaultdict(int, max_invoice_by_year)
-        if year_counters:
-            print(f"✓ Existing invoice numbers by year: {dict(year_counters)}")
-        else:
-            print(f"✓ No existing orders, starting from scratch")
-        
-        # Generate and insert orders in batches
+        # Generate orders and collect data
         print("\n" + "-" * 70)
-        print("Generating and inserting orders...")
+        print("Generating orders...")
         
-        batch = []
-        total_inserted = 0
-        parts_line_items = 0
-        services_line_items = 0
+        orders_batch = []
+        parts_items = []
+        services_items = []
+        total_generated = 0
         
         for order in order_generator(customer_ids, parts, services, TOTAL_ORDERS, year_counters):
-            batch.append(order)
-            parts_line_items += len(order['parts'])
-            services_line_items += len(order['services'])
+            orders_batch.append(order)
+            parts_items.extend(order['parts'])
+            services_items.extend(order['services'])
             
-            # Insert when batch is full
-            if len(batch) >= BATCH_SIZE:
-                insert_order_batch(cursor, batch)
-                conn.commit()
-                total_inserted += len(batch)
-                print(f"  Inserted {total_inserted:,} / {TOTAL_ORDERS:,} orders...", end='\r')
-                batch = []
+            total_generated += 1
+            if total_generated % 1000 == 0:
+                print(f"  Generated {total_generated:,} / {TOTAL_ORDERS:,} orders...", end='\r')
         
-        # Insert remaining orders
-        if batch:
-            insert_order_batch(cursor, batch)
-            conn.commit()
-            total_inserted += len(batch)
+        print(f"\n✓ Successfully generated {total_generated:,} orders")
+        print(f"✓ Total parts line items: {len(parts_items):,}")
+        print(f"✓ Total service line items: {len(services_items):,}")
         
-        print(f"\n✓ Successfully inserted {total_inserted:,} orders")
-        print(f"✓ Total parts line items: {parts_line_items:,}")
-        print(f"✓ Total service line items: {services_line_items:,}")
-        
-        # Verify results
+        # Write to CSV files
         print("\n" + "-" * 70)
-        print("Verifying results...")
-        cursor.execute("SELECT order_type, COUNT(*) FROM sales_order GROUP BY order_type ORDER BY order_type")
+        print("Writing to CSV files...")
+        
+        orders_file = f"{OUTPUT_DIR}/sales_orders.csv"
+        parts_file = f"{OUTPUT_DIR}/sales_order_parts.csv"
+        services_file = f"{OUTPUT_DIR}/sales_order_services.csv"
+        
+        write_orders_to_csv(orders_batch, orders_file)
+        print(f"✓ Written {orders_file}")
+        
+        write_parts_to_csv(parts_items, parts_file)
+        print(f"✓ Written {parts_file}")
+        
+        write_services_to_csv(services_items, services_file)
+        print(f"✓ Written {services_file}")
+        
+        # Calculate statistics
+        print("\n" + "-" * 70)
+        print("Statistics:")
+        
+        order_type_counts = defaultdict(int)
+        for order in orders_batch:
+            order_type_counts[order['order_type']] += 1
+        
         print("\nOrder counts by type:")
-        for row in cursor.fetchall():
-            print(f"  {row[0]:12s}: {row[1]:,} orders")
+        for order_type, count in sorted(order_type_counts.items()):
+            print(f"  {order_type:12s}: {count:,} orders")
         
-        cursor.execute("""
-            SELECT 
-                SUM(total_amount) as total_revenue,
-                AVG(total_amount) as avg_order_value,
-                MIN(total_amount) as min_order,
-                MAX(total_amount) as max_order
-            FROM sales_order
-        """)
-        stats = cursor.fetchone()
+        total_revenue = sum(order['total_amount'] for order in orders_batch)
+        avg_order_value = total_revenue / len(orders_batch)
+        min_order = min(order['total_amount'] for order in orders_batch)
+        max_order = max(order['total_amount'] for order in orders_batch)
+        
         print(f"\nRevenue statistics:")
-        print(f"  Total Revenue: ${stats[0]:,.2f}")
-        print(f"  Avg Order Value: ${stats[1]:,.2f}")
-        print(f"  Min Order: ${stats[2]:,.2f}")
-        print(f"  Max Order: ${stats[3]:,.2f}")
-        
-        cursor.close()
-        conn.close()
+        print(f"  Total Revenue: ${total_revenue:,.2f}")
+        print(f"  Avg Order Value: ${avg_order_value:,.2f}")
+        print(f"  Min Order: ${min_order:,.2f}")
+        print(f"  Max Order: ${max_order:,.2f}")
         
         print("\n" + "=" * 70)
-        print("Generation completed successfully!")
+        print("CSV generation completed successfully!")
         print("=" * 70)
         
-    except psycopg2.Error as e:
-        print(f"\n✗ Database error: {e}")
-        if 'conn' in locals():
-            conn.rollback()
-        return 1
     except Exception as e:
         print(f"\n✗ Unexpected error: {e}")
-        if 'conn' in locals():
-            conn.rollback()
         return 1
     
     return 0
