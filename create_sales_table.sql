@@ -6,6 +6,8 @@ CREATE TABLE sales (
     trans_type VARCHAR(50),
     sales_date DATE,
     price DECIMAL(10, 2),
+    tax DECIMAL(10, 2),
+    total DECIMAL(10, 2),
     storeid VARCHAR(50),
     customer_name VARCHAR(255),
     customer_phone VARCHAR(20),
