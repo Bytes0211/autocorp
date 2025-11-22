@@ -11,13 +11,18 @@
 
 The AutoCorp project is a comprehensive cloud-based data architecture that extends beyond a traditional database system. It encompasses a complete data lifecycle from operational database to data lake, data warehouse, and analytics platform. The finished project implements a modern AWS data lakehouse architecture enabling scalable analytics, real-time querying, and business intelligence capabilities across the organization's sales and service data.
 
+**Infrastructure as Code Implementation:** The entire AWS infrastructure is deployed using Terraform with 95% automation coverage. See Section 9 for complete IaC implementation details, including 6 reusable modules, multi-environment support, and deployment procedures.
+
 ### Goals
+
 - **Primary:** Build an end-to-end cloud data platform integrating data lake, data warehouse, and analytics capabilities
 - **Secondary:** Enable enterprise-wide data accessibility through SQL querying (AWS Athena) and BI tools
 - **Tertiary:** Implement open table formats (Apache Hudi) for ACID transactions and time-travel capabilities
 - **Quaternary:** Establish automated data pipelines with quality checks and governance
+- **Infrastructure:** Deploy complete AWS infrastructure as code using Terraform (95% automation)
 
 ### Success Criteria
+
 - **Data Ingestion:** PostgreSQL database replicated to S3 data lake via AWS DMS with CDC enabled
 - **File Integration:** Large CSV files (customers, sales orders) automatically synced via AWS DataSync
 - **Data Catalog:** All data sources cataloged in AWS Glue Data Catalog with automated schema discovery
@@ -25,8 +30,7 @@ The AutoCorp project is a comprehensive cloud-based data architecture that exten
 - **Query Layer:** AWS Athena configured as primary query engine with sub-30 second query performance
 - **Data Freshness:** End-to-end pipeline delivering <15 minute data latency from source to analytics layer
 - **Scalability:** Architecture handles considerable CSV file sizes (multi-GB) efficiently
-
----
+- **Infrastructure Automation:** 95% of infrastructure deployed via Terraform with version control and multi-environment support
 
 ## 2. Background & Context
 
@@ -43,7 +47,7 @@ The AutoCorp project begins with an operational PostgreSQL database and large-sc
   - `sales_order_parts` (2,135 rows) - Parts line items
   - `sales_order_services` (644 rows) - Service line items
 
-- **CSV Files (Large-Scale Data):** 
+- **CSV Files (Large-Scale Data):**
   - `customers.csv` (1.2M records, considerable file size) - Full customer dataset
   - Sales order CSV files (multi-GB exports generated periodically)
   - Historical data archives requiring efficient transfer mechanisms
@@ -84,11 +88,11 @@ This is **not just a database system**. The complete AutoCorp data platform deli
 
 Implement a modern data lakehouse architecture with distinct functional layers:
 
-1. **Ingestion Layer:** 
+1. **Ingestion Layer:**
    - **AWS DMS:** Continuous database extraction with Change Data Capture (CDC)
    - **AWS DataSync:** Efficient transfer of considerable-size CSV files from on-premises to cloud
 
-2. **Raw Storage Layer (Data Lake):** 
+2. **Raw Storage Layer (Data Lake):**
    - **AWS S3:** Scalable, durable object storage organized by source and date partitions
    - Landing zone for all raw data before transformation
 
@@ -111,7 +115,7 @@ Implement a modern data lakehouse architecture with distinct functional layers:
 
 ### Architecture Diagram
 
-```
+```txt
 ┌─────────────────────┐
 │ Source Systems      │
 ├─────────────────────┤
@@ -224,14 +228,16 @@ Implement a modern data lakehouse architecture with distinct functional layers:
 ### Data Flow
 
 **Database Replication Flow:**
-```
+
+```txt
 PostgreSQL → DMS Replication → S3 Raw (Parquet) 
   → Glue Crawler → Glue ETL → S3 Curated (Hudi/Delta) 
   → Athena Query
 ```
 
 **CSV Ingestion Flow:**
-```
+
+```txt
 On-Premises CSV → DataSync → S3 Raw (CSV) 
   → Glue Crawler → Glue ETL → S3 Curated (Hudi/Delta) 
   → Athena Query
@@ -240,7 +246,7 @@ On-Premises CSV → DataSync → S3 Raw (CSV)
 ### Design Decisions
 
 - **Decision:** Standardize on Apache Hudi for open table format
-  - **Rationale:** 
+  - **Rationale:**
     - Hudi excels at upsert workloads (sales orders, customer updates)
     - Strong AWS integration and Athena support
     - Mature CDC and incremental processing capabilities
@@ -264,38 +270,46 @@ On-Premises CSV → DataSync → S3 Raw (CSV)
 ## 4. Implementation Details
 
 ### Technology Stack
+
 **Data Ingestion & Extraction:**
+
 - **AWS DMS:** Database migration and continuous data capture (CDC) - Managed service for PostgreSQL replication
 - **AWS DataSync:** High-performance file transfer - Handles considerable CSV file sizes with optimization
 
 **Data Lake & Storage:**
+
 - **AWS S3:** Object storage foundation - Scalable, durable (99.999999999% durability), cost-effective
 - **S3 Lifecycle Policies:** Automated data tiering for cost optimization
 
 **Data Catalog & Metadata:**
+
 - **AWS Glue Data Catalog:** Centralized metadata repository - Apache Hive Metastore compatible
 - **AWS Glue Crawlers:** Automated schema discovery - Keeps catalog synchronized with data
 
 **ETL & Processing:**
+
 - **AWS Glue ETL:** Serverless PySpark execution - Auto-scaling, managed infrastructure
 - **Apache Hudi 0.14+:** Open table format - ACID transactions, upserts, time-travel, incremental processing
 
 **Query & Analytics:**
+
 - **AWS Athena:** Serverless SQL query engine - Pay-per-query, direct S3 querying, Hudi-native support
 - **Presto/Trino Engine:** Powers Athena with distributed query execution
 
 **Security & Governance:**
+
 - **AWS IAM:** Identity and access management - Fine-grained permissions, service roles
 - **AWS Secrets Manager:** Secure credential storage - Database passwords, API keys
 - **S3 Encryption:** SSE-S3/SSE-KMS for data at rest
 
 **Observability & Operations:**
+
 - **AWS CloudWatch:** Centralized logging and metrics - Dashboards, alarms, log insights
 - **CloudTrail:** Audit logging for all AWS API calls
 
 ### S3 Bucket Structure
 
-```
+```txt
 s3://autocorp-datalake/
 ├── raw/
 │   ├── database/                    # DMS destination - database CDC data
@@ -330,6 +344,7 @@ s3://autocorp-datalake/
 ### Key Implementation Areas
 
 #### DMS Replication Setup
+
 1. Create replication instance in same VPC as PostgreSQL
 2. Configure source endpoint (PostgreSQL)
 3. Configure target endpoint (S3)
@@ -340,6 +355,7 @@ s3://autocorp-datalake/
 6. Enable CloudWatch logging
 
 **DMS Task Configuration:**
+
 ```json
 {
   "TargetMetadata": {
@@ -364,6 +380,7 @@ s3://autocorp-datalake/
 #### AWS Glue ETL Job for Hudi
 
 **PySpark Script:**
+
 ```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
@@ -404,6 +421,7 @@ df_clean.write \
 #### AWS Glue ETL Job for Reference Data (Batch)
 
 **PySpark Script for auto_parts (lower update frequency):**
+
 ```python
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
@@ -441,36 +459,39 @@ df_clean.write \
 
 ### Migration Strategy
 
-**Phase 1: Infrastructure Setup (Week 1)**
+#### Phase 1: Infrastructure Setup (Week 1)
+
 - Create AWS accounts and IAM roles
 - Set up VPC and security groups
 - Create S3 buckets with lifecycle policies
 - Deploy DMS replication instance
 
-**Phase 2: Initial Data Load (Week 2)**
+#### Phase 2: Initial Data Load (Week 2)
+
 - Configure DMS source/target endpoints
 - Run full load tasks for all tables
 - Validate data integrity (row counts, checksums)
 - Set up DataSync tasks for CSV files
 
-**Phase 3: CDC & Automation (Week 3)**
+#### Phase 3: CDC & Automation (Week 3)
+
 - Enable CDC on DMS tasks
 - Deploy Glue crawlers (scheduled)
 - Deploy Glue ETL jobs (triggered by crawler)
 - Test end-to-end pipeline
 
-**Phase 4: Open Table Formats & Query Layer (Week 4)**
+#### Phase 4: Open Table Formats & Query Layer (Week 4)
+
 - Create Hudi tables for all data entities (transactional and reference)
 - Configure Athena workgroups and query result locations
 - Implement query performance optimizations (partitioning, compression)
 - Validate time-travel and incremental query capabilities
 - Test Athena integration with BI tools
 
----
-
 ## 5. Alternatives Considered
 
 ### Alternative 1: Custom Python CDC with Debezium
+
 - **Description:** Use Debezium for CDC + custom Python scripts for S3 upload
 - **Pros:** 
   - Full control over CDC logic
@@ -483,6 +504,7 @@ df_clean.write \
 - **Why not chosen:** Higher operational overhead, DMS is proven and managed
 
 ### Alternative 2: Delta Lake Instead of Hudi
+
 - **Description:** Use Delta Lake as the open table format
 - **Pros:** 
   - Strong Databricks ecosystem integration
@@ -495,6 +517,7 @@ df_clean.write \
 - **Why not chosen:** Hudi provides better AWS-native integration and stronger CDC capabilities for this use case
 
 ### Alternative 3: AWS Lake Formation for Governance
+
 - **Description:** Use Lake Formation for fine-grained access control
 - **Pros:** 
   - Column-level security
@@ -506,11 +529,10 @@ df_clean.write \
   - Not needed for current scale
 - **Why not chosen:** IAM policies sufficient for Phase 1, can add later
 
----
-
 ## 6. Testing Strategy
 
 ### Test Approach
+
 1. **Unit Tests:** Glue ETL job logic (PySpark)
 2. **Integration Tests:** End-to-end pipeline with test data
 3. **Data Quality Tests:** Row counts, schema validation, constraint checks
@@ -518,7 +540,8 @@ df_clean.write \
 5. **Failover Tests:** Simulate DMS/Glue failures
 
 ### Key Test Scenarios
-- **Full Load Test:** Migrate all 5,668 rows from PostgreSQL
+
+- **Full Load Test:** Migrate all 1607343 rows from PostgreSQL
 - **CDC Test:** Insert/update/delete operations replicated within 5 minutes
 - **CSV Ingestion:** 1.2M customer records loaded and cataloged
 - **Query Performance:** Athena queries return <30 seconds for aggregations
@@ -528,6 +551,7 @@ df_clean.write \
 - **Incremental Queries:** Use Hudi's incremental query feature for changed records only
 
 ### Edge Cases
+
 - **Duplicate Records:** ETL deduplicates based on primary key
 - **Null Values:** Handle missing data gracefully (not fail job)
 - **Large Objects:** Sales orders with 50+ line items
@@ -535,11 +559,11 @@ df_clean.write \
 - **Network Interruptions:** DMS resumes from checkpoint
 - **Concurrent Updates:** Multiple updates to same record
 
----
 
 ## 7. Non-Functional Considerations
 
 ### Performance
+
 - **DMS Replication:** <5 minute lag for CDC (target: 2-3 minutes)
 - **Glue ETL:** Process 1M rows in <10 minutes
 - **Athena Queries:** Simple aggregations <10 seconds, complex <30 seconds
@@ -552,6 +576,7 @@ df_clean.write \
   - Hudi/Delta compaction schedules
 
 ### Security
+
 - **Encryption at Rest:** S3 SSE-S3 (can upgrade to KMS)
 - **Encryption in Transit:** TLS 1.2+ for all connections
 - **Access Control:** IAM roles with least privilege
@@ -563,6 +588,7 @@ df_clean.write \
 - **Database Credentials:** Secrets Manager (not hardcoded)
 
 ### Scalability
+
 - **Current Scale:** 5,668 rows, <1GB total
 - **Expected Growth:** 10K new sales orders/month, 50K rows/month
 - **Scalability Limits:**
@@ -577,6 +603,7 @@ df_clean.write \
   - DataSync: Parallel file transfers for large CSV batches
 
 ### Observability
+
 - **Logging:**
   - DMS logs to CloudWatch (replication tasks)
   - Glue logs to CloudWatch (job runs, errors)
@@ -593,8 +620,6 @@ df_clean.write \
   - Athena query failures
 - **Dashboard:** CloudWatch custom dashboard with key metrics
 
----
-
 ## 8. Risks & Mitigations
 
 | Risk | Impact | Probability | Mitigation |
@@ -610,16 +635,178 @@ df_clean.write \
 
 ---
 
-## 9. Timeline & Milestones
+## 9. Infrastructure as Code (IaC) Implementation
+
+### Approach: Terraform for AWS Infrastructure
+
+**Decision:** Implement all AWS infrastructure using Terraform for version control, repeatability, and disaster recovery capabilities.
+
+**Feasibility:** 95% - All four core services (S3, Glue, DMS, DataSync) have excellent Terraform support with only minor manual steps required.
+
+### IaC Project Structure
+
+```
+terraform/
+├── main.tf                    # Root module orchestration
+├── variables.tf               # Input variables
+├── outputs.tf                 # Infrastructure outputs
+├── terraform.tfvars           # Default variable values
+├── backend.tf                 # Remote state (S3 + DynamoDB)
+├── versions.tf                # Provider version constraints
+│
+├── modules/
+│   ├── s3/                    # Data lake storage [100% IaC]
+│   ├── iam/                   # Service roles [100% IaC]
+│   ├── secrets/               # Secrets Manager [100% IaC]
+│   ├── glue/                  # Data catalog & ETL [100% IaC]
+│   ├── dms/                   # Database replication [90% IaC]
+│   └── datasync/              # File transfers [80% IaC]
+│
+└── environments/
+    ├── dev.tfvars             # Development config
+    ├── staging.tfvars         # Staging config
+    └── prod.tfvars            # Production config
+```
+
+### IaC Benefits
+
+1. **Version Control:** All infrastructure changes tracked in Git
+2. **Repeatability:** Deploy to dev/staging/prod with consistency
+3. **Disaster Recovery:** Recreate entire infrastructure from code
+4. **Drift Detection:** `terraform plan` shows configuration drift
+5. **Documentation:** Infrastructure is self-documenting code
+6. **Collaboration:** Team can review changes via pull requests
+7. **Cost Control:** Preview cost changes before deployment
+8. **Multi-Environment:** Easy environment cloning and testing
+
+### Manual Steps (Cannot Be IaC'd)
+
+1. **Terraform State Bootstrap:** Create S3 bucket and DynamoDB table for remote state (one-time)
+2. **PostgreSQL Configuration:** Enable logical replication on source database
+3. **DataSync Agent:** Deploy and activate agent on-premises VM
+4. **Secrets:** Manually set PostgreSQL password in Secrets Manager (security)
+
+### Implementation Phases (IaC-Based)
+
+**Phase 1: Foundation (Week 1) - 100% IaC**
+
+- S3 buckets with folder structure
+- IAM roles (Glue, DMS, DataSync)
+- Secrets Manager placeholder
+- Terraform state backend
+
+**Phase 2: Data Catalog (Week 2) - 100% IaC**
+
+- Glue Data Catalog
+- Glue Crawlers (scheduled)
+- Glue ETL jobs with PySpark scripts
+- Glue triggers and workflows
+
+**Phase 3: Database Replication (Week 2-3) - 90% IaC**
+- DMS replication instance
+- DMS endpoints (PostgreSQL, S3)
+- DMS replication tasks with CDC
+- Manual: Network connectivity testing
+
+**Phase 4: File Transfers (Week 3) - 80% IaC**
+- DataSync locations (on-premises, S3)
+- DataSync tasks with schedules
+- Manual: Agent deployment and activation
+
+### State Management
+
+**Remote State Configuration:**
+```hcl
+terraform {
+  backend "s3" {
+    bucket         = "autocorp-terraform-state"
+    key            = "datalake/terraform.tfstate"
+    region         = "us-east-1"
+    encrypt        = true
+    dynamodb_table = "autocorp-terraform-locks"
+  }
+}
+```
+
+**Benefits:**
+- Shared state for team collaboration
+- State locking prevents concurrent modifications
+- Versioning enables rollback
+- Encrypted at rest
+
+### Security Considerations
+
+**Secrets Management:**
+- Store PostgreSQL password in AWS Secrets Manager (IaC-managed)
+- Never commit secrets to Git (.gitignore for *.tfvars with secrets)
+- Use IAM roles for service authentication
+- Rotate credentials via Secrets Manager
+
+**IAM Least Privilege:**
+- Each service role has minimum required permissions
+- S3 access scoped to specific paths (raw/, curated/, logs/)
+- CloudTrail audit logging for all AWS API calls
+
+**Encryption:**
+- S3: SSE-S3 encryption at rest
+- DMS: TLS 1.2+ for PostgreSQL connections
+- Glue: Job bookmarks encrypted
+- Secrets Manager: KMS encryption
+
+### Deployment Commands
+
+```bash
+# Initialize Terraform
+cd terraform
+terraform init
+
+# Preview changes
+terraform plan
+
+# Deploy to dev
+terraform apply
+
+# Deploy to production
+terraform apply -var-file="environments/prod.tfvars"
+
+# Destroy (cleanup)
+terraform destroy
+```
+
+### Cost Estimation (IaC Deployed)
+
+Monthly AWS costs (dev environment):
+- S3 storage: $5-10 (1-2 TB with lifecycle)
+- Glue Crawlers: $5-10 (daily runs)
+- Glue ETL: $15-30 (20 DPU-hours/day)
+- DMS: $50-80 (t3.medium continuous)
+- DataSync: $10-20 (100 GB/day)
+- Secrets Manager: $1
+- **Total: $86-151/month**
+
+Production costs will be higher due to:
+- Increased DMS instance size (t3.large or larger)
+- More frequent ETL jobs
+- Higher data transfer volumes
+- Multi-AZ deployments for HA
+
+**References:**
+- See `IAC_FEASIBILITY_ASSESSMENT.md` for detailed IaC analysis
+- See `terraform/README.md` for deployment instructions
+
+---
+
+## 10. Timeline & Milestones
 
 ### Phase 1: Infrastructure & Setup (Week 1)
 - **Duration:** 5 days
 - **Deliverables:**
-  - AWS account setup, IAM roles created
-  - S3 buckets with proper structure
-  - VPC, security groups, endpoints configured
-  - DMS replication instance deployed
-  - DataSync agent installed on-premises
+  - Terraform project structure created
+  - S3 module deployed (data lake buckets)
+  - IAM module deployed (service roles)
+  - Secrets Manager configured
+  - Terraform state backend initialized
+  - DMS replication instance deployed (IaC)
 
 ### Phase 2: Initial Data Migration (Week 2)
 - **Duration:** 5 days
@@ -651,7 +838,7 @@ df_clean.write \
 
 ---
 
-## 10. Open Questions
+## 11. Open Questions
 
 - [ ] Should we implement Lake Formation for governance in Phase 1 or defer?
 - [ ] What is the retention policy for raw zone data? (30/60/90 days?)
@@ -666,7 +853,7 @@ df_clean.write \
 
 ---
 
-## 11. References
+## 12. References
 
 ### AWS Documentation
 - [AWS DMS Best Practices](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_BestPractices.html)
