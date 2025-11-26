@@ -2,12 +2,21 @@
 """
 Generate sales orders for AutoCorp and export to CSV files.
 Uses generators for memory efficiency.
-Configurable hyperparameters for order distribution.
+Configurable hyperparameters for order distribution and data quality testing.
+
+Data Quality Testing Features:
+- Missing/null values injection for testing ETL null handling
+- Invalid data injection (malformed dates, type mismatches, formatting issues)
+- Edge case testing (duplicates, negative values, out-of-range dates)
+- Data validation manifest generation for ETL pipeline verification
+
+Designed for testing AWS DataSync -> Glue Crawler -> Data Catalog pipelines.
 """
 
 import random
 import csv
 import os
+import json
 from datetime import datetime, timedelta
 from decimal import Decimal
 from collections import defaultdict
@@ -40,6 +49,34 @@ ORDER_DATE_END = datetime(2024, 12, 31)
 # Tax rate
 TAX_RATE = 0.08  # 8% sales tax
 
+# ============================================================================
+# DATA QUALITY TESTING PARAMETERS
+# ============================================================================
+
+# Missing/null value injection rates
+MISSING_CUSTOMER_ID_RATE = 0.007      # 0.7% of customer_ids will be missing
+MISSING_ORDER_DATE_RATE = 0.0002      # 0.02% of order_dates will be null
+MISSING_TAX_RATE = 0.001              # 0.1% of tax values will be NaN
+MISSING_INVOICE_NUMBER_RATE = 0.0005  # 0.05% of invoice_numbers will be missing
+MISSING_PAYMENT_METHOD_RATE = 0.002   # 0.2% of payment_methods will be missing
+MISSING_SUBTOTAL_RATE = 0.0003        # 0.03% of subtotals will be missing
+
+# Invalid data injection rates
+INVALID_DATE_FORMAT_RATE = 0.0008     # 0.08% invalid date formats (e.g., "2024-13-45")
+WHITESPACE_CUSTOMER_ID_RATE = 0.001   # 0.1% customer_ids with leading/trailing spaces
+FORMATTED_NUMBER_RATE = 0.0015        # 0.15% numbers with commas/currency symbols
+CURRENCY_SYMBOL_RATE = 0.0005         # 0.05% amounts with $ symbols
+
+# Edge case injection rates
+DUPLICATE_ORDER_ID_RATE = 0.0001      # 0.01% duplicate order IDs
+NEGATIVE_AMOUNT_RATE = 0.0005         # 0.05% negative amounts (business logic violation)
+FUTURE_DATE_RATE = 0.001              # 0.1% dates beyond ORDER_DATE_END
+PAST_DATE_RATE = 0.0008               # 0.08% dates before ORDER_DATE_START
+ZERO_QUANTITY_RATE = 0.0003           # 0.03% zero quantities in line items
+
+# Validation manifest settings
+GENERATE_MANIFEST = True               # Generate data validation manifest file
+
 # Payment methods distribution
 PAYMENT_METHODS = {
     'Credit Card': 0.50,
@@ -68,6 +105,50 @@ def random_date(start, end):
 def calculate_line_total(quantity, unit_price):
     """Calculate line total with proper decimal precision."""
     return Decimal(str(quantity)) * Decimal(str(unit_price))
+
+# ============================================================================
+# DATA QUALITY INJECTION FUNCTIONS
+# ============================================================================
+
+def inject_invalid_date():
+    """Generate invalid date strings for testing."""
+    invalid_formats = [
+        "2024-13-45",           # Invalid month and day
+        "2024-02-30",           # Invalid day for February
+        "invalid-date",         # Non-date string
+        "2024/06/15",           # Wrong delimiter
+        "06-15-2024",           # Wrong order
+        "2024-6-7 25:99:99",    # Invalid time
+    ]
+    return random.choice(invalid_formats)
+
+def inject_whitespace(value):
+    """Add leading/trailing whitespace to a value."""
+    whitespace_types = [
+        f" {value}",      # Leading space
+        f"{value} ",      # Trailing space
+        f" {value} ",     # Both
+        f"  {value}  ",   # Multiple spaces
+    ]
+    return random.choice(whitespace_types)
+
+def inject_formatted_number(value):
+    """Format number with commas (e.g., 1,234.56)."""
+    return f"{float(value):,.2f}"
+
+def inject_currency_symbol(value):
+    """Add currency symbol to number."""
+    return f"${float(value):.2f}"
+
+def generate_future_date():
+    """Generate a date after ORDER_DATE_END."""
+    days_ahead = random.randint(1, 365)
+    return ORDER_DATE_END + timedelta(days=days_ahead)
+
+def generate_past_date():
+    """Generate a date before ORDER_DATE_START."""
+    days_back = random.randint(1, 365)
+    return ORDER_DATE_START - timedelta(days=days_back)
 
 # ============================================================================
 # MOCK DATA GENERATORS
@@ -310,8 +391,8 @@ def order_generator(customer_ids, parts, services, total_orders, year_counters):
 # CSV EXPORT FUNCTIONS
 # ============================================================================
 
-def write_orders_to_csv(orders, output_file):
-    """Write orders to CSV file (append mode)."""
+def write_orders_to_csv(orders, output_file, duplicate_tracker):
+    """Write orders to CSV file (append mode) with comprehensive data quality injection."""
     file_exists = os.path.isfile(output_file)
     with open(output_file, 'a', newline='') as csvfile:
         fieldnames = ['order_id', 'customer_id', 'order_date', 'invoice_number', 
@@ -322,21 +403,94 @@ def write_orders_to_csv(orders, output_file):
             writer.writeheader()
         
         for order in orders:
+            # Get base values
+            order_id = order['order_id']
+            customer_id = order['customer_id']
+            order_date_obj = order['order_date']
+            invoice_number = order['invoice_number']
+            payment_method = order['payment_method']
+            subtotal = order['subtotal']
+            tax = order['tax']
+            total_amount = order['total_amount']
+            
+            # === DUPLICATE ORDER IDs ===
+            if random.random() < DUPLICATE_ORDER_ID_RATE and duplicate_tracker['order_ids']:
+                order_id = random.choice(duplicate_tracker['order_ids'])
+            else:
+                duplicate_tracker['order_ids'].append(order_id)
+            
+            # === MISSING VALUES ===
+            if random.random() < MISSING_CUSTOMER_ID_RATE:
+                customer_id = ''
+            elif random.random() < WHITESPACE_CUSTOMER_ID_RATE:
+                customer_id = inject_whitespace(customer_id)
+            
+            if random.random() < MISSING_INVOICE_NUMBER_RATE:
+                invoice_number = ''
+            
+            if random.random() < MISSING_PAYMENT_METHOD_RATE:
+                payment_method = ''
+            
+            # === DATE HANDLING ===
+            if random.random() < MISSING_ORDER_DATE_RATE:
+                order_date = ''
+            elif random.random() < INVALID_DATE_FORMAT_RATE:
+                order_date = inject_invalid_date()
+            elif random.random() < FUTURE_DATE_RATE:
+                order_date = generate_future_date().strftime('%Y-%m-%d %H:%M:%S')
+            elif random.random() < PAST_DATE_RATE:
+                order_date = generate_past_date().strftime('%Y-%m-%d %H:%M:%S')
+            else:
+                order_date = order_date_obj.strftime('%Y-%m-%d %H:%M:%S')
+            
+            # === NUMERIC VALUES ===
+            # Subtotal
+            if random.random() < MISSING_SUBTOTAL_RATE:
+                subtotal_str = ''
+            elif random.random() < NEGATIVE_AMOUNT_RATE:
+                subtotal_str = f"{-abs(float(subtotal)):.2f}"
+            elif random.random() < FORMATTED_NUMBER_RATE:
+                subtotal_str = inject_formatted_number(subtotal)
+            elif random.random() < CURRENCY_SYMBOL_RATE:
+                subtotal_str = inject_currency_symbol(subtotal)
+            else:
+                subtotal_str = f"{subtotal:.2f}"
+            
+            # Tax
+            if random.random() < MISSING_TAX_RATE:
+                tax_str = ''
+            elif random.random() < FORMATTED_NUMBER_RATE:
+                tax_str = inject_formatted_number(tax)
+            elif random.random() < CURRENCY_SYMBOL_RATE:
+                tax_str = inject_currency_symbol(tax)
+            else:
+                tax_str = f"{tax:.2f}"
+            
+            # Total amount
+            if random.random() < NEGATIVE_AMOUNT_RATE:
+                total_amount_str = f"{-abs(float(total_amount)):.2f}"
+            elif random.random() < FORMATTED_NUMBER_RATE:
+                total_amount_str = inject_formatted_number(total_amount)
+            elif random.random() < CURRENCY_SYMBOL_RATE:
+                total_amount_str = inject_currency_symbol(total_amount)
+            else:
+                total_amount_str = f"{total_amount:.2f}"
+            
             writer.writerow({
-                'order_id': order['order_id'],
-                'customer_id': order['customer_id'],
-                'order_date': order['order_date'].strftime('%Y-%m-%d %H:%M:%S'),
-                'invoice_number': order['invoice_number'],
-                'payment_method': order['payment_method'],
-                'subtotal': f"{order['subtotal']:.2f}",
-                'tax': f"{order['tax']:.2f}",
-                'total_amount': f"{order['total_amount']:.2f}",
+                'order_id': order_id,
+                'customer_id': customer_id,
+                'order_date': order_date,
+                'invoice_number': invoice_number,
+                'payment_method': payment_method,
+                'subtotal': subtotal_str,
+                'tax': tax_str,
+                'total_amount': total_amount_str,
                 'order_type': order['order_type'],
                 'status': order['status']
             })
 
 def write_parts_to_csv(parts_items, output_file):
-    """Write parts line items to CSV file (append mode)."""
+    """Write parts line items to CSV file (append mode) with data quality injection."""
     file_exists = os.path.isfile(output_file)
     with open(output_file, 'a', newline='') as csvfile:
         fieldnames = ['order_id', 'sku', 'part_description', 'quantity', 
@@ -346,17 +500,40 @@ def write_parts_to_csv(parts_items, output_file):
             writer.writeheader()
         
         for item in parts_items:
+            # Apply data quality issues to line items
+            quantity = item['quantity']
+            if random.random() < ZERO_QUANTITY_RATE:
+                quantity = 0
+            
+            unit_price = item['unit_price']
+            if random.random() < NEGATIVE_AMOUNT_RATE:
+                unit_price_str = f"{-abs(float(unit_price)):.2f}"
+            elif random.random() < FORMATTED_NUMBER_RATE:
+                unit_price_str = inject_formatted_number(unit_price)
+            elif random.random() < CURRENCY_SYMBOL_RATE:
+                unit_price_str = inject_currency_symbol(unit_price)
+            else:
+                unit_price_str = f"{unit_price:.2f}"
+            
+            line_total = item['line_total']
+            if random.random() < FORMATTED_NUMBER_RATE:
+                line_total_str = inject_formatted_number(line_total)
+            elif random.random() < CURRENCY_SYMBOL_RATE:
+                line_total_str = inject_currency_symbol(line_total)
+            else:
+                line_total_str = f"{line_total:.2f}"
+            
             writer.writerow({
                 'order_id': item['order_id'],
                 'sku': item['sku'],
                 'part_description': item['part_description'],
-                'quantity': item['quantity'],
-                'unit_price': f"{item['unit_price']:.2f}",
-                'line_total': f"{item['line_total']:.2f}"
+                'quantity': quantity,
+                'unit_price': unit_price_str,
+                'line_total': line_total_str
             })
 
 def write_services_to_csv(service_items, output_file):
-    """Write service line items to CSV file (append mode)."""
+    """Write service line items to CSV file (append mode) with data quality injection."""
     file_exists = os.path.isfile(output_file)
     with open(output_file, 'a', newline='') as csvfile:
         fieldnames = ['order_id', 'serviceid', 'service_description', 'quantity',
@@ -367,19 +544,49 @@ def write_services_to_csv(service_items, output_file):
             writer.writeheader()
         
         for item in service_items:
+            # Apply data quality issues
+            labor_cost = item['labor_cost']
+            if random.random() < FORMATTED_NUMBER_RATE:
+                labor_cost_str = inject_formatted_number(labor_cost)
+            elif random.random() < CURRENCY_SYMBOL_RATE:
+                labor_cost_str = inject_currency_symbol(labor_cost)
+            else:
+                labor_cost_str = f"{labor_cost:.2f}"
+            
+            parts_cost = item['parts_cost']
+            if random.random() < FORMATTED_NUMBER_RATE:
+                parts_cost_str = inject_formatted_number(parts_cost)
+            elif random.random() < CURRENCY_SYMBOL_RATE:
+                parts_cost_str = inject_currency_symbol(parts_cost)
+            else:
+                parts_cost_str = f"{parts_cost:.2f}"
+            
+            line_total = item['line_total']
+            if random.random() < FORMATTED_NUMBER_RATE:
+                line_total_str = inject_formatted_number(line_total)
+            elif random.random() < CURRENCY_SYMBOL_RATE:
+                line_total_str = inject_currency_symbol(line_total)
+            else:
+                line_total_str = f"{line_total:.2f}"
+            
             writer.writerow({
                 'order_id': item['order_id'],
                 'serviceid': item['serviceid'],
                 'service_description': item['service_description'],
                 'quantity': item['quantity'],
                 'labor_minutes': item['labor_minutes'],
-                'labor_cost': f"{item['labor_cost']:.2f}",
-                'parts_cost': f"{item['parts_cost']:.2f}",
-                'line_total': f"{item['line_total']:.2f}",
+                'labor_cost': labor_cost_str,
+                'parts_cost': parts_cost_str,
+                'line_total': line_total_str,
                 'vehicle_id': item['vehicle_id'],
                 'technician_id': item['technician_id'],
                 'service_status': item['service_status']
             })
+
+def write_manifest(manifest_data, output_file):
+    """Write validation manifest to JSON file."""
+    with open(output_file, 'w') as f:
+        json.dump(manifest_data, f, indent=2)
 
 # ============================================================================
 # MAIN EXECUTION
@@ -399,6 +606,21 @@ def main():
     print(f"  Date Range: {ORDER_DATE_START.date()} to {ORDER_DATE_END.date()}")
     print(f"  Tax Rate: {TAX_RATE:.1%}")
     print(f"  Output Directory: {OUTPUT_DIR}")
+    print(f"  Generate Manifest: {GENERATE_MANIFEST}")
+    print(f"\n  Data Quality Testing Rates:")
+    print(f"    Missing Values:")
+    print(f"      Customer ID:     {MISSING_CUSTOMER_ID_RATE:.4%} (~{int(TOTAL_ORDERS * MISSING_CUSTOMER_ID_RATE)} orders)")
+    print(f"      Order Date:      {MISSING_ORDER_DATE_RATE:.4%} (~{int(TOTAL_ORDERS * MISSING_ORDER_DATE_RATE)} orders)")
+    print(f"      Tax:             {MISSING_TAX_RATE:.4%} (~{int(TOTAL_ORDERS * MISSING_TAX_RATE)} orders)")
+    print(f"      Invoice Number:  {MISSING_INVOICE_NUMBER_RATE:.4%} (~{int(TOTAL_ORDERS * MISSING_INVOICE_NUMBER_RATE)} orders)")
+    print(f"      Payment Method:  {MISSING_PAYMENT_METHOD_RATE:.4%} (~{int(TOTAL_ORDERS * MISSING_PAYMENT_METHOD_RATE)} orders)")
+    print(f"    Invalid Data:")
+    print(f"      Invalid Dates:   {INVALID_DATE_FORMAT_RATE:.4%} (~{int(TOTAL_ORDERS * INVALID_DATE_FORMAT_RATE)} orders)")
+    print(f"      Formatted #s:    {FORMATTED_NUMBER_RATE:.4%} (per numeric field)")
+    print(f"    Edge Cases:")
+    print(f"      Duplicates:      {DUPLICATE_ORDER_ID_RATE:.4%} (~{int(TOTAL_ORDERS * DUPLICATE_ORDER_ID_RATE)} orders)")
+    print(f"      Negative Amts:   {NEGATIVE_AMOUNT_RATE:.4%} (per amount field)")
+    print(f"      Future Dates:    {FUTURE_DATE_RATE:.4%} (~{int(TOTAL_ORDERS * FUTURE_DATE_RATE)} orders)")
     
     try:
         # Generate mock reference data
@@ -411,8 +633,9 @@ def main():
         print(f"✓ Generated {len(parts)} parts")
         print(f"✓ Generated {len(services)} services")
         
-        # Initialize year counters (starting from 0 for new data)
+        # Initialize year counters and duplicate tracker
         year_counters = defaultdict(int)
+        duplicate_tracker = {'order_ids': []}
         print(f"✓ Starting invoice numbers from scratch")
         
         # Generate orders and collect data
@@ -444,8 +667,9 @@ def main():
         orders_file = f"{OUTPUT_DIR}/sales_orders.csv"
         parts_file = f"{OUTPUT_DIR}/sales_order_parts.csv"
         services_file = f"{OUTPUT_DIR}/sales_order_services.csv"
+        manifest_file = f"{OUTPUT_DIR}/data_validation_manifest.json"
         
-        write_orders_to_csv(orders_batch, orders_file)
+        write_orders_to_csv(orders_batch, orders_file, duplicate_tracker)
         print(f"✓ Written {orders_file}")
         
         write_parts_to_csv(parts_items, parts_file)
@@ -454,22 +678,89 @@ def main():
         write_services_to_csv(services_items, services_file)
         print(f"✓ Written {services_file}")
         
-        # Calculate statistics
-        print("\n" + "-" * 70)
-        print("Statistics:")
-        
+        # Calculate statistics for manifest and reporting
         order_type_counts = defaultdict(int)
         for order in orders_batch:
             order_type_counts[order['order_type']] += 1
-        
-        print("\nOrder counts by type:")
-        for order_type, count in sorted(order_type_counts.items()):
-            print(f"  {order_type:12s}: {count:,} orders")
         
         total_revenue = sum(order['total_amount'] for order in orders_batch)
         avg_order_value = total_revenue / len(orders_batch)
         min_order = min(order['total_amount'] for order in orders_batch)
         max_order = max(order['total_amount'] for order in orders_batch)
+        
+        # Generate validation manifest
+        if GENERATE_MANIFEST:
+            manifest_data = {
+                "generation_timestamp": datetime.now().isoformat(),
+                "configuration": {
+                    "total_orders": TOTAL_ORDERS,
+                    "order_type_distribution": ORDER_TYPE_DISTRIBUTION,
+                    "date_range": {
+                        "start": ORDER_DATE_START.isoformat(),
+                        "end": ORDER_DATE_END.isoformat()
+                    },
+                    "tax_rate": TAX_RATE
+                },
+                "data_quality_parameters": {
+                    "missing_values": {
+                        "customer_id_rate": MISSING_CUSTOMER_ID_RATE,
+                        "order_date_rate": MISSING_ORDER_DATE_RATE,
+                        "tax_rate": MISSING_TAX_RATE,
+                        "invoice_number_rate": MISSING_INVOICE_NUMBER_RATE,
+                        "payment_method_rate": MISSING_PAYMENT_METHOD_RATE,
+                        "subtotal_rate": MISSING_SUBTOTAL_RATE
+                    },
+                    "invalid_data": {
+                        "invalid_date_format_rate": INVALID_DATE_FORMAT_RATE,
+                        "whitespace_customer_id_rate": WHITESPACE_CUSTOMER_ID_RATE,
+                        "formatted_number_rate": FORMATTED_NUMBER_RATE,
+                        "currency_symbol_rate": CURRENCY_SYMBOL_RATE
+                    },
+                    "edge_cases": {
+                        "duplicate_order_id_rate": DUPLICATE_ORDER_ID_RATE,
+                        "negative_amount_rate": NEGATIVE_AMOUNT_RATE,
+                        "future_date_rate": FUTURE_DATE_RATE,
+                        "past_date_rate": PAST_DATE_RATE,
+                        "zero_quantity_rate": ZERO_QUANTITY_RATE
+                    }
+                },
+                "expected_counts": {
+                    "total_orders": total_generated,
+                    "parts_line_items": len(parts_items),
+                    "service_line_items": len(services_items),
+                    "orders_by_type": dict(order_type_counts)
+                },
+                "expected_issues": {
+                    "missing_customer_ids": int(TOTAL_ORDERS * MISSING_CUSTOMER_ID_RATE),
+                    "missing_order_dates": int(TOTAL_ORDERS * MISSING_ORDER_DATE_RATE),
+                    "missing_tax": int(TOTAL_ORDERS * MISSING_TAX_RATE),
+                    "invalid_dates": int(TOTAL_ORDERS * INVALID_DATE_FORMAT_RATE),
+                    "duplicate_order_ids": int(TOTAL_ORDERS * DUPLICATE_ORDER_ID_RATE),
+                    "future_dates": int(TOTAL_ORDERS * FUTURE_DATE_RATE),
+                    "past_dates": int(TOTAL_ORDERS * PAST_DATE_RATE)
+                },
+                "revenue_statistics": {
+                    "total_revenue": float(total_revenue),
+                    "avg_order_value": float(avg_order_value),
+                    "min_order": float(min_order),
+                    "max_order": float(max_order)
+                },
+                "files": {
+                    "orders": orders_file,
+                    "parts": parts_file,
+                    "services": services_file
+                }
+            }
+            write_manifest(manifest_data, manifest_file)
+            print(f"✓ Written {manifest_file}")
+        
+        # Display statistics
+        print("\n" + "-" * 70)
+        print("Statistics:")
+        
+        print("\nOrder counts by type:")
+        for order_type, count in sorted(order_type_counts.items()):
+            print(f"  {order_type:12s}: {count:,} orders")
         
         print(f"\nRevenue statistics:")
         print(f"  Total Revenue: ${total_revenue:,.2f}")

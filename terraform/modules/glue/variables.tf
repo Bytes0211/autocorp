@@ -31,3 +31,9 @@ variable "crawler_schedule" {
   type        = string
   default     = "cron(0 2 * * ? *)"
 }
+
+variable "enable_etl_jobs" {
+  description = "Enable Glue ETL jobs for Hudi transformations"
+  type        = bool
+  default     = true
+}

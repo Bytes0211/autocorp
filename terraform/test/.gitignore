@@ -1,0 +1,20 @@
+# Test artifacts
+coverage.out
+coverage.html
+*.test
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go test cache
+*.out

@@ -43,7 +43,6 @@ AutoCorp is a comprehensive **cloud-native data platform** that extends beyond t
 ├─────────────────────┤
 │ PostgreSQL DB       │──────► AWS DMS ──────────┐
 │ - 7 tables          │      (CDC Replication)    │
-│ - 5,668 total rows  │                           │
 └─────────────────────┘                           │
                                                    │
 ┌─────────────────────┐                           ▼
@@ -163,6 +162,12 @@ terraform apply
   - **Usage:** `.venv/bin/python upload_customers.py`
   - **Features:** Random sampling, duplicate handling, progress reporting
 
+- `generate_sales_orders_csv.py` - Generates sales orders with data quality testing features
+  - **Usage:** `python generate_sales_orders_csv.py`
+  - **Features:** 791,532 orders with configurable data quality issues for ETL testing
+  - **Output:** 3 CSV files + validation manifest JSON
+  - **Purpose:** Test AWS DataSync → Glue Crawler → Data Catalog pipeline robustness
+
 ### Documentation
 - `README.md` - This file (project overview)
 - `developer-approach.md` - **850-line comprehensive technical architecture**
@@ -171,6 +176,8 @@ terraform apply
 - `terraform/README.md` - **297-line deployment guide**
 - `DATABASE_STATUS.md` - Database schema and statistics
 - `SALES_SYSTEM_USAGE.md` - SQL query examples (10+ queries)
+- `DATA_QUALITY_TESTING.md` - **326-line comprehensive ETL testing guide**
+- `DATA_QUALITY_QUICK_REFERENCE.md` - **136-line quick reference for DQ testing**
 
 ### Configuration
 - `requirements.txt` - Python dependencies
@@ -235,9 +242,16 @@ terraform apply
 - ✅ **Security:** Secrets Manager, IAM least privilege, encryption
 
 **Analytics & Querying:**
-- ✅ **Serverless SQL:** AWS Athena queries on data lake (no data movement)
-- ✅ **Sub-30s Performance:** Optimized partitioning and compression
-- ✅ **BI Integration:** Compatible with Tableau, PowerBI, QuickSight
+- ✓ **Serverless SQL:** AWS Athena queries on data lake (no data movement)
+- ✓ **Sub-30s Performance:** Optimized partitioning and compression
+- ✓ **BI Integration:** Compatible with Tableau, PowerBI, QuickSight
+
+**Data Quality Testing:**
+- ✓ **Missing Value Injection:** Test ETL null handling (6 configurable parameters)
+- ✓ **Invalid Data Testing:** Malformed dates, formatted numbers, whitespace issues
+- ✓ **Edge Case Testing:** Duplicates, negative amounts, out-of-range dates, zero quantities
+- ✓ **Validation Manifest:** JSON ground truth for expected vs. actual data quality issues
+- ✓ **Pipeline Robustness:** Comprehensive testing for DataSync → Glue → Catalog workflows
 
 ### Database System Features
 
@@ -308,6 +322,45 @@ aws glue start-job-run --job-name autocorp-sales-order-hudi-etl
 # Check job status
 aws glue get-job-run --job-name autocorp-sales-order-hudi-etl --run-id <run-id>
 ```
+
+### Data Quality Testing Workflow
+
+**1. Generate test data with data quality issues:**
+```bash
+python generate_sales_orders_csv.py
+```
+
+Outputs:
+- `sales_orders.csv` - 791,532 orders with injected issues
+- `sales_order_parts.csv` - Parts line items
+- `sales_order_services.csv` - Service line items
+- `data_validation_manifest.json` - Expected issue counts
+
+**2. Configure data quality parameters in script:**
+```python
+# Missing values (set to 0.0 for clean data)
+MISSING_CUSTOMER_ID_RATE = 0.007      # 0.7%
+MISSING_ORDER_DATE_RATE = 0.0002      # 0.02%
+MISSING_TAX_RATE = 0.001              # 0.1%
+
+# Invalid data
+INVALID_DATE_FORMAT_RATE = 0.0008     # 0.08%
+FORMATTED_NUMBER_RATE = 0.0015        # 0.15%
+
+# Edge cases
+DUPLICATE_ORDER_ID_RATE = 0.0001      # 0.01%
+NEGATIVE_AMOUNT_RATE = 0.0005         # 0.05%
+```
+
+**3. Upload to S3 via DataSync and run Glue Crawler**
+
+**4. Validate pipeline behavior:**
+- Check schema inference (are nulls handled correctly?)
+- Verify data type detection (STRING vs. DOUBLE/TIMESTAMP?)
+- Compare actual vs. expected issue counts from manifest
+- Validate data cleansing and transformation logic
+
+**See `DATA_QUALITY_TESTING.md` for comprehensive testing guide.**
 
 ## Common Database Operations
 
