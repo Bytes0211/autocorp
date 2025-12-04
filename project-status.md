@@ -1,9 +1,9 @@
 # AutoCorp Data Lake Pipeline - Project Gantt Chart
 
 **Project Start:** November 18, 2025  
-**Current Date:** November 26, 2025  
+**Last Update:** December 4, 2025  
 **Project Duration:** 4 weeks (20 working days)  
-**Current Status:** Phase 2 - Glue ETL with Hudi (In Progress)
+**Current Status:** Phase 2 - Glue ETL with Hudi (Nearly Complete)
 
 ---
 
@@ -18,9 +18,9 @@ Week 1 (Nov 18-22): Infrastructure & IaC Foundation
 
 Week 2 (Nov 25-29): Glue & Data Catalog
 ├─ Day 6-7: ████████ [COMPLETE] Glue ETL jobs with Hudi
-├─ Day 8:   ░░░░░░░░ [PENDING] Glue Crawlers deployment
-├─ Day 9:   ░░░░░░░░ [PENDING] Data quality rules
-└─ Day 10:  ░░░░░░░░ [PENDING] End-to-end testing
+├─ Day 8:   ████████ [COMPLETE] Glue Crawlers deployment
+├─ Day 9:   ▓▓▓▓▓▓▓▓ [IN PROGRESS] Data quality rules
+└─ Day 10:  ▓▓▓▓▓▓▓▓ [IN PROGRESS] End-to-end testing
 
 Week 3 (Dec 2-6): DMS Replication & DataSync
 ├─ Day 11:  ░░░░░░░░ [PENDING] DMS connectivity testing
@@ -77,7 +77,7 @@ Legend:
 **Duration:** 5 days  
 **Start:** Nov 25, 2025  
 **End:** Nov 29, 2025  
-**Status:** 40% Complete 🔄
+**Status:** 85% Complete 🔄
 
 | Task | Owner | Days | Status | Dependencies |
 |------|-------|------|--------|--------------|
@@ -86,14 +86,18 @@ Legend:
 | Deploy Glue Crawlers (raw zones) | scotton | 0.5 | ✅ DONE | S3 buckets exist |
 | Create Hudi ETL job (sales_order) | scotton | 1.0 | ✅ DONE | Glue catalog ready |
 | Create Hudi ETL jobs (remaining tables) | scotton | 1.5 | ✅ DONE | First job tested |
+| Test Hudi table creation (auto_parts) | scotton | 0.5 | ✅ DONE | ETL jobs deployed |
 | Configure Glue triggers/workflows | scotton | 0.5 | ⏸️ PENDING | All jobs created |
-| Test end-to-end ETL pipeline | scotton | 0.5 | ⏸️ PENDING | Workflows configured |
+| Test end-to-end ETL pipeline | scotton | 0.5 | 🔄 IN PROGRESS | Workflows configured |
 
 **Deliverables:**
 - ✅ Glue Data Catalog operational
 - ✅ 2 Crawlers deployed (raw-database, raw-csv)
-- ✅ 7 ETL jobs created and tested (Hudi tables)
+- ✅ 7 ETL jobs deployed (all tables)
+- ✅ 7 PySpark scripts uploaded to S3
+- ✅ 1 Hudi table tested (auto_parts - 400 rows)
 - ⏸️ Automated pipeline with triggers (pending)
+- 🔄 End-to-end testing (in progress)
 
 **Success Criteria:**
 - Crawlers discover schema automatically
@@ -171,9 +175,9 @@ Legend:
 ## Overall Project Status
 
 ### Completion Metrics
-- **Overall Progress:** 35% (7 of 20 days)
+- **Overall Progress:** 43% (8.5 of 20 days)
 - **Phase 1:** 100% complete (all tasks done)
-- **Phase 2:** 40% complete (Day 6-7 done)
+- **Phase 2:** 85% complete (Day 6-8 done, Day 9-10 in progress)
 - **Phase 3:** 0% complete (awaiting Phase 2)
 - **Phase 4:** 0% complete (awaiting Phase 3)
 
@@ -205,7 +209,7 @@ Legend:
 
 **Critical Path:** Phase 1 → Phase 2 → Phase 3 → Phase 4
 
-**Current Bottleneck:** Glue workflow and trigger configuration (Day 8-10 tasks)
+**Current Bottleneck:** Glue workflow and trigger configuration (Day 9-10 tasks)
 
 **Dependencies:**
 1. **Phase 2 depends on:** Phase 1 infrastructure (S3, Glue IAM roles)
@@ -239,16 +243,17 @@ Legend:
 4. ✅ **Validate S3 buckets** - Verify folder structure created
 5. ✅ **Test IAM roles** - Ensure Glue/DMS roles work
 6. ✅ **Create Glue ETL jobs** - 7 PySpark scripts with Hudi
-7. ⏸️ **Configure Glue workflows** - Automate ETL pipeline
+7. ✅ **Deploy all Glue jobs** - All 7 jobs deployed to AWS
+8. ✅ **Test Hudi table creation** - auto_parts table validated
+9. ⏸️ **Configure Glue workflows** - Automate ETL pipeline
+10. 🔄 **Test remaining ETL jobs** - Validate all 7 tables
 
-### Next Week (Week 2 - Remaining)
-1. ✅ Upload PySpark ETL scripts to S3
-2. ✅ Deploy Glue Data Catalog via Terraform
-3. ✅ Create first Hudi ETL job (sales_order)
-4. ⏸️ Test Glue Crawler on sample data
-5. ✅ Validate Hudi table creation
-6. ⏸️ Configure Glue workflows and triggers
-7. ⏸️ Run end-to-end pipeline tests
+### Next Steps (Week 3 - Completion)
+1. ⏸️ Configure Glue workflows and triggers
+2. 🔄 Test all 7 ETL jobs with sample data
+3. ⏸️ Run end-to-end pipeline tests
+4. ⏸️ Document data quality rules implementation
+5. ⏸️ Begin Phase 3 planning (DMS setup)
 
 ### Following Weeks
 - Week 3: Enable DMS replication and DataSync
@@ -261,10 +266,12 @@ Legend:
 ### Technical Metrics
 - ✅ PostgreSQL database operational: 7 tables, 5,668 rows
 - ✅ S3 data lake deployed: raw/, curated/, logs/ structure
-- 🔄 Glue ETL processing: 1 Hudi table created (auto_parts)
-- ⏸️ DMS CDC lag: <5 minutes average
-- ⏸️ Athena query performance: <30 seconds for aggregations
-- ⏸️ End-to-end latency: <15 minutes (source to queryable)
+- ✅ Glue ETL jobs deployed: 7 jobs (all tables)
+- ✅ Glue Crawlers deployed: 2 crawlers (raw-database, raw-csv)
+- ✅ Hudi table tested: auto_parts (400 rows, 57 Parquet files)
+- ⏸️ DMS CDC lag: <5 minutes average (not yet deployed)
+- ⏸️ Athena query performance: <30 seconds for aggregations (not yet tested)
+- ⏸️ End-to-end latency: <15 minutes (source to queryable - pending testing)
 
 ### Documentation Metrics
 - ✅ Developer approach: 688 lines (comprehensive)
@@ -284,10 +291,10 @@ Legend:
 ## Project Timeline Summary
 
 ```
-[=============== 35% Complete ===============                    ]
+[=================== 43% Complete ====================            ]
 
 Phase 1: ████████████████████ 100% (Complete)
-Phase 2: ████████░░░░░░░░░░░░  40% (In Progress)
+Phase 2: █████████████████░░░  85% (Nearly Complete)
 Phase 3: ░░░░░░░░░░░░░░░░░░░░   0% (Pending)
 Phase 4: ░░░░░░░░░░░░░░░░░░░░   0% (Pending)
 
@@ -302,6 +309,7 @@ Estimated Completion: December 13, 2025 (on track)
 |---------|------|--------|---------|
 | 1.0 | Nov 21, 2025 | scotton | Initial Gantt chart with IaC approach |
 | 1.1 | Nov 26, 2025 | scotton | Updated with Phase 1 complete, Phase 2 progress |
+| 1.2 | Dec 4, 2025 | scotton | Updated Phase 2 to 85% complete, all ETL jobs deployed |
 
 ---
 
