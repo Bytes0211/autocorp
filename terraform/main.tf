@@ -66,6 +66,7 @@ module "dms" {
   postgres_port            = var.postgres_port
   postgres_database        = var.postgres_database
   postgres_username        = var.postgres_username
+  postgres_password        = var.postgres_password
   postgres_secret_arn      = module.secrets.postgres_password_secret_arn
   target_bucket_arn        = module.s3.data_lake_bucket_arn
   dms_role_arn             = module.iam.dms_role_arn

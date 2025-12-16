@@ -99,6 +99,13 @@ variable "postgres_username" {
   default     = "scotton"
 }
 
+variable "postgres_password" {
+  description = "PostgreSQL password for replication"
+  type        = string
+  sensitive   = true
+  default     = ""
+}
+
 # DataSync Configuration
 variable "enable_datasync" {
   description = "Enable DataSync module (requires agent deployment)"

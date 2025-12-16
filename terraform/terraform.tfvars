@@ -15,10 +15,10 @@ enable_glue_crawlers  = true
 glue_crawler_schedule = "cron(0 2 * * ? *)" # Daily at 2 AM UTC
 
 # DMS Configuration (disabled by default until PostgreSQL is accessible)
-enable_dms            = false
+enable_dms            = true
 dms_instance_class    = "dms.t3.medium"
 dms_allocated_storage = 50
-postgres_host         = "" # Update with your PostgreSQL host
+postgres_host         = "192.168.7.144"
 postgres_port         = 5432
 postgres_database     = "autocorp"
 postgres_username     = "scotton"

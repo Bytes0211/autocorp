@@ -1,0 +1,1 @@
+SELECT COUNT(order_id) FROM sales_order; 

@@ -2,7 +2,8 @@
 
 **Project:** AutoCorp Cloud Data Lakehouse  
 **Created:** December 7, 2025  
-**Version:** 1.0
+**Last Updated:** December 16, 2025  
+**Version:** 1.1
 
 ---
 
@@ -96,18 +97,18 @@ flowchart LR
         P25C[Validate Data]
     end
     
-    subgraph Phase3["Phase 3: Replication<br/>(Dec 9-13)"]
-        P3A[Deploy DMS]
-        P3B[Configure CDC]
-        P3C[Deploy DataSync]
-        P3D[Test Full Pipeline]
+    subgraph Phase3["Phase 3: DMS IaC<br/>(Dec 7-16)"]
+        P3A[Configure PostgreSQL<br/>Logical Replication]
+        P3B[DMS Terraform Module<br/>361 lines]
+        P3C[DataSync Documentation<br/>Production Guide]
+        P3D[Phase 3 IaC Complete]
     end
     
     subgraph Phase4["Phase 4: Analytics<br/>(Dec 16-20)"]
-        P4A[Configure Athena]
-        P4B[Query Optimization]
-        P4C[BI Integration]
-        P4D[Documentation]
+        P4A[Analytics ETL Jobs<br/>3 scripts created]
+        P4B[Configure Athena<br/>Workgroups]
+        P4C[Query Optimization<br/>Partitioning]
+        P4D[Documentation<br/>Finalization]
     end
     
     P1A --> P1B --> P1C
@@ -122,9 +123,9 @@ flowchart LR
     
     style Phase1 fill:#c8e6c9
     style Phase2 fill:#c8e6c9
-    style Phase25 fill:#fff9c4
-    style Phase3 fill:#e0e0e0
-    style Phase4 fill:#e0e0e0
+    style Phase25 fill:#c8e6c9
+    style Phase3 fill:#c8e6c9
+    style Phase4 fill:#fff9c4
 ```
 
 ---
@@ -166,21 +167,23 @@ flowchart TD
 
 ---
 
-## 4. DMS CDC Replication Flow (Phase 3)
+## 4. DMS CDC Replication Flow (Phase 3 - IaC Ready)
+
+**Status:** Infrastructure as Code complete, ready for deployment
 
 ```mermaid
 flowchart TB
     subgraph PostgreSQL["PostgreSQL Database"]
         PG_Data[(sales_order<br/>sales_order_parts<br/>sales_order_services<br/>300K orders)]
-        PG_Logical[Logical Replication<br/>Enabled]
+        PG_Logical[Logical Replication<br/>✅ Configured]
     end
     
-    subgraph DMS["AWS DMS"]
-        DMS_Instance[DMS Replication Instance<br/>dms.t3.medium]
-        Source_EP[Source Endpoint<br/>PostgreSQL]
-        Target_EP[Target Endpoint<br/>S3]
-        Task[DMS Task<br/>Full Load + CDC]
-        TableMap[Table Mappings<br/>7 tables]
+    subgraph DMS["AWS DMS (IaC Ready)"]
+        DMS_Instance[DMS Replication Instance<br/>dms.t3.medium<br/>📝 Terraform defined]
+        Source_EP[Source Endpoint<br/>PostgreSQL<br/>📝 Terraform defined]
+        Target_EP[Target Endpoint<br/>S3 Parquet<br/>📝 Terraform defined]
+        Task[DMS Task<br/>Full Load + CDC<br/>📝 Terraform defined]
+        TableMap[Table Mappings<br/>7 tables<br/>📝 JSON configured]
     end
     
     subgraph S3Raw["S3 Raw Zone"]
@@ -217,20 +220,22 @@ flowchart TB
 
 ---
 
-## 5. DataSync File Transfer Flow (Phase 3)
+## 5. DataSync File Transfer Flow (Phase 3 - Documented)
+
+**Status:** Production deployment guide documented, S3 CLI alternative for dev
 
 ```mermaid
 flowchart TB
     subgraph OnPrem["On-Premises/Local"]
         CSV_Files[CSV Files<br/>700K orders<br/>/data/autocorp/sales_archives/]
-        Agent[DataSync Agent<br/>VM Deployed]
+        Agent[DataSync Agent<br/>📝 Deployment guide]
     end
     
     subgraph AWS["AWS Cloud"]
-        DataSync[AWS DataSync Service]
-        Location_Source[Source Location<br/>NFS/SMB]
-        Location_Target[Target Location<br/>S3]
-        Task[DataSync Task<br/>Scheduled Transfer]
+        DataSync[AWS DataSync Service<br/>📝 Documented]
+        Location_Source[Source Location<br/>NFS/SMB<br/>📝 Config ready]
+        Location_Target[Target Location<br/>S3<br/>📝 Config ready]
+        Task[DataSync Task<br/>Scheduled Transfer<br/>📝 Documented]
     end
     
     subgraph S3["S3 Raw Zone"]
@@ -342,12 +347,14 @@ flowchart LR
 
 ---
 
-## 8. Query Layer Flow (Phase 4)
+## 8. Query Layer Flow (Phase 4 - In Progress)
+
+**Status:** Analytics ETL scripts created, Athena configuration in progress
 
 ```mermaid
 flowchart TB
     subgraph Storage["S3 Curated Zone"]
-        Hudi[(Apache Hudi Tables<br/>1M orders unified<br/>ACID + Partitioned)]
+        Hudi[(Apache Hudi Tables<br/>Operational: 7 tables<br/>Analytics: 3 new tables<br/>1M orders unified)]
     end
     
     subgraph Catalog["AWS Glue"]
@@ -562,7 +569,27 @@ To view these diagrams, paste the code blocks into any Mermaid-compatible viewer
 
 ---
 
-**Document Version:** 1.0  
-**Last Updated:** December 7, 2025  
+---
+
+## Document Change Log
+
+### Version 1.1 (December 16, 2025)
+- Updated Phase 3 to reflect IaC completion (DMS Terraform module, PostgreSQL CDC config, DataSync docs)
+- Updated Phase 4 to show analytics layer in progress (3 ETL scripts created)
+- Changed phase color coding to reflect completion status
+- Added status notes to DMS, DataSync, and Query Layer sections
+- Updated dates to reflect actual project timeline
+
+### Version 1.0 (December 7, 2025)
+- Initial process flow diagram creation
+- 10 comprehensive flow diagrams
+- Complete end-to-end architecture documentation
+
+---
+
+**Document Version:** 1.1  
+**Last Updated:** December 16, 2025  
+**Created:** December 7, 2025  
 **Author:** scotton  
-**Project:** AutoCorp Data Lake Pipeline
+**Project:** AutoCorp Data Lake Pipeline  
+**Status:** Phase 3 Complete (IaC) | Phase 4 Analytics Layer In Progress

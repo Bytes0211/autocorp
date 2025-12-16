@@ -32,6 +32,12 @@ variable "postgres_secret_arn" {
   type = string
 }
 
+variable "postgres_password" {
+  type      = string
+  sensitive = true
+  description = "PostgreSQL password for DMS connection"
+}
+
 variable "target_bucket_arn" {
   type = string
 }

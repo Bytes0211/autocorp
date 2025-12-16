@@ -14,6 +14,7 @@ AutoCorp is a comprehensive **cloud-native data platform** that extends beyond t
 - **Real-time CDC Replication:** PostgreSQL → AWS DMS → S3 (Parquet) with <5 minute lag
 - **Serverless ETL:** AWS Glue jobs transforming raw data to Apache Hudi tables
 - **Query Engine:** AWS Athena for SQL analytics directly on data lake
+- **AI Chatbox (Phase 5):** Amazon Bedrock Nova Pro with RAG for customer support & analytics
 - **Infrastructure as Code:** Complete Terraform implementation (95% automated)
 
 **Source System (PostgreSQL):**
@@ -21,8 +22,14 @@ AutoCorp is a comprehensive **cloud-native data platform** that extends beyond t
 - **Auto parts inventory** (400 parts)
 - **Service catalog** (110 services across 11 categories)
 - **Customer management** (1,149 customers)
-- **Sales orders** (supports parts sales, service sales, and mixed orders)
+- **Sales orders** (397,146 orders with 1.6M total rows)
 - **Service-parts relationships** (1,074 mappings)
+
+**CSV Data Files:**
+
+- **Historical sales data** (792K unique orders, 1.86M rows with intentional duplicates)
+- **Combined dataset** (1.19M total unique orders for testing)
+- **Data Quality Testing:** Duplicates demonstrate ETL deduplication using Hudi upserts
 
 ### Key Technical Achievements
 
@@ -91,7 +98,7 @@ AutoCorp is a comprehensive **cloud-native data platform** that extends beyond t
 
 **Database Name:** `autocorp`  
 **Total Tables:** 7  
-**Total Data Rows:** 1,607,343
+**Total Data Rows:** 1,605,804
 
 ### Tables
 
@@ -99,9 +106,20 @@ AutoCorp is a comprehensive **cloud-native data platform** that extends beyond t
 - `customers` - Customer information (1,149 rows)
 - `service` - Service catalog (110 rows)
 - `service_parts` - Service-to-parts mapping (1,074 rows)
-- `sales_order` - Order headers (0 rows - ready for data)
-- `sales_order_parts` - Parts line items (0 rows - ready for data)
-- `sales_order_services` - Service line items (0 rows - ready for data)
+- `sales_order` - Order headers (397,146 rows)
+- `sales_order_parts` - Parts line items (853,591 rows)
+- `sales_order_services` - Service line items (355,067 rows)
+
+### CSV Data Files (For DataSync Testing)
+
+- `sales_orders.csv` - Historical orders (791,532 unique, 1,864,774 total rows)
+  - **Data Quality Feature:** Contains intentional duplicates for ETL testing
+  - **Demonstrates:** Hudi upsert deduplication using invoice_number as record key
+- `sales_order_parts.csv` - Historical parts line items (4,877,041 rows)
+- `sales_order_services.csv` - Historical service line items (529,488 rows)
+- **Total CSV data:** 7,271,303 rows across 3 files
+- **Unique orders in CSV:** 791,532 (duplicates simulate real-world data issues)
+- **Combined dataset:** 1,188,678 total unique orders (PostgreSQL + CSV)
 
 ## Infrastructure as Code (Terraform)
 
@@ -173,6 +191,8 @@ terraform apply
 - `developer-approach.md` - **850-line comprehensive technical architecture**
 - `IAC_FEASIBILITY_ASSESSMENT.md` - **588-line IaC analysis**
 - `PROJECT_GANTT_CHART.md` - **307-line project timeline & status**
+- `PHASE5_AI_CHATBOX.md` - **760-line AI chatbox with Bedrock & RAG (Phase 5 plan)**
+- `PHASE5_QUICK_START.md` - **Quick start guide for Phase 5 (220 lines)**
 - `terraform/README.md` - **297-line deployment guide**
 - `DATABASE_STATUS.md` - Database schema and statistics
 - `SALES_SYSTEM_USAGE.md` - SQL query examples (10+ queries)
@@ -242,16 +262,20 @@ terraform apply
 - ✅ **Security:** Secrets Manager, IAM least privilege, encryption
 
 **Analytics & Querying:**
-- ✓ **Serverless SQL:** AWS Athena queries on data lake (no data movement)
-- ✓ **Sub-30s Performance:** Optimized partitioning and compression
-- ✓ **BI Integration:** Compatible with Tableau, PowerBI, QuickSight
+- ✅ **Analytics Layer:** Denormalized wide tables for 80%+ faster BI queries
+- ✅ **Serverless SQL:** AWS Athena queries on data lake (no data movement)
+- ✅ **Sub-30s Performance:** Optimized partitioning and compression
+- ✅ **BI Integration:** Compatible with Tableau, PowerBI, QuickSight
+- ✅ **Dual-Layer Architecture:** Normalized (operational) + denormalized (analytics) tables
 
 **Data Quality Testing:**
+- ✓ **Duplicate Record Handling:** CSV files contain intentional duplicates for Hudi upsert testing
 - ✓ **Missing Value Injection:** Test ETL null handling (6 configurable parameters)
 - ✓ **Invalid Data Testing:** Malformed dates, formatted numbers, whitespace issues
-- ✓ **Edge Case Testing:** Duplicates, negative amounts, out-of-range dates, zero quantities
+- ✓ **Edge Case Testing:** Negative amounts, out-of-range dates, zero quantities
 - ✓ **Validation Manifest:** JSON ground truth for expected vs. actual data quality issues
 - ✓ **Pipeline Robustness:** Comprehensive testing for DataSync → Glue → Catalog workflows
+- ✓ **Deduplication Strategy:** invoice_number as Hudi record key for automatic duplicate removal
 
 ### Database System Features
 
@@ -423,6 +447,10 @@ The system includes 110 services across these categories:
 - **Service with most parts:** ID `92038482` (27 parts)
 - **Customer geographic spread:** 59 different states
 - **Total service-parts relationships:** 1,074
+- **Total orders (PostgreSQL):** 397,146 orders
+- **Total orders (CSV files):** 791,532 unique orders (1,864,774 rows with intentional duplicates)
+- **Combined dataset:** 1,188,678 unique orders for DMS/DataSync testing
+- **Data quality demonstration:** CSV duplicates showcase ETL deduplication with Hudi upserts
 
 ## Technical Deep Dive
 
@@ -482,39 +510,67 @@ See **`PROJECT_GANTT_CHART.md`** (307 lines) for:
 5. **`DATABASE_STATUS.md`** - Schema details and statistics
 6. **`SALES_SYSTEM_USAGE.md`** - SQL query examples (10+ queries)
 
+### Analytics Layer
+7. **`ANALYTICS_LAYER.md`** (479 lines) - Analytics layer documentation
+   - Denormalized wide tables for BI and analytics
+   - 8+ query examples with performance comparisons
+   - ETL pipeline architecture and scheduling
+   - Performance benefits: 80%+ faster queries, 68% cost savings
+   - Best practices and monitoring guidance
+
+### AI & Machine Learning (Phase 5)
+8. **`PHASE5_AI_CHATBOX.md`** (760 lines) - AI chatbox implementation plan
+   - Amazon Bedrock Nova Pro integration
+   - RAG (Retrieval-Augmented Generation) architecture  
+   - Next.js + AWS Amplify frontend
+   - Lambda + API Gateway backend
+   - Complete implementation guide (8-10 days)
+
 ## Project Status
 
-**Current Phase:** Infrastructure Foundation (Phase 1 - 80% Complete)
+**Current Phase:** Data Preparation Complete - Ready for DMS Deployment (Phase 3)
+
+**Progress:** 55% Complete (11 of 20 days)
 
 **Completed:**
-- ✅ PostgreSQL database operational (7 tables, 5,668 rows)
-- ✅ Comprehensive technical documentation (2,042 lines)
-- ✅ Terraform IaC structure (6 modules, 25 files)
-- ✅ IaC feasibility assessment (95% automation confirmed)
-- ✅ Project timeline and Gantt chart
+- ✅ **Phase 1:** PostgreSQL database + Terraform IaC (100%)
+- ✅ **Phase 2:** Glue ETL jobs + Data Catalog (100%)
+- ✅ **Phase 2.5:** Production data generation (100%)
+  - PostgreSQL: 397K orders (1.6M total rows)
+  - CSV files: 792K unique orders (1.86M rows with intentional duplicates, 7.27M total)
+  - Combined: 1.19M unique orders across both sources
+  - Data quality testing: CSV duplicates demonstrate Hudi deduplication
+- ✅ Infrastructure deployed: 35 AWS resources via Terraform
+- ✅ Glue ETL jobs: 7 jobs operational with Apache Hudi
+- ✅ Data Quality: 35+ validation rules implemented
 
-**In Progress:**
+**Future Phases:**
 
-- 🔄 Terraform module implementation (S3, IAM, Secrets ready)
-- ⏸️ AWS account access for infrastructure deployment
+**Phase 3 (Next):** DMS & DataSync
+1. Test sales ETL jobs with production data volumes
+2. Configure PostgreSQL logical replication
+3. Deploy DMS replication instance
+4. Create DMS endpoints and configure CDC
+5. Deploy DataSync agent and configure tasks
+6. Configure Athena for SQL analytics
 
-**Next Steps:**
+**Phase 5 (Planned):** AI Chatbox with Bedrock
+1. Deploy Bedrock Nova Pro with RAG capabilities
+2. Build Next.js chatbox UI (AWS Amplify hosting)
+3. Create Lambda + API Gateway backend
+4. Integrate with existing data lake for context
+5. See `PHASE5_AI_CHATBOX.md` for full details
 
-1. Deploy Phase 1 infrastructure via Terraform
-2. Implement Glue ETL jobs with Apache Hudi
-3. Configure DMS replication with CDC
-4. Deploy DataSync for CSV file transfers
-5. Configure Athena for SQL analytics
-
-**Timeline:** 4 weeks total, targeting completion by December 13, 2025
+**Timeline:** 4 weeks total, targeting completion by December 20, 2025
 
 ## Technology Stack
 
 ### Cloud & Infrastructure
-- **AWS Services:** DMS, DataSync, Glue, S3, Athena, Secrets Manager
+- **AWS Services:** DMS, DataSync, Glue, S3, Athena, Bedrock, Lambda, API Gateway, Amplify
 - **IaC:** Terraform 1.5+ with AWS Provider 5.0
 - **Open Table Formats:** Apache Hudi 0.14+
 - **Query Engine:** AWS Athena (Presto/Trino)
+- **AI/ML:** Amazon Bedrock Nova Pro with RAG (Phase 5)
 
 ### Data Engineering
 - **ETL:** AWS Glue with PySpark
@@ -525,12 +581,13 @@ See **`PROJECT_GANTT_CHART.md`** (307 lines) for:
 ### Database
 - **RDBMS:** PostgreSQL (source system)
 - **Tables:** 7 (auto_parts, customers, service, service_parts, sales_order, sales_order_parts, sales_order_services)
-- **Data Volume:** 5,668 rows operational, designed for 1M+ scale
+- **Data Volume:** 1.6M rows in PostgreSQL + 7.27M rows in CSV files (1.19M unique orders)
 
 ### Development
-- **Languages:** Python 3.12+, SQL, HCL (Terraform)
+- **Languages:** Python 3.12+, SQL, HCL (Terraform), TypeScript (Phase 5)
+- **Frontend:** Next.js 14+, React, Tailwind CSS (Phase 5)
 - **Version Control:** Git with .gitignore for sensitive files
-- **Documentation:** Markdown (2,042 lines)
+- **Documentation:** Markdown (2,800+ lines)
 
 ## License
 
