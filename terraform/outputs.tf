@@ -51,9 +51,14 @@ output "dms_replication_instance_arn" {
   value       = var.enable_dms ? module.dms[0].replication_instance_arn : null
 }
 
-output "dms_endpoint_arns" {
-  description = "ARNs of DMS endpoints"
-  value       = var.enable_dms ? module.dms[0].endpoint_arns : null
+output "dms_postgres_endpoint_arn" {
+  description = "ARN of DMS PostgreSQL source endpoint"
+  value       = var.enable_dms ? module.dms[0].postgres_endpoint_arn : null
+}
+
+output "dms_s3_endpoint_arn" {
+  description = "ARN of DMS S3 target endpoint"
+  value       = var.enable_dms ? module.dms[0].s3_endpoint_arn : null
 }
 
 # DataSync Outputs (if enabled)
@@ -217,4 +222,50 @@ output "postgres_password_secret_arn" {
   description = "ARN of the PostgreSQL password secret"
   value       = module.secrets.postgres_password_secret_arn
   sensitive   = true
+}
+
+# Athena Outputs
+output "athena_workgroup_name" {
+  description = "Name of the Athena workgroup"
+  value       = module.athena.workgroup_name
+}
+
+output "athena_workgroup_arn" {
+  description = "ARN of the Athena workgroup"
+  value       = module.athena.workgroup_arn
+}
+
+output "athena_named_queries" {
+  description = "Map of Athena named query IDs"
+  value       = module.athena.named_queries
+}
+
+output "athena_query_results_location" {
+  description = "S3 location for Athena query results"
+  value       = module.athena.query_results_location
+}
+
+# CloudWatch Monitoring Outputs
+output "cloudwatch_dashboard_arn" {
+  description = "ARN of the CloudWatch dashboard"
+  value       = module.monitoring.dashboard_arn
+}
+
+output "cloudwatch_dashboard_name" {
+  description = "Name of the CloudWatch dashboard"
+  value       = module.monitoring.dashboard_name
+}
+
+output "cloudwatch_alarm_arns" {
+  description = "ARNs of CloudWatch alarms"
+  value = {
+    glue_job_failures   = module.monitoring.glue_job_failure_alarm_arn
+    athena_failures     = module.monitoring.athena_failure_alarm_arn
+    high_cost_alert     = module.monitoring.high_cost_alarm_arn
+  }
+}
+
+output "cloudwatch_sns_topic_arn" {
+  description = "ARN of the SNS topic for CloudWatch alerts"
+  value       = module.monitoring.sns_topic_arn
 }

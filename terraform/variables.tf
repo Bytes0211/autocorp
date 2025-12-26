@@ -124,3 +124,40 @@ variable "datasync_schedule" {
   type        = string
   default     = "rate(1 hour)"
 }
+
+# Athena Configuration
+variable "athena_database_name" {
+  description = "Glue/Athena database name for querying Hudi tables"
+  type        = string
+  default     = "autocorp_curated"
+}
+
+variable "athena_workgroup_name" {
+  description = "Athena workgroup name"
+  type        = string
+  default     = "autocorp-analytics"
+}
+
+# CloudWatch Monitoring Configuration
+variable "cloudwatch_alert_email" {
+  description = "Email address for CloudWatch alarm notifications"
+  type        = string
+  default     = ""
+}
+
+variable "glue_job_names" {
+  description = "List of Glue job names to monitor"
+  type        = list(string)
+  default     = [
+    "sales_order_etl",
+    "customers_etl",
+    "auto_parts_etl",
+    "service_etl",
+    "service_parts_etl",
+    "sales_order_parts_etl",
+    "sales_order_services_etl",
+    "analytics_sales_order_fact_etl",
+    "analytics_sales_order_line_items_etl",
+    "analytics_service_parts_catalog_etl"
+  ]
+}

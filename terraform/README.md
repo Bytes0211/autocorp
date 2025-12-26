@@ -94,7 +94,26 @@ aws secretsmanager put-secret-value \
 ```
 
 ### 4. Enable DMS (After PostgreSQL Connectivity)
+
+**IMPORTANT:** DMS requires the `dms-vpc-role` IAM role to be created first (one-time per AWS account):
+
 ```bash
+# Create DMS VPC role (one-time setup)
+aws iam create-role \
+  --role-name dms-vpc-role \
+  --assume-role-policy-document '{
+    "Version": "2012-10-17",
+    "Statement": [{
+      "Effect": "Allow",
+      "Principal": {"Service": "dms.amazonaws.com"},
+      "Action": "sts:AssumeRole"
+    }]
+  }'
+
+aws iam attach-role-policy \
+  --role-name dms-vpc-role \
+  --policy-arn arn:aws:iam::aws:policy/service-role/AmazonDMSVPCManagementRole
+
 # Update terraform.tfvars
 enable_dms = true
 postgres_host = "your-postgres-host"
@@ -102,6 +121,8 @@ postgres_host = "your-postgres-host"
 # Apply changes
 terraform apply
 ```
+
+See `modules/dms/README.md` for detailed DMS prerequisites and VPC requirements.
 
 ### 5. Enable DataSync (After Agent Deployment)
 ```bash

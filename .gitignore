@@ -4,6 +4,7 @@ __pycache__/
 .vscode/
 WARP.md
 artifacts/
+docs/
 
 # Terraform
 **/.terraform/

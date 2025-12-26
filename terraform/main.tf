@@ -85,3 +85,25 @@ module "datasync" {
   datasync_role_arn    = module.iam.datasync_role_arn
   schedule_expression  = var.datasync_schedule
 }
+
+# Athena Module - Query Workgroup and Named Queries
+module "athena" {
+  source = "./modules/athena"
+
+  project_name          = var.project_name
+  environment           = var.environment
+  query_results_bucket  = module.s3.data_lake_bucket_id
+  glue_database_name    = var.athena_database_name
+}
+
+# CloudWatch Monitoring - Dashboard and Alarms
+module "monitoring" {
+  source = "./modules/monitoring"
+
+  project_name          = var.project_name
+  environment           = var.environment
+  data_lake_bucket_name = module.s3.data_lake_bucket_id
+  glue_job_names        = var.glue_job_names
+  alert_email           = var.cloudwatch_alert_email
+  create_sns_topic      = var.cloudwatch_alert_email != "" ? true : false
+}
