@@ -81,13 +81,8 @@ hudi_options = {
     'hoodie.datasource.write.table.name': 'service_parts_catalog',
     'hoodie.datasource.write.operation': 'upsert',
     'hoodie.datasource.write.precombine.field': 'etl_timestamp',
-    'hoodie.datasource.hive_sync.enable': 'true',
-    'hoodie.datasource.hive_sync.database': 'autocorp_dev_analytics',
-    'hoodie.datasource.hive_sync.table': 'service_parts_catalog',
-    'hoodie.datasource.hive_sync.use_jdbc': 'false',
-    'hoodie.datasource.hive_sync.mode': 'hms',
-    'hoodie.upsert.shuffle.parallelism': 10,
-    'hoodie.insert.shuffle.parallelism': 10
+    'hoodie.datasource.hive_sync.enable': 'false',
+    'hoodie.upsert.shuffle.parallelism': 10
 }
 
 # Write to Hudi in analytics zone
@@ -104,7 +99,11 @@ print(f"Successfully wrote {df_catalog.count()} records to service_parts_catalog
 print("\n=== Validation Metrics ===")
 print(f"Total unique services: {df_catalog.select('serviceid').distinct().count()}")
 print(f"Total unique parts: {df_catalog.select('sku').distinct().count()}")
-print(f"Average parts per service: {df_catalog.groupBy('serviceid').count().agg(avg('count')).collect()[0][0]:.2f}")
+avg_parts_result = df_catalog.groupBy('serviceid').count().agg(avg('count')).collect()[0][0]
+if avg_parts_result is not None:
+    print(f"Average parts per service: {avg_parts_result:.2f}")
+else:
+    print("Average parts per service: N/A")
 
 # Show top services by parts cost
 print("\nTop 10 services by total parts cost:")

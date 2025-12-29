@@ -50,13 +50,8 @@ hudi_options = {
     'hoodie.datasource.write.recordkey.field': 'line_item_id',
     'hoodie.datasource.write.table.name': 'sales_order_services',
     'hoodie.datasource.write.operation': 'upsert',
-    'hoodie.datasource.write.precombine.field': 'created_at',
-    'hoodie.datasource.hive_sync.enable': 'true',
-    'hoodie.datasource.hive_sync.database': 'autocorp_dev',
-    'hoodie.datasource.hive_sync.table': 'sales_order_services',
-    'hoodie.datasource.hive_sync.use_jdbc': 'false',
-    'hoodie.datasource.hive_sync.mode': 'hms',
-    'hoodie.upsert.shuffle.parallelism': 20,
+    'hoodie.datasource.write.precombine.field': 'line_item_id',
+    'hoodie.datasource.hive_sync.enable': 'false',
     'hoodie.insert.shuffle.parallelism': 20
 }
 

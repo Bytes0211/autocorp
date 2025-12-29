@@ -51,14 +51,8 @@ hudi_options = {
     'hoodie.datasource.write.table.name': 'service',
     'hoodie.datasource.write.operation': 'upsert',
     'hoodie.datasource.write.table.type': 'MERGE_ON_READ',
-    'hoodie.datasource.hive_sync.enable': 'true',
-    'hoodie.datasource.hive_sync.database': 'autocorp_dev',
-    'hoodie.datasource.hive_sync.table': 'service',
-    'hoodie.datasource.hive_sync.partition_fields': 'category_partition',
-    'hoodie.datasource.hive_sync.partition_extractor_class': 'org.apache.hudi.hive.SlashEncodedDayPartitionValueExtractor',
-    'hoodie.datasource.hive_sync.use_jdbc': 'false',
-    'hoodie.datasource.hive_sync.mode': 'hms',
-    'hoodie.upsert.shuffle.parallelism': 5,
+    'hoodie.datasource.hive_sync.enable': 'false',
+    'hoodie.upsert.shuffle.parallelism': 10,
     'hoodie.insert.shuffle.parallelism': 5,
     'hoodie.datasource.write.hive_style_partitioning': 'true'
 }

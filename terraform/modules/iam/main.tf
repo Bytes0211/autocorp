@@ -48,7 +48,8 @@ resource "aws_iam_role_policy" "glue_s3_catalog" {
           "glue:*",
           "logs:CreateLogGroup",
           "logs:CreateLogStream",
-          "logs:PutLogEvents"
+          "logs:PutLogEvents",
+          "cloudwatch:PutMetricData"
         ]
         Resource = "*"
       }

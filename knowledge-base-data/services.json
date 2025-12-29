@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "service-10293849",
+    "type": "service",
+    "serviceid": "10293849",
+    "name": "Brake fluid flush",
+    "category": "Brakes",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Brake fluid flush (ID: 10293849). Category: Brakes. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-10293850",
+    "type": "service",
+    "serviceid": "10293850",
+    "name": "Brake booster replacement",
+    "category": "Brakes",
+    "labor_cost": 270.0,
+    "labor_minutes": 180,
+    "text": "Service: Brake booster replacement (ID: 10293850). Category: Brakes. Labor Cost: $270.00 (180 minutes)."
+  },
+  {
+    "id": "service-29384758",
+    "type": "service",
+    "serviceid": "29384758",
+    "name": "Brake line inspection/replacement",
+    "category": "Brakes",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Brake line inspection/replacement (ID: 29384758). Category: Brakes. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-38492059",
+    "type": "service",
+    "serviceid": "38492059",
+    "name": "Brake pad replacement",
+    "category": "Brakes",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Brake pad replacement (ID: 38492059). Category: Brakes. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-38492060",
+    "type": "service",
+    "serviceid": "38492060",
+    "name": "Master cylinder replacement",
+    "category": "Brakes",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "Service: Master cylinder replacement (ID: 38492060). Category: Brakes. Labor Cost: $180.00 (120 minutes)."
+  },
+  {
+    "id": "service-58392050",
+    "type": "service",
+    "serviceid": "58392050",
+    "name": "ABS system service",
+    "category": "Brakes",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "Service: ABS system service (ID: 58392050). Category: Brakes. Labor Cost: $180.00 (120 minutes)."
+  },
+  {
+    "id": "service-75839206",
+    "type": "service",
+    "serviceid": "75839206",
+    "name": "Brake rotor resurfacing/replacement",
+    "category": "Brakes",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "Service: Brake rotor resurfacing/replacement (ID: 75839206). Category: Brakes. Labor Cost: $180.00 (120 minutes)."
+  },
+  {
+    "id": "service-75839207",
+    "type": "service",
+    "serviceid": "75839207",
+    "name": "Wheel cylinder replacement",
+    "category": "Brakes",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Wheel cylinder replacement (ID: 75839207). Category: Brakes. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-84930277",
+    "type": "service",
+    "serviceid": "84930277",
+    "name": "Brake caliper replacement",
+    "category": "Brakes",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Brake caliper replacement (ID: 84930277). Category: Brakes. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-92038478",
+    "type": "service",
+    "serviceid": "92038478",
+    "name": "Parking brake adjustment",
+    "category": "Brakes",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "Service: Parking brake adjustment (ID: 92038478). Category: Brakes. Labor Cost: $45.00 (30 minutes)."
+  },
+  {
+    "id": "service-10293851",
+    "type": "service",
+    "serviceid": "10293851",
+    "name": "Cooling fan replacement",
+    "category": "Cooling System",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Cooling fan replacement (ID: 10293851). Category: Cooling System. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-29384759",
+    "type": "service",
+    "serviceid": "29384759",
+    "name": "Radiator replacement",
+    "category": "Cooling System",
+    "labor_cost": 270.0,
+    "labor_minutes": 180,
+    "text": "Service: Radiator replacement (ID: 29384759). Category: Cooling System. Labor Cost: $270.00 (180 minutes)."
+  },
+  {
+    "id": "service-29384760",
+    "type": "service",
+    "serviceid": "29384760",
+    "name": "Pressure test system",
+    "category": "Cooling System",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "Service: Pressure test system (ID: 29384760). Category: Cooling System. Labor Cost: $45.00 (30 minutes)."
+  },
+  {
+    "id": "service-38492061",
+    "type": "service",
+    "serviceid": "38492061",
+    "name": "Coolant hose replacement",
+    "category": "Cooling System",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "Service: Coolant hose replacement (ID: 38492061). Category: Cooling System. Labor Cost: $67.50 (45 minutes)."
+  },
+  {
+    "id": "service-58392051",
+    "type": "service",
+    "serviceid": "58392051",
+    "name": "Thermostat replacement",
+    "category": "Cooling System",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Thermostat replacement (ID: 58392051). Category: Cooling System. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-58392052",
+    "type": "service",
+    "serviceid": "58392052",
+    "name": "Coolant reservoir replacement",
+    "category": "Cooling System",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Coolant reservoir replacement (ID: 58392052). Category: Cooling System. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-75839208",
+    "type": "service",
+    "serviceid": "75839208",
+    "name": "Heater core service",
+    "category": "Cooling System",
+    "labor_cost": 360.0,
+    "labor_minutes": 240,
+    "text": "Service: Heater core service (ID: 75839208). Category: Cooling System. Labor Cost: $360.00 (240 minutes)."
+  },
+  {
+    "id": "service-84930278",
+    "type": "service",
+    "serviceid": "84930278",
+    "name": "Radiator flush",
+    "category": "Cooling System",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Radiator flush (ID: 84930278). Category: Cooling System. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-84930279",
+    "type": "service",
+    "serviceid": "84930279",
+    "name": "Radiator cap replacement",
+    "category": "Cooling System",
+    "labor_cost": 15.0,
+    "labor_minutes": 10,
+    "text": "Service: Radiator cap replacement (ID: 84930279). Category: Cooling System. Labor Cost: $15.00 (10 minutes)."
+  },
+  {
+    "id": "service-92038479",
+    "type": "service",
+    "serviceid": "92038479",
+    "name": "Water pump replacement",
+    "category": "Cooling System",
+    "labor_cost": 270.0,
+    "labor_minutes": 180,
+    "text": "Service: Water pump replacement (ID: 92038479). Category: Cooling System. Labor Cost: $270.00 (180 minutes)."
+  },
+  {
+    "id": "service-10293852",
+    "type": "service",
+    "serviceid": "10293852",
+    "name": "Fuse replacement",
+    "category": "Electrical System",
+    "labor_cost": 22.5,
+    "labor_minutes": 15,
+    "text": "Service: Fuse replacement (ID: 10293852). Category: Electrical System. Labor Cost: $22.50 (15 minutes)."
+  },
+  {
+    "id": "service-29384761",
+    "type": "service",
+    "serviceid": "29384761",
+    "name": "Headlight bulb replacement",
+    "category": "Electrical System",
+    "labor_cost": 30.0,
+    "labor_minutes": 20,
+    "text": "Service: Headlight bulb replacement (ID: 29384761). Category: Electrical System. Labor Cost: $30.00 (20 minutes)."
+  },
+  {
+    "id": "service-38492062",
+    "type": "service",
+    "serviceid": "38492062",
+    "name": "Alternator replacement",
+    "category": "Electrical System",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Alternator replacement (ID: 38492062). Category: Electrical System. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-38492063",
+    "type": "service",
+    "serviceid": "38492063",
+    "name": "Power window motor replacement",
+    "category": "Electrical System",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Power window motor replacement (ID: 38492063). Category: Electrical System. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-58392053",
+    "type": "service",
+    "serviceid": "58392053",
+    "name": "Taillight bulb replacement",
+    "category": "Electrical System",
+    "labor_cost": 30.0,
+    "labor_minutes": 20,
+    "text": "Service: Taillight bulb replacement (ID: 58392053). Category: Electrical System. Labor Cost: $30.00 (20 minutes)."
+  },
+  {
+    "id": "service-75839209",
+    "type": "service",
+    "serviceid": "75839209",
+    "name": "Starter motor replacement",
+    "category": "Electrical System",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Starter motor replacement (ID: 75839209). Category: Electrical System. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-75839210",
+    "type": "service",
+    "serviceid": "75839210",
+    "name": "ECU diagnostics",
+    "category": "Electrical System",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: ECU diagnostics (ID: 75839210). Category: Electrical System. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-84930280",
+    "type": "service",
+    "serviceid": "84930280",
+    "name": "Wiring harness repair",
+    "category": "Electrical System",
+    "labor_cost": 360.0,
+    "labor_minutes": 240,
+    "text": "Service: Wiring harness repair (ID: 84930280). Category: Electrical System. Labor Cost: $360.00 (240 minutes)."
+  },
+  {
+    "id": "service-92038480",
+    "type": "service",
+    "serviceid": "92038480",
+    "name": "Battery replacement",
+    "category": "Electrical System",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "Service: Battery replacement (ID: 92038480). Category: Electrical System. Labor Cost: $45.00 (30 minutes)."
+  },
+  {
+    "id": "service-92038481",
+    "type": "service",
+    "serviceid": "92038481",
+    "name": "Turn signal repair",
+    "category": "Electrical System",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "Service: Turn signal repair (ID: 92038481). Category: Electrical System. Labor Cost: $45.00 (30 minutes)."
+  },
+  {
+    "id": "service-13298476",
+    "type": "service",
+    "serviceid": "13298476",
+    "name": "Ignition coil replacement",
+    "category": "Engine & Powertrain",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "Service: Ignition coil replacement (ID: 13298476). Category: Engine & Powertrain. Labor Cost: $67.50 (45 minutes)."
+  },
+  {
+    "id": "service-24819375",
+    "type": "service",
+    "serviceid": "24819375",
+    "name": "Serpentine belt replacement",
+    "category": "Engine & Powertrain",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "Service: Serpentine belt replacement (ID: 24819375). Category: Engine & Powertrain. Labor Cost: $67.50 (45 minutes)."
+  },
+  {
+    "id": "service-37592041",
+    "type": "service",
+    "serviceid": "37592041",
+    "name": "Engine tune-up",
+    "category": "Engine & Powertrain",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Engine tune-up (ID: 37592041). Category: Engine & Powertrain. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-48392017",
+    "type": "service",
+    "serviceid": "48392017",
+    "name": "Oil change (engine oil & filter replacement)",
+    "category": "Engine & Powertrain",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "Service: Oil change (engine oil & filter replacement) (ID: 48392017). Category: Engine & Powertrain. Labor Cost: $45.00 (30 minutes)."
+  },
+  {
+    "id": "service-56120394",
+    "type": "service",
+    "serviceid": "56120394",
+    "name": "Fuel filter replacement",
+    "category": "Engine & Powertrain",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "Service: Fuel filter replacement (ID: 56120394). Category: Engine & Powertrain. Labor Cost: $45.00 (30 minutes)."
+  },
+  {
+    "id": "service-69041283",
+    "type": "service",
+    "serviceid": "69041283",
+    "name": "Drive belt inspection/replacement",
+    "category": "Engine & Powertrain",
+    "labor_cost": 30.0,
+    "labor_minutes": 20,
+    "text": "Service: Drive belt inspection/replacement (ID: 69041283). Category: Engine & Powertrain. Labor Cost: $30.00 (20 minutes)."
+  },
+  {
+    "id": "service-75930218",
+    "type": "service",
+    "serviceid": "75930218",
+    "name": "Timing belt/chain replacement",
+    "category": "Engine & Powertrain",
+    "labor_cost": 360.0,
+    "labor_minutes": 240,
+    "text": "Service: Timing belt/chain replacement (ID: 75930218). Category: Engine & Powertrain. Labor Cost: $360.00 (240 minutes)."
+  },
+  {
+    "id": "service-80451239",
+    "type": "service",
+    "serviceid": "80451239",
+    "name": "Spark plug replacement",
+    "category": "Engine & Powertrain",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "Service: Spark plug replacement (ID: 80451239). Category: Engine & Powertrain. Labor Cost: $67.50 (45 minutes)."
+  },
+  {
+    "id": "service-84201957",
+    "type": "service",
+    "serviceid": "84201957",
+    "name": "Engine mount replacement",
+    "category": "Engine & Powertrain",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "Service: Engine mount replacement (ID: 84201957). Category: Engine & Powertrain. Labor Cost: $180.00 (120 minutes)."
+  },
+  {
+    "id": "service-92710458",
+    "type": "service",
+    "serviceid": "92710458",
+    "name": "Air filter replacement",
+    "category": "Engine & Powertrain",
+    "labor_cost": 22.5,
+    "labor_minutes": 15,
+    "text": "Service: Air filter replacement (ID: 92710458). Category: Engine & Powertrain. Labor Cost: $22.50 (15 minutes)."
+  },
+  {
+    "id": "service-10293858",
+    "type": "service",
+    "serviceid": "10293858",
+    "name": "Emissions system diagnostics",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Emissions system diagnostics (ID: 10293858). Category: Exhaust & Emissions. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-29384766",
+    "type": "service",
+    "serviceid": "29384766",
+    "name": "Muffler replacement",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Muffler replacement (ID: 29384766). Category: Exhaust & Emissions. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-29384767",
+    "type": "service",
+    "serviceid": "29384767",
+    "name": "Resonator replacement",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Resonator replacement (ID: 29384767). Category: Exhaust & Emissions. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-38492068",
+    "type": "service",
+    "serviceid": "38492068",
+    "name": "Oxygen sensor replacement",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "Service: Oxygen sensor replacement (ID: 38492068). Category: Exhaust & Emissions. Labor Cost: $67.50 (45 minutes)."
+  },
+  {
+    "id": "service-58392058",
+    "type": "service",
+    "serviceid": "58392058",
+    "name": "Catalytic converter replacement",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "Service: Catalytic converter replacement (ID: 58392058). Category: Exhaust & Emissions. Labor Cost: $180.00 (120 minutes)."
+  },
+  {
+    "id": "service-58392059",
+    "type": "service",
+    "serviceid": "58392059",
+    "name": "Tailpipe replacement",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Tailpipe replacement (ID: 58392059). Category: Exhaust & Emissions. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-75839215",
+    "type": "service",
+    "serviceid": "75839215",
+    "name": "EGR valve replacement",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: EGR valve replacement (ID: 75839215). Category: Exhaust & Emissions. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-84930286",
+    "type": "service",
+    "serviceid": "84930286",
+    "name": "Exhaust manifold replacement",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 270.0,
+    "labor_minutes": 180,
+    "text": "Service: Exhaust manifold replacement (ID: 84930286). Category: Exhaust & Emissions. Labor Cost: $270.00 (180 minutes)."
+  },
+  {
+    "id": "service-92038486",
+    "type": "service",
+    "serviceid": "92038486",
+    "name": "Exhaust pipe repair",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Exhaust pipe repair (ID: 92038486). Category: Exhaust & Emissions. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-92038487",
+    "type": "service",
+    "serviceid": "92038487",
+    "name": "Smog check preparation",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "Service: Smog check preparation (ID: 92038487). Category: Exhaust & Emissions. Labor Cost: $67.50 (45 minutes)."
+  },
+  {
+    "id": "service-10293859",
+    "type": "service",
+    "serviceid": "10293859",
+    "name": "Brake fluid flush",
+    "category": "Fluids & Filters",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Brake fluid flush (ID: 10293859). Category: Fluids & Filters. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-10293860",
+    "type": "service",
+    "serviceid": "10293860",
+    "name": "Air filter replacement",
+    "category": "Fluids & Filters",
+    "labor_cost": 22.5,
+    "labor_minutes": 15,
+    "text": "Service: Air filter replacement (ID: 10293860). Category: Fluids & Filters. Labor Cost: $22.50 (15 minutes)."
+  },
+  {
+    "id": "service-29384768",
+    "type": "service",
+    "serviceid": "29384768",
+    "name": "Power steering fluid flush",
+    "category": "Fluids & Filters",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Power steering fluid flush (ID: 29384768). Category: Fluids & Filters. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-38492069",
+    "type": "service",
+    "serviceid": "38492069",
+    "name": "Engine oil & filter service",
+    "category": "Fluids & Filters",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "Service: Engine oil & filter service (ID: 38492069). Category: Fluids & Filters. Labor Cost: $45.00 (30 minutes)."
+  },
+  {
+    "id": "service-38492070",
+    "type": "service",
+    "serviceid": "38492070",
+    "name": "Fuel filter replacement",
+    "category": "Fluids & Filters",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "Service: Fuel filter replacement (ID: 38492070). Category: Fluids & Filters. Labor Cost: $45.00 (30 minutes)."
+  },
+  {
+    "id": "service-58392060",
+    "type": "service",
+    "serviceid": "58392060",
+    "name": "Differential fluid change",
+    "category": "Fluids & Filters",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "Service: Differential fluid change (ID: 58392060). Category: Fluids & Filters. Labor Cost: $67.50 (45 minutes)."
+  },
+  {
+    "id": "service-75839216",
+    "type": "service",
+    "serviceid": "75839216",
+    "name": "Transmission fluid/filter service",
+    "category": "Fluids & Filters",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Transmission fluid/filter service (ID: 75839216). Category: Fluids & Filters. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-75839217",
+    "type": "service",
+    "serviceid": "75839217",
+    "name": "Cabin air filter replacement",
+    "category": "Fluids & Filters",
+    "labor_cost": 30.0,
+    "labor_minutes": 20,
+    "text": "Service: Cabin air filter replacement (ID: 75839217). Category: Fluids & Filters. Labor Cost: $30.00 (20 minutes)."
+  },
+  {
+    "id": "service-84930287",
+    "type": "service",
+    "serviceid": "84930287",
+    "name": "Coolant flush",
+    "category": "Fluids & Filters",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Coolant flush (ID: 84930287). Category: Fluids & Filters. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-92038488",
+    "type": "service",
+    "serviceid": "92038488",
+    "name": "Transfer case fluid change",
+    "category": "Fluids & Filters",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "Service: Transfer case fluid change (ID: 92038488). Category: Fluids & Filters. Labor Cost: $67.50 (45 minutes)."
+  },
+  {
+    "id": "service-10293856",
+    "type": "service",
+    "serviceid": "10293856",
+    "name": "Fluid top-offs (oil, coolant, brake, transmission, power steering, washer)",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 30.0,
+    "labor_minutes": 20,
+    "text": "Service: Fluid top-offs (oil, coolant, brake, transmission, power steering, washer) (ID: 10293856). Category: General Preventive Maintenance. Labor Cost: $30.00 (20 minutes)."
+  },
+  {
+    "id": "service-10293857",
+    "type": "service",
+    "serviceid": "10293857",
+    "name": "Key fob battery replacement",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 15.0,
+    "labor_minutes": 10,
+    "text": "Service: Key fob battery replacement (ID: 10293857). Category: General Preventive Maintenance. Labor Cost: $15.00 (10 minutes)."
+  },
+  {
+    "id": "service-29384765",
+    "type": "service",
+    "serviceid": "29384765",
+    "name": "Windshield washer pump replacement",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "Service: Windshield washer pump replacement (ID: 29384765). Category: General Preventive Maintenance. Labor Cost: $67.50 (45 minutes)."
+  },
+  {
+    "id": "service-38492067",
+    "type": "service",
+    "serviceid": "38492067",
+    "name": "Horn repair",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "Service: Horn repair (ID: 38492067). Category: General Preventive Maintenance. Labor Cost: $67.50 (45 minutes)."
+  },
+  {
+    "id": "service-58392057",
+    "type": "service",
+    "serviceid": "58392057",
+    "name": "Exterior light inspection",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 30.0,
+    "labor_minutes": 20,
+    "text": "Service: Exterior light inspection (ID: 58392057). Category: General Preventive Maintenance. Labor Cost: $30.00 (20 minutes)."
+  },
+  {
+    "id": "service-75839213",
+    "type": "service",
+    "serviceid": "75839213",
+    "name": "Multi-point inspection",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "Service: Multi-point inspection (ID: 75839213). Category: General Preventive Maintenance. Labor Cost: $45.00 (30 minutes)."
+  },
+  {
+    "id": "service-75839214",
+    "type": "service",
+    "serviceid": "75839214",
+    "name": "Door lock/latch service",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Door lock/latch service (ID: 75839214). Category: General Preventive Maintenance. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-84930284",
+    "type": "service",
+    "serviceid": "84930284",
+    "name": "Wiper blade replacement",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 22.5,
+    "labor_minutes": 15,
+    "text": "Service: Wiper blade replacement (ID: 84930284). Category: General Preventive Maintenance. Labor Cost: $22.50 (15 minutes)."
+  },
+  {
+    "id": "service-84930285",
+    "type": "service",
+    "serviceid": "84930285",
+    "name": "Regular safety inspection",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Regular safety inspection (ID: 84930285). Category: General Preventive Maintenance. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-92038485",
+    "type": "service",
+    "serviceid": "92038485",
+    "name": "Interior light inspection",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 30.0,
+    "labor_minutes": 20,
+    "text": "Service: Interior light inspection (ID: 92038485). Category: General Preventive Maintenance. Labor Cost: $30.00 (20 minutes)."
+  },
+  {
+    "id": "service-10293853",
+    "type": "service",
+    "serviceid": "10293853",
+    "name": "Cabin air filter replacement",
+    "category": "HVAC",
+    "labor_cost": 30.0,
+    "labor_minutes": 20,
+    "text": "Service: Cabin air filter replacement (ID: 10293853). Category: HVAC. Labor Cost: $30.00 (20 minutes)."
+  },
+  {
+    "id": "service-10293854",
+    "type": "service",
+    "serviceid": "10293854",
+    "name": "Condenser replacement",
+    "category": "HVAC",
+    "labor_cost": 270.0,
+    "labor_minutes": 180,
+    "text": "Service: Condenser replacement (ID: 10293854). Category: HVAC. Labor Cost: $270.00 (180 minutes)."
+  },
+  {
+    "id": "service-29384762",
+    "type": "service",
+    "serviceid": "29384762",
+    "name": "A/C compressor replacement",
+    "category": "HVAC",
+    "labor_cost": 360.0,
+    "labor_minutes": 240,
+    "text": "Service: A/C compressor replacement (ID: 29384762). Category: HVAC. Labor Cost: $360.00 (240 minutes)."
+  },
+  {
+    "id": "service-29384763",
+    "type": "service",
+    "serviceid": "29384763",
+    "name": "Thermistor replacement",
+    "category": "HVAC",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Thermistor replacement (ID: 29384763). Category: HVAC. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-38492064",
+    "type": "service",
+    "serviceid": "38492064",
+    "name": "Climate control diagnostics",
+    "category": "HVAC",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Climate control diagnostics (ID: 38492064). Category: HVAC. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-58392054",
+    "type": "service",
+    "serviceid": "58392054",
+    "name": "Blower motor replacement",
+    "category": "HVAC",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Blower motor replacement (ID: 58392054). Category: HVAC. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-75839211",
+    "type": "service",
+    "serviceid": "75839211",
+    "name": "Evaporator replacement",
+    "category": "HVAC",
+    "labor_cost": 450.0,
+    "labor_minutes": 300,
+    "text": "Service: Evaporator replacement (ID: 75839211). Category: HVAC. Labor Cost: $450.00 (300 minutes)."
+  },
+  {
+    "id": "service-84930281",
+    "type": "service",
+    "serviceid": "84930281",
+    "name": "A/C recharge (refrigerant refill)",
+    "category": "HVAC",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: A/C recharge (refrigerant refill) (ID: 84930281). Category: HVAC. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-84930282",
+    "type": "service",
+    "serviceid": "84930282",
+    "name": "HVAC duct cleaning",
+    "category": "HVAC",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "Service: HVAC duct cleaning (ID: 84930282). Category: HVAC. Labor Cost: $180.00 (120 minutes)."
+  },
+  {
+    "id": "service-92038482",
+    "type": "service",
+    "serviceid": "92038482",
+    "name": "Heater control valve replacement",
+    "category": "HVAC",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Heater control valve replacement (ID: 92038482). Category: HVAC. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-10293855",
+    "type": "service",
+    "serviceid": "10293855",
+    "name": "Control arm replacement",
+    "category": "Suspension & Steering",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "Service: Control arm replacement (ID: 10293855). Category: Suspension & Steering. Labor Cost: $180.00 (120 minutes)."
+  },
+  {
+    "id": "service-29384764",
+    "type": "service",
+    "serviceid": "29384764",
+    "name": "Power steering fluid flush",
+    "category": "Suspension & Steering",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Power steering fluid flush (ID: 29384764). Category: Suspension & Steering. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-38492065",
+    "type": "service",
+    "serviceid": "38492065",
+    "name": "Ball joint replacement",
+    "category": "Suspension & Steering",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Ball joint replacement (ID: 38492065). Category: Suspension & Steering. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-38492066",
+    "type": "service",
+    "serviceid": "38492066",
+    "name": "Alignment check",
+    "category": "Suspension & Steering",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "Service: Alignment check (ID: 38492066). Category: Suspension & Steering. Labor Cost: $45.00 (30 minutes)."
+  },
+  {
+    "id": "service-58392055",
+    "type": "service",
+    "serviceid": "58392055",
+    "name": "Shock absorber replacement",
+    "category": "Suspension & Steering",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Shock absorber replacement (ID: 58392055). Category: Suspension & Steering. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-58392056",
+    "type": "service",
+    "serviceid": "58392056",
+    "name": "Wheel bearing replacement",
+    "category": "Suspension & Steering",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "Service: Wheel bearing replacement (ID: 58392056). Category: Suspension & Steering. Labor Cost: $180.00 (120 minutes)."
+  },
+  {
+    "id": "service-75839212",
+    "type": "service",
+    "serviceid": "75839212",
+    "name": "Tie rod end replacement",
+    "category": "Suspension & Steering",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Tie rod end replacement (ID: 75839212). Category: Suspension & Steering. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-84930283",
+    "type": "service",
+    "serviceid": "84930283",
+    "name": "Steering rack replacement",
+    "category": "Suspension & Steering",
+    "labor_cost": 360.0,
+    "labor_minutes": 240,
+    "text": "Service: Steering rack replacement (ID: 84930283). Category: Suspension & Steering. Labor Cost: $360.00 (240 minutes)."
+  },
+  {
+    "id": "service-92038483",
+    "type": "service",
+    "serviceid": "92038483",
+    "name": "Strut replacement",
+    "category": "Suspension & Steering",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "Service: Strut replacement (ID: 92038483). Category: Suspension & Steering. Labor Cost: $180.00 (120 minutes)."
+  },
+  {
+    "id": "service-92038484",
+    "type": "service",
+    "serviceid": "92038484",
+    "name": "Stabilizer bar link replacement",
+    "category": "Suspension & Steering",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Stabilizer bar link replacement (ID: 92038484). Category: Suspension & Steering. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-10293848",
+    "type": "service",
+    "serviceid": "10293848",
+    "name": "Spare tire inspection",
+    "category": "Tires & Wheels",
+    "labor_cost": 22.5,
+    "labor_minutes": 15,
+    "text": "Service: Spare tire inspection (ID: 10293848). Category: Tires & Wheels. Labor Cost: $22.50 (15 minutes)."
+  },
+  {
+    "id": "service-29384756",
+    "type": "service",
+    "serviceid": "29384756",
+    "name": "Tire rotation",
+    "category": "Tires & Wheels",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "Service: Tire rotation (ID: 29384756). Category: Tires & Wheels. Labor Cost: $45.00 (30 minutes)."
+  },
+  {
+    "id": "service-29384757",
+    "type": "service",
+    "serviceid": "29384757",
+    "name": "Seasonal tire changeover",
+    "category": "Tires & Wheels",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Seasonal tire changeover (ID: 29384757). Category: Tires & Wheels. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-38492058",
+    "type": "service",
+    "serviceid": "38492058",
+    "name": "Wheel alignment",
+    "category": "Tires & Wheels",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Wheel alignment (ID: 38492058). Category: Tires & Wheels. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-58392048",
+    "type": "service",
+    "serviceid": "58392048",
+    "name": "Tire balancing",
+    "category": "Tires & Wheels",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "Service: Tire balancing (ID: 58392048). Category: Tires & Wheels. Labor Cost: $45.00 (30 minutes)."
+  },
+  {
+    "id": "service-58392049",
+    "type": "service",
+    "serviceid": "58392049",
+    "name": "Flat tire repair",
+    "category": "Tires & Wheels",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "Service: Flat tire repair (ID: 58392049). Category: Tires & Wheels. Labor Cost: $45.00 (30 minutes)."
+  },
+  {
+    "id": "service-75839205",
+    "type": "service",
+    "serviceid": "75839205",
+    "name": "Tire pressure monitoring system (TPMS) service",
+    "category": "Tires & Wheels",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "Service: Tire pressure monitoring system (TPMS) service (ID: 75839205). Category: Tires & Wheels. Labor Cost: $45.00 (30 minutes)."
+  },
+  {
+    "id": "service-84930276",
+    "type": "service",
+    "serviceid": "84930276",
+    "name": "Rim repair/replacement",
+    "category": "Tires & Wheels",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Rim repair/replacement (ID: 84930276). Category: Tires & Wheels. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-92038476",
+    "type": "service",
+    "serviceid": "92038476",
+    "name": "Tire replacement",
+    "category": "Tires & Wheels",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "Service: Tire replacement (ID: 92038476). Category: Tires & Wheels. Labor Cost: $67.50 (45 minutes)."
+  },
+  {
+    "id": "service-92038477",
+    "type": "service",
+    "serviceid": "92038477",
+    "name": "Lug nut torque check",
+    "category": "Tires & Wheels",
+    "labor_cost": 15.0,
+    "labor_minutes": 10,
+    "text": "Service: Lug nut torque check (ID: 92038477). Category: Tires & Wheels. Labor Cost: $15.00 (10 minutes)."
+  },
+  {
+    "id": "service-10293847",
+    "type": "service",
+    "serviceid": "10293847",
+    "name": "U-joint replacement",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: U-joint replacement (ID: 10293847). Category: Transmission & Drivetrain. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-19384756",
+    "type": "service",
+    "serviceid": "19384756",
+    "name": "Transmission fluid change",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "Service: Transmission fluid change (ID: 19384756). Category: Transmission & Drivetrain. Labor Cost: $90.00 (60 minutes)."
+  },
+  {
+    "id": "service-29485710",
+    "type": "service",
+    "serviceid": "29485710",
+    "name": "Differential fluid change",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "Service: Differential fluid change (ID: 29485710). Category: Transmission & Drivetrain. Labor Cost: $67.50 (45 minutes)."
+  },
+  {
+    "id": "service-38492057",
+    "type": "service",
+    "serviceid": "38492057",
+    "name": "Driveshaft service",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Driveshaft service (ID: 38492057). Category: Transmission & Drivetrain. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-50293847",
+    "type": "service",
+    "serviceid": "50293847",
+    "name": "Transmission filter replacement",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "Service: Transmission filter replacement (ID: 50293847). Category: Transmission & Drivetrain. Labor Cost: $135.00 (90 minutes)."
+  },
+  {
+    "id": "service-58392047",
+    "type": "service",
+    "serviceid": "58392047",
+    "name": "Transfer case fluid change",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "Service: Transfer case fluid change (ID: 58392047). Category: Transmission & Drivetrain. Labor Cost: $67.50 (45 minutes)."
+  },
+  {
+    "id": "service-75839204",
+    "type": "service",
+    "serviceid": "75839204",
+    "name": "Axle replacement",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 270.0,
+    "labor_minutes": 180,
+    "text": "Service: Axle replacement (ID: 75839204). Category: Transmission & Drivetrain. Labor Cost: $270.00 (180 minutes)."
+  },
+  {
+    "id": "service-84930217",
+    "type": "service",
+    "serviceid": "84930217",
+    "name": "Clutch replacement (manual)",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 450.0,
+    "labor_minutes": 300,
+    "text": "Service: Clutch replacement (manual) (ID: 84930217). Category: Transmission & Drivetrain. Labor Cost: $450.00 (300 minutes)."
+  },
+  {
+    "id": "service-84930275",
+    "type": "service",
+    "serviceid": "84930275",
+    "name": "Transmission rebuild/repair",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 900.0,
+    "labor_minutes": 600,
+    "text": "Service: Transmission rebuild/repair (ID: 84930275). Category: Transmission & Drivetrain. Labor Cost: $900.00 (600 minutes)."
+  },
+  {
+    "id": "service-92038475",
+    "type": "service",
+    "serviceid": "92038475",
+    "name": "CV joint/boot replacement",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "Service: CV joint/boot replacement (ID: 92038475). Category: Transmission & Drivetrain. Labor Cost: $180.00 (120 minutes)."
+  }
+]

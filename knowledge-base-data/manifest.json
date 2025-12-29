@@ -1,0 +1,16 @@
+{
+  "export_date": "2025-12-29T08:45:08.476144",
+  "database": "autocorp_dev",
+  "workgroup": "autocorp-workgroup-dev",
+  "statistics": {
+    "auto_parts_count": 400,
+    "services_count": 110,
+    "service_parts_relationships": 1074,
+    "total_documents": 1584
+  },
+  "files": [
+    "auto_parts.json",
+    "services.json",
+    "service_parts.json"
+  ]
+}

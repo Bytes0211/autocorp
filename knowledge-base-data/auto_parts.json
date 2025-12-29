@@ -1,0 +1,4002 @@
+[
+  {
+    "id": "part-02T0TST8B",
+    "type": "auto_part",
+    "sku": "02T0TST8B",
+    "name": "Parking Sensor Kit",
+    "vendor": "CarQuest",
+    "price": 183.75,
+    "description": "Parking Sensor Kit-02T0TST8B",
+    "text": "Auto Part: Parking Sensor Kit (SKU: 02T0TST8B). Vendor: CarQuest. Price: $183.75. Description: Parking Sensor Kit-02T0TST8B"
+  },
+  {
+    "id": "part-0499Z0ETK",
+    "type": "auto_part",
+    "sku": "0499Z0ETK",
+    "name": "Brake Fluid",
+    "vendor": "RockAuto",
+    "price": 15.75,
+    "description": "Brake Fluid-0499Z0ETK",
+    "text": "Auto Part: Brake Fluid (SKU: 0499Z0ETK). Vendor: RockAuto. Price: $15.75. Description: Brake Fluid-0499Z0ETK"
+  },
+  {
+    "id": "part-04F07LGJQ",
+    "type": "auto_part",
+    "sku": "04F07LGJQ",
+    "name": "Manifold Air Pressure Sensor",
+    "vendor": "RockAuto",
+    "price": 105.0,
+    "description": "Manifold Air Pressure Sensor-04F07LGJQ",
+    "text": "Auto Part: Manifold Air Pressure Sensor (SKU: 04F07LGJQ). Vendor: RockAuto. Price: $105.0. Description: Manifold Air Pressure Sensor-04F07LGJQ"
+  },
+  {
+    "id": "part-08UY1OD2I",
+    "type": "auto_part",
+    "sku": "08UY1OD2I",
+    "name": "Amplifier Upgrade",
+    "vendor": "RockAuto",
+    "price": 367.5,
+    "description": "Amplifier Upgrade-08UY1OD2I",
+    "text": "Auto Part: Amplifier Upgrade (SKU: 08UY1OD2I). Vendor: RockAuto. Price: $367.5. Description: Amplifier Upgrade-08UY1OD2I"
+  },
+  {
+    "id": "part-0BE2SHAVQ",
+    "type": "auto_part",
+    "sku": "0BE2SHAVQ",
+    "name": "Brake Master Cylinder",
+    "vendor": "Pep Boys",
+    "price": 288.75,
+    "description": "Brake Master Cylinder-0BE2SHAVQ",
+    "text": "Auto Part: Brake Master Cylinder (SKU: 0BE2SHAVQ). Vendor: Pep Boys. Price: $288.75. Description: Brake Master Cylinder-0BE2SHAVQ"
+  },
+  {
+    "id": "part-0BM54P557",
+    "type": "auto_part",
+    "sku": "0BM54P557",
+    "name": "Engine Oil Additive",
+    "vendor": "Summit Racing",
+    "price": 21.0,
+    "description": "Engine Oil Additive-0BM54P557",
+    "text": "Auto Part: Engine Oil Additive (SKU: 0BM54P557). Vendor: Summit Racing. Price: $21.0. Description: Engine Oil Additive-0BM54P557"
+  },
+  {
+    "id": "part-0FO38WFDR",
+    "type": "auto_part",
+    "sku": "0FO38WFDR",
+    "name": "Seat Ventilation Fan",
+    "vendor": "AutoZone",
+    "price": 183.75,
+    "description": "Seat Ventilation Fan-0FO38WFDR",
+    "text": "Auto Part: Seat Ventilation Fan (SKU: 0FO38WFDR). Vendor: AutoZone. Price: $183.75. Description: Seat Ventilation Fan-0FO38WFDR"
+  },
+  {
+    "id": "part-0KQN0R1DG",
+    "type": "auto_part",
+    "sku": "0KQN0R1DG",
+    "name": "Blind Spot Sensor",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 367.5,
+    "description": "Blind Spot Sensor-0KQN0R1DG",
+    "text": "Auto Part: Blind Spot Sensor (SKU: 0KQN0R1DG). Vendor: O'Reilly Auto Parts. Price: $367.5. Description: Blind Spot Sensor-0KQN0R1DG"
+  },
+  {
+    "id": "part-0MCFH0I6X",
+    "type": "auto_part",
+    "sku": "0MCFH0I6X",
+    "name": "Throttle Body",
+    "vendor": "Summit Racing",
+    "price": 367.5,
+    "description": "Throttle Body-0MCFH0I6X",
+    "text": "Auto Part: Throttle Body (SKU: 0MCFH0I6X). Vendor: Summit Racing. Price: $367.5. Description: Throttle Body-0MCFH0I6X"
+  },
+  {
+    "id": "part-0QXYGFX62",
+    "type": "auto_part",
+    "sku": "0QXYGFX62",
+    "name": "Exhaust Manifold",
+    "vendor": "Advanced Auto Parts",
+    "price": 525.0,
+    "description": "Exhaust Manifold-0QXYGFX62",
+    "text": "Auto Part: Exhaust Manifold (SKU: 0QXYGFX62). Vendor: Advanced Auto Parts. Price: $525.0. Description: Exhaust Manifold-0QXYGFX62"
+  },
+  {
+    "id": "part-0ZS1QTW56",
+    "type": "auto_part",
+    "sku": "0ZS1QTW56",
+    "name": "Subwoofer",
+    "vendor": "Pep Boys",
+    "price": 288.75,
+    "description": "Subwoofer-0ZS1QTW56",
+    "text": "Auto Part: Subwoofer (SKU: 0ZS1QTW56). Vendor: Pep Boys. Price: $288.75. Description: Subwoofer-0ZS1QTW56"
+  },
+  {
+    "id": "part-11T3K1Y6A",
+    "type": "auto_part",
+    "sku": "11T3K1Y6A",
+    "name": "Mass Air Flow Sensor",
+    "vendor": "Pep Boys",
+    "price": 183.75,
+    "description": "Mass Air Flow Sensor-11T3K1Y6A",
+    "text": "Auto Part: Mass Air Flow Sensor (SKU: 11T3K1Y6A). Vendor: Pep Boys. Price: $183.75. Description: Mass Air Flow Sensor-11T3K1Y6A"
+  },
+  {
+    "id": "part-12IFSKBIU",
+    "type": "auto_part",
+    "sku": "12IFSKBIU",
+    "name": "Wi-Fi Hotspot Module",
+    "vendor": "NAPA Auto Parts",
+    "price": 367.5,
+    "description": "Wi-Fi Hotspot Module-12IFSKBIU",
+    "text": "Auto Part: Wi-Fi Hotspot Module (SKU: 12IFSKBIU). Vendor: NAPA Auto Parts. Price: $367.5. Description: Wi-Fi Hotspot Module-12IFSKBIU"
+  },
+  {
+    "id": "part-132F8X248",
+    "type": "auto_part",
+    "sku": "132F8X248",
+    "name": "Expansion Tank",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 105.0,
+    "description": "Expansion Tank-132F8X248",
+    "text": "Auto Part: Expansion Tank (SKU: 132F8X248). Vendor: O'Reilly Auto Parts. Price: $105.0. Description: Expansion Tank-132F8X248"
+  },
+  {
+    "id": "part-1CTF0B2CP",
+    "type": "auto_part",
+    "sku": "1CTF0B2CP",
+    "name": "Rear Window Defroster Switch",
+    "vendor": "Advanced Auto Parts",
+    "price": 105.0,
+    "description": "Rear Window Defroster Switch-1CTF0B2CP",
+    "text": "Auto Part: Rear Window Defroster Switch (SKU: 1CTF0B2CP). Vendor: Advanced Auto Parts. Price: $105.0. Description: Rear Window Defroster Switch-1CTF0B2CP"
+  },
+  {
+    "id": "part-1GA5M3WS5",
+    "type": "auto_part",
+    "sku": "1GA5M3WS5",
+    "name": "Resonator",
+    "vendor": "Pep Boys",
+    "price": 183.75,
+    "description": "Resonator-1GA5M3WS5",
+    "text": "Auto Part: Resonator (SKU: 1GA5M3WS5). Vendor: Pep Boys. Price: $183.75. Description: Resonator-1GA5M3WS5"
+  },
+  {
+    "id": "part-1H785XN5P",
+    "type": "auto_part",
+    "sku": "1H785XN5P",
+    "name": "Supercharger",
+    "vendor": "AutoZone",
+    "price": 3937.5,
+    "description": "Supercharger-1H785XN5P",
+    "text": "Auto Part: Supercharger (SKU: 1H785XN5P). Vendor: AutoZone. Price: $3937.5. Description: Supercharger-1H785XN5P"
+  },
+  {
+    "id": "part-1IZIOJXHX",
+    "type": "auto_part",
+    "sku": "1IZIOJXHX",
+    "name": "Propeller Shaft",
+    "vendor": "Summit Racing",
+    "price": 630.0,
+    "description": "Propeller Shaft-1IZIOJXHX",
+    "text": "Auto Part: Propeller Shaft (SKU: 1IZIOJXHX). Vendor: Summit Racing. Price: $630.0. Description: Propeller Shaft-1IZIOJXHX"
+  },
+  {
+    "id": "part-1L1OFTNBI",
+    "type": "auto_part",
+    "sku": "1L1OFTNBI",
+    "name": "Mirror Glass",
+    "vendor": "AutoZone",
+    "price": 105.0,
+    "description": "Mirror Glass-1L1OFTNBI",
+    "text": "Auto Part: Mirror Glass (SKU: 1L1OFTNBI). Vendor: AutoZone. Price: $105.0. Description: Mirror Glass-1L1OFTNBI"
+  },
+  {
+    "id": "part-1M4NTR2F5",
+    "type": "auto_part",
+    "sku": "1M4NTR2F5",
+    "name": "Retaining Clip",
+    "vendor": "AutoZone",
+    "price": 10.5,
+    "description": "Retaining Clip-1M4NTR2F5",
+    "text": "Auto Part: Retaining Clip (SKU: 1M4NTR2F5). Vendor: AutoZone. Price: $10.5. Description: Retaining Clip-1M4NTR2F5"
+  },
+  {
+    "id": "part-1NJPP4YMF",
+    "type": "auto_part",
+    "sku": "1NJPP4YMF",
+    "name": "Key Fob",
+    "vendor": "RockAuto",
+    "price": 105.0,
+    "description": "Key Fob-1NJPP4YMF",
+    "text": "Auto Part: Key Fob (SKU: 1NJPP4YMF). Vendor: RockAuto. Price: $105.0. Description: Key Fob-1NJPP4YMF"
+  },
+  {
+    "id": "part-1O32VDT59",
+    "type": "auto_part",
+    "sku": "1O32VDT59",
+    "name": "Steering Wheel Airbag",
+    "vendor": "Advanced Auto Parts",
+    "price": 630.0,
+    "description": "Steering Wheel Airbag-1O32VDT59",
+    "text": "Auto Part: Steering Wheel Airbag (SKU: 1O32VDT59). Vendor: Advanced Auto Parts. Price: $630.0. Description: Steering Wheel Airbag-1O32VDT59"
+  },
+  {
+    "id": "part-1PQ1L037F",
+    "type": "auto_part",
+    "sku": "1PQ1L037F",
+    "name": "Cooling System Pressure Tester",
+    "vendor": "NAPA Auto Parts",
+    "price": 105.0,
+    "description": "Cooling System Pressure Tester-1PQ1L037F",
+    "text": "Auto Part: Cooling System Pressure Tester (SKU: 1PQ1L037F). Vendor: NAPA Auto Parts. Price: $105.0. Description: Cooling System Pressure Tester-1PQ1L037F"
+  },
+  {
+    "id": "part-1Z6U87RKW",
+    "type": "auto_part",
+    "sku": "1Z6U87RKW",
+    "name": "High-Voltage Battery Pack",
+    "vendor": "RockAuto",
+    "price": 5250.0,
+    "description": "High-Voltage Battery Pack-1Z6U87RKW",
+    "text": "Auto Part: High-Voltage Battery Pack (SKU: 1Z6U87RKW). Vendor: RockAuto. Price: $5250.0. Description: High-Voltage Battery Pack-1Z6U87RKW"
+  },
+  {
+    "id": "part-25SUER1VU",
+    "type": "auto_part",
+    "sku": "25SUER1VU",
+    "name": "Turn Signal Light",
+    "vendor": "Advanced Auto Parts",
+    "price": 57.75,
+    "description": "Turn Signal Light-25SUER1VU",
+    "text": "Auto Part: Turn Signal Light (SKU: 25SUER1VU). Vendor: Advanced Auto Parts. Price: $57.75. Description: Turn Signal Light-25SUER1VU"
+  },
+  {
+    "id": "part-29M5GV1BF",
+    "type": "auto_part",
+    "sku": "29M5GV1BF",
+    "name": "Air Filter",
+    "vendor": "AutoZone",
+    "price": 23.63,
+    "description": "Air Filter-29M5GV1BF",
+    "text": "Auto Part: Air Filter (SKU: 29M5GV1BF). Vendor: AutoZone. Price: $23.63. Description: Air Filter-29M5GV1BF"
+  },
+  {
+    "id": "part-2AQ3MUSSY",
+    "type": "auto_part",
+    "sku": "2AQ3MUSSY",
+    "name": "LED Headlight",
+    "vendor": "CarQuest",
+    "price": 525.0,
+    "description": "LED Headlight-2AQ3MUSSY",
+    "text": "Auto Part: LED Headlight (SKU: 2AQ3MUSSY). Vendor: CarQuest. Price: $525.0. Description: LED Headlight-2AQ3MUSSY"
+  },
+  {
+    "id": "part-2BWS4ES7J",
+    "type": "auto_part",
+    "sku": "2BWS4ES7J",
+    "name": "Spring Clip",
+    "vendor": "NAPA Auto Parts",
+    "price": 10.5,
+    "description": "Spring Clip-2BWS4ES7J",
+    "text": "Auto Part: Spring Clip (SKU: 2BWS4ES7J). Vendor: NAPA Auto Parts. Price: $10.5. Description: Spring Clip-2BWS4ES7J"
+  },
+  {
+    "id": "part-2DEKU8LZS",
+    "type": "auto_part",
+    "sku": "2DEKU8LZS",
+    "name": "Carbon Fiber Side Skirts",
+    "vendor": "CarQuest",
+    "price": 892.5,
+    "description": "Carbon Fiber Side Skirts-2DEKU8LZS",
+    "text": "Auto Part: Carbon Fiber Side Skirts (SKU: 2DEKU8LZS). Vendor: CarQuest. Price: $892.5. Description: Carbon Fiber Side Skirts-2DEKU8LZS"
+  },
+  {
+    "id": "part-2DJQJQTXE",
+    "type": "auto_part",
+    "sku": "2DJQJQTXE",
+    "name": "Headlight Assembly",
+    "vendor": "Advanced Auto Parts",
+    "price": 210.0,
+    "description": "Headlight Assembly-2DJQJQTXE",
+    "text": "Auto Part: Headlight Assembly (SKU: 2DJQJQTXE). Vendor: Advanced Auto Parts. Price: $210.0. Description: Headlight Assembly-2DJQJQTXE"
+  },
+  {
+    "id": "part-2HACXWHC6",
+    "type": "auto_part",
+    "sku": "2HACXWHC6",
+    "name": "Turbocharger",
+    "vendor": "CarQuest",
+    "price": 1837.5,
+    "description": "Turbocharger-2HACXWHC6",
+    "text": "Auto Part: Turbocharger (SKU: 2HACXWHC6). Vendor: CarQuest. Price: $1837.5. Description: Turbocharger-2HACXWHC6"
+  },
+  {
+    "id": "part-2ICY7LIOY",
+    "type": "auto_part",
+    "sku": "2ICY7LIOY",
+    "name": "Exhaust Tip",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 57.75,
+    "description": "Exhaust Tip-2ICY7LIOY",
+    "text": "Auto Part: Exhaust Tip (SKU: 2ICY7LIOY). Vendor: O'Reilly Auto Parts. Price: $57.75. Description: Exhaust Tip-2ICY7LIOY"
+  },
+  {
+    "id": "part-2JBKMJNRI",
+    "type": "auto_part",
+    "sku": "2JBKMJNRI",
+    "name": "Heated Mirror",
+    "vendor": "Advanced Auto Parts",
+    "price": 236.25,
+    "description": "Heated Mirror-2JBKMJNRI",
+    "text": "Auto Part: Heated Mirror (SKU: 2JBKMJNRI). Vendor: Advanced Auto Parts. Price: $236.25. Description: Heated Mirror-2JBKMJNRI"
+  },
+  {
+    "id": "part-2K5BNTVK0",
+    "type": "auto_part",
+    "sku": "2K5BNTVK0",
+    "name": "Fender",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 367.5,
+    "description": "Fender-2K5BNTVK0",
+    "text": "Auto Part: Fender (SKU: 2K5BNTVK0). Vendor: O'Reilly Auto Parts. Price: $367.5. Description: Fender-2K5BNTVK0"
+  },
+  {
+    "id": "part-2K6FO5KWZ",
+    "type": "auto_part",
+    "sku": "2K6FO5KWZ",
+    "name": "Driver Airbag",
+    "vendor": "Pep Boys",
+    "price": 787.5,
+    "description": "Driver Airbag-2K6FO5KWZ",
+    "text": "Auto Part: Driver Airbag (SKU: 2K6FO5KWZ). Vendor: Pep Boys. Price: $787.5. Description: Driver Airbag-2K6FO5KWZ"
+  },
+  {
+    "id": "part-2LB5M0Q47",
+    "type": "auto_part",
+    "sku": "2LB5M0Q47",
+    "name": "Child Seat Anchor",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 36.75,
+    "description": "Child Seat Anchor-2LB5M0Q47",
+    "text": "Auto Part: Child Seat Anchor (SKU: 2LB5M0Q47). Vendor: O'Reilly Auto Parts. Price: $36.75. Description: Child Seat Anchor-2LB5M0Q47"
+  },
+  {
+    "id": "part-2O6GL3U4X",
+    "type": "auto_part",
+    "sku": "2O6GL3U4X",
+    "name": "Seat Cover",
+    "vendor": "Pep Boys",
+    "price": 105.0,
+    "description": "Seat Cover-2O6GL3U4X",
+    "text": "Auto Part: Seat Cover (SKU: 2O6GL3U4X). Vendor: Pep Boys. Price: $105.0. Description: Seat Cover-2O6GL3U4X"
+  },
+  {
+    "id": "part-2OHUSWKKX",
+    "type": "auto_part",
+    "sku": "2OHUSWKKX",
+    "name": "Spark Plug",
+    "vendor": "AutoZone",
+    "price": 10.5,
+    "description": "Spark Plug-2OHUSWKKX",
+    "text": "Auto Part: Spark Plug (SKU: 2OHUSWKKX). Vendor: AutoZone. Price: $10.5. Description: Spark Plug-2OHUSWKKX"
+  },
+  {
+    "id": "part-2RRB8P96D",
+    "type": "auto_part",
+    "sku": "2RRB8P96D",
+    "name": "AC Condenser",
+    "vendor": "AutoZone",
+    "price": 315.0,
+    "description": "AC Condenser-2RRB8P96D",
+    "text": "Auto Part: AC Condenser (SKU: 2RRB8P96D). Vendor: AutoZone. Price: $315.0. Description: AC Condenser-2RRB8P96D"
+  },
+  {
+    "id": "part-2TUJE9FZD",
+    "type": "auto_part",
+    "sku": "2TUJE9FZD",
+    "name": "Impact Wrench",
+    "vendor": "Pep Boys",
+    "price": 288.75,
+    "description": "Impact Wrench-2TUJE9FZD",
+    "text": "Auto Part: Impact Wrench (SKU: 2TUJE9FZD). Vendor: Pep Boys. Price: $288.75. Description: Impact Wrench-2TUJE9FZD"
+  },
+  {
+    "id": "part-3223PSRAN",
+    "type": "auto_part",
+    "sku": "3223PSRAN",
+    "name": "O2 Sensor Bung",
+    "vendor": "RockAuto",
+    "price": 18.38,
+    "description": "O2 Sensor Bung-3223PSRAN",
+    "text": "Auto Part: O2 Sensor Bung (SKU: 3223PSRAN). Vendor: RockAuto. Price: $18.38. Description: O2 Sensor Bung-3223PSRAN"
+  },
+  {
+    "id": "part-34K8HCNM5",
+    "type": "auto_part",
+    "sku": "34K8HCNM5",
+    "name": "Pedestrian Detection Sensor",
+    "vendor": "NAPA Auto Parts",
+    "price": 892.5,
+    "description": "Pedestrian Detection Sensor-34K8HCNM5",
+    "text": "Auto Part: Pedestrian Detection Sensor (SKU: 34K8HCNM5). Vendor: NAPA Auto Parts. Price: $892.5. Description: Pedestrian Detection Sensor-34K8HCNM5"
+  },
+  {
+    "id": "part-3616ESD8Q",
+    "type": "auto_part",
+    "sku": "3616ESD8Q",
+    "name": "Radiator Hose",
+    "vendor": "CarQuest",
+    "price": 28.88,
+    "description": "Radiator Hose-3616ESD8Q",
+    "text": "Auto Part: Radiator Hose (SKU: 3616ESD8Q). Vendor: CarQuest. Price: $28.88. Description: Radiator Hose-3616ESD8Q"
+  },
+  {
+    "id": "part-36MZVBZO7",
+    "type": "auto_part",
+    "sku": "36MZVBZO7",
+    "name": "Steering Wheel",
+    "vendor": "Advanced Auto Parts",
+    "price": 288.75,
+    "description": "Steering Wheel-36MZVBZO7",
+    "text": "Auto Part: Steering Wheel (SKU: 36MZVBZO7). Vendor: Advanced Auto Parts. Price: $288.75. Description: Steering Wheel-36MZVBZO7"
+  },
+  {
+    "id": "part-37VCFO0JI",
+    "type": "auto_part",
+    "sku": "37VCFO0JI",
+    "name": "Alarm System",
+    "vendor": "Summit Racing",
+    "price": 367.5,
+    "description": "Alarm System-37VCFO0JI",
+    "text": "Auto Part: Alarm System (SKU: 37VCFO0JI). Vendor: Summit Racing. Price: $367.5. Description: Alarm System-37VCFO0JI"
+  },
+  {
+    "id": "part-38GPZBALE",
+    "type": "auto_part",
+    "sku": "38GPZBALE",
+    "name": "Water Pump",
+    "vendor": "CarQuest",
+    "price": 210.0,
+    "description": "Water Pump-38GPZBALE",
+    "text": "Auto Part: Water Pump (SKU: 38GPZBALE). Vendor: CarQuest. Price: $210.0. Description: Water Pump-38GPZBALE"
+  },
+  {
+    "id": "part-38PM3SQS1",
+    "type": "auto_part",
+    "sku": "38PM3SQS1",
+    "name": "U-Joint",
+    "vendor": "Pep Boys",
+    "price": 36.75,
+    "description": "U-Joint-38PM3SQS1",
+    "text": "Auto Part: U-Joint (SKU: 38PM3SQS1). Vendor: Pep Boys. Price: $36.75. Description: U-Joint-38PM3SQS1"
+  },
+  {
+    "id": "part-38SHZG3GC",
+    "type": "auto_part",
+    "sku": "38SHZG3GC",
+    "name": "Parking Assist Camera",
+    "vendor": "CarQuest",
+    "price": 210.0,
+    "description": "Parking Assist Camera-38SHZG3GC",
+    "text": "Auto Part: Parking Assist Camera (SKU: 38SHZG3GC). Vendor: CarQuest. Price: $210.0. Description: Parking Assist Camera-38SHZG3GC"
+  },
+  {
+    "id": "part-3BQL8AOZU",
+    "type": "auto_part",
+    "sku": "3BQL8AOZU",
+    "name": "Windshield Washer Pump",
+    "vendor": "NAPA Auto Parts",
+    "price": 36.75,
+    "description": "Windshield Washer Pump-3BQL8AOZU",
+    "text": "Auto Part: Windshield Washer Pump (SKU: 3BQL8AOZU). Vendor: NAPA Auto Parts. Price: $36.75. Description: Windshield Washer Pump-3BQL8AOZU"
+  },
+  {
+    "id": "part-3F2H6QKMK",
+    "type": "auto_part",
+    "sku": "3F2H6QKMK",
+    "name": "Roof Cargo Box",
+    "vendor": "Pep Boys",
+    "price": 630.0,
+    "description": "Roof Cargo Box-3F2H6QKMK",
+    "text": "Auto Part: Roof Cargo Box (SKU: 3F2H6QKMK). Vendor: Pep Boys. Price: $630.0. Description: Roof Cargo Box-3F2H6QKMK"
+  },
+  {
+    "id": "part-3HV9EM24P",
+    "type": "auto_part",
+    "sku": "3HV9EM24P",
+    "name": "Valve Cover",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 183.75,
+    "description": "Valve Cover-3HV9EM24P",
+    "text": "Auto Part: Valve Cover (SKU: 3HV9EM24P). Vendor: O'Reilly Auto Parts. Price: $183.75. Description: Valve Cover-3HV9EM24P"
+  },
+  {
+    "id": "part-3I78VXQJ3",
+    "type": "auto_part",
+    "sku": "3I78VXQJ3",
+    "name": "Crankshaft Position Sensor",
+    "vendor": "RockAuto",
+    "price": 105.0,
+    "description": "Crankshaft Position Sensor-3I78VXQJ3",
+    "text": "Auto Part: Crankshaft Position Sensor (SKU: 3I78VXQJ3). Vendor: RockAuto. Price: $105.0. Description: Crankshaft Position Sensor-3I78VXQJ3"
+  },
+  {
+    "id": "part-3M7D140EY",
+    "type": "auto_part",
+    "sku": "3M7D140EY",
+    "name": "Amplifier Module",
+    "vendor": "CarQuest",
+    "price": 288.75,
+    "description": "Amplifier Module-3M7D140EY",
+    "text": "Auto Part: Amplifier Module (SKU: 3M7D140EY). Vendor: CarQuest. Price: $288.75. Description: Amplifier Module-3M7D140EY"
+  },
+  {
+    "id": "part-3NFCPGNIO",
+    "type": "auto_part",
+    "sku": "3NFCPGNIO",
+    "name": "Oil Cooler",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 367.5,
+    "description": "Oil Cooler-3NFCPGNIO",
+    "text": "Auto Part: Oil Cooler (SKU: 3NFCPGNIO). Vendor: O'Reilly Auto Parts. Price: $367.5. Description: Oil Cooler-3NFCPGNIO"
+  },
+  {
+    "id": "part-3PLQPLHTC",
+    "type": "auto_part",
+    "sku": "3PLQPLHTC",
+    "name": "Valve Cover Gasket",
+    "vendor": "Advanced Auto Parts",
+    "price": 36.75,
+    "description": "Valve Cover Gasket-3PLQPLHTC",
+    "text": "Auto Part: Valve Cover Gasket (SKU: 3PLQPLHTC). Vendor: Advanced Auto Parts. Price: $36.75. Description: Valve Cover Gasket-3PLQPLHTC"
+  },
+  {
+    "id": "part-3R45KY6HK",
+    "type": "auto_part",
+    "sku": "3R45KY6HK",
+    "name": "Door",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 892.5,
+    "description": "Door-3R45KY6HK",
+    "text": "Auto Part: Door (SKU: 3R45KY6HK). Vendor: O'Reilly Auto Parts. Price: $892.5. Description: Door-3R45KY6HK"
+  },
+  {
+    "id": "part-3WTRRBD36",
+    "type": "auto_part",
+    "sku": "3WTRRBD36",
+    "name": "Automatic Wiper Motor",
+    "vendor": "AutoZone",
+    "price": 288.75,
+    "description": "Automatic Wiper Motor-3WTRRBD36",
+    "text": "Auto Part: Automatic Wiper Motor (SKU: 3WTRRBD36). Vendor: AutoZone. Price: $288.75. Description: Automatic Wiper Motor-3WTRRBD36"
+  },
+  {
+    "id": "part-3Y1ADGI9S",
+    "type": "auto_part",
+    "sku": "3Y1ADGI9S",
+    "name": "Heads-Up Display Kit",
+    "vendor": "NAPA Auto Parts",
+    "price": 630.0,
+    "description": "Heads-Up Display Kit-3Y1ADGI9S",
+    "text": "Auto Part: Heads-Up Display Kit (SKU: 3Y1ADGI9S). Vendor: NAPA Auto Parts. Price: $630.0. Description: Heads-Up Display Kit-3Y1ADGI9S"
+  },
+  {
+    "id": "part-40KEH7LA4",
+    "type": "auto_part",
+    "sku": "40KEH7LA4",
+    "name": "Power Seat Motor",
+    "vendor": "CarQuest",
+    "price": 288.75,
+    "description": "Power Seat Motor-40KEH7LA4",
+    "text": "Auto Part: Power Seat Motor (SKU: 40KEH7LA4). Vendor: CarQuest. Price: $288.75. Description: Power Seat Motor-40KEH7LA4"
+  },
+  {
+    "id": "part-41FPD8ZLK",
+    "type": "auto_part",
+    "sku": "41FPD8ZLK",
+    "name": "Bike Rack",
+    "vendor": "CarQuest",
+    "price": 367.5,
+    "description": "Bike Rack-41FPD8ZLK",
+    "text": "Auto Part: Bike Rack (SKU: 41FPD8ZLK). Vendor: CarQuest. Price: $367.5. Description: Bike Rack-41FPD8ZLK"
+  },
+  {
+    "id": "part-4ACPWKLJ5",
+    "type": "auto_part",
+    "sku": "4ACPWKLJ5",
+    "name": "Drum Brake Shoe",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 73.5,
+    "description": "Drum Brake Shoe-4ACPWKLJ5",
+    "text": "Auto Part: Drum Brake Shoe (SKU: 4ACPWKLJ5). Vendor: O'Reilly Auto Parts. Price: $73.5. Description: Drum Brake Shoe-4ACPWKLJ5"
+  },
+  {
+    "id": "part-4ENKI7L88",
+    "type": "auto_part",
+    "sku": "4ENKI7L88",
+    "name": "Carpet Kit",
+    "vendor": "RockAuto",
+    "price": 367.5,
+    "description": "Carpet Kit-4ENKI7L88",
+    "text": "Auto Part: Carpet Kit (SKU: 4ENKI7L88). Vendor: RockAuto. Price: $367.5. Description: Carpet Kit-4ENKI7L88"
+  },
+  {
+    "id": "part-4KJCNPJ2J",
+    "type": "auto_part",
+    "sku": "4KJCNPJ2J",
+    "name": "Side Window",
+    "vendor": "NAPA Auto Parts",
+    "price": 288.75,
+    "description": "Side Window-4KJCNPJ2J",
+    "text": "Auto Part: Side Window (SKU: 4KJCNPJ2J). Vendor: NAPA Auto Parts. Price: $288.75. Description: Side Window-4KJCNPJ2J"
+  },
+  {
+    "id": "part-4PNEZ1BFI",
+    "type": "auto_part",
+    "sku": "4PNEZ1BFI",
+    "name": "Alloy Wheel",
+    "vendor": "CarQuest",
+    "price": 288.75,
+    "description": "Alloy Wheel-4PNEZ1BFI",
+    "text": "Auto Part: Alloy Wheel (SKU: 4PNEZ1BFI). Vendor: CarQuest. Price: $288.75. Description: Alloy Wheel-4PNEZ1BFI"
+  },
+  {
+    "id": "part-4YWX1UR98",
+    "type": "auto_part",
+    "sku": "4YWX1UR98",
+    "name": "Windshield Washer Reservoir",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 105.0,
+    "description": "Windshield Washer Reservoir-4YWX1UR98",
+    "text": "Auto Part: Windshield Washer Reservoir (SKU: 4YWX1UR98). Vendor: O'Reilly Auto Parts. Price: $105.0. Description: Windshield Washer Reservoir-4YWX1UR98"
+  },
+  {
+    "id": "part-51Q4HYIBO",
+    "type": "auto_part",
+    "sku": "51Q4HYIBO",
+    "name": "Performance Clutch Kit",
+    "vendor": "Advanced Auto Parts",
+    "price": 787.5,
+    "description": "Performance Clutch Kit-51Q4HYIBO",
+    "text": "Auto Part: Performance Clutch Kit (SKU: 51Q4HYIBO). Vendor: Advanced Auto Parts. Price: $787.5. Description: Performance Clutch Kit-51Q4HYIBO"
+  },
+  {
+    "id": "part-57YJU00BM",
+    "type": "auto_part",
+    "sku": "57YJU00BM",
+    "name": "Grease Gun",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 36.75,
+    "description": "Grease Gun-57YJU00BM",
+    "text": "Auto Part: Grease Gun (SKU: 57YJU00BM). Vendor: O'Reilly Auto Parts. Price: $36.75. Description: Grease Gun-57YJU00BM"
+  },
+  {
+    "id": "part-5822PJ3YT",
+    "type": "auto_part",
+    "sku": "5822PJ3YT",
+    "name": "DPF (Diesel Particulate Filter)",
+    "vendor": "RockAuto",
+    "price": 1837.5,
+    "description": "DPF (Diesel Particulate Filter)-5822PJ3YT",
+    "text": "Auto Part: DPF (Diesel Particulate Filter) (SKU: 5822PJ3YT). Vendor: RockAuto. Price: $1837.5. Description: DPF (Diesel Particulate Filter)-5822PJ3YT"
+  },
+  {
+    "id": "part-593AQTXV2",
+    "type": "auto_part",
+    "sku": "593AQTXV2",
+    "name": "Performance Driveshaft",
+    "vendor": "RockAuto",
+    "price": 787.5,
+    "description": "Performance Driveshaft-593AQTXV2",
+    "text": "Auto Part: Performance Driveshaft (SKU: 593AQTXV2). Vendor: RockAuto. Price: $787.5. Description: Performance Driveshaft-593AQTXV2"
+  },
+  {
+    "id": "part-59Q8KUZD7",
+    "type": "auto_part",
+    "sku": "59Q8KUZD7",
+    "name": "Performance Exhaust",
+    "vendor": "Pep Boys",
+    "price": 892.5,
+    "description": "Performance Exhaust-59Q8KUZD7",
+    "text": "Auto Part: Performance Exhaust (SKU: 59Q8KUZD7). Vendor: Pep Boys. Price: $892.5. Description: Performance Exhaust-59Q8KUZD7"
+  },
+  {
+    "id": "part-5F5DKQXE7",
+    "type": "auto_part",
+    "sku": "5F5DKQXE7",
+    "name": "EGR Valve",
+    "vendor": "RockAuto",
+    "price": 183.75,
+    "description": "EGR Valve-5F5DKQXE7",
+    "text": "Auto Part: EGR Valve (SKU: 5F5DKQXE7). Vendor: RockAuto. Price: $183.75. Description: EGR Valve-5F5DKQXE7"
+  },
+  {
+    "id": "part-5I8SPCTX6",
+    "type": "auto_part",
+    "sku": "5I8SPCTX6",
+    "name": "Heater Core",
+    "vendor": "CarQuest",
+    "price": 367.5,
+    "description": "Heater Core-5I8SPCTX6",
+    "text": "Auto Part: Heater Core (SKU: 5I8SPCTX6). Vendor: CarQuest. Price: $367.5. Description: Heater Core-5I8SPCTX6"
+  },
+  {
+    "id": "part-60YJWUUM6",
+    "type": "auto_part",
+    "sku": "60YJWUUM6",
+    "name": "Underbody Lighting Kit",
+    "vendor": "RockAuto",
+    "price": 367.5,
+    "description": "Underbody Lighting Kit-60YJWUUM6",
+    "text": "Auto Part: Underbody Lighting Kit (SKU: 60YJWUUM6). Vendor: RockAuto. Price: $367.5. Description: Underbody Lighting Kit-60YJWUUM6"
+  },
+  {
+    "id": "part-63092606D",
+    "type": "auto_part",
+    "sku": "63092606D",
+    "name": "Engine Oil (5 qt)",
+    "vendor": "Advanced Auto Parts",
+    "price": 47.25,
+    "description": "Engine Oil (5 qt)-63092606D",
+    "text": "Auto Part: Engine Oil (5 qt) (SKU: 63092606D). Vendor: Advanced Auto Parts. Price: $47.25. Description: Engine Oil (5 qt)-63092606D"
+  },
+  {
+    "id": "part-65F9B2DAS",
+    "type": "auto_part",
+    "sku": "65F9B2DAS",
+    "name": "Remote Start Kit",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 367.5,
+    "description": "Remote Start Kit-65F9B2DAS",
+    "text": "Auto Part: Remote Start Kit (SKU: 65F9B2DAS). Vendor: O'Reilly Auto Parts. Price: $367.5. Description: Remote Start Kit-65F9B2DAS"
+  },
+  {
+    "id": "part-69CIH6FDM",
+    "type": "auto_part",
+    "sku": "69CIH6FDM",
+    "name": "Throwout Bearing",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 57.75,
+    "description": "Throwout Bearing-69CIH6FDM",
+    "text": "Auto Part: Throwout Bearing (SKU: 69CIH6FDM). Vendor: O'Reilly Auto Parts. Price: $57.75. Description: Throwout Bearing-69CIH6FDM"
+  },
+  {
+    "id": "part-6E1NE6SVE",
+    "type": "auto_part",
+    "sku": "6E1NE6SVE",
+    "name": "LED Taillights",
+    "vendor": "Summit Racing",
+    "price": 367.5,
+    "description": "LED Taillights-6E1NE6SVE",
+    "text": "Auto Part: LED Taillights (SKU: 6E1NE6SVE). Vendor: Summit Racing. Price: $367.5. Description: LED Taillights-6E1NE6SVE"
+  },
+  {
+    "id": "part-6F0W07N9H",
+    "type": "auto_part",
+    "sku": "6F0W07N9H",
+    "name": "Charging Port",
+    "vendor": "Summit Racing",
+    "price": 525.0,
+    "description": "Charging Port-6F0W07N9H",
+    "text": "Auto Part: Charging Port (SKU: 6F0W07N9H). Vendor: Summit Racing. Price: $525.0. Description: Charging Port-6F0W07N9H"
+  },
+  {
+    "id": "part-6LVY01POC",
+    "type": "auto_part",
+    "sku": "6LVY01POC",
+    "name": "Distributor Cap",
+    "vendor": "Pep Boys",
+    "price": 36.75,
+    "description": "Distributor Cap-6LVY01POC",
+    "text": "Auto Part: Distributor Cap (SKU: 6LVY01POC). Vendor: Pep Boys. Price: $36.75. Description: Distributor Cap-6LVY01POC"
+  },
+  {
+    "id": "part-6MY90GE4W",
+    "type": "auto_part",
+    "sku": "6MY90GE4W",
+    "name": "Airbag Sensor",
+    "vendor": "CarQuest",
+    "price": 210.0,
+    "description": "Airbag Sensor-6MY90GE4W",
+    "text": "Auto Part: Airbag Sensor (SKU: 6MY90GE4W). Vendor: CarQuest. Price: $210.0. Description: Airbag Sensor-6MY90GE4W"
+  },
+  {
+    "id": "part-6N7DX2SF6",
+    "type": "auto_part",
+    "sku": "6N7DX2SF6",
+    "name": "Off-Road Fog Lights",
+    "vendor": "Summit Racing",
+    "price": 288.75,
+    "description": "Off-Road Fog Lights-6N7DX2SF6",
+    "text": "Auto Part: Off-Road Fog Lights (SKU: 6N7DX2SF6). Vendor: Summit Racing. Price: $288.75. Description: Off-Road Fog Lights-6N7DX2SF6"
+  },
+  {
+    "id": "part-6NUTHGCQ6",
+    "type": "auto_part",
+    "sku": "6NUTHGCQ6",
+    "name": "AC Evaporator",
+    "vendor": "CarQuest",
+    "price": 393.75,
+    "description": "AC Evaporator-6NUTHGCQ6",
+    "text": "Auto Part: AC Evaporator (SKU: 6NUTHGCQ6). Vendor: CarQuest. Price: $393.75. Description: AC Evaporator-6NUTHGCQ6"
+  },
+  {
+    "id": "part-6QX71VQ7F",
+    "type": "auto_part",
+    "sku": "6QX71VQ7F",
+    "name": "Parking Sensor",
+    "vendor": "Pep Boys",
+    "price": 105.0,
+    "description": "Parking Sensor-6QX71VQ7F",
+    "text": "Auto Part: Parking Sensor (SKU: 6QX71VQ7F). Vendor: Pep Boys. Price: $105.0. Description: Parking Sensor-6QX71VQ7F"
+  },
+  {
+    "id": "part-6U5W6CRY4",
+    "type": "auto_part",
+    "sku": "6U5W6CRY4",
+    "name": "Clutch Kit",
+    "vendor": "Summit Racing",
+    "price": 577.5,
+    "description": "Clutch Kit-6U5W6CRY4",
+    "text": "Auto Part: Clutch Kit (SKU: 6U5W6CRY4). Vendor: Summit Racing. Price: $577.5. Description: Clutch Kit-6U5W6CRY4"
+  },
+  {
+    "id": "part-6WX8V08A8",
+    "type": "auto_part",
+    "sku": "6WX8V08A8",
+    "name": "Fuel Pump",
+    "vendor": "Summit Racing",
+    "price": 288.75,
+    "description": "Fuel Pump-6WX8V08A8",
+    "text": "Auto Part: Fuel Pump (SKU: 6WX8V08A8). Vendor: Summit Racing. Price: $288.75. Description: Fuel Pump-6WX8V08A8"
+  },
+  {
+    "id": "part-6YMIM4KD7",
+    "type": "auto_part",
+    "sku": "6YMIM4KD7",
+    "name": "Steel Wheel",
+    "vendor": "Pep Boys",
+    "price": 147.0,
+    "description": "Steel Wheel-6YMIM4KD7",
+    "text": "Auto Part: Steel Wheel (SKU: 6YMIM4KD7). Vendor: Pep Boys. Price: $147.0. Description: Steel Wheel-6YMIM4KD7"
+  },
+  {
+    "id": "part-6ZUIXQXUM",
+    "type": "auto_part",
+    "sku": "6ZUIXQXUM",
+    "name": "Roof Rail",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 367.5,
+    "description": "Roof Rail-6ZUIXQXUM",
+    "text": "Auto Part: Roof Rail (SKU: 6ZUIXQXUM). Vendor: O'Reilly Auto Parts. Price: $367.5. Description: Roof Rail-6ZUIXQXUM"
+  },
+  {
+    "id": "part-70M6FXSP1",
+    "type": "auto_part",
+    "sku": "70M6FXSP1",
+    "name": "Airbag Module",
+    "vendor": "Pep Boys",
+    "price": 1050.0,
+    "description": "Airbag Module-70M6FXSP1",
+    "text": "Auto Part: Airbag Module (SKU: 70M6FXSP1). Vendor: Pep Boys. Price: $1050.0. Description: Airbag Module-70M6FXSP1"
+  },
+  {
+    "id": "part-71MOWZDZI",
+    "type": "auto_part",
+    "sku": "71MOWZDZI",
+    "name": "Seat Covers",
+    "vendor": "NAPA Auto Parts",
+    "price": 105.0,
+    "description": "Seat Covers-71MOWZDZI",
+    "text": "Auto Part: Seat Covers (SKU: 71MOWZDZI). Vendor: NAPA Auto Parts. Price: $105.0. Description: Seat Covers-71MOWZDZI"
+  },
+  {
+    "id": "part-772DQ8MO2",
+    "type": "auto_part",
+    "sku": "772DQ8MO2",
+    "name": "Airbag Control Module",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 892.5,
+    "description": "Airbag Control Module-772DQ8MO2",
+    "text": "Auto Part: Airbag Control Module (SKU: 772DQ8MO2). Vendor: O'Reilly Auto Parts. Price: $892.5. Description: Airbag Control Module-772DQ8MO2"
+  },
+  {
+    "id": "part-7CLAE33QW",
+    "type": "auto_part",
+    "sku": "7CLAE33QW",
+    "name": "ECU (Engine Control Unit)",
+    "vendor": "Advanced Auto Parts",
+    "price": 1050.0,
+    "description": "ECU (Engine Control Unit)-7CLAE33QW",
+    "text": "Auto Part: ECU (Engine Control Unit) (SKU: 7CLAE33QW). Vendor: Advanced Auto Parts. Price: $1050.0. Description: ECU (Engine Control Unit)-7CLAE33QW"
+  },
+  {
+    "id": "part-7FBMKWP4K",
+    "type": "auto_part",
+    "sku": "7FBMKWP4K",
+    "name": "Taillight Assembly",
+    "vendor": "AutoZone",
+    "price": 147.0,
+    "description": "Taillight Assembly-7FBMKWP4K",
+    "text": "Auto Part: Taillight Assembly (SKU: 7FBMKWP4K). Vendor: AutoZone. Price: $147.0. Description: Taillight Assembly-7FBMKWP4K"
+  },
+  {
+    "id": "part-7KLO42ZR5",
+    "type": "auto_part",
+    "sku": "7KLO42ZR5",
+    "name": "Sequential Turn Signal",
+    "vendor": "Pep Boys",
+    "price": 367.5,
+    "description": "Sequential Turn Signal-7KLO42ZR5",
+    "text": "Auto Part: Sequential Turn Signal (SKU: 7KLO42ZR5). Vendor: Pep Boys. Price: $367.5. Description: Sequential Turn Signal-7KLO42ZR5"
+  },
+  {
+    "id": "part-7LSQJLPXS",
+    "type": "auto_part",
+    "sku": "7LSQJLPXS",
+    "name": "Ignition Module",
+    "vendor": "Summit Racing",
+    "price": 183.75,
+    "description": "Ignition Module-7LSQJLPXS",
+    "text": "Auto Part: Ignition Module (SKU: 7LSQJLPXS). Vendor: Summit Racing. Price: $183.75. Description: Ignition Module-7LSQJLPXS"
+  },
+  {
+    "id": "part-7N96WBUB0",
+    "type": "auto_part",
+    "sku": "7N96WBUB0",
+    "name": "Exhaust Manifold Gasket",
+    "vendor": "Summit Racing",
+    "price": 36.75,
+    "description": "Exhaust Manifold Gasket-7N96WBUB0",
+    "text": "Auto Part: Exhaust Manifold Gasket (SKU: 7N96WBUB0). Vendor: Summit Racing. Price: $36.75. Description: Exhaust Manifold Gasket-7N96WBUB0"
+  },
+  {
+    "id": "part-7QPB7HMH3",
+    "type": "auto_part",
+    "sku": "7QPB7HMH3",
+    "name": "Limited Slip Differential",
+    "vendor": "RockAuto",
+    "price": 1837.5,
+    "description": "Limited Slip Differential-7QPB7HMH3",
+    "text": "Auto Part: Limited Slip Differential (SKU: 7QPB7HMH3). Vendor: RockAuto. Price: $1837.5. Description: Limited Slip Differential-7QPB7HMH3"
+  },
+  {
+    "id": "part-7SPBQ7PBB",
+    "type": "auto_part",
+    "sku": "7SPBQ7PBB",
+    "name": "Automatic Emergency Braking Module",
+    "vendor": "RockAuto",
+    "price": 1207.5,
+    "description": "Automatic Emergency Braking Module-7SPBQ7PBB",
+    "text": "Auto Part: Automatic Emergency Braking Module (SKU: 7SPBQ7PBB). Vendor: RockAuto. Price: $1207.5. Description: Automatic Emergency Braking Module-7SPBQ7PBB"
+  },
+  {
+    "id": "part-7VWC75UUK",
+    "type": "auto_part",
+    "sku": "7VWC75UUK",
+    "name": "Heated Steering Wheel",
+    "vendor": "CarQuest",
+    "price": 367.5,
+    "description": "Heated Steering Wheel-7VWC75UUK",
+    "text": "Auto Part: Heated Steering Wheel (SKU: 7VWC75UUK). Vendor: CarQuest. Price: $367.5. Description: Heated Steering Wheel-7VWC75UUK"
+  },
+  {
+    "id": "part-7Y8PBXJVZ",
+    "type": "auto_part",
+    "sku": "7Y8PBXJVZ",
+    "name": "Backup Camera Kit",
+    "vendor": "Summit Racing",
+    "price": 210.0,
+    "description": "Backup Camera Kit-7Y8PBXJVZ",
+    "text": "Auto Part: Backup Camera Kit (SKU: 7Y8PBXJVZ). Vendor: Summit Racing. Price: $210.0. Description: Backup Camera Kit-7Y8PBXJVZ"
+  },
+  {
+    "id": "part-86E1GIHL7",
+    "type": "auto_part",
+    "sku": "86E1GIHL7",
+    "name": "Crankshaft",
+    "vendor": "Pep Boys",
+    "price": 630.0,
+    "description": "Crankshaft-86E1GIHL7",
+    "text": "Auto Part: Crankshaft (SKU: 86E1GIHL7). Vendor: Pep Boys. Price: $630.0. Description: Crankshaft-86E1GIHL7"
+  },
+  {
+    "id": "part-889R5XW5L",
+    "type": "auto_part",
+    "sku": "889R5XW5L",
+    "name": "Power Steering Pump",
+    "vendor": "Pep Boys",
+    "price": 288.75,
+    "description": "Power Steering Pump-889R5XW5L",
+    "text": "Auto Part: Power Steering Pump (SKU: 889R5XW5L). Vendor: Pep Boys. Price: $288.75. Description: Power Steering Pump-889R5XW5L"
+  },
+  {
+    "id": "part-8AX9F4TXY",
+    "type": "auto_part",
+    "sku": "8AX9F4TXY",
+    "name": "Air Compressor",
+    "vendor": "NAPA Auto Parts",
+    "price": 420.0,
+    "description": "Air Compressor-8AX9F4TXY",
+    "text": "Auto Part: Air Compressor (SKU: 8AX9F4TXY). Vendor: NAPA Auto Parts. Price: $420.0. Description: Air Compressor-8AX9F4TXY"
+  },
+  {
+    "id": "part-8IHQQ65HS",
+    "type": "auto_part",
+    "sku": "8IHQQ65HS",
+    "name": "Lane Departure Sensor",
+    "vendor": "CarQuest",
+    "price": 525.0,
+    "description": "Lane Departure Sensor-8IHQQ65HS",
+    "text": "Auto Part: Lane Departure Sensor (SKU: 8IHQQ65HS). Vendor: CarQuest. Price: $525.0. Description: Lane Departure Sensor-8IHQQ65HS"
+  },
+  {
+    "id": "part-8OVNZ1WNX",
+    "type": "auto_part",
+    "sku": "8OVNZ1WNX",
+    "name": "License Plate Light",
+    "vendor": "RockAuto",
+    "price": 10.5,
+    "description": "License Plate Light-8OVNZ1WNX",
+    "text": "Auto Part: License Plate Light (SKU: 8OVNZ1WNX). Vendor: RockAuto. Price: $10.5. Description: License Plate Light-8OVNZ1WNX"
+  },
+  {
+    "id": "part-8Q7X5AHWL",
+    "type": "auto_part",
+    "sku": "8Q7X5AHWL",
+    "name": "Door Seal",
+    "vendor": "Advanced Auto Parts",
+    "price": 105.0,
+    "description": "Door Seal-8Q7X5AHWL",
+    "text": "Auto Part: Door Seal (SKU: 8Q7X5AHWL). Vendor: Advanced Auto Parts. Price: $105.0. Description: Door Seal-8Q7X5AHWL"
+  },
+  {
+    "id": "part-8S3NTYXNZ",
+    "type": "auto_part",
+    "sku": "8S3NTYXNZ",
+    "name": "Electric Motor",
+    "vendor": "Summit Racing",
+    "price": 3675.0,
+    "description": "Electric Motor-8S3NTYXNZ",
+    "text": "Auto Part: Electric Motor (SKU: 8S3NTYXNZ). Vendor: Summit Racing. Price: $3675.0. Description: Electric Motor-8S3NTYXNZ"
+  },
+  {
+    "id": "part-8T8RQXC58",
+    "type": "auto_part",
+    "sku": "8T8RQXC58",
+    "name": "Exhaust Heat Shield",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 105.0,
+    "description": "Exhaust Heat Shield-8T8RQXC58",
+    "text": "Auto Part: Exhaust Heat Shield (SKU: 8T8RQXC58). Vendor: O'Reilly Auto Parts. Price: $105.0. Description: Exhaust Heat Shield-8T8RQXC58"
+  },
+  {
+    "id": "part-8UI1GPP6D",
+    "type": "auto_part",
+    "sku": "8UI1GPP6D",
+    "name": "Hose Clamp",
+    "vendor": "NAPA Auto Parts",
+    "price": 10.5,
+    "description": "Hose Clamp-8UI1GPP6D",
+    "text": "Auto Part: Hose Clamp (SKU: 8UI1GPP6D). Vendor: NAPA Auto Parts. Price: $10.5. Description: Hose Clamp-8UI1GPP6D"
+  },
+  {
+    "id": "part-8VOVLR83X",
+    "type": "auto_part",
+    "sku": "8VOVLR83X",
+    "name": "Oil Pressure Sensor",
+    "vendor": "CarQuest",
+    "price": 105.0,
+    "description": "Oil Pressure Sensor-8VOVLR83X",
+    "text": "Auto Part: Oil Pressure Sensor (SKU: 8VOVLR83X). Vendor: CarQuest. Price: $105.0. Description: Oil Pressure Sensor-8VOVLR83X"
+  },
+  {
+    "id": "part-8YZKBGR07",
+    "type": "auto_part",
+    "sku": "8YZKBGR07",
+    "name": "Catalytic Converter",
+    "vendor": "Pep Boys",
+    "price": 1207.5,
+    "description": "Catalytic Converter-8YZKBGR07",
+    "text": "Auto Part: Catalytic Converter (SKU: 8YZKBGR07). Vendor: Pep Boys. Price: $1207.5. Description: Catalytic Converter-8YZKBGR07"
+  },
+  {
+    "id": "part-9MG9I5KH6",
+    "type": "auto_part",
+    "sku": "9MG9I5KH6",
+    "name": "Multimeter",
+    "vendor": "RockAuto",
+    "price": 42.0,
+    "description": "Multimeter-9MG9I5KH6",
+    "text": "Auto Part: Multimeter (SKU: 9MG9I5KH6). Vendor: RockAuto. Price: $42.0. Description: Multimeter-9MG9I5KH6"
+  },
+  {
+    "id": "part-9N4OHNWUP",
+    "type": "auto_part",
+    "sku": "9N4OHNWUP",
+    "name": "Cylinder Head",
+    "vendor": "Summit Racing",
+    "price": 892.5,
+    "description": "Cylinder Head-9N4OHNWUP",
+    "text": "Auto Part: Cylinder Head (SKU: 9N4OHNWUP). Vendor: Summit Racing. Price: $892.5. Description: Cylinder Head-9N4OHNWUP"
+  },
+  {
+    "id": "part-9RS1T6LOB",
+    "type": "auto_part",
+    "sku": "9RS1T6LOB",
+    "name": "Defroster Grid",
+    "vendor": "Advanced Auto Parts",
+    "price": 183.75,
+    "description": "Defroster Grid-9RS1T6LOB",
+    "text": "Auto Part: Defroster Grid (SKU: 9RS1T6LOB). Vendor: Advanced Auto Parts. Price: $183.75. Description: Defroster Grid-9RS1T6LOB"
+  },
+  {
+    "id": "part-9TDGAMVUV",
+    "type": "auto_part",
+    "sku": "9TDGAMVUV",
+    "name": "Axle Seal",
+    "vendor": "CarQuest",
+    "price": 36.75,
+    "description": "Axle Seal-9TDGAMVUV",
+    "text": "Auto Part: Axle Seal (SKU: 9TDGAMVUV). Vendor: CarQuest. Price: $36.75. Description: Axle Seal-9TDGAMVUV"
+  },
+  {
+    "id": "part-9TS8Q7IZB",
+    "type": "auto_part",
+    "sku": "9TS8Q7IZB",
+    "name": "Alternator Regulator",
+    "vendor": "Advanced Auto Parts",
+    "price": 105.0,
+    "description": "Alternator Regulator-9TS8Q7IZB",
+    "text": "Auto Part: Alternator Regulator (SKU: 9TS8Q7IZB). Vendor: Advanced Auto Parts. Price: $105.0. Description: Alternator Regulator-9TS8Q7IZB"
+  },
+  {
+    "id": "part-9U3X3V1G8",
+    "type": "auto_part",
+    "sku": "9U3X3V1G8",
+    "name": "License Plate Frame",
+    "vendor": "CarQuest",
+    "price": 21.0,
+    "description": "License Plate Frame-9U3X3V1G8",
+    "text": "Auto Part: License Plate Frame (SKU: 9U3X3V1G8). Vendor: CarQuest. Price: $21.0. Description: License Plate Frame-9U3X3V1G8"
+  },
+  {
+    "id": "part-9WAOUIIJZ",
+    "type": "auto_part",
+    "sku": "9WAOUIIJZ",
+    "name": "Muffler",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 183.75,
+    "description": "Muffler-9WAOUIIJZ",
+    "text": "Auto Part: Muffler (SKU: 9WAOUIIJZ). Vendor: O'Reilly Auto Parts. Price: $183.75. Description: Muffler-9WAOUIIJZ"
+  },
+  {
+    "id": "part-9WPN4E8W2",
+    "type": "auto_part",
+    "sku": "9WPN4E8W2",
+    "name": "Brake Rotors (each)",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 105.0,
+    "description": "Brake Rotors (each)-9WPN4E8W2",
+    "text": "Auto Part: Brake Rotors (each) (SKU: 9WPN4E8W2). Vendor: O'Reilly Auto Parts. Price: $105.0. Description: Brake Rotors (each)-9WPN4E8W2"
+  },
+  {
+    "id": "part-9XCVBX3BU",
+    "type": "auto_part",
+    "sku": "9XCVBX3BU",
+    "name": "Ignition Coil",
+    "vendor": "RockAuto",
+    "price": 84.0,
+    "description": "Ignition Coil-9XCVBX3BU",
+    "text": "Auto Part: Ignition Coil (SKU: 9XCVBX3BU). Vendor: RockAuto. Price: $84.0. Description: Ignition Coil-9XCVBX3BU"
+  },
+  {
+    "id": "part-A28N8TMHT",
+    "type": "auto_part",
+    "sku": "A28N8TMHT",
+    "name": "Door Sill Plate",
+    "vendor": "NAPA Auto Parts",
+    "price": 105.0,
+    "description": "Door Sill Plate-A28N8TMHT",
+    "text": "Auto Part: Door Sill Plate (SKU: A28N8TMHT). Vendor: NAPA Auto Parts. Price: $105.0. Description: Door Sill Plate-A28N8TMHT"
+  },
+  {
+    "id": "part-A98BWI7ND",
+    "type": "auto_part",
+    "sku": "A98BWI7ND",
+    "name": "Driver Monitoring Camera",
+    "vendor": "Summit Racing",
+    "price": 787.5,
+    "description": "Driver Monitoring Camera-A98BWI7ND",
+    "text": "Auto Part: Driver Monitoring Camera (SKU: A98BWI7ND). Vendor: Summit Racing. Price: $787.5. Description: Driver Monitoring Camera-A98BWI7ND"
+  },
+  {
+    "id": "part-A9U8MJJMX",
+    "type": "auto_part",
+    "sku": "A9U8MJJMX",
+    "name": "Vacuum Pump",
+    "vendor": "Pep Boys",
+    "price": 105.0,
+    "description": "Vacuum Pump-A9U8MJJMX",
+    "text": "Auto Part: Vacuum Pump (SKU: A9U8MJJMX). Vendor: Pep Boys. Price: $105.0. Description: Vacuum Pump-A9U8MJJMX"
+  },
+  {
+    "id": "part-A9YAOMHEI",
+    "type": "auto_part",
+    "sku": "A9YAOMHEI",
+    "name": "360-Degree Camera System",
+    "vendor": "RockAuto",
+    "price": 1207.5,
+    "description": "360-Degree Camera System-A9YAOMHEI",
+    "text": "Auto Part: 360-Degree Camera System (SKU: A9YAOMHEI). Vendor: RockAuto. Price: $1207.5. Description: 360-Degree Camera System-A9YAOMHEI"
+  },
+  {
+    "id": "part-AATS2JR18",
+    "type": "auto_part",
+    "sku": "AATS2JR18",
+    "name": "Sunroof Drain Tube",
+    "vendor": "Advanced Auto Parts",
+    "price": 36.75,
+    "description": "Sunroof Drain Tube-AATS2JR18",
+    "text": "Auto Part: Sunroof Drain Tube (SKU: AATS2JR18). Vendor: Advanced Auto Parts. Price: $36.75. Description: Sunroof Drain Tube-AATS2JR18"
+  },
+  {
+    "id": "part-ACX0972XX",
+    "type": "auto_part",
+    "sku": "ACX0972XX",
+    "name": "Widebody Kit",
+    "vendor": "CarQuest",
+    "price": 3675.0,
+    "description": "Widebody Kit-ACX0972XX",
+    "text": "Auto Part: Widebody Kit (SKU: ACX0972XX). Vendor: CarQuest. Price: $3675.0. Description: Widebody Kit-ACX0972XX"
+  },
+  {
+    "id": "part-AHWCDYOU8",
+    "type": "auto_part",
+    "sku": "AHWCDYOU8",
+    "name": "DC-DC Converter",
+    "vendor": "CarQuest",
+    "price": 892.5,
+    "description": "DC-DC Converter-AHWCDYOU8",
+    "text": "Auto Part: DC-DC Converter (SKU: AHWCDYOU8). Vendor: CarQuest. Price: $892.5. Description: DC-DC Converter-AHWCDYOU8"
+  },
+  {
+    "id": "part-AIQIKOX83",
+    "type": "auto_part",
+    "sku": "AIQIKOX83",
+    "name": "Sun Visor",
+    "vendor": "Summit Racing",
+    "price": 57.75,
+    "description": "Sun Visor-AIQIKOX83",
+    "text": "Auto Part: Sun Visor (SKU: AIQIKOX83). Vendor: Summit Racing. Price: $57.75. Description: Sun Visor-AIQIKOX83"
+  },
+  {
+    "id": "part-AJ9I55FQJ",
+    "type": "auto_part",
+    "sku": "AJ9I55FQJ",
+    "name": "Infotainment Upgrade",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 892.5,
+    "description": "Infotainment Upgrade-AJ9I55FQJ",
+    "text": "Auto Part: Infotainment Upgrade (SKU: AJ9I55FQJ). Vendor: O'Reilly Auto Parts. Price: $892.5. Description: Infotainment Upgrade-AJ9I55FQJ"
+  },
+  {
+    "id": "part-AOIOXDLFX",
+    "type": "auto_part",
+    "sku": "AOIOXDLFX",
+    "name": "Air Pump",
+    "vendor": "CarQuest",
+    "price": 288.75,
+    "description": "Air Pump-AOIOXDLFX",
+    "text": "Auto Part: Air Pump (SKU: AOIOXDLFX). Vendor: CarQuest. Price: $288.75. Description: Air Pump-AOIOXDLFX"
+  },
+  {
+    "id": "part-APC8FYM7H",
+    "type": "auto_part",
+    "sku": "APC8FYM7H",
+    "name": "Washer Set",
+    "vendor": "Summit Racing",
+    "price": 21.0,
+    "description": "Washer Set-APC8FYM7H",
+    "text": "Auto Part: Washer Set (SKU: APC8FYM7H). Vendor: Summit Racing. Price: $21.0. Description: Washer Set-APC8FYM7H"
+  },
+  {
+    "id": "part-AUF1QE4EC",
+    "type": "auto_part",
+    "sku": "AUF1QE4EC",
+    "name": "Relay",
+    "vendor": "AutoZone",
+    "price": 21.0,
+    "description": "Relay-AUF1QE4EC",
+    "text": "Auto Part: Relay (SKU: AUF1QE4EC). Vendor: AutoZone. Price: $21.0. Description: Relay-AUF1QE4EC"
+  },
+  {
+    "id": "part-AV2HKN38U",
+    "type": "auto_part",
+    "sku": "AV2HKN38U",
+    "name": "Seat Cushion",
+    "vendor": "RockAuto",
+    "price": 210.0,
+    "description": "Seat Cushion-AV2HKN38U",
+    "text": "Auto Part: Seat Cushion (SKU: AV2HKN38U). Vendor: RockAuto. Price: $210.0. Description: Seat Cushion-AV2HKN38U"
+  },
+  {
+    "id": "part-AWHMHWAX8",
+    "type": "auto_part",
+    "sku": "AWHMHWAX8",
+    "name": "Performance ECU Tune",
+    "vendor": "Summit Racing",
+    "price": 577.5,
+    "description": "Performance ECU Tune-AWHMHWAX8",
+    "text": "Auto Part: Performance ECU Tune (SKU: AWHMHWAX8). Vendor: Summit Racing. Price: $577.5. Description: Performance ECU Tune-AWHMHWAX8"
+  },
+  {
+    "id": "part-AXGYUOALG",
+    "type": "auto_part",
+    "sku": "AXGYUOALG",
+    "name": "Lug Nut",
+    "vendor": "Summit Racing",
+    "price": 3.68,
+    "description": "Lug Nut-AXGYUOALG",
+    "text": "Auto Part: Lug Nut (SKU: AXGYUOALG). Vendor: Summit Racing. Price: $3.68. Description: Lug Nut-AXGYUOALG"
+  },
+  {
+    "id": "part-B13DAH2C5",
+    "type": "auto_part",
+    "sku": "B13DAH2C5",
+    "name": "Exhaust Gasket",
+    "vendor": "AutoZone",
+    "price": 21.0,
+    "description": "Exhaust Gasket-B13DAH2C5",
+    "text": "Auto Part: Exhaust Gasket (SKU: B13DAH2C5). Vendor: AutoZone. Price: $21.0. Description: Exhaust Gasket-B13DAH2C5"
+  },
+  {
+    "id": "part-B1W56ASBZ",
+    "type": "auto_part",
+    "sku": "B1W56ASBZ",
+    "name": "Oxygen Sensor",
+    "vendor": "Advanced Auto Parts",
+    "price": 105.0,
+    "description": "Oxygen Sensor-B1W56ASBZ",
+    "text": "Auto Part: Oxygen Sensor (SKU: B1W56ASBZ). Vendor: Advanced Auto Parts. Price: $105.0. Description: Oxygen Sensor-B1W56ASBZ"
+  },
+  {
+    "id": "part-B26JU1K7H",
+    "type": "auto_part",
+    "sku": "B26JU1K7H",
+    "name": "Performance Piston",
+    "vendor": "AutoZone",
+    "price": 183.75,
+    "description": "Performance Piston-B26JU1K7H",
+    "text": "Auto Part: Performance Piston (SKU: B26JU1K7H). Vendor: AutoZone. Price: $183.75. Description: Performance Piston-B26JU1K7H"
+  },
+  {
+    "id": "part-B2UO04OWX",
+    "type": "auto_part",
+    "sku": "B2UO04OWX",
+    "name": "Thread Locker",
+    "vendor": "Advanced Auto Parts",
+    "price": 10.5,
+    "description": "Thread Locker-B2UO04OWX",
+    "text": "Auto Part: Thread Locker (SKU: B2UO04OWX). Vendor: Advanced Auto Parts. Price: $10.5. Description: Thread Locker-B2UO04OWX"
+  },
+  {
+    "id": "part-B3D6MTGOW",
+    "type": "auto_part",
+    "sku": "B3D6MTGOW",
+    "name": "Sequential LED Taillights",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 525.0,
+    "description": "Sequential LED Taillights-B3D6MTGOW",
+    "text": "Auto Part: Sequential LED Taillights (SKU: B3D6MTGOW). Vendor: O'Reilly Auto Parts. Price: $525.0. Description: Sequential LED Taillights-B3D6MTGOW"
+  },
+  {
+    "id": "part-BE05UHHCC",
+    "type": "auto_part",
+    "sku": "BE05UHHCC",
+    "name": "Timing Chain",
+    "vendor": "NAPA Auto Parts",
+    "price": 210.0,
+    "description": "Timing Chain-BE05UHHCC",
+    "text": "Auto Part: Timing Chain (SKU: BE05UHHCC). Vendor: NAPA Auto Parts. Price: $210.0. Description: Timing Chain-BE05UHHCC"
+  },
+  {
+    "id": "part-BJ3E6AR5K",
+    "type": "auto_part",
+    "sku": "BJ3E6AR5K",
+    "name": "Battery",
+    "vendor": "AutoZone",
+    "price": 183.75,
+    "description": "Battery-BJ3E6AR5K",
+    "text": "Auto Part: Battery (SKU: BJ3E6AR5K). Vendor: AutoZone. Price: $183.75. Description: Battery-BJ3E6AR5K"
+  },
+  {
+    "id": "part-BNFFCGHO2",
+    "type": "auto_part",
+    "sku": "BNFFCGHO2",
+    "name": "Windshield Wipers",
+    "vendor": "Summit Racing",
+    "price": 28.88,
+    "description": "Windshield Wipers-BNFFCGHO2",
+    "text": "Auto Part: Windshield Wipers (SKU: BNFFCGHO2). Vendor: Summit Racing. Price: $28.88. Description: Windshield Wipers-BNFFCGHO2"
+  },
+  {
+    "id": "part-BO79FLCRU",
+    "type": "auto_part",
+    "sku": "BO79FLCRU",
+    "name": "Floor Mat Set",
+    "vendor": "Summit Racing",
+    "price": 105.0,
+    "description": "Floor Mat Set-BO79FLCRU",
+    "text": "Auto Part: Floor Mat Set (SKU: BO79FLCRU). Vendor: Summit Racing. Price: $105.0. Description: Floor Mat Set-BO79FLCRU"
+  },
+  {
+    "id": "part-BT1GH8NQ9",
+    "type": "auto_part",
+    "sku": "BT1GH8NQ9",
+    "name": "Serpentine Belt",
+    "vendor": "Pep Boys",
+    "price": 52.5,
+    "description": "Serpentine Belt-BT1GH8NQ9",
+    "text": "Auto Part: Serpentine Belt (SKU: BT1GH8NQ9). Vendor: Pep Boys. Price: $52.5. Description: Serpentine Belt-BT1GH8NQ9"
+  },
+  {
+    "id": "part-BVQ9NJ8YC",
+    "type": "auto_part",
+    "sku": "BVQ9NJ8YC",
+    "name": "Compression Tester",
+    "vendor": "CarQuest",
+    "price": 57.75,
+    "description": "Compression Tester-BVQ9NJ8YC",
+    "text": "Auto Part: Compression Tester (SKU: BVQ9NJ8YC). Vendor: CarQuest. Price: $57.75. Description: Compression Tester-BVQ9NJ8YC"
+  },
+  {
+    "id": "part-BX70AHWFV",
+    "type": "auto_part",
+    "sku": "BX70AHWFV",
+    "name": "Rock Panel",
+    "vendor": "NAPA Auto Parts",
+    "price": 367.5,
+    "description": "Rock Panel-BX70AHWFV",
+    "text": "Auto Part: Rock Panel (SKU: BX70AHWFV). Vendor: NAPA Auto Parts. Price: $367.5. Description: Rock Panel-BX70AHWFV"
+  },
+  {
+    "id": "part-BXHKMQHUR",
+    "type": "auto_part",
+    "sku": "BXHKMQHUR",
+    "name": "Quarter Panel",
+    "vendor": "Advanced Auto Parts",
+    "price": 630.0,
+    "description": "Quarter Panel-BXHKMQHUR",
+    "text": "Auto Part: Quarter Panel (SKU: BXHKMQHUR). Vendor: Advanced Auto Parts. Price: $630.0. Description: Quarter Panel-BXHKMQHUR"
+  },
+  {
+    "id": "part-BZNGCWR8O",
+    "type": "auto_part",
+    "sku": "BZNGCWR8O",
+    "name": "LED Conversion Kit",
+    "vendor": "CarQuest",
+    "price": 105.0,
+    "description": "LED Conversion Kit-BZNGCWR8O",
+    "text": "Auto Part: LED Conversion Kit (SKU: BZNGCWR8O). Vendor: CarQuest. Price: $105.0. Description: LED Conversion Kit-BZNGCWR8O"
+  },
+  {
+    "id": "part-C061AH5D3",
+    "type": "auto_part",
+    "sku": "C061AH5D3",
+    "name": "Heads-Up Display",
+    "vendor": "RockAuto",
+    "price": 630.0,
+    "description": "Heads-Up Display-C061AH5D3",
+    "text": "Auto Part: Heads-Up Display (SKU: C061AH5D3). Vendor: RockAuto. Price: $630.0. Description: Heads-Up Display-C061AH5D3"
+  },
+  {
+    "id": "part-C49X4FBT1",
+    "type": "auto_part",
+    "sku": "C49X4FBT1",
+    "name": "Door Handle",
+    "vendor": "Pep Boys",
+    "price": 42.0,
+    "description": "Door Handle-C49X4FBT1",
+    "text": "Auto Part: Door Handle (SKU: C49X4FBT1). Vendor: Pep Boys. Price: $42.0. Description: Door Handle-C49X4FBT1"
+  },
+  {
+    "id": "part-C6DYT7ZE8",
+    "type": "auto_part",
+    "sku": "C6DYT7ZE8",
+    "name": "Bluetooth Module",
+    "vendor": "Advanced Auto Parts",
+    "price": 183.75,
+    "description": "Bluetooth Module-C6DYT7ZE8",
+    "text": "Auto Part: Bluetooth Module (SKU: C6DYT7ZE8). Vendor: Advanced Auto Parts. Price: $183.75. Description: Bluetooth Module-C6DYT7ZE8"
+  },
+  {
+    "id": "part-C9DNYJU9L",
+    "type": "auto_part",
+    "sku": "C9DNYJU9L",
+    "name": "Performance Turbo Kit",
+    "vendor": "RockAuto",
+    "price": 3675.0,
+    "description": "Performance Turbo Kit-C9DNYJU9L",
+    "text": "Auto Part: Performance Turbo Kit (SKU: C9DNYJU9L). Vendor: RockAuto. Price: $3675.0. Description: Performance Turbo Kit-C9DNYJU9L"
+  },
+  {
+    "id": "part-CEM4P5V2V",
+    "type": "auto_part",
+    "sku": "CEM4P5V2V",
+    "name": "Adaptive Cruise Control Module",
+    "vendor": "RockAuto",
+    "price": 892.5,
+    "description": "Adaptive Cruise Control Module-CEM4P5V2V",
+    "text": "Auto Part: Adaptive Cruise Control Module (SKU: CEM4P5V2V). Vendor: RockAuto. Price: $892.5. Description: Adaptive Cruise Control Module-CEM4P5V2V"
+  },
+  {
+    "id": "part-CJUPLBX83",
+    "type": "auto_part",
+    "sku": "CJUPLBX83",
+    "name": "Collision Avoidance Sensor",
+    "vendor": "AutoZone",
+    "price": 892.5,
+    "description": "Collision Avoidance Sensor-CJUPLBX83",
+    "text": "Auto Part: Collision Avoidance Sensor (SKU: CJUPLBX83). Vendor: AutoZone. Price: $892.5. Description: Collision Avoidance Sensor-CJUPLBX83"
+  },
+  {
+    "id": "part-CM1Y6F5UP",
+    "type": "auto_part",
+    "sku": "CM1Y6F5UP",
+    "name": "Brake Hose",
+    "vendor": "Summit Racing",
+    "price": 36.75,
+    "description": "Brake Hose-CM1Y6F5UP",
+    "text": "Auto Part: Brake Hose (SKU: CM1Y6F5UP). Vendor: Summit Racing. Price: $36.75. Description: Brake Hose-CM1Y6F5UP"
+  },
+  {
+    "id": "part-CM3FQS8ZE",
+    "type": "auto_part",
+    "sku": "CM3FQS8ZE",
+    "name": "Hammer",
+    "vendor": "AutoZone",
+    "price": 21.0,
+    "description": "Hammer-CM3FQS8ZE",
+    "text": "Auto Part: Hammer (SKU: CM3FQS8ZE). Vendor: AutoZone. Price: $21.0. Description: Hammer-CM3FQS8ZE"
+  },
+  {
+    "id": "part-CNAU2EJ1U",
+    "type": "auto_part",
+    "sku": "CNAU2EJ1U",
+    "name": "Tow Hook",
+    "vendor": "RockAuto",
+    "price": 105.0,
+    "description": "Tow Hook-CNAU2EJ1U",
+    "text": "Auto Part: Tow Hook (SKU: CNAU2EJ1U). Vendor: RockAuto. Price: $105.0. Description: Tow Hook-CNAU2EJ1U"
+  },
+  {
+    "id": "part-CQ12UPTFS",
+    "type": "auto_part",
+    "sku": "CQ12UPTFS",
+    "name": "Hood",
+    "vendor": "RockAuto",
+    "price": 525.0,
+    "description": "Hood-CQ12UPTFS",
+    "text": "Auto Part: Hood (SKU: CQ12UPTFS). Vendor: RockAuto. Price: $525.0. Description: Hood-CQ12UPTFS"
+  },
+  {
+    "id": "part-CT9SZCST5",
+    "type": "auto_part",
+    "sku": "CT9SZCST5",
+    "name": "Radiator",
+    "vendor": "NAPA Auto Parts",
+    "price": 525.0,
+    "description": "Radiator-CT9SZCST5",
+    "text": "Auto Part: Radiator (SKU: CT9SZCST5). Vendor: NAPA Auto Parts. Price: $525.0. Description: Radiator-CT9SZCST5"
+  },
+  {
+    "id": "part-CX5VWB0BZ",
+    "type": "auto_part",
+    "sku": "CX5VWB0BZ",
+    "name": "Flywheel",
+    "vendor": "Advanced Auto Parts",
+    "price": 367.5,
+    "description": "Flywheel-CX5VWB0BZ",
+    "text": "Auto Part: Flywheel (SKU: CX5VWB0BZ). Vendor: Advanced Auto Parts. Price: $367.5. Description: Flywheel-CX5VWB0BZ"
+  },
+  {
+    "id": "part-D0QLVQJAV",
+    "type": "auto_part",
+    "sku": "D0QLVQJAV",
+    "name": "Side Curtain Airbag",
+    "vendor": "AutoZone",
+    "price": 787.5,
+    "description": "Side Curtain Airbag-D0QLVQJAV",
+    "text": "Auto Part: Side Curtain Airbag (SKU: D0QLVQJAV). Vendor: AutoZone. Price: $787.5. Description: Side Curtain Airbag-D0QLVQJAV"
+  },
+  {
+    "id": "part-D41KAX4ZE",
+    "type": "auto_part",
+    "sku": "D41KAX4ZE",
+    "name": "Sunshade",
+    "vendor": "Summit Racing",
+    "price": 36.75,
+    "description": "Sunshade-D41KAX4ZE",
+    "text": "Auto Part: Sunshade (SKU: D41KAX4ZE). Vendor: Summit Racing. Price: $36.75. Description: Sunshade-D41KAX4ZE"
+  },
+  {
+    "id": "part-DA1X8M7K9",
+    "type": "auto_part",
+    "sku": "DA1X8M7K9",
+    "name": "Power Window Switch",
+    "vendor": "CarQuest",
+    "price": 105.0,
+    "description": "Power Window Switch-DA1X8M7K9",
+    "text": "Auto Part: Power Window Switch (SKU: DA1X8M7K9). Vendor: CarQuest. Price: $105.0. Description: Power Window Switch-DA1X8M7K9"
+  },
+  {
+    "id": "part-DBFD2RZ7J",
+    "type": "auto_part",
+    "sku": "DBFD2RZ7J",
+    "name": "Piston",
+    "vendor": "RockAuto",
+    "price": 73.5,
+    "description": "Piston-DBFD2RZ7J",
+    "text": "Auto Part: Piston (SKU: DBFD2RZ7J). Vendor: RockAuto. Price: $73.5. Description: Piston-DBFD2RZ7J"
+  },
+  {
+    "id": "part-DC7WWE4FJ",
+    "type": "auto_part",
+    "sku": "DC7WWE4FJ",
+    "name": "Lowering Springs",
+    "vendor": "AutoZone",
+    "price": 367.5,
+    "description": "Lowering Springs-DC7WWE4FJ",
+    "text": "Auto Part: Lowering Springs (SKU: DC7WWE4FJ). Vendor: AutoZone. Price: $367.5. Description: Lowering Springs-DC7WWE4FJ"
+  },
+  {
+    "id": "part-DE3XCKDZ0",
+    "type": "auto_part",
+    "sku": "DE3XCKDZ0",
+    "name": "Seat Heater Element",
+    "vendor": "Summit Racing",
+    "price": 183.75,
+    "description": "Seat Heater Element-DE3XCKDZ0",
+    "text": "Auto Part: Seat Heater Element (SKU: DE3XCKDZ0). Vendor: Summit Racing. Price: $183.75. Description: Seat Heater Element-DE3XCKDZ0"
+  },
+  {
+    "id": "part-DG11DVLCV",
+    "type": "auto_part",
+    "sku": "DG11DVLCV",
+    "name": "Body Molding",
+    "vendor": "CarQuest",
+    "price": 105.0,
+    "description": "Body Molding-DG11DVLCV",
+    "text": "Auto Part: Body Molding (SKU: DG11DVLCV). Vendor: CarQuest. Price: $105.0. Description: Body Molding-DG11DVLCV"
+  },
+  {
+    "id": "part-DPXPB150T",
+    "type": "auto_part",
+    "sku": "DPXPB150T",
+    "name": "Coil Spring",
+    "vendor": "Advanced Auto Parts",
+    "price": 183.75,
+    "description": "Coil Spring-DPXPB150T",
+    "text": "Auto Part: Coil Spring (SKU: DPXPB150T). Vendor: Advanced Auto Parts. Price: $183.75. Description: Coil Spring-DPXPB150T"
+  },
+  {
+    "id": "part-DQ298G01V",
+    "type": "auto_part",
+    "sku": "DQ298G01V",
+    "name": "Exhaust Clamp",
+    "vendor": "Advanced Auto Parts",
+    "price": 21.0,
+    "description": "Exhaust Clamp-DQ298G01V",
+    "text": "Auto Part: Exhaust Clamp (SKU: DQ298G01V). Vendor: Advanced Auto Parts. Price: $21.0. Description: Exhaust Clamp-DQ298G01V"
+  },
+  {
+    "id": "part-DSF7RMWSK",
+    "type": "auto_part",
+    "sku": "DSF7RMWSK",
+    "name": "Hubcap",
+    "vendor": "NAPA Auto Parts",
+    "price": 42.0,
+    "description": "Hubcap-DSF7RMWSK",
+    "text": "Auto Part: Hubcap (SKU: DSF7RMWSK). Vendor: NAPA Auto Parts. Price: $42.0. Description: Hubcap-DSF7RMWSK"
+  },
+  {
+    "id": "part-DUN4RGJG6",
+    "type": "auto_part",
+    "sku": "DUN4RGJG6",
+    "name": "MAP Sensor",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 105.0,
+    "description": "MAP Sensor-DUN4RGJG6",
+    "text": "Auto Part: MAP Sensor (SKU: DUN4RGJG6). Vendor: O'Reilly Auto Parts. Price: $105.0. Description: MAP Sensor-DUN4RGJG6"
+  },
+  {
+    "id": "part-E5TKO51VQ",
+    "type": "auto_part",
+    "sku": "E5TKO51VQ",
+    "name": "Steering Wheel Cover",
+    "vendor": "AutoZone",
+    "price": 42.0,
+    "description": "Steering Wheel Cover-E5TKO51VQ",
+    "text": "Auto Part: Steering Wheel Cover (SKU: E5TKO51VQ). Vendor: AutoZone. Price: $42.0. Description: Steering Wheel Cover-E5TKO51VQ"
+  },
+  {
+    "id": "part-E7KC6KPR3",
+    "type": "auto_part",
+    "sku": "E7KC6KPR3",
+    "name": "Trailer Hitch Ball",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 36.75,
+    "description": "Trailer Hitch Ball-E7KC6KPR3",
+    "text": "Auto Part: Trailer Hitch Ball (SKU: E7KC6KPR3). Vendor: O'Reilly Auto Parts. Price: $36.75. Description: Trailer Hitch Ball-E7KC6KPR3"
+  },
+  {
+    "id": "part-E7O9OWFUW",
+    "type": "auto_part",
+    "sku": "E7O9OWFUW",
+    "name": "Tire Pressure Sensor",
+    "vendor": "RockAuto",
+    "price": 105.0,
+    "description": "Tire Pressure Sensor-E7O9OWFUW",
+    "text": "Auto Part: Tire Pressure Sensor (SKU: E7O9OWFUW). Vendor: RockAuto. Price: $105.0. Description: Tire Pressure Sensor-E7O9OWFUW"
+  },
+  {
+    "id": "part-E974JS5AE",
+    "type": "auto_part",
+    "sku": "E974JS5AE",
+    "name": "Strut Assembly",
+    "vendor": "AutoZone",
+    "price": 236.25,
+    "description": "Strut Assembly-E974JS5AE",
+    "text": "Auto Part: Strut Assembly (SKU: E974JS5AE). Vendor: AutoZone. Price: $236.25. Description: Strut Assembly-E974JS5AE"
+  },
+  {
+    "id": "part-E9P6UIF8V",
+    "type": "auto_part",
+    "sku": "E9P6UIF8V",
+    "name": "Jump Starter",
+    "vendor": "Pep Boys",
+    "price": 183.75,
+    "description": "Jump Starter-E9P6UIF8V",
+    "text": "Auto Part: Jump Starter (SKU: E9P6UIF8V). Vendor: Pep Boys. Price: $183.75. Description: Jump Starter-E9P6UIF8V"
+  },
+  {
+    "id": "part-EA3CN3DRY",
+    "type": "auto_part",
+    "sku": "EA3CN3DRY",
+    "name": "NOx Sensor",
+    "vendor": "AutoZone",
+    "price": 367.5,
+    "description": "NOx Sensor-EA3CN3DRY",
+    "text": "Auto Part: NOx Sensor (SKU: EA3CN3DRY). Vendor: AutoZone. Price: $367.5. Description: NOx Sensor-EA3CN3DRY"
+  },
+  {
+    "id": "part-ECAO78YXL",
+    "type": "auto_part",
+    "sku": "ECAO78YXL",
+    "name": "Bumper",
+    "vendor": "CarQuest",
+    "price": 525.0,
+    "description": "Bumper-ECAO78YXL",
+    "text": "Auto Part: Bumper (SKU: ECAO78YXL). Vendor: CarQuest. Price: $525.0. Description: Bumper-ECAO78YXL"
+  },
+  {
+    "id": "part-EK7XOHEZR",
+    "type": "auto_part",
+    "sku": "EK7XOHEZR",
+    "name": "Exhaust Flex Pipe",
+    "vendor": "CarQuest",
+    "price": 105.0,
+    "description": "Exhaust Flex Pipe-EK7XOHEZR",
+    "text": "Auto Part: Exhaust Flex Pipe (SKU: EK7XOHEZR). Vendor: CarQuest. Price: $105.0. Description: Exhaust Flex Pipe-EK7XOHEZR"
+  },
+  {
+    "id": "part-EMW3Y0N9P",
+    "type": "auto_part",
+    "sku": "EMW3Y0N9P",
+    "name": "Big Brake Kit",
+    "vendor": "CarQuest",
+    "price": 2362.5,
+    "description": "Big Brake Kit-EMW3Y0N9P",
+    "text": "Auto Part: Big Brake Kit (SKU: EMW3Y0N9P). Vendor: CarQuest. Price: $2362.5. Description: Big Brake Kit-EMW3Y0N9P"
+  },
+  {
+    "id": "part-EQ9S07KLU",
+    "type": "auto_part",
+    "sku": "EQ9S07KLU",
+    "name": "Keyless Entry Module",
+    "vendor": "Pep Boys",
+    "price": 367.5,
+    "description": "Keyless Entry Module-EQ9S07KLU",
+    "text": "Auto Part: Keyless Entry Module (SKU: EQ9S07KLU). Vendor: Pep Boys. Price: $367.5. Description: Keyless Entry Module-EQ9S07KLU"
+  },
+  {
+    "id": "part-ERZT0LGCJ",
+    "type": "auto_part",
+    "sku": "ERZT0LGCJ",
+    "name": "Dash Cam",
+    "vendor": "RockAuto",
+    "price": 210.0,
+    "description": "Dash Cam-ERZT0LGCJ",
+    "text": "Auto Part: Dash Cam (SKU: ERZT0LGCJ). Vendor: RockAuto. Price: $210.0. Description: Dash Cam-ERZT0LGCJ"
+  },
+  {
+    "id": "part-ESNZDYYRH",
+    "type": "auto_part",
+    "sku": "ESNZDYYRH",
+    "name": "Oil Filter",
+    "vendor": "Pep Boys",
+    "price": 15.75,
+    "description": "Oil Filter-ESNZDYYRH",
+    "text": "Auto Part: Oil Filter (SKU: ESNZDYYRH). Vendor: Pep Boys. Price: $15.75. Description: Oil Filter-ESNZDYYRH"
+  },
+  {
+    "id": "part-ETKBCWLTE",
+    "type": "auto_part",
+    "sku": "ETKBCWLTE",
+    "name": "Coolant Temperature Sensor",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 36.75,
+    "description": "Coolant Temperature Sensor-ETKBCWLTE",
+    "text": "Auto Part: Coolant Temperature Sensor (SKU: ETKBCWLTE). Vendor: O'Reilly Auto Parts. Price: $36.75. Description: Coolant Temperature Sensor-ETKBCWLTE"
+  },
+  {
+    "id": "part-EWQLWPC3V",
+    "type": "auto_part",
+    "sku": "EWQLWPC3V",
+    "name": "Battery Charger",
+    "vendor": "Pep Boys",
+    "price": 183.75,
+    "description": "Battery Charger-EWQLWPC3V",
+    "text": "Auto Part: Battery Charger (SKU: EWQLWPC3V). Vendor: Pep Boys. Price: $183.75. Description: Battery Charger-EWQLWPC3V"
+  },
+  {
+    "id": "part-F7AJUEBVB",
+    "type": "auto_part",
+    "sku": "F7AJUEBVB",
+    "name": "Trailer Hitch",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 367.5,
+    "description": "Trailer Hitch-F7AJUEBVB",
+    "text": "Auto Part: Trailer Hitch (SKU: F7AJUEBVB). Vendor: O'Reilly Auto Parts. Price: $367.5. Description: Trailer Hitch-F7AJUEBVB"
+  },
+  {
+    "id": "part-FAELZ7NZ0",
+    "type": "auto_part",
+    "sku": "FAELZ7NZ0",
+    "name": "Brake Light Bulb",
+    "vendor": "Advanced Auto Parts",
+    "price": 10.5,
+    "description": "Brake Light Bulb-FAELZ7NZ0",
+    "text": "Auto Part: Brake Light Bulb (SKU: FAELZ7NZ0). Vendor: Advanced Auto Parts. Price: $10.5. Description: Brake Light Bulb-FAELZ7NZ0"
+  },
+  {
+    "id": "part-FAWQ72IMF",
+    "type": "auto_part",
+    "sku": "FAWQ72IMF",
+    "name": "Performance Intercooler",
+    "vendor": "Pep Boys",
+    "price": 892.5,
+    "description": "Performance Intercooler-FAWQ72IMF",
+    "text": "Auto Part: Performance Intercooler (SKU: FAWQ72IMF). Vendor: Pep Boys. Price: $892.5. Description: Performance Intercooler-FAWQ72IMF"
+  },
+  {
+    "id": "part-FFD3K34XI",
+    "type": "auto_part",
+    "sku": "FFD3K34XI",
+    "name": "Rearview Mirror",
+    "vendor": "Summit Racing",
+    "price": 105.0,
+    "description": "Rearview Mirror-FFD3K34XI",
+    "text": "Auto Part: Rearview Mirror (SKU: FFD3K34XI). Vendor: Summit Racing. Price: $105.0. Description: Rearview Mirror-FFD3K34XI"
+  },
+  {
+    "id": "part-FJEWJBMBT",
+    "type": "auto_part",
+    "sku": "FJEWJBMBT",
+    "name": "Glove Box",
+    "vendor": "RockAuto",
+    "price": 105.0,
+    "description": "Glove Box-FJEWJBMBT",
+    "text": "Auto Part: Glove Box (SKU: FJEWJBMBT). Vendor: RockAuto. Price: $105.0. Description: Glove Box-FJEWJBMBT"
+  },
+  {
+    "id": "part-FM1EMQ52C",
+    "type": "auto_part",
+    "sku": "FM1EMQ52C",
+    "name": "Exhaust Mount",
+    "vendor": "AutoZone",
+    "price": 18.38,
+    "description": "Exhaust Mount-FM1EMQ52C",
+    "text": "Auto Part: Exhaust Mount (SKU: FM1EMQ52C). Vendor: AutoZone. Price: $18.38. Description: Exhaust Mount-FM1EMQ52C"
+  },
+  {
+    "id": "part-FOR5KTXOG",
+    "type": "auto_part",
+    "sku": "FOR5KTXOG",
+    "name": "Alarm System",
+    "vendor": "AutoZone",
+    "price": 367.5,
+    "description": "Alarm System-FOR5KTXOG",
+    "text": "Auto Part: Alarm System (SKU: FOR5KTXOG). Vendor: AutoZone. Price: $367.5. Description: Alarm System-FOR5KTXOG"
+  },
+  {
+    "id": "part-FRSV5C1J8",
+    "type": "auto_part",
+    "sku": "FRSV5C1J8",
+    "name": "Seat Frame",
+    "vendor": "NAPA Auto Parts",
+    "price": 367.5,
+    "description": "Seat Frame-FRSV5C1J8",
+    "text": "Auto Part: Seat Frame (SKU: FRSV5C1J8). Vendor: NAPA Auto Parts. Price: $367.5. Description: Seat Frame-FRSV5C1J8"
+  },
+  {
+    "id": "part-FS5ILKPAU",
+    "type": "auto_part",
+    "sku": "FS5ILKPAU",
+    "name": "Infotainment Screen",
+    "vendor": "CarQuest",
+    "price": 892.5,
+    "description": "Infotainment Screen-FS5ILKPAU",
+    "text": "Auto Part: Infotainment Screen (SKU: FS5ILKPAU). Vendor: CarQuest. Price: $892.5. Description: Infotainment Screen-FS5ILKPAU"
+  },
+  {
+    "id": "part-FTCQLAQCZ",
+    "type": "auto_part",
+    "sku": "FTCQLAQCZ",
+    "name": "Performance Radiator",
+    "vendor": "RockAuto",
+    "price": 630.0,
+    "description": "Performance Radiator-FTCQLAQCZ",
+    "text": "Auto Part: Performance Radiator (SKU: FTCQLAQCZ). Vendor: RockAuto. Price: $630.0. Description: Performance Radiator-FTCQLAQCZ"
+  },
+  {
+    "id": "part-FVKP6IFP2",
+    "type": "auto_part",
+    "sku": "FVKP6IFP2",
+    "name": "PCV Valve",
+    "vendor": "CarQuest",
+    "price": 18.38,
+    "description": "PCV Valve-FVKP6IFP2",
+    "text": "Auto Part: PCV Valve (SKU: FVKP6IFP2). Vendor: CarQuest. Price: $18.38. Description: PCV Valve-FVKP6IFP2"
+  },
+  {
+    "id": "part-FVRNJM43C",
+    "type": "auto_part",
+    "sku": "FVRNJM43C",
+    "name": "Trunk Organizer",
+    "vendor": "RockAuto",
+    "price": 57.75,
+    "description": "Trunk Organizer-FVRNJM43C",
+    "text": "Auto Part: Trunk Organizer (SKU: FVRNJM43C). Vendor: RockAuto. Price: $57.75. Description: Trunk Organizer-FVRNJM43C"
+  },
+  {
+    "id": "part-FVZCNKRLW",
+    "type": "auto_part",
+    "sku": "FVZCNKRLW",
+    "name": "Center Console",
+    "vendor": "CarQuest",
+    "price": 367.5,
+    "description": "Center Console-FVZCNKRLW",
+    "text": "Auto Part: Center Console (SKU: FVZCNKRLW). Vendor: CarQuest. Price: $367.5. Description: Center Console-FVZCNKRLW"
+  },
+  {
+    "id": "part-G55Y6GLPP",
+    "type": "auto_part",
+    "sku": "G55Y6GLPP",
+    "name": "Timing Light",
+    "vendor": "Advanced Auto Parts",
+    "price": 57.75,
+    "description": "Timing Light-G55Y6GLPP",
+    "text": "Auto Part: Timing Light (SKU: G55Y6GLPP). Vendor: Advanced Auto Parts. Price: $57.75. Description: Timing Light-G55Y6GLPP"
+  },
+  {
+    "id": "part-G6RAK1YW4",
+    "type": "auto_part",
+    "sku": "G6RAK1YW4",
+    "name": "Thermostat",
+    "vendor": "Advanced Auto Parts",
+    "price": 36.75,
+    "description": "Thermostat-G6RAK1YW4",
+    "text": "Auto Part: Thermostat (SKU: G6RAK1YW4). Vendor: Advanced Auto Parts. Price: $36.75. Description: Thermostat-G6RAK1YW4"
+  },
+  {
+    "id": "part-G9TAHPNLW",
+    "type": "auto_part",
+    "sku": "G9TAHPNLW",
+    "name": "CV Axle",
+    "vendor": "CarQuest",
+    "price": 210.0,
+    "description": "CV Axle-G9TAHPNLW",
+    "text": "Auto Part: CV Axle (SKU: G9TAHPNLW). Vendor: CarQuest. Price: $210.0. Description: CV Axle-G9TAHPNLW"
+  },
+  {
+    "id": "part-GCTS8DEAD",
+    "type": "auto_part",
+    "sku": "GCTS8DEAD",
+    "name": "Roof Tent",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 1837.5,
+    "description": "Roof Tent-GCTS8DEAD",
+    "text": "Auto Part: Roof Tent (SKU: GCTS8DEAD). Vendor: O'Reilly Auto Parts. Price: $1837.5. Description: Roof Tent-GCTS8DEAD"
+  },
+  {
+    "id": "part-GGZEUNDWT",
+    "type": "auto_part",
+    "sku": "GGZEUNDWT",
+    "name": "Carbon Fiber Diffuser",
+    "vendor": "Advanced Auto Parts",
+    "price": 1207.5,
+    "description": "Carbon Fiber Diffuser-GGZEUNDWT",
+    "text": "Auto Part: Carbon Fiber Diffuser (SKU: GGZEUNDWT). Vendor: Advanced Auto Parts. Price: $1207.5. Description: Carbon Fiber Diffuser-GGZEUNDWT"
+  },
+  {
+    "id": "part-GIHW2R438",
+    "type": "auto_part",
+    "sku": "GIHW2R438",
+    "name": "Tachometer",
+    "vendor": "AutoZone",
+    "price": 210.0,
+    "description": "Tachometer-GIHW2R438",
+    "text": "Auto Part: Tachometer (SKU: GIHW2R438). Vendor: AutoZone. Price: $210.0. Description: Tachometer-GIHW2R438"
+  },
+  {
+    "id": "part-GMRM94BPI",
+    "type": "auto_part",
+    "sku": "GMRM94BPI",
+    "name": "Engine Stand",
+    "vendor": "NAPA Auto Parts",
+    "price": 210.0,
+    "description": "Engine Stand-GMRM94BPI",
+    "text": "Auto Part: Engine Stand (SKU: GMRM94BPI). Vendor: NAPA Auto Parts. Price: $210.0. Description: Engine Stand-GMRM94BPI"
+  },
+  {
+    "id": "part-GQWZUVGNO",
+    "type": "auto_part",
+    "sku": "GQWZUVGNO",
+    "name": "Speedometer",
+    "vendor": "NAPA Auto Parts",
+    "price": 210.0,
+    "description": "Speedometer-GQWZUVGNO",
+    "text": "Auto Part: Speedometer (SKU: GQWZUVGNO). Vendor: NAPA Auto Parts. Price: $210.0. Description: Speedometer-GQWZUVGNO"
+  },
+  {
+    "id": "part-GUIRDYNIZ",
+    "type": "auto_part",
+    "sku": "GUIRDYNIZ",
+    "name": "Timing Belt",
+    "vendor": "RockAuto",
+    "price": 105.0,
+    "description": "Timing Belt-GUIRDYNIZ",
+    "text": "Auto Part: Timing Belt (SKU: GUIRDYNIZ). Vendor: RockAuto. Price: $105.0. Description: Timing Belt-GUIRDYNIZ"
+  },
+  {
+    "id": "part-GUTCVD1L9",
+    "type": "auto_part",
+    "sku": "GUTCVD1L9",
+    "name": "Coilover Suspension",
+    "vendor": "Summit Racing",
+    "price": 1207.5,
+    "description": "Coilover Suspension-GUTCVD1L9",
+    "text": "Auto Part: Coilover Suspension (SKU: GUTCVD1L9). Vendor: Summit Racing. Price: $1207.5. Description: Coilover Suspension-GUTCVD1L9"
+  },
+  {
+    "id": "part-GUTZDVOUO",
+    "type": "auto_part",
+    "sku": "GUTZDVOUO",
+    "name": "Roof Rack",
+    "vendor": "Summit Racing",
+    "price": 367.5,
+    "description": "Roof Rack-GUTZDVOUO",
+    "text": "Auto Part: Roof Rack (SKU: GUTZDVOUO). Vendor: Summit Racing. Price: $367.5. Description: Roof Rack-GUTZDVOUO"
+  },
+  {
+    "id": "part-GYD9F4S0J",
+    "type": "auto_part",
+    "sku": "GYD9F4S0J",
+    "name": "Brake Booster",
+    "vendor": "CarQuest",
+    "price": 367.5,
+    "description": "Brake Booster-GYD9F4S0J",
+    "text": "Auto Part: Brake Booster (SKU: GYD9F4S0J). Vendor: CarQuest. Price: $367.5. Description: Brake Booster-GYD9F4S0J"
+  },
+  {
+    "id": "part-H0V02CMJ9",
+    "type": "auto_part",
+    "sku": "H0V02CMJ9",
+    "name": "Carbon Fiber Spoiler",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 892.5,
+    "description": "Carbon Fiber Spoiler-H0V02CMJ9",
+    "text": "Auto Part: Carbon Fiber Spoiler (SKU: H0V02CMJ9). Vendor: O'Reilly Auto Parts. Price: $892.5. Description: Carbon Fiber Spoiler-H0V02CMJ9"
+  },
+  {
+    "id": "part-H1190QI6T",
+    "type": "auto_part",
+    "sku": "H1190QI6T",
+    "name": "Alternator",
+    "vendor": "AutoZone",
+    "price": 315.0,
+    "description": "Alternator-H1190QI6T",
+    "text": "Auto Part: Alternator (SKU: H1190QI6T). Vendor: AutoZone. Price: $315.0. Description: Alternator-H1190QI6T"
+  },
+  {
+    "id": "part-H4UQWPFHY",
+    "type": "auto_part",
+    "sku": "H4UQWPFHY",
+    "name": "Starter Solenoid",
+    "vendor": "AutoZone",
+    "price": 57.75,
+    "description": "Starter Solenoid-H4UQWPFHY",
+    "text": "Auto Part: Starter Solenoid (SKU: H4UQWPFHY). Vendor: AutoZone. Price: $57.75. Description: Starter Solenoid-H4UQWPFHY"
+  },
+  {
+    "id": "part-H68FWYSEK",
+    "type": "auto_part",
+    "sku": "H68FWYSEK",
+    "name": "OBD-II Scanner",
+    "vendor": "NAPA Auto Parts",
+    "price": 105.0,
+    "description": "OBD-II Scanner-H68FWYSEK",
+    "text": "Auto Part: OBD-II Scanner (SKU: H68FWYSEK). Vendor: NAPA Auto Parts. Price: $105.0. Description: OBD-II Scanner-H68FWYSEK"
+  },
+  {
+    "id": "part-H6LKE0LQF",
+    "type": "auto_part",
+    "sku": "H6LKE0LQF",
+    "name": "Halogen Headlights",
+    "vendor": "Advanced Auto Parts",
+    "price": 183.75,
+    "description": "Halogen Headlights-H6LKE0LQF",
+    "text": "Auto Part: Halogen Headlights (SKU: H6LKE0LQF). Vendor: Advanced Auto Parts. Price: $183.75. Description: Halogen Headlights-H6LKE0LQF"
+  },
+  {
+    "id": "part-HBVP23L8K",
+    "type": "auto_part",
+    "sku": "HBVP23L8K",
+    "name": "Convertible Top Motor",
+    "vendor": "RockAuto",
+    "price": 525.0,
+    "description": "Convertible Top Motor-HBVP23L8K",
+    "text": "Auto Part: Convertible Top Motor (SKU: HBVP23L8K). Vendor: RockAuto. Price: $525.0. Description: Convertible Top Motor-HBVP23L8K"
+  },
+  {
+    "id": "part-HG9RC1FU1",
+    "type": "auto_part",
+    "sku": "HG9RC1FU1",
+    "name": "Brake Bleeder Kit",
+    "vendor": "Pep Boys",
+    "price": 105.0,
+    "description": "Brake Bleeder Kit-HG9RC1FU1",
+    "text": "Auto Part: Brake Bleeder Kit (SKU: HG9RC1FU1). Vendor: Pep Boys. Price: $105.0. Description: Brake Bleeder Kit-HG9RC1FU1"
+  },
+  {
+    "id": "part-HH1TGKTPD",
+    "type": "auto_part",
+    "sku": "HH1TGKTPD",
+    "name": "Pedal Assembly",
+    "vendor": "Summit Racing",
+    "price": 183.75,
+    "description": "Pedal Assembly-HH1TGKTPD",
+    "text": "Auto Part: Pedal Assembly (SKU: HH1TGKTPD). Vendor: Summit Racing. Price: $183.75. Description: Pedal Assembly-HH1TGKTPD"
+  },
+  {
+    "id": "part-HL0HYD6AS",
+    "type": "auto_part",
+    "sku": "HL0HYD6AS",
+    "name": "Sunroof Seal",
+    "vendor": "RockAuto",
+    "price": 105.0,
+    "description": "Sunroof Seal-HL0HYD6AS",
+    "text": "Auto Part: Sunroof Seal (SKU: HL0HYD6AS). Vendor: RockAuto. Price: $105.0. Description: Sunroof Seal-HL0HYD6AS"
+  },
+  {
+    "id": "part-HP93RBMDZ",
+    "type": "auto_part",
+    "sku": "HP93RBMDZ",
+    "name": "Axle Shaft",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 288.75,
+    "description": "Axle Shaft-HP93RBMDZ",
+    "text": "Auto Part: Axle Shaft (SKU: HP93RBMDZ). Vendor: O'Reilly Auto Parts. Price: $288.75. Description: Axle Shaft-HP93RBMDZ"
+  },
+  {
+    "id": "part-HPHAECAD8",
+    "type": "auto_part",
+    "sku": "HPHAECAD8",
+    "name": "Silicone Sealant",
+    "vendor": "AutoZone",
+    "price": 10.5,
+    "description": "Silicone Sealant-HPHAECAD8",
+    "text": "Auto Part: Silicone Sealant (SKU: HPHAECAD8). Vendor: AutoZone. Price: $10.5. Description: Silicone Sealant-HPHAECAD8"
+  },
+  {
+    "id": "part-HQIFY16IR",
+    "type": "auto_part",
+    "sku": "HQIFY16IR",
+    "name": "Trailer Brake Controller",
+    "vendor": "RockAuto",
+    "price": 288.75,
+    "description": "Trailer Brake Controller-HQIFY16IR",
+    "text": "Auto Part: Trailer Brake Controller (SKU: HQIFY16IR). Vendor: RockAuto. Price: $288.75. Description: Trailer Brake Controller-HQIFY16IR"
+  },
+  {
+    "id": "part-HSFZ7F6VU",
+    "type": "auto_part",
+    "sku": "HSFZ7F6VU",
+    "name": "Side Mirror",
+    "vendor": "RockAuto",
+    "price": 183.75,
+    "description": "Side Mirror-HSFZ7F6VU",
+    "text": "Auto Part: Side Mirror (SKU: HSFZ7F6VU). Vendor: RockAuto. Price: $183.75. Description: Side Mirror-HSFZ7F6VU"
+  },
+  {
+    "id": "part-HZ2JQBFE1",
+    "type": "auto_part",
+    "sku": "HZ2JQBFE1",
+    "name": "License Plate LED",
+    "vendor": "CarQuest",
+    "price": 36.75,
+    "description": "License Plate LED-HZ2JQBFE1",
+    "text": "Auto Part: License Plate LED (SKU: HZ2JQBFE1). Vendor: CarQuest. Price: $36.75. Description: License Plate LED-HZ2JQBFE1"
+  },
+  {
+    "id": "part-I07A5Y2GC",
+    "type": "auto_part",
+    "sku": "I07A5Y2GC",
+    "name": "Carbon Fiber Fender",
+    "vendor": "Pep Boys",
+    "price": 630.0,
+    "description": "Carbon Fiber Fender-I07A5Y2GC",
+    "text": "Auto Part: Carbon Fiber Fender (SKU: I07A5Y2GC). Vendor: Pep Boys. Price: $630.0. Description: Carbon Fiber Fender-I07A5Y2GC"
+  },
+  {
+    "id": "part-I2MQ5VDEM",
+    "type": "auto_part",
+    "sku": "I2MQ5VDEM",
+    "name": "Climate Control Module",
+    "vendor": "Summit Racing",
+    "price": 525.0,
+    "description": "Climate Control Module-I2MQ5VDEM",
+    "text": "Auto Part: Climate Control Module (SKU: I2MQ5VDEM). Vendor: Summit Racing. Price: $525.0. Description: Climate Control Module-I2MQ5VDEM"
+  },
+  {
+    "id": "part-I2NVKWAUZ",
+    "type": "auto_part",
+    "sku": "I2NVKWAUZ",
+    "name": "Tire (each)",
+    "vendor": "AutoZone",
+    "price": 183.75,
+    "description": "Tire (each)-I2NVKWAUZ",
+    "text": "Auto Part: Tire (each) (SKU: I2NVKWAUZ). Vendor: AutoZone. Price: $183.75. Description: Tire (each)-I2NVKWAUZ"
+  },
+  {
+    "id": "part-I375CC1OW",
+    "type": "auto_part",
+    "sku": "I375CC1OW",
+    "name": "Headlight Washer Nozzle",
+    "vendor": "Advanced Auto Parts",
+    "price": 36.75,
+    "description": "Headlight Washer Nozzle-I375CC1OW",
+    "text": "Auto Part: Headlight Washer Nozzle (SKU: I375CC1OW). Vendor: Advanced Auto Parts. Price: $36.75. Description: Headlight Washer Nozzle-I375CC1OW"
+  },
+  {
+    "id": "part-I9TRUD60G",
+    "type": "auto_part",
+    "sku": "I9TRUD60G",
+    "name": "Remote Starter",
+    "vendor": "Advanced Auto Parts",
+    "price": 367.5,
+    "description": "Remote Starter-I9TRUD60G",
+    "text": "Auto Part: Remote Starter (SKU: I9TRUD60G). Vendor: Advanced Auto Parts. Price: $367.5. Description: Remote Starter-I9TRUD60G"
+  },
+  {
+    "id": "part-I9VZLQNN7",
+    "type": "auto_part",
+    "sku": "I9VZLQNN7",
+    "name": "Shop Towels",
+    "vendor": "RockAuto",
+    "price": 15.75,
+    "description": "Shop Towels-I9VZLQNN7",
+    "text": "Auto Part: Shop Towels (SKU: I9VZLQNN7). Vendor: RockAuto. Price: $15.75. Description: Shop Towels-I9VZLQNN7"
+  },
+  {
+    "id": "part-IAKCWZDRF",
+    "type": "auto_part",
+    "sku": "IAKCWZDRF",
+    "name": "Oil Pump",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 288.75,
+    "description": "Oil Pump-IAKCWZDRF",
+    "text": "Auto Part: Oil Pump (SKU: IAKCWZDRF). Vendor: O'Reilly Auto Parts. Price: $288.75. Description: Oil Pump-IAKCWZDRF"
+  },
+  {
+    "id": "part-IIQAYY8C3",
+    "type": "auto_part",
+    "sku": "IIQAYY8C3",
+    "name": "Voltage Regulator",
+    "vendor": "NAPA Auto Parts",
+    "price": 73.5,
+    "description": "Voltage Regulator-IIQAYY8C3",
+    "text": "Auto Part: Voltage Regulator (SKU: IIQAYY8C3). Vendor: NAPA Auto Parts. Price: $73.5. Description: Voltage Regulator-IIQAYY8C3"
+  },
+  {
+    "id": "part-IKV69W7IX",
+    "type": "auto_part",
+    "sku": "IKV69W7IX",
+    "name": "Transmission Jack",
+    "vendor": "Summit Racing",
+    "price": 367.5,
+    "description": "Transmission Jack-IKV69W7IX",
+    "text": "Auto Part: Transmission Jack (SKU: IKV69W7IX). Vendor: Summit Racing. Price: $367.5. Description: Transmission Jack-IKV69W7IX"
+  },
+  {
+    "id": "part-IQK5JVQDY",
+    "type": "auto_part",
+    "sku": "IQK5JVQDY",
+    "name": "Performance Intake Manifold",
+    "vendor": "Summit Racing",
+    "price": 892.5,
+    "description": "Performance Intake Manifold-IQK5JVQDY",
+    "text": "Auto Part: Performance Intake Manifold (SKU: IQK5JVQDY). Vendor: Summit Racing. Price: $892.5. Description: Performance Intake Manifold-IQK5JVQDY"
+  },
+  {
+    "id": "part-IXAHXKQH8",
+    "type": "auto_part",
+    "sku": "IXAHXKQH8",
+    "name": "Oil Pan",
+    "vendor": "NAPA Auto Parts",
+    "price": 288.75,
+    "description": "Oil Pan-IXAHXKQH8",
+    "text": "Auto Part: Oil Pan (SKU: IXAHXKQH8). Vendor: NAPA Auto Parts. Price: $288.75. Description: Oil Pan-IXAHXKQH8"
+  },
+  {
+    "id": "part-IZV3QZ9AH",
+    "type": "auto_part",
+    "sku": "IZV3QZ9AH",
+    "name": "Interior Dome Light",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 18.38,
+    "description": "Interior Dome Light-IZV3QZ9AH",
+    "text": "Auto Part: Interior Dome Light (SKU: IZV3QZ9AH). Vendor: O'Reilly Auto Parts. Price: $18.38. Description: Interior Dome Light-IZV3QZ9AH"
+  },
+  {
+    "id": "part-J2ML4B8WQ",
+    "type": "auto_part",
+    "sku": "J2ML4B8WQ",
+    "name": "Ball Joint",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 57.75,
+    "description": "Ball Joint-J2ML4B8WQ",
+    "text": "Auto Part: Ball Joint (SKU: J2ML4B8WQ). Vendor: O'Reilly Auto Parts. Price: $57.75. Description: Ball Joint-J2ML4B8WQ"
+  },
+  {
+    "id": "part-J534R9BNM",
+    "type": "auto_part",
+    "sku": "J534R9BNM",
+    "name": "Seat Belt Pretensioner",
+    "vendor": "RockAuto",
+    "price": 288.75,
+    "description": "Seat Belt Pretensioner-J534R9BNM",
+    "text": "Auto Part: Seat Belt Pretensioner (SKU: J534R9BNM). Vendor: RockAuto. Price: $288.75. Description: Seat Belt Pretensioner-J534R9BNM"
+  },
+  {
+    "id": "part-J7PVLXJ85",
+    "type": "auto_part",
+    "sku": "J7PVLXJ85",
+    "name": "Trailer Wiring Harness",
+    "vendor": "RockAuto",
+    "price": 105.0,
+    "description": "Trailer Wiring Harness-J7PVLXJ85",
+    "text": "Auto Part: Trailer Wiring Harness (SKU: J7PVLXJ85). Vendor: RockAuto. Price: $105.0. Description: Trailer Wiring Harness-J7PVLXJ85"
+  },
+  {
+    "id": "part-J7ZCFEEWI",
+    "type": "auto_part",
+    "sku": "J7ZCFEEWI",
+    "name": "Evaporative Emission Valve",
+    "vendor": "AutoZone",
+    "price": 105.0,
+    "description": "Evaporative Emission Valve-J7ZCFEEWI",
+    "text": "Auto Part: Evaporative Emission Valve (SKU: J7ZCFEEWI). Vendor: AutoZone. Price: $105.0. Description: Evaporative Emission Valve-J7ZCFEEWI"
+  },
+  {
+    "id": "part-JFHWZLZMR",
+    "type": "auto_part",
+    "sku": "JFHWZLZMR",
+    "name": "Power Steering Fluid",
+    "vendor": "RockAuto",
+    "price": 15.75,
+    "description": "Power Steering Fluid-JFHWZLZMR",
+    "text": "Auto Part: Power Steering Fluid (SKU: JFHWZLZMR). Vendor: RockAuto. Price: $15.75. Description: Power Steering Fluid-JFHWZLZMR"
+  },
+  {
+    "id": "part-JINMYB8GU",
+    "type": "auto_part",
+    "sku": "JINMYB8GU",
+    "name": "Clutch Slave Cylinder",
+    "vendor": "CarQuest",
+    "price": 105.0,
+    "description": "Clutch Slave Cylinder-JINMYB8GU",
+    "text": "Auto Part: Clutch Slave Cylinder (SKU: JINMYB8GU). Vendor: CarQuest. Price: $105.0. Description: Clutch Slave Cylinder-JINMYB8GU"
+  },
+  {
+    "id": "part-JJS76W15G",
+    "type": "auto_part",
+    "sku": "JJS76W15G",
+    "name": "Exhaust Hanger",
+    "vendor": "AutoZone",
+    "price": 10.5,
+    "description": "Exhaust Hanger-JJS76W15G",
+    "text": "Auto Part: Exhaust Hanger (SKU: JJS76W15G). Vendor: AutoZone. Price: $10.5. Description: Exhaust Hanger-JJS76W15G"
+  },
+  {
+    "id": "part-JRS9MCJA0",
+    "type": "auto_part",
+    "sku": "JRS9MCJA0",
+    "name": "Trailer Hitch Mount",
+    "vendor": "Summit Racing",
+    "price": 105.0,
+    "description": "Trailer Hitch Mount-JRS9MCJA0",
+    "text": "Auto Part: Trailer Hitch Mount (SKU: JRS9MCJA0). Vendor: Summit Racing. Price: $105.0. Description: Trailer Hitch Mount-JRS9MCJA0"
+  },
+  {
+    "id": "part-JWEAMUZUR",
+    "type": "auto_part",
+    "sku": "JWEAMUZUR",
+    "name": "Cold Air Intake Kit",
+    "vendor": "Summit Racing",
+    "price": 367.5,
+    "description": "Cold Air Intake Kit-JWEAMUZUR",
+    "text": "Auto Part: Cold Air Intake Kit (SKU: JWEAMUZUR). Vendor: Summit Racing. Price: $367.5. Description: Cold Air Intake Kit-JWEAMUZUR"
+  },
+  {
+    "id": "part-JX8ZUUJDT",
+    "type": "auto_part",
+    "sku": "JX8ZUUJDT",
+    "name": "Jack Stand",
+    "vendor": "Summit Racing",
+    "price": 57.75,
+    "description": "Jack Stand-JX8ZUUJDT",
+    "text": "Auto Part: Jack Stand (SKU: JX8ZUUJDT). Vendor: Summit Racing. Price: $57.75. Description: Jack Stand-JX8ZUUJDT"
+  },
+  {
+    "id": "part-K1EQTLFQS",
+    "type": "auto_part",
+    "sku": "K1EQTLFQS",
+    "name": "Remote Key Receiver",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 183.75,
+    "description": "Remote Key Receiver-K1EQTLFQS",
+    "text": "Auto Part: Remote Key Receiver (SKU: K1EQTLFQS). Vendor: O'Reilly Auto Parts. Price: $183.75. Description: Remote Key Receiver-K1EQTLFQS"
+  },
+  {
+    "id": "part-K29YU9JIX",
+    "type": "auto_part",
+    "sku": "K29YU9JIX",
+    "name": "Steering Rack",
+    "vendor": "Pep Boys",
+    "price": 892.5,
+    "description": "Steering Rack-K29YU9JIX",
+    "text": "Auto Part: Steering Rack (SKU: K29YU9JIX). Vendor: Pep Boys. Price: $892.5. Description: Steering Rack-K29YU9JIX"
+  },
+  {
+    "id": "part-K596X71GD",
+    "type": "auto_part",
+    "sku": "K596X71GD",
+    "name": "Headlight Washer Pump",
+    "vendor": "Pep Boys",
+    "price": 105.0,
+    "description": "Headlight Washer Pump-K596X71GD",
+    "text": "Auto Part: Headlight Washer Pump (SKU: K596X71GD). Vendor: Pep Boys. Price: $105.0. Description: Headlight Washer Pump-K596X71GD"
+  },
+  {
+    "id": "part-K8HNJBICU",
+    "type": "auto_part",
+    "sku": "K8HNJBICU",
+    "name": "Wheel Spacer",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 105.0,
+    "description": "Wheel Spacer-K8HNJBICU",
+    "text": "Auto Part: Wheel Spacer (SKU: K8HNJBICU). Vendor: O'Reilly Auto Parts. Price: $105.0. Description: Wheel Spacer-K8HNJBICU"
+  },
+  {
+    "id": "part-KASI07D9R",
+    "type": "auto_part",
+    "sku": "KASI07D9R",
+    "name": "Cornering Light",
+    "vendor": "Advanced Auto Parts",
+    "price": 367.5,
+    "description": "Cornering Light-KASI07D9R",
+    "text": "Auto Part: Cornering Light (SKU: KASI07D9R). Vendor: Advanced Auto Parts. Price: $367.5. Description: Cornering Light-KASI07D9R"
+  },
+  {
+    "id": "part-KCFIFI45L",
+    "type": "auto_part",
+    "sku": "KCFIFI45L",
+    "name": "Shift Knob",
+    "vendor": "Summit Racing",
+    "price": 42.0,
+    "description": "Shift Knob-KCFIFI45L",
+    "text": "Auto Part: Shift Knob (SKU: KCFIFI45L). Vendor: Summit Racing. Price: $42.0. Description: Shift Knob-KCFIFI45L"
+  },
+  {
+    "id": "part-KDOF3BOKH",
+    "type": "auto_part",
+    "sku": "KDOF3BOKH",
+    "name": "Window Regulator",
+    "vendor": "RockAuto",
+    "price": 183.75,
+    "description": "Window Regulator-KDOF3BOKH",
+    "text": "Auto Part: Window Regulator (SKU: KDOF3BOKH). Vendor: RockAuto. Price: $183.75. Description: Window Regulator-KDOF3BOKH"
+  },
+  {
+    "id": "part-KJOQRIYNY",
+    "type": "auto_part",
+    "sku": "KJOQRIYNY",
+    "name": "Fuel Additive",
+    "vendor": "RockAuto",
+    "price": 21.0,
+    "description": "Fuel Additive-KJOQRIYNY",
+    "text": "Auto Part: Fuel Additive (SKU: KJOQRIYNY). Vendor: RockAuto. Price: $21.0. Description: Fuel Additive-KJOQRIYNY"
+  },
+  {
+    "id": "part-KK987XVE6",
+    "type": "auto_part",
+    "sku": "KK987XVE6",
+    "name": "Fuel Pressure Sensor",
+    "vendor": "Summit Racing",
+    "price": 105.0,
+    "description": "Fuel Pressure Sensor-KK987XVE6",
+    "text": "Auto Part: Fuel Pressure Sensor (SKU: KK987XVE6). Vendor: Summit Racing. Price: $105.0. Description: Fuel Pressure Sensor-KK987XVE6"
+  },
+  {
+    "id": "part-KM7YGDHT2",
+    "type": "auto_part",
+    "sku": "KM7YGDHT2",
+    "name": "Charcoal Canister",
+    "vendor": "Summit Racing",
+    "price": 183.75,
+    "description": "Charcoal Canister-KM7YGDHT2",
+    "text": "Auto Part: Charcoal Canister (SKU: KM7YGDHT2). Vendor: Summit Racing. Price: $183.75. Description: Charcoal Canister-KM7YGDHT2"
+  },
+  {
+    "id": "part-KRLIJQGMI",
+    "type": "auto_part",
+    "sku": "KRLIJQGMI",
+    "name": "Brake Caliper",
+    "vendor": "CarQuest",
+    "price": 183.75,
+    "description": "Brake Caliper-KRLIJQGMI",
+    "text": "Auto Part: Brake Caliper (SKU: KRLIJQGMI). Vendor: CarQuest. Price: $183.75. Description: Brake Caliper-KRLIJQGMI"
+  },
+  {
+    "id": "part-KSKMASLHH",
+    "type": "auto_part",
+    "sku": "KSKMASLHH",
+    "name": "Body Panel Reinforcement",
+    "vendor": "Pep Boys",
+    "price": 525.0,
+    "description": "Body Panel Reinforcement-KSKMASLHH",
+    "text": "Auto Part: Body Panel Reinforcement (SKU: KSKMASLHH). Vendor: Pep Boys. Price: $525.0. Description: Body Panel Reinforcement-KSKMASLHH"
+  },
+  {
+    "id": "part-KVVYV12MR",
+    "type": "auto_part",
+    "sku": "KVVYV12MR",
+    "name": "Degreaser",
+    "vendor": "Summit Racing",
+    "price": 15.75,
+    "description": "Degreaser-KVVYV12MR",
+    "text": "Auto Part: Degreaser (SKU: KVVYV12MR). Vendor: Summit Racing. Price: $15.75. Description: Degreaser-KVVYV12MR"
+  },
+  {
+    "id": "part-L0WYUXY55",
+    "type": "auto_part",
+    "sku": "L0WYUXY55",
+    "name": "Portable Fridge",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 892.5,
+    "description": "Portable Fridge-L0WYUXY55",
+    "text": "Auto Part: Portable Fridge (SKU: L0WYUXY55). Vendor: O'Reilly Auto Parts. Price: $892.5. Description: Portable Fridge-L0WYUXY55"
+  },
+  {
+    "id": "part-L3AETHLAT",
+    "type": "auto_part",
+    "sku": "L3AETHLAT",
+    "name": "Window Motor",
+    "vendor": "AutoZone",
+    "price": 183.75,
+    "description": "Window Motor-L3AETHLAT",
+    "text": "Auto Part: Window Motor (SKU: L3AETHLAT). Vendor: AutoZone. Price: $183.75. Description: Window Motor-L3AETHLAT"
+  },
+  {
+    "id": "part-L6Z1EHY0W",
+    "type": "auto_part",
+    "sku": "L6Z1EHY0W",
+    "name": "Rain Sensor",
+    "vendor": "Summit Racing",
+    "price": 183.75,
+    "description": "Rain Sensor-L6Z1EHY0W",
+    "text": "Auto Part: Rain Sensor (SKU: L6Z1EHY0W). Vendor: Summit Racing. Price: $183.75. Description: Rain Sensor-L6Z1EHY0W"
+  },
+  {
+    "id": "part-LAZNK9MC6",
+    "type": "auto_part",
+    "sku": "LAZNK9MC6",
+    "name": "Dashboard",
+    "vendor": "AutoZone",
+    "price": 892.5,
+    "description": "Dashboard-LAZNK9MC6",
+    "text": "Auto Part: Dashboard (SKU: LAZNK9MC6). Vendor: AutoZone. Price: $892.5. Description: Dashboard-LAZNK9MC6"
+  },
+  {
+    "id": "part-LJHX19UHI",
+    "type": "auto_part",
+    "sku": "LJHX19UHI",
+    "name": "Diagnostic Tool",
+    "vendor": "Advanced Auto Parts",
+    "price": 420.0,
+    "description": "Diagnostic Tool-LJHX19UHI",
+    "text": "Auto Part: Diagnostic Tool (SKU: LJHX19UHI). Vendor: Advanced Auto Parts. Price: $420.0. Description: Diagnostic Tool-LJHX19UHI"
+  },
+  {
+    "id": "part-LMYS9H25R",
+    "type": "auto_part",
+    "sku": "LMYS9H25R",
+    "name": "Armrest",
+    "vendor": "CarQuest",
+    "price": 105.0,
+    "description": "Armrest-LMYS9H25R",
+    "text": "Auto Part: Armrest (SKU: LMYS9H25R). Vendor: CarQuest. Price: $105.0. Description: Armrest-LMYS9H25R"
+  },
+  {
+    "id": "part-LOSZ2VUT2",
+    "type": "auto_part",
+    "sku": "LOSZ2VUT2",
+    "name": "Weatherstrip",
+    "vendor": "CarQuest",
+    "price": 42.0,
+    "description": "Weatherstrip-LOSZ2VUT2",
+    "text": "Auto Part: Weatherstrip (SKU: LOSZ2VUT2). Vendor: CarQuest. Price: $42.0. Description: Weatherstrip-LOSZ2VUT2"
+  },
+  {
+    "id": "part-LPJYT4DWB",
+    "type": "auto_part",
+    "sku": "LPJYT4DWB",
+    "name": "Interior LED Kit",
+    "vendor": "CarQuest",
+    "price": 210.0,
+    "description": "Interior LED Kit-LPJYT4DWB",
+    "text": "Auto Part: Interior LED Kit (SKU: LPJYT4DWB). Vendor: CarQuest. Price: $210.0. Description: Interior LED Kit-LPJYT4DWB"
+  },
+  {
+    "id": "part-LRUMUHGW5",
+    "type": "auto_part",
+    "sku": "LRUMUHGW5",
+    "name": "Brake Cleaner",
+    "vendor": "Pep Boys",
+    "price": 10.5,
+    "description": "Brake Cleaner-LRUMUHGW5",
+    "text": "Auto Part: Brake Cleaner (SKU: LRUMUHGW5). Vendor: Pep Boys. Price: $10.5. Description: Brake Cleaner-LRUMUHGW5"
+  },
+  {
+    "id": "part-LTX7Y24WT",
+    "type": "auto_part",
+    "sku": "LTX7Y24WT",
+    "name": "Mirror Housing",
+    "vendor": "Advanced Auto Parts",
+    "price": 183.75,
+    "description": "Mirror Housing-LTX7Y24WT",
+    "text": "Auto Part: Mirror Housing (SKU: LTX7Y24WT). Vendor: Advanced Auto Parts. Price: $183.75. Description: Mirror Housing-LTX7Y24WT"
+  },
+  {
+    "id": "part-LVV3H007U",
+    "type": "auto_part",
+    "sku": "LVV3H007U",
+    "name": "Cooling Fan",
+    "vendor": "AutoZone",
+    "price": 183.75,
+    "description": "Cooling Fan-LVV3H007U",
+    "text": "Auto Part: Cooling Fan (SKU: LVV3H007U). Vendor: AutoZone. Price: $183.75. Description: Cooling Fan-LVV3H007U"
+  },
+  {
+    "id": "part-M12M8FREY",
+    "type": "auto_part",
+    "sku": "M12M8FREY",
+    "name": "Starter Motor",
+    "vendor": "Pep Boys",
+    "price": 262.5,
+    "description": "Starter Motor-M12M8FREY",
+    "text": "Auto Part: Starter Motor (SKU: M12M8FREY). Vendor: Pep Boys. Price: $262.5. Description: Starter Motor-M12M8FREY"
+  },
+  {
+    "id": "part-MDA5714HZ",
+    "type": "auto_part",
+    "sku": "MDA5714HZ",
+    "name": "Wiring Harness",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 420.0,
+    "description": "Wiring Harness-MDA5714HZ",
+    "text": "Auto Part: Wiring Harness (SKU: MDA5714HZ). Vendor: O'Reilly Auto Parts. Price: $420.0. Description: Wiring Harness-MDA5714HZ"
+  },
+  {
+    "id": "part-MDVGXD1OA",
+    "type": "auto_part",
+    "sku": "MDVGXD1OA",
+    "name": "Tow Strap",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 36.75,
+    "description": "Tow Strap-MDVGXD1OA",
+    "text": "Auto Part: Tow Strap (SKU: MDVGXD1OA). Vendor: O'Reilly Auto Parts. Price: $36.75. Description: Tow Strap-MDVGXD1OA"
+  },
+  {
+    "id": "part-MS9LSLIG1",
+    "type": "auto_part",
+    "sku": "MS9LSLIG1",
+    "name": "Wheel Bearing",
+    "vendor": "CarQuest",
+    "price": 105.0,
+    "description": "Wheel Bearing-MS9LSLIG1",
+    "text": "Auto Part: Wheel Bearing (SKU: MS9LSLIG1). Vendor: CarQuest. Price: $105.0. Description: Wheel Bearing-MS9LSLIG1"
+  },
+  {
+    "id": "part-MV6CSW23Y",
+    "type": "auto_part",
+    "sku": "MV6CSW23Y",
+    "name": "Anti-Seize Compound",
+    "vendor": "NAPA Auto Parts",
+    "price": 10.5,
+    "description": "Anti-Seize Compound-MV6CSW23Y",
+    "text": "Auto Part: Anti-Seize Compound (SKU: MV6CSW23Y). Vendor: NAPA Auto Parts. Price: $10.5. Description: Anti-Seize Compound-MV6CSW23Y"
+  },
+  {
+    "id": "part-MWHRL4N7R",
+    "type": "auto_part",
+    "sku": "MWHRL4N7R",
+    "name": "Daytime Running Light Module",
+    "vendor": "NAPA Auto Parts",
+    "price": 183.75,
+    "description": "Daytime Running Light Module-MWHRL4N7R",
+    "text": "Auto Part: Daytime Running Light Module (SKU: MWHRL4N7R). Vendor: NAPA Auto Parts. Price: $183.75. Description: Daytime Running Light Module-MWHRL4N7R"
+  },
+  {
+    "id": "part-MWY83QTYV",
+    "type": "auto_part",
+    "sku": "MWY83QTYV",
+    "name": "Sway Bar Link",
+    "vendor": "Pep Boys",
+    "price": 42.0,
+    "description": "Sway Bar Link-MWY83QTYV",
+    "text": "Auto Part: Sway Bar Link (SKU: MWY83QTYV). Vendor: Pep Boys. Price: $42.0. Description: Sway Bar Link-MWY83QTYV"
+  },
+  {
+    "id": "part-MYIDN7KC1",
+    "type": "auto_part",
+    "sku": "MYIDN7KC1",
+    "name": "Exhaust Clamp",
+    "vendor": "NAPA Auto Parts",
+    "price": 21.0,
+    "description": "Exhaust Clamp-MYIDN7KC1",
+    "text": "Auto Part: Exhaust Clamp (SKU: MYIDN7KC1). Vendor: NAPA Auto Parts. Price: $21.0. Description: Exhaust Clamp-MYIDN7KC1"
+  },
+  {
+    "id": "part-N4SPE8LYU",
+    "type": "auto_part",
+    "sku": "N4SPE8LYU",
+    "name": "Brake Pads (set)",
+    "vendor": "Pep Boys",
+    "price": 73.5,
+    "description": "Brake Pads (set)-N4SPE8LYU",
+    "text": "Auto Part: Brake Pads (set) (SKU: N4SPE8LYU). Vendor: Pep Boys. Price: $73.5. Description: Brake Pads (set)-N4SPE8LYU"
+  },
+  {
+    "id": "part-N56WO6YQ6",
+    "type": "auto_part",
+    "sku": "N56WO6YQ6",
+    "name": "Cabin Air Filter",
+    "vendor": "Summit Racing",
+    "price": 23.63,
+    "description": "Cabin Air Filter-N56WO6YQ6",
+    "text": "Auto Part: Cabin Air Filter (SKU: N56WO6YQ6). Vendor: Summit Racing. Price: $23.63. Description: Cabin Air Filter-N56WO6YQ6"
+  },
+  {
+    "id": "part-N9LQI8MOR",
+    "type": "auto_part",
+    "sku": "N9LQI8MOR",
+    "name": "Onboard Charger",
+    "vendor": "Summit Racing",
+    "price": 1837.5,
+    "description": "Onboard Charger-N9LQI8MOR",
+    "text": "Auto Part: Onboard Charger (SKU: N9LQI8MOR). Vendor: Summit Racing. Price: $1837.5. Description: Onboard Charger-N9LQI8MOR"
+  },
+  {
+    "id": "part-NBENYTBFQ",
+    "type": "auto_part",
+    "sku": "NBENYTBFQ",
+    "name": "Windshield",
+    "vendor": "Pep Boys",
+    "price": 525.0,
+    "description": "Windshield-NBENYTBFQ",
+    "text": "Auto Part: Windshield (SKU: NBENYTBFQ). Vendor: Pep Boys. Price: $525.0. Description: Windshield-NBENYTBFQ"
+  },
+  {
+    "id": "part-NCAEZN0IO",
+    "type": "auto_part",
+    "sku": "NCAEZN0IO",
+    "name": "Fuel Injector",
+    "vendor": "Pep Boys",
+    "price": 105.0,
+    "description": "Fuel Injector-NCAEZN0IO",
+    "text": "Auto Part: Fuel Injector (SKU: NCAEZN0IO). Vendor: Pep Boys. Price: $105.0. Description: Fuel Injector-NCAEZN0IO"
+  },
+  {
+    "id": "part-NGVEB0UOU",
+    "type": "auto_part",
+    "sku": "NGVEB0UOU",
+    "name": "Brake Line Fitting",
+    "vendor": "RockAuto",
+    "price": 18.38,
+    "description": "Brake Line Fitting-NGVEB0UOU",
+    "text": "Auto Part: Brake Line Fitting (SKU: NGVEB0UOU). Vendor: RockAuto. Price: $18.38. Description: Brake Line Fitting-NGVEB0UOU"
+  },
+  {
+    "id": "part-NISN9Q3I6",
+    "type": "auto_part",
+    "sku": "NISN9Q3I6",
+    "name": "Regenerative Braking Module",
+    "vendor": "AutoZone",
+    "price": 892.5,
+    "description": "Regenerative Braking Module-NISN9Q3I6",
+    "text": "Auto Part: Regenerative Braking Module (SKU: NISN9Q3I6). Vendor: AutoZone. Price: $892.5. Description: Regenerative Braking Module-NISN9Q3I6"
+  },
+  {
+    "id": "part-NWS2T2XRJ",
+    "type": "auto_part",
+    "sku": "NWS2T2XRJ",
+    "name": "Third Brake Light LED",
+    "vendor": "AutoZone",
+    "price": 105.0,
+    "description": "Third Brake Light LED-NWS2T2XRJ",
+    "text": "Auto Part: Third Brake Light LED (SKU: NWS2T2XRJ). Vendor: AutoZone. Price: $105.0. Description: Third Brake Light LED-NWS2T2XRJ"
+  },
+  {
+    "id": "part-O076XO3QE",
+    "type": "auto_part",
+    "sku": "O076XO3QE",
+    "name": "Horn",
+    "vendor": "Pep Boys",
+    "price": 36.75,
+    "description": "Horn-O076XO3QE",
+    "text": "Auto Part: Horn (SKU: O076XO3QE). Vendor: Pep Boys. Price: $36.75. Description: Horn-O076XO3QE"
+  },
+  {
+    "id": "part-O0GC2XCTO",
+    "type": "auto_part",
+    "sku": "O0GC2XCTO",
+    "name": "Trunk Lid",
+    "vendor": "AutoZone",
+    "price": 630.0,
+    "description": "Trunk Lid-O0GC2XCTO",
+    "text": "Auto Part: Trunk Lid (SKU: O0GC2XCTO). Vendor: AutoZone. Price: $630.0. Description: Trunk Lid-O0GC2XCTO"
+  },
+  {
+    "id": "part-O17B5WVYV",
+    "type": "auto_part",
+    "sku": "O17B5WVYV",
+    "name": "Driveshaft",
+    "vendor": "Advanced Auto Parts",
+    "price": 630.0,
+    "description": "Driveshaft-O17B5WVYV",
+    "text": "Auto Part: Driveshaft (SKU: O17B5WVYV). Vendor: Advanced Auto Parts. Price: $630.0. Description: Driveshaft-O17B5WVYV"
+  },
+  {
+    "id": "part-O2HS10DO8",
+    "type": "auto_part",
+    "sku": "O2HS10DO8",
+    "name": "Body Kit",
+    "vendor": "Summit Racing",
+    "price": 2100.0,
+    "description": "Body Kit-O2HS10DO8",
+    "text": "Auto Part: Body Kit (SKU: O2HS10DO8). Vendor: Summit Racing. Price: $2100.0. Description: Body Kit-O2HS10DO8"
+  },
+  {
+    "id": "part-O55XLBCQB",
+    "type": "auto_part",
+    "sku": "O55XLBCQB",
+    "name": "Gas Cap",
+    "vendor": "RockAuto",
+    "price": 15.75,
+    "description": "Gas Cap-O55XLBCQB",
+    "text": "Auto Part: Gas Cap (SKU: O55XLBCQB). Vendor: RockAuto. Price: $15.75. Description: Gas Cap-O55XLBCQB"
+  },
+  {
+    "id": "part-O68ZH93WN",
+    "type": "auto_part",
+    "sku": "O68ZH93WN",
+    "name": "Door Panel",
+    "vendor": "NAPA Auto Parts",
+    "price": 367.5,
+    "description": "Door Panel-O68ZH93WN",
+    "text": "Auto Part: Door Panel (SKU: O68ZH93WN). Vendor: NAPA Auto Parts. Price: $367.5. Description: Door Panel-O68ZH93WN"
+  },
+  {
+    "id": "part-O955DRS8N",
+    "type": "auto_part",
+    "sku": "O955DRS8N",
+    "name": "LED Light Bar",
+    "vendor": "Pep Boys",
+    "price": 367.5,
+    "description": "LED Light Bar-O955DRS8N",
+    "text": "Auto Part: LED Light Bar (SKU: O955DRS8N). Vendor: Pep Boys. Price: $367.5. Description: LED Light Bar-O955DRS8N"
+  },
+  {
+    "id": "part-OFNKIZPEJ",
+    "type": "auto_part",
+    "sku": "OFNKIZPEJ",
+    "name": "Pliers Set",
+    "vendor": "NAPA Auto Parts",
+    "price": 42.0,
+    "description": "Pliers Set-OFNKIZPEJ",
+    "text": "Auto Part: Pliers Set (SKU: OFNKIZPEJ). Vendor: NAPA Auto Parts. Price: $42.0. Description: Pliers Set-OFNKIZPEJ"
+  },
+  {
+    "id": "part-OMSFLQWZ2",
+    "type": "auto_part",
+    "sku": "OMSFLQWZ2",
+    "name": "Interior Ambient Lighting Kit",
+    "vendor": "Pep Boys",
+    "price": 210.0,
+    "description": "Interior Ambient Lighting Kit-OMSFLQWZ2",
+    "text": "Auto Part: Interior Ambient Lighting Kit (SKU: OMSFLQWZ2). Vendor: Pep Boys. Price: $210.0. Description: Interior Ambient Lighting Kit-OMSFLQWZ2"
+  },
+  {
+    "id": "part-ORTFLBGPC",
+    "type": "auto_part",
+    "sku": "ORTFLBGPC",
+    "name": "Telematics Module",
+    "vendor": "RockAuto",
+    "price": 525.0,
+    "description": "Telematics Module-ORTFLBGPC",
+    "text": "Auto Part: Telematics Module (SKU: ORTFLBGPC). Vendor: RockAuto. Price: $525.0. Description: Telematics Module-ORTFLBGPC"
+  },
+  {
+    "id": "part-OUNBK77R3",
+    "type": "auto_part",
+    "sku": "OUNBK77R3",
+    "name": "Light Bulb",
+    "vendor": "Summit Racing",
+    "price": 13.13,
+    "description": "Light Bulb-OUNBK77R3",
+    "text": "Auto Part: Light Bulb (SKU: OUNBK77R3). Vendor: Summit Racing. Price: $13.13. Description: Light Bulb-OUNBK77R3"
+  },
+  {
+    "id": "part-OUS2Y658Z",
+    "type": "auto_part",
+    "sku": "OUS2Y658Z",
+    "name": "Wheel Stud",
+    "vendor": "RockAuto",
+    "price": 10.5,
+    "description": "Wheel Stud-OUS2Y658Z",
+    "text": "Auto Part: Wheel Stud (SKU: OUS2Y658Z). Vendor: RockAuto. Price: $10.5. Description: Wheel Stud-OUS2Y658Z"
+  },
+  {
+    "id": "part-OZM55D3WO",
+    "type": "auto_part",
+    "sku": "OZM55D3WO",
+    "name": "Carburetor",
+    "vendor": "RockAuto",
+    "price": 367.5,
+    "description": "Carburetor-OZM55D3WO",
+    "text": "Auto Part: Carburetor (SKU: OZM55D3WO). Vendor: RockAuto. Price: $367.5. Description: Carburetor-OZM55D3WO"
+  },
+  {
+    "id": "part-P3W1ETA3U",
+    "type": "auto_part",
+    "sku": "P3W1ETA3U",
+    "name": "Intake Manifold",
+    "vendor": "Pep Boys",
+    "price": 525.0,
+    "description": "Intake Manifold-P3W1ETA3U",
+    "text": "Auto Part: Intake Manifold (SKU: P3W1ETA3U). Vendor: Pep Boys. Price: $525.0. Description: Intake Manifold-P3W1ETA3U"
+  },
+  {
+    "id": "part-PB873MMR5",
+    "type": "auto_part",
+    "sku": "PB873MMR5",
+    "name": "Navigation System",
+    "vendor": "AutoZone",
+    "price": 1050.0,
+    "description": "Navigation System-PB873MMR5",
+    "text": "Auto Part: Navigation System (SKU: PB873MMR5). Vendor: AutoZone. Price: $1050.0. Description: Navigation System-PB873MMR5"
+  },
+  {
+    "id": "part-PHDDYC5C0",
+    "type": "auto_part",
+    "sku": "PHDDYC5C0",
+    "name": "Fog Light",
+    "vendor": "RockAuto",
+    "price": 105.0,
+    "description": "Fog Light-PHDDYC5C0",
+    "text": "Auto Part: Fog Light (SKU: PHDDYC5C0). Vendor: RockAuto. Price: $105.0. Description: Fog Light-PHDDYC5C0"
+  },
+  {
+    "id": "part-PHLX1H19Z",
+    "type": "auto_part",
+    "sku": "PHLX1H19Z",
+    "name": "Wheel Cylinder",
+    "vendor": "RockAuto",
+    "price": 52.5,
+    "description": "Wheel Cylinder-PHLX1H19Z",
+    "text": "Auto Part: Wheel Cylinder (SKU: PHLX1H19Z). Vendor: RockAuto. Price: $52.5. Description: Wheel Cylinder-PHLX1H19Z"
+  },
+  {
+    "id": "part-POY9KODUM",
+    "type": "auto_part",
+    "sku": "POY9KODUM",
+    "name": "Tire Valve Stem",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 10.5,
+    "description": "Tire Valve Stem-POY9KODUM",
+    "text": "Auto Part: Tire Valve Stem (SKU: POY9KODUM). Vendor: O'Reilly Auto Parts. Price: $10.5. Description: Tire Valve Stem-POY9KODUM"
+  },
+  {
+    "id": "part-PV2N1E3EL",
+    "type": "auto_part",
+    "sku": "PV2N1E3EL",
+    "name": "Transmission Filter",
+    "vendor": "NAPA Auto Parts",
+    "price": 36.75,
+    "description": "Transmission Filter-PV2N1E3EL",
+    "text": "Auto Part: Transmission Filter (SKU: PV2N1E3EL). Vendor: NAPA Auto Parts. Price: $36.75. Description: Transmission Filter-PV2N1E3EL"
+  },
+  {
+    "id": "part-PZ0DXS9JY",
+    "type": "auto_part",
+    "sku": "PZ0DXS9JY",
+    "name": "Half Shaft",
+    "vendor": "Summit Racing",
+    "price": 288.75,
+    "description": "Half Shaft-PZ0DXS9JY",
+    "text": "Auto Part: Half Shaft (SKU: PZ0DXS9JY). Vendor: Summit Racing. Price: $288.75. Description: Half Shaft-PZ0DXS9JY"
+  },
+  {
+    "id": "part-PZZU963WJ",
+    "type": "auto_part",
+    "sku": "PZZU963WJ",
+    "name": "Shock Absorber",
+    "vendor": "Advanced Auto Parts",
+    "price": 105.0,
+    "description": "Shock Absorber-PZZU963WJ",
+    "text": "Auto Part: Shock Absorber (SKU: PZZU963WJ). Vendor: Advanced Auto Parts. Price: $105.0. Description: Shock Absorber-PZZU963WJ"
+  },
+  {
+    "id": "part-Q6I2Z8YXM",
+    "type": "auto_part",
+    "sku": "Q6I2Z8YXM",
+    "name": "Transmission Assembly",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 2625.0,
+    "description": "Transmission Assembly-Q6I2Z8YXM",
+    "text": "Auto Part: Transmission Assembly (SKU: Q6I2Z8YXM). Vendor: O'Reilly Auto Parts. Price: $2625.0. Description: Transmission Assembly-Q6I2Z8YXM"
+  },
+  {
+    "id": "part-Q8RVXSUH1",
+    "type": "auto_part",
+    "sku": "Q8RVXSUH1",
+    "name": "Power Door Lock Actuator",
+    "vendor": "AutoZone",
+    "price": 183.75,
+    "description": "Power Door Lock Actuator-Q8RVXSUH1",
+    "text": "Auto Part: Power Door Lock Actuator (SKU: Q8RVXSUH1). Vendor: AutoZone. Price: $183.75. Description: Power Door Lock Actuator-Q8RVXSUH1"
+  },
+  {
+    "id": "part-QGD2NCXPD",
+    "type": "auto_part",
+    "sku": "QGD2NCXPD",
+    "name": "Lug Wrench",
+    "vendor": "NAPA Auto Parts",
+    "price": 36.75,
+    "description": "Lug Wrench-QGD2NCXPD",
+    "text": "Auto Part: Lug Wrench (SKU: QGD2NCXPD). Vendor: NAPA Auto Parts. Price: $36.75. Description: Lug Wrench-QGD2NCXPD"
+  },
+  {
+    "id": "part-QLX2Y9ZAT",
+    "type": "auto_part",
+    "sku": "QLX2Y9ZAT",
+    "name": "Fuel Pressure Tester",
+    "vendor": "Summit Racing",
+    "price": 57.75,
+    "description": "Fuel Pressure Tester-QLX2Y9ZAT",
+    "text": "Auto Part: Fuel Pressure Tester (SKU: QLX2Y9ZAT). Vendor: Summit Racing. Price: $57.75. Description: Fuel Pressure Tester-QLX2Y9ZAT"
+  },
+  {
+    "id": "part-R1K6QFDT0",
+    "type": "auto_part",
+    "sku": "R1K6QFDT0",
+    "name": "Screwdriver Set",
+    "vendor": "Pep Boys",
+    "price": 42.0,
+    "description": "Screwdriver Set-R1K6QFDT0",
+    "text": "Auto Part: Screwdriver Set (SKU: R1K6QFDT0). Vendor: Pep Boys. Price: $42.0. Description: Screwdriver Set-R1K6QFDT0"
+  },
+  {
+    "id": "part-R2T0RDAAZ",
+    "type": "auto_part",
+    "sku": "R2T0RDAAZ",
+    "name": "Carbon Fiber Trunk Lid",
+    "vendor": "NAPA Auto Parts",
+    "price": 1207.5,
+    "description": "Carbon Fiber Trunk Lid-R2T0RDAAZ",
+    "text": "Auto Part: Carbon Fiber Trunk Lid (SKU: R2T0RDAAZ). Vendor: NAPA Auto Parts. Price: $1207.5. Description: Carbon Fiber Trunk Lid-R2T0RDAAZ"
+  },
+  {
+    "id": "part-R822UMQIA",
+    "type": "auto_part",
+    "sku": "R822UMQIA",
+    "name": "Performance Camshaft",
+    "vendor": "Summit Racing",
+    "price": 525.0,
+    "description": "Performance Camshaft-R822UMQIA",
+    "text": "Auto Part: Performance Camshaft (SKU: R822UMQIA). Vendor: Summit Racing. Price: $525.0. Description: Performance Camshaft-R822UMQIA"
+  },
+  {
+    "id": "part-RCKXSDZ59",
+    "type": "auto_part",
+    "sku": "RCKXSDZ59",
+    "name": "Clutch Master Cylinder",
+    "vendor": "NAPA Auto Parts",
+    "price": 183.75,
+    "description": "Clutch Master Cylinder-RCKXSDZ59",
+    "text": "Auto Part: Clutch Master Cylinder (SKU: RCKXSDZ59). Vendor: NAPA Auto Parts. Price: $183.75. Description: Clutch Master Cylinder-RCKXSDZ59"
+  },
+  {
+    "id": "part-RJYBY694N",
+    "type": "auto_part",
+    "sku": "RJYBY694N",
+    "name": "Nut Set",
+    "vendor": "CarQuest",
+    "price": 21.0,
+    "description": "Nut Set-RJYBY694N",
+    "text": "Auto Part: Nut Set (SKU: RJYBY694N). Vendor: CarQuest. Price: $21.0. Description: Nut Set-RJYBY694N"
+  },
+  {
+    "id": "part-ROP0HYQ2H",
+    "type": "auto_part",
+    "sku": "ROP0HYQ2H",
+    "name": "Grille",
+    "vendor": "CarQuest",
+    "price": 210.0,
+    "description": "Grille-ROP0HYQ2H",
+    "text": "Auto Part: Grille (SKU: ROP0HYQ2H). Vendor: CarQuest. Price: $210.0. Description: Grille-ROP0HYQ2H"
+  },
+  {
+    "id": "part-RQN4X87CZ",
+    "type": "auto_part",
+    "sku": "RQN4X87CZ",
+    "name": "Amplifier",
+    "vendor": "Summit Racing",
+    "price": 288.75,
+    "description": "Amplifier-RQN4X87CZ",
+    "text": "Auto Part: Amplifier (SKU: RQN4X87CZ). Vendor: Summit Racing. Price: $288.75. Description: Amplifier-RQN4X87CZ"
+  },
+  {
+    "id": "part-RS9J6E876",
+    "type": "auto_part",
+    "sku": "RS9J6E876",
+    "name": "Pinion Gear",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 183.75,
+    "description": "Pinion Gear-RS9J6E876",
+    "text": "Auto Part: Pinion Gear (SKU: RS9J6E876). Vendor: O'Reilly Auto Parts. Price: $183.75. Description: Pinion Gear-RS9J6E876"
+  },
+  {
+    "id": "part-RXZY2OAYG",
+    "type": "auto_part",
+    "sku": "RXZY2OAYG",
+    "name": "Head Gasket",
+    "vendor": "CarQuest",
+    "price": 210.0,
+    "description": "Head Gasket-RXZY2OAYG",
+    "text": "Auto Part: Head Gasket (SKU: RXZY2OAYG). Vendor: CarQuest. Price: $210.0. Description: Head Gasket-RXZY2OAYG"
+  },
+  {
+    "id": "part-RYLOZZ5JP",
+    "type": "auto_part",
+    "sku": "RYLOZZ5JP",
+    "name": "Instrument Cluster",
+    "vendor": "CarQuest",
+    "price": 630.0,
+    "description": "Instrument Cluster-RYLOZZ5JP",
+    "text": "Auto Part: Instrument Cluster (SKU: RYLOZZ5JP). Vendor: CarQuest. Price: $630.0. Description: Instrument Cluster-RYLOZZ5JP"
+  },
+  {
+    "id": "part-SAE0PFM8S",
+    "type": "auto_part",
+    "sku": "SAE0PFM8S",
+    "name": "Underbody Neon Kit",
+    "vendor": "RockAuto",
+    "price": 367.5,
+    "description": "Underbody Neon Kit-SAE0PFM8S",
+    "text": "Auto Part: Underbody Neon Kit (SKU: SAE0PFM8S). Vendor: RockAuto. Price: $367.5. Description: Underbody Neon Kit-SAE0PFM8S"
+  },
+  {
+    "id": "part-SG1EE35HJ",
+    "type": "auto_part",
+    "sku": "SG1EE35HJ",
+    "name": "Performance Brake Kit",
+    "vendor": "Advanced Auto Parts",
+    "price": 1207.5,
+    "description": "Performance Brake Kit-SG1EE35HJ",
+    "text": "Auto Part: Performance Brake Kit (SKU: SG1EE35HJ). Vendor: Advanced Auto Parts. Price: $1207.5. Description: Performance Brake Kit-SG1EE35HJ"
+  },
+  {
+    "id": "part-SSLQ18RN8",
+    "type": "auto_part",
+    "sku": "SSLQ18RN8",
+    "name": "Engine Hoist",
+    "vendor": "Pep Boys",
+    "price": 525.0,
+    "description": "Engine Hoist-SSLQ18RN8",
+    "text": "Auto Part: Engine Hoist (SKU: SSLQ18RN8). Vendor: Pep Boys. Price: $525.0. Description: Engine Hoist-SSLQ18RN8"
+  },
+  {
+    "id": "part-T5N1XOV3D",
+    "type": "auto_part",
+    "sku": "T5N1XOV3D",
+    "name": "Adaptive Headlight",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 892.5,
+    "description": "Adaptive Headlight-T5N1XOV3D",
+    "text": "Auto Part: Adaptive Headlight (SKU: T5N1XOV3D). Vendor: O'Reilly Auto Parts. Price: $892.5. Description: Adaptive Headlight-T5N1XOV3D"
+  },
+  {
+    "id": "part-T6J56B66M",
+    "type": "auto_part",
+    "sku": "T6J56B66M",
+    "name": "Spoiler",
+    "vendor": "Summit Racing",
+    "price": 288.75,
+    "description": "Spoiler-T6J56B66M",
+    "text": "Auto Part: Spoiler (SKU: T6J56B66M). Vendor: Summit Racing. Price: $288.75. Description: Spoiler-T6J56B66M"
+  },
+  {
+    "id": "part-TD1TX5979",
+    "type": "auto_part",
+    "sku": "TD1TX5979",
+    "name": "Headrest",
+    "vendor": "AutoZone",
+    "price": 105.0,
+    "description": "Headrest-TD1TX5979",
+    "text": "Auto Part: Headrest (SKU: TD1TX5979). Vendor: AutoZone. Price: $105.0. Description: Headrest-TD1TX5979"
+  },
+  {
+    "id": "part-TFVRH56PL",
+    "type": "auto_part",
+    "sku": "TFVRH56PL",
+    "name": "Intake Manifold Gasket",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 36.75,
+    "description": "Intake Manifold Gasket-TFVRH56PL",
+    "text": "Auto Part: Intake Manifold Gasket (SKU: TFVRH56PL). Vendor: O'Reilly Auto Parts. Price: $36.75. Description: Intake Manifold Gasket-TFVRH56PL"
+  },
+  {
+    "id": "part-TK607O5UE",
+    "type": "auto_part",
+    "sku": "TK607O5UE",
+    "name": "Cargo Net",
+    "vendor": "AutoZone",
+    "price": 36.75,
+    "description": "Cargo Net-TK607O5UE",
+    "text": "Auto Part: Cargo Net (SKU: TK607O5UE). Vendor: AutoZone. Price: $36.75. Description: Cargo Net-TK607O5UE"
+  },
+  {
+    "id": "part-TKP4FSDDT",
+    "type": "auto_part",
+    "sku": "TKP4FSDDT",
+    "name": "Jack",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 105.0,
+    "description": "Jack-TKP4FSDDT",
+    "text": "Auto Part: Jack (SKU: TKP4FSDDT). Vendor: O'Reilly Auto Parts. Price: $105.0. Description: Jack-TKP4FSDDT"
+  },
+  {
+    "id": "part-TP7B81FIT",
+    "type": "auto_part",
+    "sku": "TP7B81FIT",
+    "name": "Inverter",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 1837.5,
+    "description": "Inverter-TP7B81FIT",
+    "text": "Auto Part: Inverter (SKU: TP7B81FIT). Vendor: O'Reilly Auto Parts. Price: $1837.5. Description: Inverter-TP7B81FIT"
+  },
+  {
+    "id": "part-TT3880ZNQ",
+    "type": "auto_part",
+    "sku": "TT3880ZNQ",
+    "name": "Carbon Fiber Roof",
+    "vendor": "RockAuto",
+    "price": 2362.5,
+    "description": "Carbon Fiber Roof-TT3880ZNQ",
+    "text": "Auto Part: Carbon Fiber Roof (SKU: TT3880ZNQ). Vendor: RockAuto. Price: $2362.5. Description: Carbon Fiber Roof-TT3880ZNQ"
+  },
+  {
+    "id": "part-TWJKEAQV7",
+    "type": "auto_part",
+    "sku": "TWJKEAQV7",
+    "name": "Carbon Fiber Mirror Caps",
+    "vendor": "Summit Racing",
+    "price": 367.5,
+    "description": "Carbon Fiber Mirror Caps-TWJKEAQV7",
+    "text": "Auto Part: Carbon Fiber Mirror Caps (SKU: TWJKEAQV7). Vendor: Summit Racing. Price: $367.5. Description: Carbon Fiber Mirror Caps-TWJKEAQV7"
+  },
+  {
+    "id": "part-TYDJCR9V7",
+    "type": "auto_part",
+    "sku": "TYDJCR9V7",
+    "name": "Side Marker Light",
+    "vendor": "Advanced Auto Parts",
+    "price": 36.75,
+    "description": "Side Marker Light-TYDJCR9V7",
+    "text": "Auto Part: Side Marker Light (SKU: TYDJCR9V7). Vendor: Advanced Auto Parts. Price: $36.75. Description: Side Marker Light-TYDJCR9V7"
+  },
+  {
+    "id": "part-TZ2A8FE6N",
+    "type": "auto_part",
+    "sku": "TZ2A8FE6N",
+    "name": "Mirror Motor",
+    "vendor": "RockAuto",
+    "price": 183.75,
+    "description": "Mirror Motor-TZ2A8FE6N",
+    "text": "Auto Part: Mirror Motor (SKU: TZ2A8FE6N). Vendor: RockAuto. Price: $183.75. Description: Mirror Motor-TZ2A8FE6N"
+  },
+  {
+    "id": "part-U7DYODL55",
+    "type": "auto_part",
+    "sku": "U7DYODL55",
+    "name": "Stud Kit",
+    "vendor": "AutoZone",
+    "price": 36.75,
+    "description": "Stud Kit-U7DYODL55",
+    "text": "Auto Part: Stud Kit (SKU: U7DYODL55). Vendor: AutoZone. Price: $36.75. Description: Stud Kit-U7DYODL55"
+  },
+  {
+    "id": "part-U8B0B8RNT",
+    "type": "auto_part",
+    "sku": "U8B0B8RNT",
+    "name": "Bolt Set",
+    "vendor": "Advanced Auto Parts",
+    "price": 42.0,
+    "description": "Bolt Set-U8B0B8RNT",
+    "text": "Auto Part: Bolt Set (SKU: U8B0B8RNT). Vendor: Advanced Auto Parts. Price: $42.0. Description: Bolt Set-U8B0B8RNT"
+  },
+  {
+    "id": "part-U97QYLWVU",
+    "type": "auto_part",
+    "sku": "U97QYLWVU",
+    "name": "Throttle Position Sensor",
+    "vendor": "RockAuto",
+    "price": 73.5,
+    "description": "Throttle Position Sensor-U97QYLWVU",
+    "text": "Auto Part: Throttle Position Sensor (SKU: U97QYLWVU). Vendor: RockAuto. Price: $73.5. Description: Throttle Position Sensor-U97QYLWVU"
+  },
+  {
+    "id": "part-UAY9QXBO5",
+    "type": "auto_part",
+    "sku": "UAY9QXBO5",
+    "name": "Performance Fuel Rail",
+    "vendor": "Summit Racing",
+    "price": 367.5,
+    "description": "Performance Fuel Rail-UAY9QXBO5",
+    "text": "Auto Part: Performance Fuel Rail (SKU: UAY9QXBO5). Vendor: Summit Racing. Price: $367.5. Description: Performance Fuel Rail-UAY9QXBO5"
+  },
+  {
+    "id": "part-UB9O1R7VK",
+    "type": "auto_part",
+    "sku": "UB9O1R7VK",
+    "name": "Winch",
+    "vendor": "Advanced Auto Parts",
+    "price": 892.5,
+    "description": "Winch-UB9O1R7VK",
+    "text": "Auto Part: Winch (SKU: UB9O1R7VK). Vendor: Advanced Auto Parts. Price: $892.5. Description: Winch-UB9O1R7VK"
+  },
+  {
+    "id": "part-UK98STRNO",
+    "type": "auto_part",
+    "sku": "UK98STRNO",
+    "name": "Parking Brake Cable",
+    "vendor": "Summit Racing",
+    "price": 57.75,
+    "description": "Parking Brake Cable-UK98STRNO",
+    "text": "Auto Part: Parking Brake Cable (SKU: UK98STRNO). Vendor: Summit Racing. Price: $57.75. Description: Parking Brake Cable-UK98STRNO"
+  },
+  {
+    "id": "part-UQVO81G5K",
+    "type": "auto_part",
+    "sku": "UQVO81G5K",
+    "name": "Ring Gear",
+    "vendor": "Pep Boys",
+    "price": 236.25,
+    "description": "Ring Gear-UQVO81G5K",
+    "text": "Auto Part: Ring Gear (SKU: UQVO81G5K). Vendor: Pep Boys. Price: $236.25. Description: Ring Gear-UQVO81G5K"
+  },
+  {
+    "id": "part-UUETC6IID",
+    "type": "auto_part",
+    "sku": "UUETC6IID",
+    "name": "Convertible Top Fabric",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 1050.0,
+    "description": "Convertible Top Fabric-UUETC6IID",
+    "text": "Auto Part: Convertible Top Fabric (SKU: UUETC6IID). Vendor: O'Reilly Auto Parts. Price: $1050.0. Description: Convertible Top Fabric-UUETC6IID"
+  },
+  {
+    "id": "part-UZNURECWZ",
+    "type": "auto_part",
+    "sku": "UZNURECWZ",
+    "name": "Dash Camera",
+    "vendor": "Summit Racing",
+    "price": 210.0,
+    "description": "Dash Camera-UZNURECWZ",
+    "text": "Auto Part: Dash Camera (SKU: UZNURECWZ). Vendor: Summit Racing. Price: $210.0. Description: Dash Camera-UZNURECWZ"
+  },
+  {
+    "id": "part-UZYV0M678",
+    "type": "auto_part",
+    "sku": "UZYV0M678",
+    "name": "Fuse Box",
+    "vendor": "CarQuest",
+    "price": 105.0,
+    "description": "Fuse Box-UZYV0M678",
+    "text": "Auto Part: Fuse Box (SKU: UZYV0M678). Vendor: CarQuest. Price: $105.0. Description: Fuse Box-UZYV0M678"
+  },
+  {
+    "id": "part-V1N01ZBYC",
+    "type": "auto_part",
+    "sku": "V1N01ZBYC",
+    "name": "ECU Reprogramming Kit",
+    "vendor": "Advanced Auto Parts",
+    "price": 577.5,
+    "description": "ECU Reprogramming Kit-V1N01ZBYC",
+    "text": "Auto Part: ECU Reprogramming Kit (SKU: V1N01ZBYC). Vendor: Advanced Auto Parts. Price: $577.5. Description: ECU Reprogramming Kit-V1N01ZBYC"
+  },
+  {
+    "id": "part-V3TU5U853",
+    "type": "auto_part",
+    "sku": "V3TU5U853",
+    "name": "Coolant Additive",
+    "vendor": "CarQuest",
+    "price": 21.0,
+    "description": "Coolant Additive-V3TU5U853",
+    "text": "Auto Part: Coolant Additive (SKU: V3TU5U853). Vendor: CarQuest. Price: $21.0. Description: Coolant Additive-V3TU5U853"
+  },
+  {
+    "id": "part-V4QW5JJ9H",
+    "type": "auto_part",
+    "sku": "V4QW5JJ9H",
+    "name": "Matrix LED Headlight",
+    "vendor": "RockAuto",
+    "price": 1207.5,
+    "description": "Matrix LED Headlight-V4QW5JJ9H",
+    "text": "Auto Part: Matrix LED Headlight (SKU: V4QW5JJ9H). Vendor: RockAuto. Price: $1207.5. Description: Matrix LED Headlight-V4QW5JJ9H"
+  },
+  {
+    "id": "part-V7AZJ3RQZ",
+    "type": "auto_part",
+    "sku": "V7AZJ3RQZ",
+    "name": "Sunroof Motor",
+    "vendor": "RockAuto",
+    "price": 367.5,
+    "description": "Sunroof Motor-V7AZJ3RQZ",
+    "text": "Auto Part: Sunroof Motor (SKU: V7AZJ3RQZ). Vendor: RockAuto. Price: $367.5. Description: Sunroof Motor-V7AZJ3RQZ"
+  },
+  {
+    "id": "part-VBJEJ6M49",
+    "type": "auto_part",
+    "sku": "VBJEJ6M49",
+    "name": "Transmission Fluid",
+    "vendor": "AutoZone",
+    "price": 36.75,
+    "description": "Transmission Fluid-VBJEJ6M49",
+    "text": "Auto Part: Transmission Fluid (SKU: VBJEJ6M49). Vendor: AutoZone. Price: $36.75. Description: Transmission Fluid-VBJEJ6M49"
+  },
+  {
+    "id": "part-VDZ27WKFR",
+    "type": "auto_part",
+    "sku": "VDZ27WKFR",
+    "name": "ABS Wheel Speed Sensor",
+    "vendor": "Pep Boys",
+    "price": 105.0,
+    "description": "ABS Wheel Speed Sensor-VDZ27WKFR",
+    "text": "Auto Part: ABS Wheel Speed Sensor (SKU: VDZ27WKFR). Vendor: Pep Boys. Price: $105.0. Description: ABS Wheel Speed Sensor-VDZ27WKFR"
+  },
+  {
+    "id": "part-VFBWBQ87W",
+    "type": "auto_part",
+    "sku": "VFBWBQ87W",
+    "name": "Timing Chain Tensioner",
+    "vendor": "NAPA Auto Parts",
+    "price": 105.0,
+    "description": "Timing Chain Tensioner-VFBWBQ87W",
+    "text": "Auto Part: Timing Chain Tensioner (SKU: VFBWBQ87W). Vendor: NAPA Auto Parts. Price: $105.0. Description: Timing Chain Tensioner-VFBWBQ87W"
+  },
+  {
+    "id": "part-VFO6HEDF5",
+    "type": "auto_part",
+    "sku": "VFO6HEDF5",
+    "name": "Differential",
+    "vendor": "Advanced Auto Parts",
+    "price": 1207.5,
+    "description": "Differential-VFO6HEDF5",
+    "text": "Auto Part: Differential (SKU: VFO6HEDF5). Vendor: Advanced Auto Parts. Price: $1207.5. Description: Differential-VFO6HEDF5"
+  },
+  {
+    "id": "part-VHGNCPSRP",
+    "type": "auto_part",
+    "sku": "VHGNCPSRP",
+    "name": "Projector Headlights",
+    "vendor": "Advanced Auto Parts",
+    "price": 630.0,
+    "description": "Projector Headlights-VHGNCPSRP",
+    "text": "Auto Part: Projector Headlights (SKU: VHGNCPSRP). Vendor: Advanced Auto Parts. Price: $630.0. Description: Projector Headlights-VHGNCPSRP"
+  },
+  {
+    "id": "part-VHOQWXSE5",
+    "type": "auto_part",
+    "sku": "VHOQWXSE5",
+    "name": "Performance Crankshaft",
+    "vendor": "NAPA Auto Parts",
+    "price": 787.5,
+    "description": "Performance Crankshaft-VHOQWXSE5",
+    "text": "Auto Part: Performance Crankshaft (SKU: VHOQWXSE5). Vendor: NAPA Auto Parts. Price: $787.5. Description: Performance Crankshaft-VHOQWXSE5"
+  },
+  {
+    "id": "part-VIJ911UXB",
+    "type": "auto_part",
+    "sku": "VIJ911UXB",
+    "name": "Carbon Fiber Hood",
+    "vendor": "Summit Racing",
+    "price": 1207.5,
+    "description": "Carbon Fiber Hood-VIJ911UXB",
+    "text": "Auto Part: Carbon Fiber Hood (SKU: VIJ911UXB). Vendor: Summit Racing. Price: $1207.5. Description: Carbon Fiber Hood-VIJ911UXB"
+  },
+  {
+    "id": "part-VQEK3O086",
+    "type": "auto_part",
+    "sku": "VQEK3O086",
+    "name": "Battery Cooling System",
+    "vendor": "RockAuto",
+    "price": 892.5,
+    "description": "Battery Cooling System-VQEK3O086",
+    "text": "Auto Part: Battery Cooling System (SKU: VQEK3O086). Vendor: RockAuto. Price: $892.5. Description: Battery Cooling System-VQEK3O086"
+  },
+  {
+    "id": "part-VQWXHFE21",
+    "type": "auto_part",
+    "sku": "VQWXHFE21",
+    "name": "Laser Headlight",
+    "vendor": "CarQuest",
+    "price": 2362.5,
+    "description": "Laser Headlight-VQWXHFE21",
+    "text": "Auto Part: Laser Headlight (SKU: VQWXHFE21). Vendor: CarQuest. Price: $2362.5. Description: Laser Headlight-VQWXHFE21"
+  },
+  {
+    "id": "part-VS7ND0218",
+    "type": "auto_part",
+    "sku": "VS7ND0218",
+    "name": "Tire Repair Kit",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 36.75,
+    "description": "Tire Repair Kit-VS7ND0218",
+    "text": "Auto Part: Tire Repair Kit (SKU: VS7ND0218). Vendor: O'Reilly Auto Parts. Price: $36.75. Description: Tire Repair Kit-VS7ND0218"
+  },
+  {
+    "id": "part-VUUHP4J57",
+    "type": "auto_part",
+    "sku": "VUUHP4J57",
+    "name": "Performance Exhaust Tip",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 210.0,
+    "description": "Performance Exhaust Tip-VUUHP4J57",
+    "text": "Auto Part: Performance Exhaust Tip (SKU: VUUHP4J57). Vendor: O'Reilly Auto Parts. Price: $210.0. Description: Performance Exhaust Tip-VUUHP4J57"
+  },
+  {
+    "id": "part-VXQL5OPV1",
+    "type": "auto_part",
+    "sku": "VXQL5OPV1",
+    "name": "Running Board",
+    "vendor": "Summit Racing",
+    "price": 367.5,
+    "description": "Running Board-VXQL5OPV1",
+    "text": "Auto Part: Running Board (SKU: VXQL5OPV1). Vendor: Summit Racing. Price: $367.5. Description: Running Board-VXQL5OPV1"
+  },
+  {
+    "id": "part-VZ1UGQTTV",
+    "type": "auto_part",
+    "sku": "VZ1UGQTTV",
+    "name": "Exhaust Pipe",
+    "vendor": "AutoZone",
+    "price": 105.0,
+    "description": "Exhaust Pipe-VZ1UGQTTV",
+    "text": "Auto Part: Exhaust Pipe (SKU: VZ1UGQTTV). Vendor: AutoZone. Price: $105.0. Description: Exhaust Pipe-VZ1UGQTTV"
+  },
+  {
+    "id": "part-W5QQNIBYI",
+    "type": "auto_part",
+    "sku": "W5QQNIBYI",
+    "name": "Camshaft Position Sensor",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 105.0,
+    "description": "Camshaft Position Sensor-W5QQNIBYI",
+    "text": "Auto Part: Camshaft Position Sensor (SKU: W5QQNIBYI). Vendor: O'Reilly Auto Parts. Price: $105.0. Description: Camshaft Position Sensor-W5QQNIBYI"
+  },
+  {
+    "id": "part-WJJSQUNIA",
+    "type": "auto_part",
+    "sku": "WJJSQUNIA",
+    "name": "Ignition Switch",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 105.0,
+    "description": "Ignition Switch-WJJSQUNIA",
+    "text": "Auto Part: Ignition Switch (SKU: WJJSQUNIA). Vendor: O'Reilly Auto Parts. Price: $105.0. Description: Ignition Switch-WJJSQUNIA"
+  },
+  {
+    "id": "part-WOD2VYMR6",
+    "type": "auto_part",
+    "sku": "WOD2VYMR6",
+    "name": "Car Stereo Head Unit",
+    "vendor": "Summit Racing",
+    "price": 367.5,
+    "description": "Car Stereo Head Unit-WOD2VYMR6",
+    "text": "Auto Part: Car Stereo Head Unit (SKU: WOD2VYMR6). Vendor: Summit Racing. Price: $367.5. Description: Car Stereo Head Unit-WOD2VYMR6"
+  },
+  {
+    "id": "part-WPHUAH25E",
+    "type": "auto_part",
+    "sku": "WPHUAH25E",
+    "name": "Sunroof Glass",
+    "vendor": "Advanced Auto Parts",
+    "price": 630.0,
+    "description": "Sunroof Glass-WPHUAH25E",
+    "text": "Auto Part: Sunroof Glass (SKU: WPHUAH25E). Vendor: Advanced Auto Parts. Price: $630.0. Description: Sunroof Glass-WPHUAH25E"
+  },
+  {
+    "id": "part-WUSS92RBA",
+    "type": "auto_part",
+    "sku": "WUSS92RBA",
+    "name": "Knock Sensor",
+    "vendor": "AutoZone",
+    "price": 73.5,
+    "description": "Knock Sensor-WUSS92RBA",
+    "text": "Auto Part: Knock Sensor (SKU: WUSS92RBA). Vendor: AutoZone. Price: $73.5. Description: Knock Sensor-WUSS92RBA"
+  },
+  {
+    "id": "part-WVSCSI1TG",
+    "type": "auto_part",
+    "sku": "WVSCSI1TG",
+    "name": "Motor Controller",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 1837.5,
+    "description": "Motor Controller-WVSCSI1TG",
+    "text": "Auto Part: Motor Controller (SKU: WVSCSI1TG). Vendor: O'Reilly Auto Parts. Price: $1837.5. Description: Motor Controller-WVSCSI1TG"
+  },
+  {
+    "id": "part-WYHVDC227",
+    "type": "auto_part",
+    "sku": "WYHVDC227",
+    "name": "Floor Mats",
+    "vendor": "NAPA Auto Parts",
+    "price": 105.0,
+    "description": "Floor Mats-WYHVDC227",
+    "text": "Auto Part: Floor Mats (SKU: WYHVDC227). Vendor: NAPA Auto Parts. Price: $105.0. Description: Floor Mats-WYHVDC227"
+  },
+  {
+    "id": "part-X73RS4SSV",
+    "type": "auto_part",
+    "sku": "X73RS4SSV",
+    "name": "Torque Wrench",
+    "vendor": "RockAuto",
+    "price": 105.0,
+    "description": "Torque Wrench-X73RS4SSV",
+    "text": "Auto Part: Torque Wrench (SKU: X73RS4SSV). Vendor: RockAuto. Price: $105.0. Description: Torque Wrench-X73RS4SSV"
+  },
+  {
+    "id": "part-X7VCL13ZU",
+    "type": "auto_part",
+    "sku": "X7VCL13ZU",
+    "name": "Dash Wiring Harness",
+    "vendor": "Advanced Auto Parts",
+    "price": 420.0,
+    "description": "Dash Wiring Harness-X7VCL13ZU",
+    "text": "Auto Part: Dash Wiring Harness (SKU: X7VCL13ZU). Vendor: Advanced Auto Parts. Price: $420.0. Description: Dash Wiring Harness-X7VCL13ZU"
+  },
+  {
+    "id": "part-X8FS3GJ57",
+    "type": "auto_part",
+    "sku": "X8FS3GJ57",
+    "name": "Crash Sensor",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 183.75,
+    "description": "Crash Sensor-X8FS3GJ57",
+    "text": "Auto Part: Crash Sensor (SKU: X8FS3GJ57). Vendor: O'Reilly Auto Parts. Price: $183.75. Description: Crash Sensor-X8FS3GJ57"
+  },
+  {
+    "id": "part-XKH9T8Y8Y",
+    "type": "auto_part",
+    "sku": "XKH9T8Y8Y",
+    "name": "AC Compressor",
+    "vendor": "CarQuest",
+    "price": 472.5,
+    "description": "AC Compressor-XKH9T8Y8Y",
+    "text": "Auto Part: AC Compressor (SKU: XKH9T8Y8Y). Vendor: CarQuest. Price: $472.5. Description: AC Compressor-XKH9T8Y8Y"
+  },
+  {
+    "id": "part-XKQDY3IUT",
+    "type": "auto_part",
+    "sku": "XKQDY3IUT",
+    "name": "Third Brake Light",
+    "vendor": "Pep Boys",
+    "price": 105.0,
+    "description": "Third Brake Light-XKQDY3IUT",
+    "text": "Auto Part: Third Brake Light (SKU: XKQDY3IUT). Vendor: Pep Boys. Price: $105.0. Description: Third Brake Light-XKQDY3IUT"
+  },
+  {
+    "id": "part-XL349S936",
+    "type": "auto_part",
+    "sku": "XL349S936",
+    "name": "Socket Set",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 105.0,
+    "description": "Socket Set-XL349S936",
+    "text": "Auto Part: Socket Set (SKU: XL349S936). Vendor: O'Reilly Auto Parts. Price: $105.0. Description: Socket Set-XL349S936"
+  },
+  {
+    "id": "part-XL866LCA6",
+    "type": "auto_part",
+    "sku": "XL866LCA6",
+    "name": "Control Arm",
+    "vendor": "NAPA Auto Parts",
+    "price": 210.0,
+    "description": "Control Arm-XL866LCA6",
+    "text": "Auto Part: Control Arm (SKU: XL866LCA6). Vendor: NAPA Auto Parts. Price: $210.0. Description: Control Arm-XL866LCA6"
+  },
+  {
+    "id": "part-XO2HE2DLB",
+    "type": "auto_part",
+    "sku": "XO2HE2DLB",
+    "name": "Coolant",
+    "vendor": "Pep Boys",
+    "price": 23.63,
+    "description": "Coolant-XO2HE2DLB",
+    "text": "Auto Part: Coolant (SKU: XO2HE2DLB). Vendor: Pep Boys. Price: $23.63. Description: Coolant-XO2HE2DLB"
+  },
+  {
+    "id": "part-XQETU49KO",
+    "type": "auto_part",
+    "sku": "XQETU49KO",
+    "name": "Performance Suspension Kit",
+    "vendor": "AutoZone",
+    "price": 1207.5,
+    "description": "Performance Suspension Kit-XQETU49KO",
+    "text": "Auto Part: Performance Suspension Kit (SKU: XQETU49KO). Vendor: AutoZone. Price: $1207.5. Description: Performance Suspension Kit-XQETU49KO"
+  },
+  {
+    "id": "part-XSYUL6DGV",
+    "type": "auto_part",
+    "sku": "XSYUL6DGV",
+    "name": "Backup Camera",
+    "vendor": "Pep Boys",
+    "price": 210.0,
+    "description": "Backup Camera-XSYUL6DGV",
+    "text": "Auto Part: Backup Camera (SKU: XSYUL6DGV). Vendor: Pep Boys. Price: $210.0. Description: Backup Camera-XSYUL6DGV"
+  },
+  {
+    "id": "part-Y1B8EAL9W",
+    "type": "auto_part",
+    "sku": "Y1B8EAL9W",
+    "name": "Rear Window",
+    "vendor": "NAPA Auto Parts",
+    "price": 367.5,
+    "description": "Rear Window-Y1B8EAL9W",
+    "text": "Auto Part: Rear Window (SKU: Y1B8EAL9W). Vendor: NAPA Auto Parts. Price: $367.5. Description: Rear Window-Y1B8EAL9W"
+  },
+  {
+    "id": "part-Y1JQVZYQM",
+    "type": "auto_part",
+    "sku": "Y1JQVZYQM",
+    "name": "HID Ballast",
+    "vendor": "AutoZone",
+    "price": 183.75,
+    "description": "HID Ballast-Y1JQVZYQM",
+    "text": "Auto Part: HID Ballast (SKU: Y1JQVZYQM). Vendor: AutoZone. Price: $183.75. Description: HID Ballast-Y1JQVZYQM"
+  },
+  {
+    "id": "part-Y3KG4JM4G",
+    "type": "auto_part",
+    "sku": "Y3KG4JM4G",
+    "name": "Axle Bearing",
+    "vendor": "CarQuest",
+    "price": 105.0,
+    "description": "Axle Bearing-Y3KG4JM4G",
+    "text": "Auto Part: Axle Bearing (SKU: Y3KG4JM4G). Vendor: CarQuest. Price: $105.0. Description: Axle Bearing-Y3KG4JM4G"
+  },
+  {
+    "id": "part-Y3NGQT9IV",
+    "type": "auto_part",
+    "sku": "Y3NGQT9IV",
+    "name": "Roof Panel",
+    "vendor": "Summit Racing",
+    "price": 892.5,
+    "description": "Roof Panel-Y3NGQT9IV",
+    "text": "Auto Part: Roof Panel (SKU: Y3NGQT9IV). Vendor: Summit Racing. Price: $892.5. Description: Roof Panel-Y3NGQT9IV"
+  },
+  {
+    "id": "part-Y6L9DEH14",
+    "type": "auto_part",
+    "sku": "Y6L9DEH14",
+    "name": "Grease",
+    "vendor": "Advanced Auto Parts",
+    "price": 10.5,
+    "description": "Grease-Y6L9DEH14",
+    "text": "Auto Part: Grease (SKU: Y6L9DEH14). Vendor: Advanced Auto Parts. Price: $10.5. Description: Grease-Y6L9DEH14"
+  },
+  {
+    "id": "part-YAPEV2CLZ",
+    "type": "auto_part",
+    "sku": "YAPEV2CLZ",
+    "name": "Gear Shifter",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 210.0,
+    "description": "Gear Shifter-YAPEV2CLZ",
+    "text": "Auto Part: Gear Shifter (SKU: YAPEV2CLZ). Vendor: O'Reilly Auto Parts. Price: $210.0. Description: Gear Shifter-YAPEV2CLZ"
+  },
+  {
+    "id": "part-YBK4OIWSI",
+    "type": "auto_part",
+    "sku": "YBK4OIWSI",
+    "name": "Cotter Pin",
+    "vendor": "Pep Boys",
+    "price": 3.15,
+    "description": "Cotter Pin-YBK4OIWSI",
+    "text": "Auto Part: Cotter Pin (SKU: YBK4OIWSI). Vendor: Pep Boys. Price: $3.15. Description: Cotter Pin-YBK4OIWSI"
+  },
+  {
+    "id": "part-YNK8N3DD1",
+    "type": "auto_part",
+    "sku": "YNK8N3DD1",
+    "name": "Power Distribution Unit",
+    "vendor": "Summit Racing",
+    "price": 1470.0,
+    "description": "Power Distribution Unit-YNK8N3DD1",
+    "text": "Auto Part: Power Distribution Unit (SKU: YNK8N3DD1). Vendor: Summit Racing. Price: $1470.0. Description: Power Distribution Unit-YNK8N3DD1"
+  },
+  {
+    "id": "part-YRQLFZ0HS",
+    "type": "auto_part",
+    "sku": "YRQLFZ0HS",
+    "name": "Wheel Arch Trim",
+    "vendor": "Advanced Auto Parts",
+    "price": 183.75,
+    "description": "Wheel Arch Trim-YRQLFZ0HS",
+    "text": "Auto Part: Wheel Arch Trim (SKU: YRQLFZ0HS). Vendor: Advanced Auto Parts. Price: $183.75. Description: Wheel Arch Trim-YRQLFZ0HS"
+  },
+  {
+    "id": "part-YRSWRZFD2",
+    "type": "auto_part",
+    "sku": "YRSWRZFD2",
+    "name": "Ski Rack",
+    "vendor": "CarQuest",
+    "price": 367.5,
+    "description": "Ski Rack-YRSWRZFD2",
+    "text": "Auto Part: Ski Rack (SKU: YRSWRZFD2). Vendor: CarQuest. Price: $367.5. Description: Ski Rack-YRSWRZFD2"
+  },
+  {
+    "id": "part-Z5F9K6XWO",
+    "type": "auto_part",
+    "sku": "Z5F9K6XWO",
+    "name": "Trunk Release Actuator",
+    "vendor": "CarQuest",
+    "price": 183.75,
+    "description": "Trunk Release Actuator-Z5F9K6XWO",
+    "text": "Auto Part: Trunk Release Actuator (SKU: Z5F9K6XWO). Vendor: CarQuest. Price: $183.75. Description: Trunk Release Actuator-Z5F9K6XWO"
+  },
+  {
+    "id": "part-ZEFZDST6T",
+    "type": "auto_part",
+    "sku": "ZEFZDST6T",
+    "name": "Seat Belt",
+    "vendor": "Summit Racing",
+    "price": 105.0,
+    "description": "Seat Belt-ZEFZDST6T",
+    "text": "Auto Part: Seat Belt (SKU: ZEFZDST6T). Vendor: Summit Racing. Price: $105.0. Description: Seat Belt-ZEFZDST6T"
+  },
+  {
+    "id": "part-ZGZYJSKMH",
+    "type": "auto_part",
+    "sku": "ZGZYJSKMH",
+    "name": "Shift Boot",
+    "vendor": "NAPA Auto Parts",
+    "price": 36.75,
+    "description": "Shift Boot-ZGZYJSKMH",
+    "text": "Auto Part: Shift Boot (SKU: ZGZYJSKMH). Vendor: NAPA Auto Parts. Price: $36.75. Description: Shift Boot-ZGZYJSKMH"
+  },
+  {
+    "id": "part-ZH2ZJZ7GD",
+    "type": "auto_part",
+    "sku": "ZH2ZJZ7GD",
+    "name": "Tie Rod End",
+    "vendor": "CarQuest",
+    "price": 52.5,
+    "description": "Tie Rod End-ZH2ZJZ7GD",
+    "text": "Auto Part: Tie Rod End (SKU: ZH2ZJZ7GD). Vendor: CarQuest. Price: $52.5. Description: Tie Rod End-ZH2ZJZ7GD"
+  },
+  {
+    "id": "part-ZHBF12ZYL",
+    "type": "auto_part",
+    "sku": "ZHBF12ZYL",
+    "name": "Wheel Hub",
+    "vendor": "Advanced Auto Parts",
+    "price": 183.75,
+    "description": "Wheel Hub-ZHBF12ZYL",
+    "text": "Auto Part: Wheel Hub (SKU: ZHBF12ZYL). Vendor: Advanced Auto Parts. Price: $183.75. Description: Wheel Hub-ZHBF12ZYL"
+  },
+  {
+    "id": "part-ZM47CHWN0",
+    "type": "auto_part",
+    "sku": "ZM47CHWN0",
+    "name": "Electronic Stability Control Module",
+    "vendor": "Advanced Auto Parts",
+    "price": 892.5,
+    "description": "Electronic Stability Control Module-ZM47CHWN0",
+    "text": "Auto Part: Electronic Stability Control Module (SKU: ZM47CHWN0). Vendor: Advanced Auto Parts. Price: $892.5. Description: Electronic Stability Control Module-ZM47CHWN0"
+  },
+  {
+    "id": "part-ZRN2L98LG",
+    "type": "auto_part",
+    "sku": "ZRN2L98LG",
+    "name": "Passenger Airbag",
+    "vendor": "RockAuto",
+    "price": 787.5,
+    "description": "Passenger Airbag-ZRN2L98LG",
+    "text": "Auto Part: Passenger Airbag (SKU: ZRN2L98LG). Vendor: RockAuto. Price: $787.5. Description: Passenger Airbag-ZRN2L98LG"
+  },
+  {
+    "id": "part-ZSCM1T1HA",
+    "type": "auto_part",
+    "sku": "ZSCM1T1HA",
+    "name": "ABS Sensor",
+    "vendor": "NAPA Auto Parts",
+    "price": 105.0,
+    "description": "ABS Sensor-ZSCM1T1HA",
+    "text": "Auto Part: ABS Sensor (SKU: ZSCM1T1HA). Vendor: NAPA Auto Parts. Price: $105.0. Description: ABS Sensor-ZSCM1T1HA"
+  },
+  {
+    "id": "part-ZU1BA9Z2U",
+    "type": "auto_part",
+    "sku": "ZU1BA9Z2U",
+    "name": "Intake Air Temperature Sensor",
+    "vendor": "O'Reilly Auto Parts",
+    "price": 36.75,
+    "description": "Intake Air Temperature Sensor-ZU1BA9Z2U",
+    "text": "Auto Part: Intake Air Temperature Sensor (SKU: ZU1BA9Z2U). Vendor: O'Reilly Auto Parts. Price: $36.75. Description: Intake Air Temperature Sensor-ZU1BA9Z2U"
+  },
+  {
+    "id": "part-ZYJOVUV97",
+    "type": "auto_part",
+    "sku": "ZYJOVUV97",
+    "name": "Keyless Entry Kit",
+    "vendor": "NAPA Auto Parts",
+    "price": 367.5,
+    "description": "Keyless Entry Kit-ZYJOVUV97",
+    "text": "Auto Part: Keyless Entry Kit (SKU: ZYJOVUV97). Vendor: NAPA Auto Parts. Price: $367.5. Description: Keyless Entry Kit-ZYJOVUV97"
+  },
+  {
+    "id": "part-ZZWILAA75",
+    "type": "auto_part",
+    "sku": "ZZWILAA75",
+    "name": "Transfer Case",
+    "vendor": "NAPA Auto Parts",
+    "price": 1837.5,
+    "description": "Transfer Case-ZZWILAA75",
+    "text": "Auto Part: Transfer Case (SKU: ZZWILAA75). Vendor: NAPA Auto Parts. Price: $1837.5. Description: Transfer Case-ZZWILAA75"
+  }
+]

@@ -1,9 +1,9 @@
 # AutoCorp Data Lake Pipeline - Project Gantt Chart
 
 **Project Start:** November 18, 2025  
-**Last Update:** December 26, 2025
-**Project Duration:** 4 weeks (20 working days)  
-**Current Status:** Phase 4 Complete ✅ | Core Pipeline Operational | Awaiting Commit
+**Last Update:** December 29, 2025
+**Project Duration:** 6 weeks (30 working days planned)  
+**Current Status:** Phase 5 In Progress ⚙️ | Days 1-2 Complete (20%) | Bedrock Infrastructure Ready
 
 ---
 
@@ -234,11 +234,11 @@ Legend:
 
 ---
 
-### Phase 5: AI Chatbox with Bedrock & RAG (Future)
+### Phase 5: AI Chatbox with Bedrock & RAG (In Progress)
 **Duration:** 8-10 days  
-**Start:** TBD (After Phase 4)  
-**End:** TBD  
-**Status:** 0% Complete 📝 PLANNED
+**Start:** Dec 29, 2025  
+**End:** TBD (Est. Jan 10, 2026)  
+**Status:** 20% Complete ⚙️ IN PROGRESS
 
 **Overview:**  
 Implement AI-powered chatbox using Amazon Bedrock Nova Pro with Retrieval-Augmented Generation (RAG) for customer support and data analytics queries. The solution leverages the existing AutoCorp data lake (1.19M orders, 400+ parts, 110 services) as the knowledge base.
@@ -258,10 +258,10 @@ Implement AI-powered chatbox using Amazon Bedrock Nova Pro with Retrieval-Augmen
 
 | Task | Owner | Days | Status | Dependencies |
 |------|-------|------|--------|--------------|
-|| Day 1: Request Bedrock Nova Pro model access | scotton | 0.5 | 📝 PLANNED | AWS account access |
-|| Day 1: Create Terraform bedrock module | scotton | 1.0 | 📝 PLANNED | AWS account access |
-| Day 2: Create RAG data export script (Athena → S3) | scotton | 1.0 | 📝 PLANNED | Phase 4 complete |
-| Day 2: Format knowledge base (400 parts, 110 services) | scotton | 0.5 | 📝 PLANNED | Export script working |
+|| Day 1: Request Bedrock Nova Pro model access | scotton | 0.5 | ✅ DONE | AWS account access |
+|| Day 1: Create Terraform bedrock module | scotton | 1.0 | ✅ DONE | AWS account access |
+| Day 2: Create RAG data export script (Athena → S3) | scotton | 1.0 | ✅ DONE | Phase 4 complete |
+| Day 2: Format knowledge base (400 parts, 110 services) | scotton | 0.5 | ✅ DONE | Export script working |
 | Day 3: Deploy OpenSearch Serverless collection | scotton | 0.5 | 📝 PLANNED | Bedrock access granted |
 | Day 3: Configure Bedrock Knowledge Base | scotton | 1.0 | 📝 PLANNED | OpenSearch deployed |
 | Day 3: Set up Titan Embeddings G1 vectorization | scotton | 0.5 | 📝 PLANNED | Knowledge Base configured |
@@ -368,13 +368,14 @@ terraform/modules/
 ## Overall Project Status
 
 ### Completion Metrics
-- **Overall Progress:** 100% (20 of 20 days) - Core pipeline complete ✅
+- **Overall Progress:** 100% core pipeline + 20% Phase 5 (22 of 30 days total)
 - **Phase 1:** 100% complete (all tasks done)
 - **Phase 2:** 100% complete (Day 6-10 done)
 - **Phase 2.5:** 100% complete (Data preparation done)
 - **Phase 3:** 100% complete (IaC implementation complete)
 - **Phase 4:** 100% complete (Analytics & Query Layer operational) ✅
-- **Phase 5:** 0% complete (planned, ready to start)
+- **Code Refinements:** 100% complete (Dec 28, 2025)
+- **Phase 5:** 20% complete (Days 1-2 done - Bedrock module + KB export) ⚙️
 
 ### Key Milestones
 || Milestone | Target Date | Status |
@@ -388,6 +389,7 @@ terraform/modules/
 || ✅ Production data generated (Phase 2.5) | Dec 7 | ACHIEVED |
 || ✅ Data quality testing enabled | Dec 7 | ACHIEVED |
 || ✅ Analytics layer operational (Phase 4) | Dec 23 | ACHIEVED |
+|| ✅ Bedrock infrastructure (Phase 5 Days 1-2) | Dec 29 | ACHIEVED |
 || ⏸️ DMS replication live (Phase 3 execution) | TBD | DEFERRED |
 
 ### Risk Register
@@ -455,13 +457,13 @@ terraform/modules/
 6. ✅ **Implemented data quality testing** - CSV duplicates for ETL deduplication demonstration
 7. ⏸️ **Test sales ETL jobs** - Validate Hudi upsert deduplication with invoice_number key
 
-### Current Focus (Phase 4 - Analytics Layer)
-1. ⚓⚓ **Complete analytics ETL jobs** - Finish remaining analytics scripts
-2. ⏸️ **Deploy analytics ETL jobs to Glue** - Upload and configure in AWS
-3. ⏸️ **Configure Athena workgroups** - Set up query environment via Terraform
-4. ⏸️ **Test Athena queries on Hudi tables** - Validate query performance (<30s)
-5. ⏸️ **Create CloudWatch dashboards** - Monitoring for all services
-6. ⏸️ **Finalize documentation** - Complete runbook and architecture diagrams
+### Current Focus (Phase 5 - AI Chatbox Backend)
+1. ✅ **Request Bedrock Nova Pro access** - Model access granted (Day 1)
+2. ✅ **Create Terraform bedrock module** - IaC for Bedrock complete (Day 1)
+3. ✅ **Create RAG data export script** - Athena → S3 knowledge base (Day 2)
+4. ✅ **Format knowledge base** - 400 parts + 110 services JSON formatted (Day 2)
+5. ⚙️ **Deploy OpenSearch Serverless** - Vector store for RAG (Day 3 - Next)
+6. 📝 **Configure Bedrock Knowledge Base** - RAG pipeline setup (Day 3)
 
 ### Phase 3 Execution (Deferred - IaC Complete)
 Phase 3 IaC is 100% complete and ready for deployment. Execution deferred to focus on Phase 4 analytics:
@@ -471,10 +473,28 @@ Phase 3 IaC is 100% complete and ready for deployment. Execution deferred to foc
 4. **Deploy DataSync agent** - Set up for CSV transfers (production environment)
 5. **Validate end-to-end CDC** - Test <5 minute replication lag
 
-### Phase 5 Planning (After Phase 4 Complete)
-- Request Bedrock Nova Pro model access
-- Export knowledge base data from Athena
-- Begin AI chatbox implementation (8-10 days)
+### Phase 5 Completed (Days 1-2 - Dec 29)
+- ✅ **Bedrock Infrastructure** - Terraform module created (240 lines)
+  - OpenSearch Serverless collection with encryption policies
+  - IAM role for Bedrock with S3, OpenSearch, and model access
+  - Knowledge Base resource with Titan Embeddings G1
+  - Data source configuration with chunking (300 tokens, 20% overlap)
+- ✅ **Knowledge Base Export Script** - Python script created (262 lines)
+  - Queries Athena tables: auto_parts (400), service (110), service_parts (1,074)
+  - Exports to structured JSON format optimized for RAG
+  - Total: 1,584 knowledge base documents
+- ✅ **Knowledge Base Data Upload** - All data uploaded to S3
+  - s3://autocorp-datalake-dev/knowledge-base/auto_parts.json (137 KB)
+  - s3://autocorp-datalake-dev/knowledge-base/services.json (37 KB)
+  - s3://autocorp-datalake-dev/knowledge-base/service_parts.json (379 KB)
+  - s3://autocorp-datalake-dev/knowledge-base/manifest.json
+
+### Phase 5 Next Steps (Days 3-10)
+- **Day 3:** Deploy OpenSearch Serverless + configure Bedrock Knowledge Base with Titan Embeddings
+- **Day 4:** Create Lambda functions (chat-handler with RAG, analytics-query)
+- **Day 5:** Deploy API Gateway REST API with CORS, authentication, and rate limiting
+- **Days 6-7:** Build Next.js frontend (TypeScript, Tailwind CSS, shadcn/ui components)
+- **Days 8-10:** E2E testing, AWS Amplify deployment, performance optimization, documentation
 
 ---
 
@@ -487,16 +507,17 @@ Phase 3 IaC is 100% complete and ready for deployment. Execution deferred to foc
 - ✅ Total data volume: 1.19M unique orders across both sources
 - ✅ Data quality testing: CSV duplicates demonstrate Hudi upsert deduplication capabilities
 - ✅ S3 data lake deployed: raw/, curated/, logs/ structure
-- ✅ Glue ETL jobs created: 10 scripts (7 operational + 3 analytics)
-- ✅ Glue Crawlers deployed: 2 crawlers (raw-database, raw-csv)
-- ✅ Hudi tables tested: 7 operational tables (all validated)
+- ✅ Glue ETL jobs deployed: 11 jobs (7 operational + 3 analytics + 1 CSV ingestion)
+- ✅ Glue Crawlers deployed: 3 crawlers (raw-database, raw-csv, analytics)
+- ✅ Hudi tables tested: 10 tables (all operational and analytics validated)
 - ✅ Data quality rules: 35+ validations implemented
 - ✅ End-to-end pipeline: <15 minutes (tested and validated)
-|- ✅ DMS Terraform module: Complete and ready for deployment (361 lines)
-|- ⏸️ DMS CDC lag: <5 minutes average (IaC ready, execution deferred)
-|- ✅ Athena Terraform module: Complete with workgroup and 5 named queries
-|- ✅ CloudWatch monitoring: Dashboard and alarms operational
-|- ✅ Operations runbook: 614 lines covering all procedures
+- ✅ DMS Terraform module: Complete and ready for deployment (361 lines)
+- ⏸️ DMS CDC lag: <5 minutes average (IaC ready, execution deferred)
+- ✅ Athena Terraform module: Complete with workgroup and 5 named queries
+- ✅ CloudWatch monitoring: Dashboard and alarms operational
+- ✅ Operations runbook: 614 lines covering all procedures
+- ✅ Utility scripts: Pipeline testing and AWS resource validation scripts created
 
 ### Documentation Metrics
 - ✅ Developer approach: 688 lines (comprehensive)
@@ -546,6 +567,7 @@ Phase 5 (AI Chatbox): Ready to start
 ||| 1.8 | Dec 23, 2025 | scotton | Expanded Phase 5 with comprehensive AI chatbox implementation details from PHASE5_AI_CHATBOX.md |
 || 1.9 | Dec 23, 2025 | scotton | Phase 4 complete: Athena module (157 lines), CloudWatch monitoring (218 lines), Operations runbook (614 lines) ✅ |
 || 2.0 | Dec 26, 2025 | scotton | Documentation corrections: Fixed ETL job count (11→10), module count (7→8), file paths updated |
+|| 2.1 | Dec 28, 2025 | scotton | Code refinements: Optimized ETL scripts, added utility scripts, updated metrics (11 jobs, 3 crawlers, 10 Hudi tables) |
 
 ---
 
@@ -558,3 +580,5 @@ Phase 5 (AI Chatbox): Ready to start
 - [PHASE5_AI_CHATBOX.md](PHASE5_AI_CHATBOX.md) - AI chatbox implementation plan (Phase 5)
 - [artifacts/DEVELOPER_JOURNAL_2025-11-26.md](artifacts/DEVELOPER_JOURNAL_2025-11-26.md) - Phase 2 implementation details
 - [artifacts/PHASE1_DEPLOYMENT_COMPLETE.md](artifacts/PHASE1_DEPLOYMENT_COMPLETE.md) - Phase 1 summary
+
+|| 2.2 | Dec 29, 2025 | scotton | Phase 5 Days 1-2 complete: Bedrock Terraform module (240 lines), Knowledge base export script (262 lines), 1,584 documents uploaded to S3 |
