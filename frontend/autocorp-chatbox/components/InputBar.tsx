@@ -25,23 +25,23 @@ export default function InputBar({ onSendMessage, disabled }: InputBarProps) {
   };
 
   return (
-    <div className="border-t bg-white p-4">
-      <div className="flex space-x-2">
+    <div className="border-t border-gray-200 bg-white px-6 py-4">
+      <div className="flex items-center space-x-3 max-w-4xl mx-auto">
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyPress={handleKeyPress}
-          placeholder="Ask me anything about auto parts or services..."
+          placeholder="Type your message here..."
           disabled={disabled}
-          className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
+          className="flex-1 px-5 py-3 bg-gray-50 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed text-sm"
         />
         <button
           onClick={handleSend}
           disabled={disabled || !input.trim()}
-          className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
+          className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-all transform hover:scale-105 active:scale-95 font-medium text-sm shadow-md"
         >
-          Send
+          ➤ Send
         </button>
       </div>
     </div>

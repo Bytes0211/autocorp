@@ -73,13 +73,13 @@ export default function ChatBox() {
   };
 
   return (
-    <div className="flex flex-col h-screen max-w-4xl mx-auto bg-gray-50">
+    <div className="flex flex-col h-screen max-w-5xl mx-auto bg-white shadow-2xl">
       <ChatHeader />
       <MessageList messages={messages} isLoading={isLoading} />
       <InputBar onSendMessage={handleSendMessage} disabled={isLoading} />
       {error && (
-        <div className="px-4 py-2 bg-red-100 text-red-700 text-sm">
-          Error: {error}
+        <div className="px-6 py-3 bg-red-50 border-l-4 border-red-500 text-red-700 text-sm">
+          <span className="font-semibold">Error:</span> {error}
         </div>
       )}
     </div>
