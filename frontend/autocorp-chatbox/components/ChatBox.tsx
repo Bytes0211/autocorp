@@ -21,7 +21,7 @@ export default function ChatBox() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: 'Hello! I\'m the AutoCorp AI assistant. I can help you with questions about auto parts, services, and pricing. What would you like to know?',
+      text: 'Hello I\'m Mici, your AutoCorp AI assistant. How can I help you with questions about auto parts, services, and pricing?',
       sender: 'bot',
       timestamp: new Date(),
     },
