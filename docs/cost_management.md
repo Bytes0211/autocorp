@@ -1,9 +1,11 @@
 # AutoCorp Cost Management & Optimization
 
-**Last Updated:** January 1, 2026  
+**Last Updated:** January 1, 2026 (Post-Deployment)  
 **Environment:** Development  
-**Current Monthly Cost:** ~$220-250  
-**Optimization Potential:** 30-40% reduction possible
+**Deployment Status:** 100% Complete (All 5 Phases)  
+**Current Monthly Cost:** ~$283-371 (unoptimized)  
+**Optimized Monthly Cost:** ~$130-170 (with immediate optimizations)  
+**Optimization Potential:** 35-38% reduction possible
 
 ---
 
@@ -14,11 +16,15 @@
 #### Core Infrastructure (Phases 1-4): $63-91/month
 
 **Storage - S3**
-- Data Lake storage: $10-15/month
+- Data Lake storage: $11-16/month
   - Raw zone: ~2 GB ($0.046/GB)
   - Curated zone (Hudi): ~5 GB ($0.115/GB)
   - Logs: ~1 GB ($0.023/GB)
+  - Frontend hosting: ~0.1 GB ($0.023/GB) + requests
 - Lifecycle policies: Transition to Glacier after 90 days (savings: ~40%)
+- Static website hosting: $0-2/month (requests + bandwidth)
+  - GET requests: $0.0004/1K requests
+  - Data transfer: First 100 GB/month free, then $0.09/GB
 - **Optimization:** Enable S3 Intelligent-Tiering (potential 20% savings)
 
 **ETL - AWS Glue**
@@ -118,16 +124,18 @@
 - API Gateway logs: $0.50/month
   - 1 GB/month
 
-**Amplify Hosting**
-- Build minutes: $0-5/month
-  - First 1,000 build minutes free
-  - $0.01/build minute thereafter
-  - ~10 builds/month @ 5 min = 50 minutes (within free tier)
-- Hosting: $0-5/month
-  - First 15 GB bandwidth free
-  - Estimated: 5 GB/month (within free tier)
-  - Storage: 100 MB = $0.023/month
-- **Optimization:** Enable Amplify CDN caching
+**Frontend Hosting (S3 Static Website)**
+- Storage: $0.023/month
+  - 100 MB static assets
+  - $0.023/GB-month
+- Requests: $0-1/month
+  - Estimated: 10K requests/month
+  - $0.0004/1K GET requests = $0.004/month
+- Bandwidth: $0-5/month
+  - First 100 GB free (well within limits for dev)
+  - Estimated usage: 2 GB/month (free)
+- **Note:** Deployed via S3 static website hosting instead of Amplify
+- **Optimization:** Add CloudFront CDN for HTTPS and better performance ($0.50-5/month)
 
 **Phase 5 Subtotal:** $157-181/month (with corrections needed)
 
@@ -352,7 +360,11 @@ Phase 5 (AI/ML): $220-280/month
 **Cost by Service (Top 5):**
 1. OpenSearch Serverless: $350/month (61%)
 2. Glue: $21-32/month (8%)
-3. S3: $10-15/month (4%)
+3. S3: $11-17/month (4%) - 6 buckets total
+   - autocorp-datalake-dev (main data lake)
+   - autocorp-frontend-dev (static website hosting)
+   - autocorp-terraform-state (IaC state)
+   - 3 test/legacy buckets
 4. Bedrock: $13-20/month (4%)
 5. Lambda: $8/month (3%)
 
