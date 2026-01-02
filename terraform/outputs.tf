@@ -269,3 +269,71 @@ output "cloudwatch_sns_topic_arn" {
   description = "ARN of the SNS topic for CloudWatch alerts"
   value       = module.monitoring.sns_topic_arn
 }
+
+# Bedrock Outputs (Phase 5)
+output "bedrock_knowledge_base_id" {
+  description = "ID of the Bedrock Knowledge Base"
+  value       = var.enable_bedrock ? module.bedrock[0].knowledge_base_id : null
+}
+
+output "bedrock_knowledge_base_arn" {
+  description = "ARN of the Bedrock Knowledge Base"
+  value       = var.enable_bedrock ? module.bedrock[0].knowledge_base_arn : null
+}
+
+output "bedrock_opensearch_collection_arn" {
+  description = "ARN of the OpenSearch Serverless collection"
+  value       = var.enable_bedrock ? module.bedrock[0].opensearch_collection_arn : null
+}
+
+output "bedrock_opensearch_collection_endpoint" {
+  description = "Endpoint of the OpenSearch Serverless collection"
+  value       = var.enable_bedrock ? module.bedrock[0].opensearch_collection_endpoint : null
+}
+
+output "bedrock_kb_role_arn" {
+  description = "ARN of the IAM role for Bedrock Knowledge Base"
+  value       = var.enable_bedrock ? module.bedrock[0].bedrock_kb_role_arn : null
+}
+
+output "bedrock_data_source_id" {
+  description = "ID of the Bedrock Knowledge Base data source"
+  value       = var.enable_bedrock ? module.bedrock[0].data_source_id : null
+}
+
+output "bedrock_vector_index_name" {
+  description = "Name of the vector index in OpenSearch"
+  value       = var.enable_bedrock ? module.bedrock[0].vector_index_name : null
+}
+
+# Lambda Chat Outputs (Phase 5)
+output "chat_handler_function_name" {
+  description = "Name of the chat handler Lambda function"
+  value       = var.enable_lambda_chat ? module.lambda_chat[0].chat_handler_function_name : null
+}
+
+output "analytics_query_function_name" {
+  description = "Name of the analytics query Lambda function"
+  value       = var.enable_lambda_chat ? module.lambda_chat[0].analytics_query_function_name : null
+}
+
+output "api_gateway_endpoint" {
+  description = "Base URL for the API Gateway"
+  value       = var.enable_lambda_chat ? module.lambda_chat[0].api_gateway_endpoint : null
+}
+
+output "chat_endpoint" {
+  description = "Full URL for the chat endpoint"
+  value       = var.enable_lambda_chat ? module.lambda_chat[0].chat_endpoint : null
+}
+
+output "analytics_endpoint" {
+  description = "Full URL for the analytics endpoint"
+  value       = var.enable_lambda_chat ? module.lambda_chat[0].analytics_endpoint : null
+}
+
+output "api_key_secret_arn" {
+  description = "ARN of the Secrets Manager secret containing the API key"
+  value       = var.enable_lambda_chat ? module.lambda_chat[0].api_key_secret_arn : null
+  sensitive   = true
+}

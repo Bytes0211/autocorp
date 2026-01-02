@@ -1,0 +1,1 @@
+The Thermistor replacement service requires Relay as a component. When booking Thermistor replacement, Relay is included as a necessary material. Service: Thermistor replacement. Part: Relay. Quantity: 1.

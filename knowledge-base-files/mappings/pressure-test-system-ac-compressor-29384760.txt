@@ -1,0 +1,1 @@
+The Pressure test system service requires AC Compressor as a component. When booking Pressure test system, AC Compressor is included as a necessary material. Service: Pressure test system. Part: AC Compressor. Quantity: 1.

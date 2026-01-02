@@ -34,65 +34,119 @@ AutoCorp is a comprehensive **cloud-native data platform** that extends beyond t
 ### Key Technical Achievements
 
 - ✅ **<15 minute end-to-end data latency** from source to queryable
-- ✅ **CDC with <5 minute lag** using AWS DMS
+- ✅ **CDC with <5 minute lag** using AWS DMS (IaC ready)
 - ✅ **Apache Hudi tables** with ACID transactions and time-travel queries
-- ✅ **Terraform IaC** with 95% automation (6 modules, 25 files)
+- ✅ **Terraform IaC** with 95% automation (8 modules, 119 AWS resources)
 - ✅ **Multi-environment support** (dev/staging/prod) via IaC
 - ✅ **Cost-optimized** S3 lifecycle policies (raw → Glacier after 90 days)
+- ✅ **AI chatbox with RAG** Amazon Bedrock Nova Pro + Knowledge Base (1,584 docs)
+- ✅ **Serverless backend** Lambda + API Gateway with 3-second response times
 
 ## Architecture Overview
 
-### Data Lakehouse Architecture
+### Complete Data Lakehouse + AI Architecture
 
-```
-┌─────────────────────┐
-│ Source Systems      │
-├─────────────────────┤
-│ PostgreSQL DB       │──────► AWS DMS ──────────┐
-│ - 7 tables          │      (CDC Replication)    │
-└─────────────────────┘                           │
-                                                   │
-┌─────────────────────┐                           ▼
-│ CSV Files           │              ┌────────────────────────┐
-├─────────────────────┤              │   S3 Data Lake         │
-│ customers.csv       │──► DataSync ─►   (Raw Zone)           │
-│ sales_orders.csv    │              │ - /raw/database/       │
-└─────────────────────┘              │ - /raw/csv/            │
-                                     └────────────────────────┘
-                                                   │
-                                                   ▼
-                                     ┌────────────────────────┐
-                                     │   AWS Glue             │
-                                     │ - Crawler (catalog)    │
-                                     │ - ETL Jobs (PySpark)   │
-                                     │ - Data Quality Rules   │
-                                     └────────────────────────┘
-                                                   │
-                                                   ▼
-                                     ┌────────────────────────┐
-                                     │   S3 Data Lake         │
-                                     │   (Curated Zone)       │
-                                     │ - Apache Hudi tables   │
-                                     └────────────────────────┘
-                                                   │
-                                                   ▼
-                                     ┌────────────────────────┐
-                                     │   AWS Athena           │
-                                     │   (Query Engine)       │
-                                     └────────────────────────┘
+```mermaid
+graph TB
+    subgraph Sources["Source Systems"]
+        PG["PostgreSQL DB<br/>- 7 tables<br/>- 1.6M rows"]
+        CSV["CSV Files<br/>- customers.csv<br/>- sales_orders.csv"]
+    end
+    
+    subgraph Ingestion["Data Ingestion Layer"]
+        DMS["AWS DMS<br/>(CDC Replication)<br/>[IaC Ready]"]
+        DS["AWS DataSync<br/>[Documented]"]
+    end
+    
+    subgraph RawZone["S3 Data Lake - Raw Zone"]
+        S3Raw["S3 Bucket<br/>- /raw/database/<br/>- /raw/csv/<br/>- /knowledge-base/"]
+    end
+    
+    subgraph Transform["ETL & Processing Layer"]
+        Glue["AWS Glue<br/>- 3 Crawlers<br/>- 11 ETL Jobs (PySpark)<br/>- Data Quality Rules"]
+    end
+    
+    subgraph CuratedZone["S3 Data Lake - Curated Zone"]
+        S3Curated["S3 Bucket<br/>- 10 Apache Hudi Tables<br/>- ACID Transactions<br/>- Time Travel"]
+    end
+    
+    subgraph Analytics["Analytics & Query Layer"]
+        Athena["AWS Athena<br/>(Query Engine)<br/>- 5 Named Queries<br/>- Time-travel Queries"]
+    end
+    
+    subgraph AI["AI/ML Layer"]
+        Bedrock["Amazon Bedrock<br/>- Knowledge Base (1,584 docs)<br/>- Nova Pro (LLM)<br/>- Titan Embeddings G1"]
+        AOSS["OpenSearch Serverless<br/>(Vector Store)"]
+    end
+    
+    subgraph Backend["Serverless Backend"]
+        Lambda["AWS Lambda<br/>- Chat Function<br/>- Analytics Function<br/>(Python 3.12)"]
+        APIGW["API Gateway (REST)<br/>- /chat endpoint<br/>- /analytics endpoint<br/>- CORS + API Keys"]
+    end
+    
+    subgraph Frontend["Frontend Layer"]
+        NextJS["Next.js Frontend<br/>(S3 Static Hosting)<br/>- React + TypeScript<br/>- Live at S3 Website"]
+    end
+    
+    %% Data Flow
+    PG -->|CDC Stream| DMS
+    CSV -->|File Transfer| DS
+    DMS -->|Parquet Files| S3Raw
+    DS -->|CSV Upload| S3Raw
+    S3Raw -->|Schema Discovery| Glue
+    Glue -->|Transform & Load| S3Curated
+    S3Curated -->|Query| Athena
+    S3Raw -->|Documents| Bedrock
+    Bedrock <-->|Vector Search| AOSS
+    Athena -->|SQL Analytics| Lambda
+    Bedrock -->|RAG Response| Lambda
+    Lambda -->|REST API| APIGW
+    APIGW -->|HTTPS| NextJS
+    
+    %% Styling
+    classDef sourceStyle fill:#e1f5ff,stroke:#01579b,stroke-width:2px
+    classDef ingestionStyle fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    classDef storageStyle fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef transformStyle fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px
+    classDef analyticsStyle fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    classDef aiStyle fill:#fce4ec,stroke:#880e4f,stroke-width:2px
+    classDef backendStyle fill:#e0f2f1,stroke:#004d40,stroke-width:2px
+    classDef frontendStyle fill:#e8eaf6,stroke:#1a237e,stroke-width:2px
+    
+    class PG,CSV sourceStyle
+    class DMS,DS ingestionStyle
+    class S3Raw,S3Curated storageStyle
+    class Glue transformStyle
+    class Athena analyticsStyle
+    class Bedrock,AOSS aiStyle
+    class Lambda,APIGW backendStyle
+    class NextJS frontendStyle
 ```
 
 ### AWS Services Stack
 
-| Service | Purpose | Configuration |
-|---------|---------|---------------|
-| **AWS DMS** | PostgreSQL CDC replication | dms.t3.medium, <5min lag |
-| **AWS DataSync** | Large CSV file transfers | Hourly sync, multi-GB files |
-| **AWS Glue** | Data catalog & ETL | PySpark jobs, Hudi transformations |
-| **AWS S3** | Data lake storage | Raw/curated/logs, lifecycle policies |
-| **AWS Athena** | Serverless SQL queries | Sub-30s performance |
-| **Apache Hudi** | Open table format | ACID, upserts, time-travel |
-| **Terraform** | Infrastructure as Code | 6 modules, 95% automated |
+| Service | Purpose | Configuration | Status |
+|---------|---------|---------------|--------|
+| **Data Lake Layer (Phases 1-2)** |
+| **AWS S3** | Data lake storage | Raw/curated/logs/knowledge-base zones | ✅ Operational |
+| **AWS Glue** | Data catalog & ETL | 11 PySpark jobs, 3 crawlers, Hudi transformations | ✅ Operational |
+| **AWS IAM** | Service roles | Least-privilege roles for all services | ✅ Operational |
+| **AWS Secrets Manager** | Credentials storage | PostgreSQL credentials | ✅ Operational |
+| **CDC Replication Layer (Phase 3)** |
+| **AWS DMS** | PostgreSQL CDC replication | dms.t3.medium, <5min lag | 📝 IaC Ready |
+| **AWS DataSync** | Large CSV file transfers | Hourly sync, multi-GB files | 📖 Documented |
+| **Analytics Layer (Phase 4)** |
+| **AWS Athena** | Serverless SQL queries | 5 named queries, sub-30s performance | ✅ Operational |
+| **AWS CloudWatch** | Monitoring & alerts | Dashboard + 3 alarms (Glue, Athena, Cost) | ✅ Operational |
+| **AI/ML Layer (Phase 5 - 95% Complete)** |
+| **Amazon Bedrock** | AI foundation models | Nova Pro (LLM) + Titan Embeddings + Knowledge Base (1,584 docs) | ✅ Operational |
+| **OpenSearch Serverless** | Vector database for RAG | 2GB collection with semantic search | ✅ Operational |
+| **AWS Lambda** | Serverless API functions | Chat + Analytics functions (Python 3.12) | ✅ Operational |
+| **API Gateway** | REST API endpoints | /chat + /analytics with CORS + API keys | ✅ Operational |
+| **AWS Amplify** | Frontend hosting | Next.js 16.1.1 + React + TypeScript | 🚀 Ready for Deploy |
+| **Open Source** |
+| **Apache Hudi** | Open table format | ACID, upserts, time-travel | ✅ Operational |
+| **Terraform** | Infrastructure as Code | 8 modules, 119 AWS resources, 95% automated | ✅ Operational |
 
 ## Database Structure (Source System)
 
@@ -135,12 +189,14 @@ terraform/
 ├── versions.tf                # Provider versions
 │
 ├── modules/
-│   ├── s3/                    # Data lake [✅ READY]
-│   ├── iam/                   # Service roles [✅ READY]
-│   ├── secrets/               # Secrets Manager [✅ READY]
-│   ├── glue/                  # ETL & catalog [⚠️ BASIC]
-│   ├── dms/                   # Replication [📝 TODO]
-│   └── datasync/              # File sync [📝 TODO]
+│   ├── s3/                    # Data lake [✅ OPERATIONAL]
+│   ├── iam/                   # Service roles [✅ OPERATIONAL]
+│   ├── secrets/               # Secrets Manager [✅ OPERATIONAL]
+│   ├── glue/                  # ETL & catalog [✅ OPERATIONAL]
+│   ├── dms/                   # CDC replication [📝 IaC READY]
+│   ├── athena/                # Query workgroup [✅ OPERATIONAL]
+│   ├── bedrock/               # AI/ML Knowledge Base [✅ OPERATIONAL]
+│   └── lambda-chat/           # Chat API functions [✅ OPERATIONAL]
 │
 └── environments/
     ├── dev.tfvars             # Development
@@ -198,6 +254,7 @@ terraform apply
 - `SALES_SYSTEM_USAGE.md` - SQL query examples (10+ queries)
 - `DATA_QUALITY_TESTING.md` - **326-line comprehensive ETL testing guide**
 - `DATA_QUALITY_QUICK_REFERENCE.md` - **136-line quick reference for DQ testing**
+- `docs/parts_selection_and_correction.md` - **253-line guide on RAG parts retrieval and correction process**
 
 ### Configuration
 - `requirements.txt` - Python dependencies
@@ -526,11 +583,17 @@ See **`PROJECT_GANTT_CHART.md`** (307 lines) for:
    - Lambda + API Gateway backend
    - Complete implementation guide (8-10 days)
 
+9. **`docs/parts_selection_and_correction.md`** (253 lines) - Parts selection guide
+   - How RAG retrieval works for service queries
+   - Complete data flow: PostgreSQL → Enrichment → S3 → Bedrock
+   - 7-step correction process for incorrect part mappings
+   - Best practices and troubleshooting
+
 ## Project Status
 
-**Current Phase:** Phase 5 Complete - AI Chatbox Ready for Deployment
+**Current Phase:** Phase 5 Complete - AI Chatbox Deployed
 
-**Progress:** 95% Complete (28.5 of 30 days)
+**Progress:** 100% Complete (30 of 30 days)
 
 **Completed:**
 - ✅ **Phase 1:** PostgreSQL database + Terraform IaC (100%)
@@ -548,11 +611,11 @@ See **`PROJECT_GANTT_CHART.md`** (307 lines) for:
   - Athena workgroup with 5 named queries
   - CloudWatch monitoring and alarms
   - 3 analytics ETL jobs deployed
-- ✅ **Phase 5:** AI Chatbox (95%)
+- ✅ **Phase 5:** AI Chatbox (100%)
   - Bedrock Nova Pro with RAG operational
-  - Lambda + API Gateway deployed and tested
-  - Next.js frontend implemented and committed
-  - Awaiting final Amplify Console deployment
+  - Lambda + API Gateway deployed and tested (3-second response times)
+  - Next.js frontend deployed to S3 static hosting
+  - Live URL: http://autocorp-frontend-dev.s3-website-us-east-1.amazonaws.com
 - ✅ Infrastructure deployed: 119 AWS resources via Terraform
 - ✅ Glue ETL jobs: 11 jobs operational with Apache Hudi
 - ✅ Data Quality: 35+ validation rules implemented
@@ -562,14 +625,20 @@ See **`PROJECT_GANTT_CHART.md`** (307 lines) for:
 2. Apache Hudi tables with ACID transactions
 3. Bedrock Nova Pro AI with 1,584 documents indexed
 4. API Gateway endpoints responding in ~3 seconds
-5. Next.js chatbox UI ready for deployment
+5. 🌐 **Live AI Chatbox:** http://autocorp-frontend-dev.s3-website-us-east-1.amazonaws.com
 
-**Final Step (5% remaining):**
-- Deploy frontend via AWS Amplify Console
-- See `docs/amplify_deployment_guide.md` for instructions
-- Estimated time: 10 minutes (OAuth setup required)
+**Deployment Complete:**
+- ✅ Frontend deployed to S3 static website hosting
+- 🌐 **Live URL:** http://autocorp-frontend-dev.s3-website-us-east-1.amazonaws.com
+- **Note:** Alternative deployment method used (S3 instead of Amplify) to avoid GitHub OAuth requirement
+- See `docs/amplify_deployment_guide.md` for Amplify Console deployment instructions
 
-**Timeline:** 6 weeks (Nov 18, 2025 - Jan 1, 2026) - Core platform complete!
+**Latest Update (Jan 2, 2026):**
+- 📖 Added comprehensive parts selection and correction guide
+- 🔍 Documented RAG retrieval process for service queries
+- 🛠️ Created step-by-step guide to fix incorrect service-part mappings
+
+**Timeline:** 6 weeks (Nov 18, 2025 - Jan 2, 2026) - Core platform complete!
 
 ## Technology Stack
 

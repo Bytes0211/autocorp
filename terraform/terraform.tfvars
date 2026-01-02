@@ -27,3 +27,16 @@ postgres_username     = "scotton"
 enable_datasync       = false
 datasync_agent_arns   = [] # Update after agent activation
 datasync_schedule     = "rate(1 hour)"
+
+# Athena Configuration
+athena_database_name  = "autocorp_dev"
+
+# Bedrock Configuration (Phase 5 - AI Chatbox)
+enable_bedrock              = true
+enable_bedrock_data_source  = true  # Knowledge base data uploaded to S3
+bedrock_embedding_model     = "amazon.titan-embed-text-v2:0"
+bedrock_chunk_size          = 300
+bedrock_chunk_overlap       = 20
+
+# Lambda Chat Configuration (Phase 5 - API Gateway + Lambda)
+enable_lambda_chat          = true

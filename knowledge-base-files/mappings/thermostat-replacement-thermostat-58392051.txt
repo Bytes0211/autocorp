@@ -1,0 +1,1 @@
+The Thermostat replacement service requires Thermostat as a component. When booking Thermostat replacement, Thermostat is included as a necessary material. Service: Thermostat replacement. Part: Thermostat. Quantity: 1.

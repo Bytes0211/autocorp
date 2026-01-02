@@ -1,0 +1,1 @@
+The Climate control diagnostics service requires Motor Controller as a component. When booking Climate control diagnostics, Motor Controller is included as a necessary material. Service: Climate control diagnostics. Part: Motor Controller. Quantity: 1.

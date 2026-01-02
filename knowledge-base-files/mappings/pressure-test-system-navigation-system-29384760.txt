@@ -1,0 +1,1 @@
+The Pressure test system service requires Navigation System as a component. When booking Pressure test system, Navigation System is included as a necessary material. Service: Pressure test system. Part: Navigation System. Quantity: 1.

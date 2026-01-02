@@ -1,0 +1,1 @@
+The Thermistor replacement service requires Hammer as a component. When booking Thermistor replacement, Hammer is included as a necessary material. Service: Thermistor replacement. Part: Hammer. Quantity: 1.

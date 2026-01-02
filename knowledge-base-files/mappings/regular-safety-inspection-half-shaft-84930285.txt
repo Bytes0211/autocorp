@@ -1,0 +1,1 @@
+The Regular safety inspection service requires Half Shaft as a component. When booking Regular safety inspection, Half Shaft is included as a necessary material. Service: Regular safety inspection. Part: Half Shaft. Quantity: 1.

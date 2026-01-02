@@ -1,0 +1,1 @@
+The Parking brake adjustment service requires Parking Sensor as a component. When booking Parking brake adjustment, Parking Sensor is included as a necessary material. Service: Parking brake adjustment. Part: Parking Sensor. Quantity: 1.

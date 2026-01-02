@@ -1,0 +1,1 @@
+The Alignment check service requires Infotainment Upgrade as a component. When booking Alignment check, Infotainment Upgrade is included as a necessary material. Service: Alignment check. Part: Infotainment Upgrade. Quantity: 1.

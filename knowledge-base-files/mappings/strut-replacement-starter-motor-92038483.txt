@@ -1,0 +1,1 @@
+The Strut replacement service requires Starter Motor as a component. When booking Strut replacement, Starter Motor is included as a necessary material. Service: Strut replacement. Part: Starter Motor. Quantity: 1.

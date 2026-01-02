@@ -1,0 +1,1 @@
+The Tire replacement service requires Torque Wrench as a component. When booking Tire replacement, Torque Wrench is included as a necessary material. Service: Tire replacement. Part: Torque Wrench. Quantity: 1.

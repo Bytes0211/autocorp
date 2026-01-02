@@ -1,0 +1,1 @@
+The Thermostat replacement service requires Headrest as a component. When booking Thermostat replacement, Headrest is included as a necessary material. Service: Thermostat replacement. Part: Headrest. Quantity: 1.

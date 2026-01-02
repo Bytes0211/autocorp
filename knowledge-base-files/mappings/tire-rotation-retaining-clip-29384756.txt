@@ -1,0 +1,1 @@
+The Tire rotation service requires Retaining Clip as a component. When booking Tire rotation, Retaining Clip is included as a necessary material. Service: Tire rotation. Part: Retaining Clip. Quantity: 1.

@@ -1,0 +1,1 @@
+The Tire balancing service requires Regenerative Braking Module as a component. When booking Tire balancing, Regenerative Braking Module is included as a necessary material. Service: Tire balancing. Part: Regenerative Braking Module. Quantity: 1.

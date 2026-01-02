@@ -1,0 +1,1 @@
+The Tire rotation service requires Seat Ventilation Fan as a component. When booking Tire rotation, Seat Ventilation Fan is included as a necessary material. Service: Tire rotation. Part: Seat Ventilation Fan. Quantity: 1.

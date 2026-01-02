@@ -1,0 +1,1 @@
+The Coolant flush service requires Cooling Fan as a component. When booking Coolant flush, Cooling Fan is included as a necessary material. Service: Coolant flush. Part: Cooling Fan. Quantity: 1.

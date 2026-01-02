@@ -1,0 +1,1 @@
+The Radiator flush service requires Air Filter as a component. When booking Radiator flush, Air Filter is included as a necessary material. Service: Radiator flush. Part: Air Filter. Quantity: 1.

@@ -1,0 +1,1 @@
+The ABS system service service requires Cooling System Pressure Tester as a component. When booking ABS system service, Cooling System Pressure Tester is included as a necessary material. Service: ABS system service. Part: Cooling System Pressure Tester. Quantity: 1.

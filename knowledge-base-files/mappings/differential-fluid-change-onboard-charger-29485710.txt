@@ -1,0 +1,1 @@
+The Differential fluid change service requires Onboard Charger as a component. When booking Differential fluid change, Onboard Charger is included as a necessary material. Service: Differential fluid change. Part: Onboard Charger. Quantity: 1.

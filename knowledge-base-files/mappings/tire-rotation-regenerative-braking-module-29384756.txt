@@ -1,0 +1,1 @@
+The Tire rotation service requires Regenerative Braking Module as a component. When booking Tire rotation, Regenerative Braking Module is included as a necessary material. Service: Tire rotation. Part: Regenerative Braking Module. Quantity: 1.

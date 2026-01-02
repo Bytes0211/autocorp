@@ -1,0 +1,1 @@
+The Coolant flush service requires Coolant Temperature Sensor as a component. When booking Coolant flush, Coolant Temperature Sensor is included as a necessary material. Service: Coolant flush. Part: Coolant Temperature Sensor. Quantity: 1.

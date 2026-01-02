@@ -1,0 +1,1 @@
+The Multi-point inspection service requires Horn as a component. When booking Multi-point inspection, Horn is included as a necessary material. Service: Multi-point inspection. Part: Horn. Quantity: 1.

@@ -1,0 +1,1 @@
+The Thermostat replacement service requires Hammer as a component. When booking Thermostat replacement, Hammer is included as a necessary material. Service: Thermostat replacement. Part: Hammer. Quantity: 1.

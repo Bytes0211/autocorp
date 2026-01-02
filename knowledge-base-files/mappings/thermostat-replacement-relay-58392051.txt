@@ -1,0 +1,1 @@
+The Thermostat replacement service requires Relay as a component. When booking Thermostat replacement, Relay is included as a necessary material. Service: Thermostat replacement. Part: Relay. Quantity: 1.

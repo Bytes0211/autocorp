@@ -1,0 +1,1 @@
+The Resonator replacement service requires Armrest as a component. When booking Resonator replacement, Armrest is included as a necessary material. Service: Resonator replacement. Part: Armrest. Quantity: 1.

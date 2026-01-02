@@ -1,0 +1,1 @@
+The Heater core service service requires Battery as a component. When booking Heater core service, Battery is included as a necessary material. Service: Heater core service. Part: Battery. Quantity: 1.

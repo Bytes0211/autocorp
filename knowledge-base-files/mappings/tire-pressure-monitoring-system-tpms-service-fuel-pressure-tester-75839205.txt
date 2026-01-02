@@ -1,0 +1,1 @@
+The Tire pressure monitoring system (TPMS) service service requires Fuel Pressure Tester as a component. When booking Tire pressure monitoring system (TPMS) service, Fuel Pressure Tester is included as a necessary material. Service: Tire pressure monitoring system (TPMS) service. Part: Fuel Pressure Tester. Quantity: 1.

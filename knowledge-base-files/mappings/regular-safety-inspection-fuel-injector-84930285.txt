@@ -1,0 +1,1 @@
+The Regular safety inspection service requires Fuel Injector as a component. When booking Regular safety inspection, Fuel Injector is included as a necessary material. Service: Regular safety inspection. Part: Fuel Injector. Quantity: 1.

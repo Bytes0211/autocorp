@@ -1,0 +1,1 @@
+The Emissions system diagnostics service requires Compression Tester as a component. When booking Emissions system diagnostics, Compression Tester is included as a necessary material. Service: Emissions system diagnostics. Part: Compression Tester. Quantity: 1.

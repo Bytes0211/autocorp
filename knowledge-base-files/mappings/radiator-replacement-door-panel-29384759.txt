@@ -1,0 +1,1 @@
+The Radiator replacement service requires Door Panel as a component. When booking Radiator replacement, Door Panel is included as a necessary material. Service: Radiator replacement. Part: Door Panel. Quantity: 1.

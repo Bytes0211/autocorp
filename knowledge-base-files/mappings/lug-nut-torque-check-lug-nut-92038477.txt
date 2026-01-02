@@ -1,0 +1,1 @@
+The Lug nut torque check service requires Lug Nut as a component. When booking Lug nut torque check, Lug Nut is included as a necessary material. Service: Lug nut torque check. Part: Lug Nut. Quantity: 1.

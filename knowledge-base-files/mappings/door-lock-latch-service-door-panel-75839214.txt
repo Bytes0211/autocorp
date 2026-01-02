@@ -1,0 +1,1 @@
+The Door lock/latch service service requires Door Panel as a component. When booking Door lock/latch service, Door Panel is included as a necessary material. Service: Door lock/latch service. Part: Door Panel. Quantity: 1.

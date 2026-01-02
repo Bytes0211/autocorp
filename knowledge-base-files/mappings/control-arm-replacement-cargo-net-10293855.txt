@@ -1,0 +1,1 @@
+The Control arm replacement service requires Cargo Net as a component. When booking Control arm replacement, Cargo Net is included as a necessary material. Service: Control arm replacement. Part: Cargo Net. Quantity: 1.

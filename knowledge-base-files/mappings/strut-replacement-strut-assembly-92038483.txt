@@ -1,0 +1,1 @@
+The Strut replacement service requires Strut Assembly as a component. When booking Strut replacement, Strut Assembly is included as a necessary material. Service: Strut replacement. Part: Strut Assembly. Quantity: 1.

@@ -1,0 +1,1 @@
+The Radiator replacement service requires Radiator as a component. When booking Radiator replacement, Radiator is included as a necessary material. Service: Radiator replacement. Part: Radiator. Quantity: 1.

@@ -5,7 +5,7 @@ __pycache__/
 WARP.md
 artifacts/
 docs/
-
+.venv/
 # Terraform
 **/.terraform/
 **/.terraform.lock.hcl

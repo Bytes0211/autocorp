@@ -1,0 +1,1 @@
+The Pressure test system service requires Cooling System Pressure Tester as a component. When booking Pressure test system, Cooling System Pressure Tester is included as a necessary material. Service: Pressure test system. Part: Cooling System Pressure Tester. Quantity: 1.

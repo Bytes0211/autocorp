@@ -1,0 +1,1 @@
+The Multi-point inspection service requires U-Joint as a component. When booking Multi-point inspection, U-Joint is included as a necessary material. Service: Multi-point inspection. Part: U-Joint. Quantity: 1.

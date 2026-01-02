@@ -1,0 +1,1 @@
+The Climate control diagnostics service requires Coolant as a component. When booking Climate control diagnostics, Coolant is included as a necessary material. Service: Climate control diagnostics. Part: Coolant. Quantity: 1.

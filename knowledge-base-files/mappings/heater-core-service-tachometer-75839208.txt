@@ -1,0 +1,1 @@
+The Heater core service service requires Tachometer as a component. When booking Heater core service, Tachometer is included as a necessary material. Service: Heater core service. Part: Tachometer. Quantity: 1.

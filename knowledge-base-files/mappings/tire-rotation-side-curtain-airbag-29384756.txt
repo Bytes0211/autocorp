@@ -1,0 +1,1 @@
+The Tire rotation service requires Side Curtain Airbag as a component. When booking Tire rotation, Side Curtain Airbag is included as a necessary material. Service: Tire rotation. Part: Side Curtain Airbag. Quantity: 1.

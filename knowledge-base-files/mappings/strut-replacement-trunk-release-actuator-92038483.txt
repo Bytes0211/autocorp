@@ -1,0 +1,1 @@
+The Strut replacement service requires Trunk Release Actuator as a component. When booking Strut replacement, Trunk Release Actuator is included as a necessary material. Service: Strut replacement. Part: Trunk Release Actuator. Quantity: 1.

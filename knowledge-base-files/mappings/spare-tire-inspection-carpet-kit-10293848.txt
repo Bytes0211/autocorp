@@ -1,0 +1,1 @@
+The Spare tire inspection service requires Carpet Kit as a component. When booking Spare tire inspection, Carpet Kit is included as a necessary material. Service: Spare tire inspection. Part: Carpet Kit. Quantity: 1.

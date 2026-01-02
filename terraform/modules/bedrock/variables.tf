@@ -30,7 +30,7 @@ variable "enable_data_source" {
 variable "embedding_model" {
   description = "Bedrock embedding model to use"
   type        = string
-  default     = "amazon.titan-embed-text-v1"
+  default     = "amazon.titan-embed-text-v2:0"
 }
 
 variable "chunk_size_tokens" {

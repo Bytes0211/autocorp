@@ -1,0 +1,1 @@
+The Thermistor replacement service requires Radiator as a component. When booking Thermistor replacement, Radiator is included as a necessary material. Service: Thermistor replacement. Part: Radiator. Quantity: 1.

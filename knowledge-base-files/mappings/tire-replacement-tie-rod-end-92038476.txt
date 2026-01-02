@@ -1,0 +1,1 @@
+The Tire replacement service requires Tie Rod End as a component. When booking Tire replacement, Tie Rod End is included as a necessary material. Service: Tire replacement. Part: Tie Rod End. Quantity: 1.

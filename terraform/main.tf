@@ -107,3 +107,36 @@ module "monitoring" {
   alert_email           = var.cloudwatch_alert_email
   create_sns_topic      = var.cloudwatch_alert_email != "" ? true : false
 }
+
+# Bedrock Module - AI Knowledge Base with RAG (Phase 5)
+module "bedrock" {
+  source = "./modules/bedrock"
+  count  = var.enable_bedrock ? 1 : 0
+
+  project_name               = var.project_name
+  environment                = var.environment
+  knowledge_base_bucket_arn  = module.s3.data_lake_bucket_arn
+  bedrock_execution_role_arn = ""  # Will use module-created role
+  enable_data_source         = var.enable_bedrock_data_source
+  embedding_model            = var.bedrock_embedding_model
+  chunk_size_tokens          = var.bedrock_chunk_size
+  chunk_overlap_percentage   = var.bedrock_chunk_overlap
+}
+
+# Lambda Chat Module - Lambda Functions + API Gateway (Phase 5)
+module "lambda_chat" {
+  source = "./modules/lambda-chat"
+  count  = var.enable_lambda_chat ? 1 : 0
+
+  project_name       = var.project_name
+  environment        = var.environment
+  aws_region         = var.aws_region
+  knowledge_base_id  = var.enable_bedrock ? module.bedrock[0].knowledge_base_id : ""
+  knowledge_base_arn = var.enable_bedrock ? module.bedrock[0].knowledge_base_arn : ""
+  glue_database      = var.athena_database_name
+  athena_workgroup   = module.athena.workgroup_name
+  s3_bucket_name     = module.s3.data_lake_bucket_id
+  s3_bucket_arn      = module.s3.data_lake_bucket_arn
+
+  depends_on = [module.bedrock, module.athena]
+}

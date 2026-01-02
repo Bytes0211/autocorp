@@ -1,0 +1,1 @@
+The Smog check preparation service requires Piston as a component. When booking Smog check preparation, Piston is included as a necessary material. Service: Smog check preparation. Part: Piston. Quantity: 1.

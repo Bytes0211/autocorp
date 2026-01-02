@@ -1,0 +1,1 @@
+The Interior light inspection service requires Light Bulb as a component. When booking Interior light inspection, Light Bulb is included as a necessary material. Service: Interior light inspection. Part: Light Bulb. Quantity: 1.

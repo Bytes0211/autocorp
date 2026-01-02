@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "service-58392050",
+    "type": "service",
+    "serviceid": "58392050",
+    "name": "ABS system service",
+    "category": "Brakes",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "We offer ABS system service service in our Brakes department. This service addresses vehicle maintenance and repair needs. Labor cost is $180.00 and takes approximately 2.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Brakes. Service ID: 58392050."
+  },
+  {
+    "id": "service-29384762",
+    "type": "service",
+    "serviceid": "29384762",
+    "name": "A/C compressor replacement",
+    "category": "HVAC",
+    "labor_cost": 360.0,
+    "labor_minutes": 240,
+    "text": "We offer A/C compressor replacement service in our HVAC department. This service addresses vehicle maintenance and repair needs. Labor cost is $360.00 and takes approximately 4.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: HVAC. Service ID: 29384762."
+  },
+  {
+    "id": "service-84930281",
+    "type": "service",
+    "serviceid": "84930281",
+    "name": "A/C recharge (refrigerant refill)",
+    "category": "HVAC",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer A/C recharge (refrigerant refill) service in our HVAC department. This service addresses vehicle maintenance and repair needs. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: HVAC. Service ID: 84930281."
+  },
+  {
+    "id": "service-10293860",
+    "type": "service",
+    "serviceid": "10293860",
+    "name": "Air filter replacement",
+    "category": "Fluids & Filters",
+    "labor_cost": 22.5,
+    "labor_minutes": 15,
+    "text": "We offer Air filter replacement service in our Fluids & Filters department. This service addresses vehicle maintenance and repair needs. Labor cost is $22.50 and takes approximately 15 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Fluids & Filters. Service ID: 10293860."
+  },
+  {
+    "id": "service-92710458",
+    "type": "service",
+    "serviceid": "92710458",
+    "name": "Air filter replacement",
+    "category": "Engine & Powertrain",
+    "labor_cost": 22.5,
+    "labor_minutes": 15,
+    "text": "We offer Air filter replacement service in our Engine & Powertrain department. This service addresses vehicle maintenance and repair needs. Labor cost is $22.50 and takes approximately 15 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Engine & Powertrain. Service ID: 92710458."
+  },
+  {
+    "id": "service-38492066",
+    "type": "service",
+    "serviceid": "38492066",
+    "name": "Alignment check",
+    "category": "Suspension & Steering",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "We offer Alignment check service in our Suspension & Steering department. This service addresses vehicle pulling, uneven tire wear, steering problems. Labor cost is $45.00 and takes approximately 30 minutes. Common reasons customers need this service: after hitting a pothole, uneven tire wear noticed, steering wheel off-center. Service category: Suspension & Steering. Service ID: 38492066."
+  },
+  {
+    "id": "service-38492062",
+    "type": "service",
+    "serviceid": "38492062",
+    "name": "Alternator replacement",
+    "category": "Electrical System",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Alternator replacement service in our Electrical System department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Electrical System. Service ID: 38492062."
+  },
+  {
+    "id": "service-75839204",
+    "type": "service",
+    "serviceid": "75839204",
+    "name": "Axle replacement",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 270.0,
+    "labor_minutes": 180,
+    "text": "We offer Axle replacement service in our Transmission & Drivetrain department. This service addresses vehicle maintenance and repair needs. Labor cost is $270.00 and takes approximately 3.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Transmission & Drivetrain. Service ID: 75839204."
+  },
+  {
+    "id": "service-38492065",
+    "type": "service",
+    "serviceid": "38492065",
+    "name": "Ball joint replacement",
+    "category": "Suspension & Steering",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Ball joint replacement service in our Suspension & Steering department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Suspension & Steering. Service ID: 38492065."
+  },
+  {
+    "id": "service-92038480",
+    "type": "service",
+    "serviceid": "92038480",
+    "name": "Battery replacement",
+    "category": "Electrical System",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "We offer Battery replacement service in our Electrical System department. This service addresses car won't start, dead battery, weak starting, electrical problems. Labor cost is $45.00 and takes approximately 30 minutes. Common reasons customers need this service: car won't start, dim lights, electrical issues. Service category: Electrical System. Service ID: 92038480."
+  },
+  {
+    "id": "service-58392054",
+    "type": "service",
+    "serviceid": "58392054",
+    "name": "Blower motor replacement",
+    "category": "HVAC",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Blower motor replacement service in our HVAC department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: HVAC. Service ID: 58392054."
+  },
+  {
+    "id": "service-10293850",
+    "type": "service",
+    "serviceid": "10293850",
+    "name": "Brake booster replacement",
+    "category": "Brakes",
+    "labor_cost": 270.0,
+    "labor_minutes": 180,
+    "text": "We offer Brake booster replacement service in our Brakes department. This service addresses poor braking performance, squealing noises, reduced stopping power, safety concerns. Labor cost is $270.00 and takes approximately 3.0 hours. Common reasons customers need this service: hearing squealing sounds, feeling vibration when braking, brake warning light. Service category: Brakes. Service ID: 10293850."
+  },
+  {
+    "id": "service-84930277",
+    "type": "service",
+    "serviceid": "84930277",
+    "name": "Brake caliper replacement",
+    "category": "Brakes",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Brake caliper replacement service in our Brakes department. This service addresses poor braking performance, squealing noises, reduced stopping power, safety concerns. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: hearing squealing sounds, feeling vibration when braking, brake warning light. Service category: Brakes. Service ID: 84930277."
+  },
+  {
+    "id": "service-10293849",
+    "type": "service",
+    "serviceid": "10293849",
+    "name": "Brake fluid flush",
+    "category": "Brakes",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Brake fluid flush service in our Brakes department. This service addresses poor braking performance, squealing noises, reduced stopping power, safety concerns. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: hearing squealing sounds, feeling vibration when braking, brake warning light. Service category: Brakes. Service ID: 10293849."
+  },
+  {
+    "id": "service-10293859",
+    "type": "service",
+    "serviceid": "10293859",
+    "name": "Brake fluid flush",
+    "category": "Fluids & Filters",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Brake fluid flush service in our Fluids & Filters department. This service addresses poor braking performance, squealing noises, reduced stopping power, safety concerns. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: hearing squealing sounds, feeling vibration when braking, brake warning light. Service category: Fluids & Filters. Service ID: 10293859."
+  },
+  {
+    "id": "service-29384758",
+    "type": "service",
+    "serviceid": "29384758",
+    "name": "Brake line inspection/replacement",
+    "category": "Brakes",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Brake line inspection/replacement service in our Brakes department. This service addresses poor braking performance, squealing noises, reduced stopping power, safety concerns. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: hearing squealing sounds, feeling vibration when braking, brake warning light. Service category: Brakes. Service ID: 29384758."
+  },
+  {
+    "id": "service-38492059",
+    "type": "service",
+    "serviceid": "38492059",
+    "name": "Brake pad replacement",
+    "category": "Brakes",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Brake pad replacement service in our Brakes department. This service addresses poor braking performance, squealing noises, reduced stopping power, safety concerns. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: hearing squealing sounds, feeling vibration when braking, brake warning light. Service category: Brakes. Service ID: 38492059."
+  },
+  {
+    "id": "service-75839206",
+    "type": "service",
+    "serviceid": "75839206",
+    "name": "Brake rotor resurfacing/replacement",
+    "category": "Brakes",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "We offer Brake rotor resurfacing/replacement service in our Brakes department. This service addresses poor braking performance, squealing noises, reduced stopping power, safety concerns. Labor cost is $180.00 and takes approximately 2.0 hours. Common reasons customers need this service: hearing squealing sounds, feeling vibration when braking, brake warning light. Service category: Brakes. Service ID: 75839206."
+  },
+  {
+    "id": "service-10293853",
+    "type": "service",
+    "serviceid": "10293853",
+    "name": "Cabin air filter replacement",
+    "category": "HVAC",
+    "labor_cost": 30.0,
+    "labor_minutes": 20,
+    "text": "We offer Cabin air filter replacement service in our HVAC department. This service addresses vehicle maintenance and repair needs. Labor cost is $30.00 and takes approximately 20 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: HVAC. Service ID: 10293853."
+  },
+  {
+    "id": "service-75839217",
+    "type": "service",
+    "serviceid": "75839217",
+    "name": "Cabin air filter replacement",
+    "category": "Fluids & Filters",
+    "labor_cost": 30.0,
+    "labor_minutes": 20,
+    "text": "We offer Cabin air filter replacement service in our Fluids & Filters department. This service addresses vehicle maintenance and repair needs. Labor cost is $30.00 and takes approximately 20 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Fluids & Filters. Service ID: 75839217."
+  },
+  {
+    "id": "service-58392058",
+    "type": "service",
+    "serviceid": "58392058",
+    "name": "Catalytic converter replacement",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "We offer Catalytic converter replacement service in our Exhaust & Emissions department. This service addresses vehicle maintenance and repair needs. Labor cost is $180.00 and takes approximately 2.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Exhaust & Emissions. Service ID: 58392058."
+  },
+  {
+    "id": "service-38492064",
+    "type": "service",
+    "serviceid": "38492064",
+    "name": "Climate control diagnostics",
+    "category": "HVAC",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Climate control diagnostics service in our HVAC department. This service addresses check engine light, performance issues, unknown problems. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: warning lights on, strange noises, performance problems. Service category: HVAC. Service ID: 38492064."
+  },
+  {
+    "id": "service-84930217",
+    "type": "service",
+    "serviceid": "84930217",
+    "name": "Clutch replacement (manual)",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 450.0,
+    "labor_minutes": 300,
+    "text": "We offer Clutch replacement (manual) service in our Transmission & Drivetrain department. This service addresses vehicle maintenance and repair needs. Labor cost is $450.00 and takes approximately 5.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Transmission & Drivetrain. Service ID: 84930217."
+  },
+  {
+    "id": "service-10293854",
+    "type": "service",
+    "serviceid": "10293854",
+    "name": "Condenser replacement",
+    "category": "HVAC",
+    "labor_cost": 270.0,
+    "labor_minutes": 180,
+    "text": "We offer Condenser replacement service in our HVAC department. This service addresses vehicle maintenance and repair needs. Labor cost is $270.00 and takes approximately 3.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: HVAC. Service ID: 10293854."
+  },
+  {
+    "id": "service-10293855",
+    "type": "service",
+    "serviceid": "10293855",
+    "name": "Control arm replacement",
+    "category": "Suspension & Steering",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "We offer Control arm replacement service in our Suspension & Steering department. This service addresses vehicle maintenance and repair needs. Labor cost is $180.00 and takes approximately 2.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Suspension & Steering. Service ID: 10293855."
+  },
+  {
+    "id": "service-84930287",
+    "type": "service",
+    "serviceid": "84930287",
+    "name": "Coolant flush",
+    "category": "Fluids & Filters",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Coolant flush service in our Fluids & Filters department. This service addresses overheating, engine temperature regulation, cooling system health. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Fluids & Filters. Service ID: 84930287."
+  },
+  {
+    "id": "service-38492061",
+    "type": "service",
+    "serviceid": "38492061",
+    "name": "Coolant hose replacement",
+    "category": "Cooling System",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "We offer Coolant hose replacement service in our Cooling System department. This service addresses overheating, engine temperature regulation, cooling system health. Labor cost is $67.50 and takes approximately 45 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Cooling System. Service ID: 38492061."
+  },
+  {
+    "id": "service-58392052",
+    "type": "service",
+    "serviceid": "58392052",
+    "name": "Coolant reservoir replacement",
+    "category": "Cooling System",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Coolant reservoir replacement service in our Cooling System department. This service addresses overheating, engine temperature regulation, cooling system health. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Cooling System. Service ID: 58392052."
+  },
+  {
+    "id": "service-10293851",
+    "type": "service",
+    "serviceid": "10293851",
+    "name": "Cooling fan replacement",
+    "category": "Cooling System",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Cooling fan replacement service in our Cooling System department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Cooling System. Service ID: 10293851."
+  },
+  {
+    "id": "service-92038475",
+    "type": "service",
+    "serviceid": "92038475",
+    "name": "CV joint/boot replacement",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "We offer CV joint/boot replacement service in our Transmission & Drivetrain department. This service addresses vehicle maintenance and repair needs. Labor cost is $180.00 and takes approximately 2.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Transmission & Drivetrain. Service ID: 92038475."
+  },
+  {
+    "id": "service-58392060",
+    "type": "service",
+    "serviceid": "58392060",
+    "name": "Differential fluid change",
+    "category": "Fluids & Filters",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "We offer Differential fluid change service in our Fluids & Filters department. This service addresses system maintenance, preventing damage, ensuring proper operation. Labor cost is $67.50 and takes approximately 45 minutes. Common reasons customers need this service: scheduled maintenance, fluid leak noticed, color change in fluid. Service category: Fluids & Filters. Service ID: 58392060."
+  },
+  {
+    "id": "service-29485710",
+    "type": "service",
+    "serviceid": "29485710",
+    "name": "Differential fluid change",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "We offer Differential fluid change service in our Transmission & Drivetrain department. This service addresses system maintenance, preventing damage, ensuring proper operation. Labor cost is $67.50 and takes approximately 45 minutes. Common reasons customers need this service: scheduled maintenance, fluid leak noticed, color change in fluid. Service category: Transmission & Drivetrain. Service ID: 29485710."
+  },
+  {
+    "id": "service-75839214",
+    "type": "service",
+    "serviceid": "75839214",
+    "name": "Door lock/latch service",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Door lock/latch service service in our General Preventive Maintenance department. This service addresses vehicle maintenance and repair needs. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: General Preventive Maintenance. Service ID: 75839214."
+  },
+  {
+    "id": "service-69041283",
+    "type": "service",
+    "serviceid": "69041283",
+    "name": "Drive belt inspection/replacement",
+    "category": "Engine & Powertrain",
+    "labor_cost": 30.0,
+    "labor_minutes": 20,
+    "text": "We offer Drive belt inspection/replacement service in our Engine & Powertrain department. This service addresses safety compliance, pre-purchase evaluation, maintenance planning. Labor cost is $30.00 and takes approximately 20 minutes. Common reasons customers need this service: annual safety check, buying/selling vehicle, registration renewal. Service category: Engine & Powertrain. Service ID: 69041283."
+  },
+  {
+    "id": "service-38492057",
+    "type": "service",
+    "serviceid": "38492057",
+    "name": "Driveshaft service",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Driveshaft service service in our Transmission & Drivetrain department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Transmission & Drivetrain. Service ID: 38492057."
+  },
+  {
+    "id": "service-75839210",
+    "type": "service",
+    "serviceid": "75839210",
+    "name": "ECU diagnostics",
+    "category": "Electrical System",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer ECU diagnostics service in our Electrical System department. This service addresses check engine light, performance issues, unknown problems. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: warning lights on, strange noises, performance problems. Service category: Electrical System. Service ID: 75839210."
+  },
+  {
+    "id": "service-75839215",
+    "type": "service",
+    "serviceid": "75839215",
+    "name": "EGR valve replacement",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer EGR valve replacement service in our Exhaust & Emissions department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Exhaust & Emissions. Service ID: 75839215."
+  },
+  {
+    "id": "service-10293858",
+    "type": "service",
+    "serviceid": "10293858",
+    "name": "Emissions system diagnostics",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Emissions system diagnostics service in our Exhaust & Emissions department. This service addresses check engine light, performance issues, unknown problems. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: warning lights on, strange noises, performance problems. Service category: Exhaust & Emissions. Service ID: 10293858."
+  },
+  {
+    "id": "service-84201957",
+    "type": "service",
+    "serviceid": "84201957",
+    "name": "Engine mount replacement",
+    "category": "Engine & Powertrain",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "We offer Engine mount replacement service in our Engine & Powertrain department. This service addresses vehicle maintenance and repair needs. Labor cost is $180.00 and takes approximately 2.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Engine & Powertrain. Service ID: 84201957."
+  },
+  {
+    "id": "service-38492069",
+    "type": "service",
+    "serviceid": "38492069",
+    "name": "Engine oil & filter service",
+    "category": "Fluids & Filters",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "We offer Engine oil & filter service service in our Fluids & Filters department. This service addresses engine wear prevention, maintaining lubrication, extending engine life. Labor cost is $45.00 and takes approximately 30 minutes. Common reasons customers need this service: routine maintenance schedule, oil change reminder, engine protection. Service category: Fluids & Filters. Service ID: 38492069."
+  },
+  {
+    "id": "service-37592041",
+    "type": "service",
+    "serviceid": "37592041",
+    "name": "Engine tune-up",
+    "category": "Engine & Powertrain",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Engine tune-up service in our Engine & Powertrain department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Engine & Powertrain. Service ID: 37592041."
+  },
+  {
+    "id": "service-75839211",
+    "type": "service",
+    "serviceid": "75839211",
+    "name": "Evaporator replacement",
+    "category": "HVAC",
+    "labor_cost": 450.0,
+    "labor_minutes": 300,
+    "text": "We offer Evaporator replacement service in our HVAC department. This service addresses vehicle maintenance and repair needs. Labor cost is $450.00 and takes approximately 5.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: HVAC. Service ID: 75839211."
+  },
+  {
+    "id": "service-84930286",
+    "type": "service",
+    "serviceid": "84930286",
+    "name": "Exhaust manifold replacement",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 270.0,
+    "labor_minutes": 180,
+    "text": "We offer Exhaust manifold replacement service in our Exhaust & Emissions department. This service addresses vehicle maintenance and repair needs. Labor cost is $270.00 and takes approximately 3.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Exhaust & Emissions. Service ID: 84930286."
+  },
+  {
+    "id": "service-92038486",
+    "type": "service",
+    "serviceid": "92038486",
+    "name": "Exhaust pipe repair",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Exhaust pipe repair service in our Exhaust & Emissions department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Exhaust & Emissions. Service ID: 92038486."
+  },
+  {
+    "id": "service-58392057",
+    "type": "service",
+    "serviceid": "58392057",
+    "name": "Exterior light inspection",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 30.0,
+    "labor_minutes": 20,
+    "text": "We offer Exterior light inspection service in our General Preventive Maintenance department. This service addresses safety compliance, pre-purchase evaluation, maintenance planning. Labor cost is $30.00 and takes approximately 20 minutes. Common reasons customers need this service: annual safety check, buying/selling vehicle, registration renewal. Service category: General Preventive Maintenance. Service ID: 58392057."
+  },
+  {
+    "id": "service-58392049",
+    "type": "service",
+    "serviceid": "58392049",
+    "name": "Flat tire repair",
+    "category": "Tires & Wheels",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "We offer Flat tire repair service in our Tires & Wheels department. This service addresses uneven wear, vibration, poor handling, safety issues. Labor cost is $45.00 and takes approximately 30 minutes. Common reasons customers need this service: seasonal tire change, new tire installation, tire damage. Service category: Tires & Wheels. Service ID: 58392049."
+  },
+  {
+    "id": "service-10293856",
+    "type": "service",
+    "serviceid": "10293856",
+    "name": "Fluid top-offs (oil, coolant, brake, transmission, power steering, washer)",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 30.0,
+    "labor_minutes": 20,
+    "text": "We offer Fluid top-offs (oil, coolant, brake, transmission, power steering, washer) service in our General Preventive Maintenance department. This service addresses poor braking performance, squealing noises, reduced stopping power, safety concerns. Labor cost is $30.00 and takes approximately 20 minutes. Common reasons customers need this service: hearing squealing sounds, feeling vibration when braking, brake warning light. Service category: General Preventive Maintenance. Service ID: 10293856."
+  },
+  {
+    "id": "service-38492070",
+    "type": "service",
+    "serviceid": "38492070",
+    "name": "Fuel filter replacement",
+    "category": "Fluids & Filters",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "We offer Fuel filter replacement service in our Fluids & Filters department. This service addresses vehicle maintenance and repair needs. Labor cost is $45.00 and takes approximately 30 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Fluids & Filters. Service ID: 38492070."
+  },
+  {
+    "id": "service-56120394",
+    "type": "service",
+    "serviceid": "56120394",
+    "name": "Fuel filter replacement",
+    "category": "Engine & Powertrain",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "We offer Fuel filter replacement service in our Engine & Powertrain department. This service addresses vehicle maintenance and repair needs. Labor cost is $45.00 and takes approximately 30 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Engine & Powertrain. Service ID: 56120394."
+  },
+  {
+    "id": "service-10293852",
+    "type": "service",
+    "serviceid": "10293852",
+    "name": "Fuse replacement",
+    "category": "Electrical System",
+    "labor_cost": 22.5,
+    "labor_minutes": 15,
+    "text": "We offer Fuse replacement service in our Electrical System department. This service addresses vehicle maintenance and repair needs. Labor cost is $22.50 and takes approximately 15 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Electrical System. Service ID: 10293852."
+  },
+  {
+    "id": "service-29384761",
+    "type": "service",
+    "serviceid": "29384761",
+    "name": "Headlight bulb replacement",
+    "category": "Electrical System",
+    "labor_cost": 30.0,
+    "labor_minutes": 20,
+    "text": "We offer Headlight bulb replacement service in our Electrical System department. This service addresses vehicle maintenance and repair needs. Labor cost is $30.00 and takes approximately 20 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Electrical System. Service ID: 29384761."
+  },
+  {
+    "id": "service-92038482",
+    "type": "service",
+    "serviceid": "92038482",
+    "name": "Heater control valve replacement",
+    "category": "HVAC",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Heater control valve replacement service in our HVAC department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: HVAC. Service ID: 92038482."
+  },
+  {
+    "id": "service-75839208",
+    "type": "service",
+    "serviceid": "75839208",
+    "name": "Heater core service",
+    "category": "Cooling System",
+    "labor_cost": 360.0,
+    "labor_minutes": 240,
+    "text": "We offer Heater core service service in our Cooling System department. This service addresses vehicle maintenance and repair needs. Labor cost is $360.00 and takes approximately 4.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Cooling System. Service ID: 75839208."
+  },
+  {
+    "id": "service-38492067",
+    "type": "service",
+    "serviceid": "38492067",
+    "name": "Horn repair",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "We offer Horn repair service in our General Preventive Maintenance department. This service addresses vehicle maintenance and repair needs. Labor cost is $67.50 and takes approximately 45 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: General Preventive Maintenance. Service ID: 38492067."
+  },
+  {
+    "id": "service-84930282",
+    "type": "service",
+    "serviceid": "84930282",
+    "name": "HVAC duct cleaning",
+    "category": "HVAC",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "We offer HVAC duct cleaning service in our HVAC department. This service addresses vehicle maintenance and repair needs. Labor cost is $180.00 and takes approximately 2.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: HVAC. Service ID: 84930282."
+  },
+  {
+    "id": "service-13298476",
+    "type": "service",
+    "serviceid": "13298476",
+    "name": "Ignition coil replacement",
+    "category": "Engine & Powertrain",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "We offer Ignition coil replacement service in our Engine & Powertrain department. This service addresses engine wear prevention, maintaining lubrication, extending engine life. Labor cost is $67.50 and takes approximately 45 minutes. Common reasons customers need this service: routine maintenance schedule, oil change reminder, engine protection. Service category: Engine & Powertrain. Service ID: 13298476."
+  },
+  {
+    "id": "service-92038485",
+    "type": "service",
+    "serviceid": "92038485",
+    "name": "Interior light inspection",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 30.0,
+    "labor_minutes": 20,
+    "text": "We offer Interior light inspection service in our General Preventive Maintenance department. This service addresses safety compliance, pre-purchase evaluation, maintenance planning. Labor cost is $30.00 and takes approximately 20 minutes. Common reasons customers need this service: annual safety check, buying/selling vehicle, registration renewal. Service category: General Preventive Maintenance. Service ID: 92038485."
+  },
+  {
+    "id": "service-10293857",
+    "type": "service",
+    "serviceid": "10293857",
+    "name": "Key fob battery replacement",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 15.0,
+    "labor_minutes": 10,
+    "text": "We offer Key fob battery replacement service in our General Preventive Maintenance department. This service addresses car won't start, dead battery, weak starting, electrical problems. Labor cost is $15.00 and takes approximately 10 minutes. Common reasons customers need this service: car won't start, dim lights, electrical issues. Service category: General Preventive Maintenance. Service ID: 10293857."
+  },
+  {
+    "id": "service-92038477",
+    "type": "service",
+    "serviceid": "92038477",
+    "name": "Lug nut torque check",
+    "category": "Tires & Wheels",
+    "labor_cost": 15.0,
+    "labor_minutes": 10,
+    "text": "We offer Lug nut torque check service in our Tires & Wheels department. This service addresses vehicle maintenance and repair needs. Labor cost is $15.00 and takes approximately 10 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Tires & Wheels. Service ID: 92038477."
+  },
+  {
+    "id": "service-38492060",
+    "type": "service",
+    "serviceid": "38492060",
+    "name": "Master cylinder replacement",
+    "category": "Brakes",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "We offer Master cylinder replacement service in our Brakes department. This service addresses vehicle maintenance and repair needs. Labor cost is $180.00 and takes approximately 2.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Brakes. Service ID: 38492060."
+  },
+  {
+    "id": "service-29384766",
+    "type": "service",
+    "serviceid": "29384766",
+    "name": "Muffler replacement",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Muffler replacement service in our Exhaust & Emissions department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Exhaust & Emissions. Service ID: 29384766."
+  },
+  {
+    "id": "service-75839213",
+    "type": "service",
+    "serviceid": "75839213",
+    "name": "Multi-point inspection",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "We offer Multi-point inspection service in our General Preventive Maintenance department. This service addresses safety compliance, pre-purchase evaluation, maintenance planning. Labor cost is $45.00 and takes approximately 30 minutes. Common reasons customers need this service: annual safety check, buying/selling vehicle, registration renewal. Service category: General Preventive Maintenance. Service ID: 75839213."
+  },
+  {
+    "id": "service-48392017",
+    "type": "service",
+    "serviceid": "48392017",
+    "name": "Oil change (engine oil & filter replacement)",
+    "category": "Engine & Powertrain",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "We offer Oil change (engine oil & filter replacement) service in our Engine & Powertrain department. This service addresses engine wear prevention, maintaining lubrication, extending engine life. Labor cost is $45.00 and takes approximately 30 minutes. Common reasons customers need this service: routine maintenance schedule, oil change reminder, engine protection. Service category: Engine & Powertrain. Service ID: 48392017."
+  },
+  {
+    "id": "service-38492068",
+    "type": "service",
+    "serviceid": "38492068",
+    "name": "Oxygen sensor replacement",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "We offer Oxygen sensor replacement service in our Exhaust & Emissions department. This service addresses vehicle maintenance and repair needs. Labor cost is $67.50 and takes approximately 45 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Exhaust & Emissions. Service ID: 38492068."
+  },
+  {
+    "id": "service-92038478",
+    "type": "service",
+    "serviceid": "92038478",
+    "name": "Parking brake adjustment",
+    "category": "Brakes",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "We offer Parking brake adjustment service in our Brakes department. This service addresses poor braking performance, squealing noises, reduced stopping power, safety concerns. Labor cost is $45.00 and takes approximately 30 minutes. Common reasons customers need this service: hearing squealing sounds, feeling vibration when braking, brake warning light. Service category: Brakes. Service ID: 92038478."
+  },
+  {
+    "id": "service-29384764",
+    "type": "service",
+    "serviceid": "29384764",
+    "name": "Power steering fluid flush",
+    "category": "Suspension & Steering",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Power steering fluid flush service in our Suspension & Steering department. This service addresses system maintenance, preventing damage, ensuring proper operation. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: scheduled maintenance, fluid leak noticed, color change in fluid. Service category: Suspension & Steering. Service ID: 29384764."
+  },
+  {
+    "id": "service-29384768",
+    "type": "service",
+    "serviceid": "29384768",
+    "name": "Power steering fluid flush",
+    "category": "Fluids & Filters",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Power steering fluid flush service in our Fluids & Filters department. This service addresses system maintenance, preventing damage, ensuring proper operation. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: scheduled maintenance, fluid leak noticed, color change in fluid. Service category: Fluids & Filters. Service ID: 29384768."
+  },
+  {
+    "id": "service-38492063",
+    "type": "service",
+    "serviceid": "38492063",
+    "name": "Power window motor replacement",
+    "category": "Electrical System",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Power window motor replacement service in our Electrical System department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Electrical System. Service ID: 38492063."
+  },
+  {
+    "id": "service-29384760",
+    "type": "service",
+    "serviceid": "29384760",
+    "name": "Pressure test system",
+    "category": "Cooling System",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "We offer Pressure test system service in our Cooling System department. This service addresses vehicle maintenance and repair needs. Labor cost is $45.00 and takes approximately 30 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Cooling System. Service ID: 29384760."
+  },
+  {
+    "id": "service-84930279",
+    "type": "service",
+    "serviceid": "84930279",
+    "name": "Radiator cap replacement",
+    "category": "Cooling System",
+    "labor_cost": 15.0,
+    "labor_minutes": 10,
+    "text": "We offer Radiator cap replacement service in our Cooling System department. This service addresses vehicle maintenance and repair needs. Labor cost is $15.00 and takes approximately 10 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Cooling System. Service ID: 84930279."
+  },
+  {
+    "id": "service-84930278",
+    "type": "service",
+    "serviceid": "84930278",
+    "name": "Radiator flush",
+    "category": "Cooling System",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Radiator flush service in our Cooling System department. This service addresses vehicle maintenance and repair needs. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Cooling System. Service ID: 84930278."
+  },
+  {
+    "id": "service-29384759",
+    "type": "service",
+    "serviceid": "29384759",
+    "name": "Radiator replacement",
+    "category": "Cooling System",
+    "labor_cost": 270.0,
+    "labor_minutes": 180,
+    "text": "We offer Radiator replacement service in our Cooling System department. This service addresses vehicle maintenance and repair needs. Labor cost is $270.00 and takes approximately 3.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Cooling System. Service ID: 29384759."
+  },
+  {
+    "id": "service-84930285",
+    "type": "service",
+    "serviceid": "84930285",
+    "name": "Regular safety inspection",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Regular safety inspection service in our General Preventive Maintenance department. This service addresses safety compliance, pre-purchase evaluation, maintenance planning. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: annual safety check, buying/selling vehicle, registration renewal. Service category: General Preventive Maintenance. Service ID: 84930285."
+  },
+  {
+    "id": "service-29384767",
+    "type": "service",
+    "serviceid": "29384767",
+    "name": "Resonator replacement",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Resonator replacement service in our Exhaust & Emissions department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Exhaust & Emissions. Service ID: 29384767."
+  },
+  {
+    "id": "service-84930276",
+    "type": "service",
+    "serviceid": "84930276",
+    "name": "Rim repair/replacement",
+    "category": "Tires & Wheels",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Rim repair/replacement service in our Tires & Wheels department. This service addresses vehicle maintenance and repair needs. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Tires & Wheels. Service ID: 84930276."
+  },
+  {
+    "id": "service-29384757",
+    "type": "service",
+    "serviceid": "29384757",
+    "name": "Seasonal tire changeover",
+    "category": "Tires & Wheels",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Seasonal tire changeover service in our Tires & Wheels department. This service addresses uneven wear, vibration, poor handling, safety issues. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: seasonal tire change, new tire installation, tire damage. Service category: Tires & Wheels. Service ID: 29384757."
+  },
+  {
+    "id": "service-24819375",
+    "type": "service",
+    "serviceid": "24819375",
+    "name": "Serpentine belt replacement",
+    "category": "Engine & Powertrain",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "We offer Serpentine belt replacement service in our Engine & Powertrain department. This service addresses accessory failure, squealing noises, preventing breakdowns. Labor cost is $67.50 and takes approximately 45 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Engine & Powertrain. Service ID: 24819375."
+  },
+  {
+    "id": "service-58392055",
+    "type": "service",
+    "serviceid": "58392055",
+    "name": "Shock absorber replacement",
+    "category": "Suspension & Steering",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Shock absorber replacement service in our Suspension & Steering department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Suspension & Steering. Service ID: 58392055."
+  },
+  {
+    "id": "service-92038487",
+    "type": "service",
+    "serviceid": "92038487",
+    "name": "Smog check preparation",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "We offer Smog check preparation service in our Exhaust & Emissions department. This service addresses vehicle maintenance and repair needs. Labor cost is $67.50 and takes approximately 45 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Exhaust & Emissions. Service ID: 92038487."
+  },
+  {
+    "id": "service-10293848",
+    "type": "service",
+    "serviceid": "10293848",
+    "name": "Spare tire inspection",
+    "category": "Tires & Wheels",
+    "labor_cost": 22.5,
+    "labor_minutes": 15,
+    "text": "We offer Spare tire inspection service in our Tires & Wheels department. This service addresses uneven wear, vibration, poor handling, safety issues. Labor cost is $22.50 and takes approximately 15 minutes. Common reasons customers need this service: seasonal tire change, new tire installation, tire damage. Service category: Tires & Wheels. Service ID: 10293848."
+  },
+  {
+    "id": "service-80451239",
+    "type": "service",
+    "serviceid": "80451239",
+    "name": "Spark plug replacement",
+    "category": "Engine & Powertrain",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "We offer Spark plug replacement service in our Engine & Powertrain department. This service addresses vehicle maintenance and repair needs. Labor cost is $67.50 and takes approximately 45 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Engine & Powertrain. Service ID: 80451239."
+  },
+  {
+    "id": "service-92038484",
+    "type": "service",
+    "serviceid": "92038484",
+    "name": "Stabilizer bar link replacement",
+    "category": "Suspension & Steering",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Stabilizer bar link replacement service in our Suspension & Steering department. This service addresses vehicle maintenance and repair needs. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Suspension & Steering. Service ID: 92038484."
+  },
+  {
+    "id": "service-75839209",
+    "type": "service",
+    "serviceid": "75839209",
+    "name": "Starter motor replacement",
+    "category": "Electrical System",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Starter motor replacement service in our Electrical System department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Electrical System. Service ID: 75839209."
+  },
+  {
+    "id": "service-84930283",
+    "type": "service",
+    "serviceid": "84930283",
+    "name": "Steering rack replacement",
+    "category": "Suspension & Steering",
+    "labor_cost": 360.0,
+    "labor_minutes": 240,
+    "text": "We offer Steering rack replacement service in our Suspension & Steering department. This service addresses vehicle maintenance and repair needs. Labor cost is $360.00 and takes approximately 4.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Suspension & Steering. Service ID: 84930283."
+  },
+  {
+    "id": "service-92038483",
+    "type": "service",
+    "serviceid": "92038483",
+    "name": "Strut replacement",
+    "category": "Suspension & Steering",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "We offer Strut replacement service in our Suspension & Steering department. This service addresses vehicle maintenance and repair needs. Labor cost is $180.00 and takes approximately 2.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Suspension & Steering. Service ID: 92038483."
+  },
+  {
+    "id": "service-58392053",
+    "type": "service",
+    "serviceid": "58392053",
+    "name": "Taillight bulb replacement",
+    "category": "Electrical System",
+    "labor_cost": 30.0,
+    "labor_minutes": 20,
+    "text": "We offer Taillight bulb replacement service in our Electrical System department. This service addresses vehicle maintenance and repair needs. Labor cost is $30.00 and takes approximately 20 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Electrical System. Service ID: 58392053."
+  },
+  {
+    "id": "service-58392059",
+    "type": "service",
+    "serviceid": "58392059",
+    "name": "Tailpipe replacement",
+    "category": "Exhaust & Emissions",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Tailpipe replacement service in our Exhaust & Emissions department. This service addresses vehicle maintenance and repair needs. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Exhaust & Emissions. Service ID: 58392059."
+  },
+  {
+    "id": "service-29384763",
+    "type": "service",
+    "serviceid": "29384763",
+    "name": "Thermistor replacement",
+    "category": "HVAC",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Thermistor replacement service in our HVAC department. This service addresses vehicle maintenance and repair needs. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: HVAC. Service ID: 29384763."
+  },
+  {
+    "id": "service-58392051",
+    "type": "service",
+    "serviceid": "58392051",
+    "name": "Thermostat replacement",
+    "category": "Cooling System",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Thermostat replacement service in our Cooling System department. This service addresses vehicle maintenance and repair needs. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Cooling System. Service ID: 58392051."
+  },
+  {
+    "id": "service-75839212",
+    "type": "service",
+    "serviceid": "75839212",
+    "name": "Tie rod end replacement",
+    "category": "Suspension & Steering",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Tie rod end replacement service in our Suspension & Steering department. This service addresses vehicle maintenance and repair needs. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Suspension & Steering. Service ID: 75839212."
+  },
+  {
+    "id": "service-75930218",
+    "type": "service",
+    "serviceid": "75930218",
+    "name": "Timing belt/chain replacement",
+    "category": "Engine & Powertrain",
+    "labor_cost": 360.0,
+    "labor_minutes": 240,
+    "text": "We offer Timing belt/chain replacement service in our Engine & Powertrain department. This service addresses accessory failure, squealing noises, preventing breakdowns. Labor cost is $360.00 and takes approximately 4.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Engine & Powertrain. Service ID: 75930218."
+  },
+  {
+    "id": "service-58392048",
+    "type": "service",
+    "serviceid": "58392048",
+    "name": "Tire balancing",
+    "category": "Tires & Wheels",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "We offer Tire balancing service in our Tires & Wheels department. This service addresses uneven wear, vibration, poor handling, safety issues. Labor cost is $45.00 and takes approximately 30 minutes. Common reasons customers need this service: seasonal tire change, new tire installation, tire damage. Service category: Tires & Wheels. Service ID: 58392048."
+  },
+  {
+    "id": "service-75839205",
+    "type": "service",
+    "serviceid": "75839205",
+    "name": "Tire pressure monitoring system (TPMS) service",
+    "category": "Tires & Wheels",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "We offer Tire pressure monitoring system (TPMS) service service in our Tires & Wheels department. This service addresses uneven wear, vibration, poor handling, safety issues. Labor cost is $45.00 and takes approximately 30 minutes. Common reasons customers need this service: seasonal tire change, new tire installation, tire damage. Service category: Tires & Wheels. Service ID: 75839205."
+  },
+  {
+    "id": "service-92038476",
+    "type": "service",
+    "serviceid": "92038476",
+    "name": "Tire replacement",
+    "category": "Tires & Wheels",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "We offer Tire replacement service in our Tires & Wheels department. This service addresses uneven wear, vibration, poor handling, safety issues. Labor cost is $67.50 and takes approximately 45 minutes. Common reasons customers need this service: seasonal tire change, new tire installation, tire damage. Service category: Tires & Wheels. Service ID: 92038476."
+  },
+  {
+    "id": "service-29384756",
+    "type": "service",
+    "serviceid": "29384756",
+    "name": "Tire rotation",
+    "category": "Tires & Wheels",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "We offer Tire rotation service in our Tires & Wheels department. This service addresses uneven wear, vibration, poor handling, safety issues. Labor cost is $45.00 and takes approximately 30 minutes. Common reasons customers need this service: seasonal tire change, new tire installation, tire damage. Service category: Tires & Wheels. Service ID: 29384756."
+  },
+  {
+    "id": "service-92038488",
+    "type": "service",
+    "serviceid": "92038488",
+    "name": "Transfer case fluid change",
+    "category": "Fluids & Filters",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "We offer Transfer case fluid change service in our Fluids & Filters department. This service addresses system maintenance, preventing damage, ensuring proper operation. Labor cost is $67.50 and takes approximately 45 minutes. Common reasons customers need this service: scheduled maintenance, fluid leak noticed, color change in fluid. Service category: Fluids & Filters. Service ID: 92038488."
+  },
+  {
+    "id": "service-58392047",
+    "type": "service",
+    "serviceid": "58392047",
+    "name": "Transfer case fluid change",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "We offer Transfer case fluid change service in our Transmission & Drivetrain department. This service addresses system maintenance, preventing damage, ensuring proper operation. Labor cost is $67.50 and takes approximately 45 minutes. Common reasons customers need this service: scheduled maintenance, fluid leak noticed, color change in fluid. Service category: Transmission & Drivetrain. Service ID: 58392047."
+  },
+  {
+    "id": "service-50293847",
+    "type": "service",
+    "serviceid": "50293847",
+    "name": "Transmission filter replacement",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Transmission filter replacement service in our Transmission & Drivetrain department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Transmission & Drivetrain. Service ID: 50293847."
+  },
+  {
+    "id": "service-19384756",
+    "type": "service",
+    "serviceid": "19384756",
+    "name": "Transmission fluid change",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Transmission fluid change service in our Transmission & Drivetrain department. This service addresses system maintenance, preventing damage, ensuring proper operation. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: scheduled maintenance, fluid leak noticed, color change in fluid. Service category: Transmission & Drivetrain. Service ID: 19384756."
+  },
+  {
+    "id": "service-75839216",
+    "type": "service",
+    "serviceid": "75839216",
+    "name": "Transmission fluid/filter service",
+    "category": "Fluids & Filters",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Transmission fluid/filter service service in our Fluids & Filters department. This service addresses system maintenance, preventing damage, ensuring proper operation. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: scheduled maintenance, fluid leak noticed, color change in fluid. Service category: Fluids & Filters. Service ID: 75839216."
+  },
+  {
+    "id": "service-84930275",
+    "type": "service",
+    "serviceid": "84930275",
+    "name": "Transmission rebuild/repair",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 900.0,
+    "labor_minutes": 600,
+    "text": "We offer Transmission rebuild/repair service in our Transmission & Drivetrain department. This service addresses vehicle maintenance and repair needs. Labor cost is $900.00 and takes approximately 10.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Transmission & Drivetrain. Service ID: 84930275."
+  },
+  {
+    "id": "service-92038481",
+    "type": "service",
+    "serviceid": "92038481",
+    "name": "Turn signal repair",
+    "category": "Electrical System",
+    "labor_cost": 45.0,
+    "labor_minutes": 30,
+    "text": "We offer Turn signal repair service in our Electrical System department. This service addresses vehicle maintenance and repair needs. Labor cost is $45.00 and takes approximately 30 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Electrical System. Service ID: 92038481."
+  },
+  {
+    "id": "service-10293847",
+    "type": "service",
+    "serviceid": "10293847",
+    "name": "U-joint replacement",
+    "category": "Transmission & Drivetrain",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer U-joint replacement service in our Transmission & Drivetrain department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Transmission & Drivetrain. Service ID: 10293847."
+  },
+  {
+    "id": "service-92038479",
+    "type": "service",
+    "serviceid": "92038479",
+    "name": "Water pump replacement",
+    "category": "Cooling System",
+    "labor_cost": 270.0,
+    "labor_minutes": 180,
+    "text": "We offer Water pump replacement service in our Cooling System department. This service addresses vehicle maintenance and repair needs. Labor cost is $270.00 and takes approximately 3.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Cooling System. Service ID: 92038479."
+  },
+  {
+    "id": "service-38492058",
+    "type": "service",
+    "serviceid": "38492058",
+    "name": "Wheel alignment",
+    "category": "Tires & Wheels",
+    "labor_cost": 90.0,
+    "labor_minutes": 60,
+    "text": "We offer Wheel alignment service in our Tires & Wheels department. This service addresses vehicle pulling, uneven tire wear, steering problems. Labor cost is $90.00 and takes approximately 1.0 hours. Common reasons customers need this service: after hitting a pothole, uneven tire wear noticed, steering wheel off-center. Service category: Tires & Wheels. Service ID: 38492058."
+  },
+  {
+    "id": "service-58392056",
+    "type": "service",
+    "serviceid": "58392056",
+    "name": "Wheel bearing replacement",
+    "category": "Suspension & Steering",
+    "labor_cost": 180.0,
+    "labor_minutes": 120,
+    "text": "We offer Wheel bearing replacement service in our Suspension & Steering department. This service addresses vehicle maintenance and repair needs. Labor cost is $180.00 and takes approximately 2.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Suspension & Steering. Service ID: 58392056."
+  },
+  {
+    "id": "service-75839207",
+    "type": "service",
+    "serviceid": "75839207",
+    "name": "Wheel cylinder replacement",
+    "category": "Brakes",
+    "labor_cost": 135.0,
+    "labor_minutes": 90,
+    "text": "We offer Wheel cylinder replacement service in our Brakes department. This service addresses vehicle maintenance and repair needs. Labor cost is $135.00 and takes approximately 1.5 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Brakes. Service ID: 75839207."
+  },
+  {
+    "id": "service-29384765",
+    "type": "service",
+    "serviceid": "29384765",
+    "name": "Windshield washer pump replacement",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 67.5,
+    "labor_minutes": 45,
+    "text": "We offer Windshield washer pump replacement service in our General Preventive Maintenance department. This service addresses vehicle maintenance and repair needs. Labor cost is $67.50 and takes approximately 45 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: General Preventive Maintenance. Service ID: 29384765."
+  },
+  {
+    "id": "service-84930284",
+    "type": "service",
+    "serviceid": "84930284",
+    "name": "Wiper blade replacement",
+    "category": "General Preventive Maintenance",
+    "labor_cost": 22.5,
+    "labor_minutes": 15,
+    "text": "We offer Wiper blade replacement service in our General Preventive Maintenance department. This service addresses vehicle maintenance and repair needs. Labor cost is $22.50 and takes approximately 15 minutes. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: General Preventive Maintenance. Service ID: 84930284."
+  },
+  {
+    "id": "service-84930280",
+    "type": "service",
+    "serviceid": "84930280",
+    "name": "Wiring harness repair",
+    "category": "Electrical System",
+    "labor_cost": 360.0,
+    "labor_minutes": 240,
+    "text": "We offer Wiring harness repair service in our Electrical System department. This service addresses vehicle maintenance and repair needs. Labor cost is $360.00 and takes approximately 4.0 hours. Common reasons customers need this service: maintaining vehicle reliability and safety. Service category: Electrical System. Service ID: 84930280."
+  }
+]

@@ -1,0 +1,1 @@
+The Battery replacement service requires Cotter Pin as a component. When booking Battery replacement, Cotter Pin is included as a necessary material. Service: Battery replacement. Part: Cotter Pin. Quantity: 1.

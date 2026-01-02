@@ -1,0 +1,1 @@
+The Strut replacement service requires Seat Heater Element as a component. When booking Strut replacement, Seat Heater Element is included as a necessary material. Service: Strut replacement. Part: Seat Heater Element. Quantity: 1.

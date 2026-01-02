@@ -1,0 +1,1 @@
+The Alignment check service requires Infotainment Screen as a component. When booking Alignment check, Infotainment Screen is included as a necessary material. Service: Alignment check. Part: Infotainment Screen. Quantity: 1.

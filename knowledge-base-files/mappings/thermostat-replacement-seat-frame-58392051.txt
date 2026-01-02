@@ -1,0 +1,1 @@
+The Thermostat replacement service requires Seat Frame as a component. When booking Thermostat replacement, Seat Frame is included as a necessary material. Service: Thermostat replacement. Part: Seat Frame. Quantity: 1.

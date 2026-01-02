@@ -161,3 +161,41 @@ variable "glue_job_names" {
     "analytics_service_parts_catalog_etl"
   ]
 }
+
+# Bedrock Configuration (Phase 5)
+variable "enable_bedrock" {
+  description = "Enable Bedrock module for AI chatbox"
+  type        = bool
+  default     = false
+}
+
+variable "enable_bedrock_data_source" {
+  description = "Enable Bedrock data source (set to true after uploading knowledge base data to S3)"
+  type        = bool
+  default     = false
+}
+
+variable "bedrock_embedding_model" {
+  description = "Bedrock embedding model for vectorization"
+  type        = string
+  default     = "amazon.titan-embed-text-v1"
+}
+
+variable "bedrock_chunk_size" {
+  description = "Maximum tokens per chunk for document chunking"
+  type        = number
+  default     = 300
+}
+
+variable "bedrock_chunk_overlap" {
+  description = "Percentage overlap between chunks"
+  type        = number
+  default     = 20
+}
+
+# Lambda Chat Configuration (Phase 5)
+variable "enable_lambda_chat" {
+  description = "Enable Lambda functions and API Gateway for AI chatbox"
+  type        = bool
+  default     = false
+}

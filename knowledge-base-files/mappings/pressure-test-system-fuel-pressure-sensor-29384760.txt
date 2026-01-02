@@ -1,0 +1,1 @@
+The Pressure test system service requires Fuel Pressure Sensor as a component. When booking Pressure test system, Fuel Pressure Sensor is included as a necessary material. Service: Pressure test system. Part: Fuel Pressure Sensor. Quantity: 1.

@@ -1,0 +1,1 @@
+The Pressure test system service requires Tire Pressure Sensor as a component. When booking Pressure test system, Tire Pressure Sensor is included as a necessary material. Service: Pressure test system. Part: Tire Pressure Sensor. Quantity: 1.

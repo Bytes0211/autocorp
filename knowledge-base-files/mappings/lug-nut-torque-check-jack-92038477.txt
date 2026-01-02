@@ -1,0 +1,1 @@
+The Lug nut torque check service requires Jack as a component. When booking Lug nut torque check, Jack is included as a necessary material. Service: Lug nut torque check. Part: Jack. Quantity: 1.

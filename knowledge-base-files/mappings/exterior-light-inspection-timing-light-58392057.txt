@@ -1,0 +1,1 @@
+The Exterior light inspection service requires Timing Light as a component. When booking Exterior light inspection, Timing Light is included as a necessary material. Service: Exterior light inspection. Part: Timing Light. Quantity: 1.

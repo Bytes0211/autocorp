@@ -1,0 +1,1 @@
+The Fuse replacement service requires Seat Frame as a component. When booking Fuse replacement, Seat Frame is included as a necessary material. Service: Fuse replacement. Part: Seat Frame. Quantity: 1.

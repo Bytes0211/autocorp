@@ -1,0 +1,1 @@
+The Spare tire inspection service requires Tire (each) as a component. When booking Spare tire inspection, Tire (each) is included as a necessary material. Service: Spare tire inspection. Part: Tire (each). Quantity: 1.

@@ -1,0 +1,1 @@
+The Tire rotation service requires Throttle Position Sensor as a component. When booking Tire rotation, Throttle Position Sensor is included as a necessary material. Service: Tire rotation. Part: Throttle Position Sensor. Quantity: 1.

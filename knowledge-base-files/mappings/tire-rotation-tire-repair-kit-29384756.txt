@@ -1,0 +1,1 @@
+The Tire rotation service requires Tire Repair Kit as a component. When booking Tire rotation, Tire Repair Kit is included as a necessary material. Service: Tire rotation. Part: Tire Repair Kit. Quantity: 1.

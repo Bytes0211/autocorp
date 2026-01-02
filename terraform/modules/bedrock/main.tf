@@ -54,43 +54,6 @@ resource "aws_opensearchserverless_collection" "knowledge_base" {
   }
 }
 
-# Data access policy for OpenSearch
-resource "aws_opensearchserverless_access_policy" "knowledge_base" {
-  name = "${var.project_name}-kb-access-${var.environment}"
-  type = "data"
-  
-  policy = jsonencode([{
-    Rules = [{
-      Resource = [
-        "collection/${var.project_name}-kb-${var.environment}"
-      ]
-      Permission = [
-        "aoss:CreateCollectionItems",
-        "aoss:DeleteCollectionItems",
-        "aoss:UpdateCollectionItems",
-        "aoss:DescribeCollectionItems"
-      ]
-      ResourceType = "collection"
-    }, {
-      Resource = [
-        "index/${var.project_name}-kb-${var.environment}/*"
-      ]
-      Permission = [
-        "aoss:CreateIndex",
-        "aoss:DeleteIndex",
-        "aoss:UpdateIndex",
-        "aoss:DescribeIndex",
-        "aoss:ReadDocument",
-        "aoss:WriteDocument"
-      ]
-      ResourceType = "index"
-    }]
-    Principal = [
-      var.bedrock_execution_role_arn
-    ]
-  }])
-}
-
 # IAM role for Bedrock to access OpenSearch and S3
 resource "aws_iam_role" "bedrock_kb" {
   name = "${var.project_name}-bedrock-kb-role-${var.environment}"
@@ -166,10 +129,52 @@ resource "aws_iam_role_policy" "bedrock_kb_models" {
         "bedrock:InvokeModel"
       ]
       Resource = [
-        "arn:aws:bedrock:${data.aws_region.current.name}::foundation-model/amazon.titan-embed-text-v1"
+        "arn:aws:bedrock:${data.aws_region.current.name}::foundation-model/${var.embedding_model}"
       ]
     }]
   })
+}
+
+# Data access policy for OpenSearch (created after IAM role)
+resource "aws_opensearchserverless_access_policy" "knowledge_base" {
+  name = "${var.project_name}-kb-access-${var.environment}"
+  type = "data"
+  
+  policy = jsonencode([{
+    Rules = [{
+      Resource = [
+        "collection/${var.project_name}-kb-${var.environment}"
+      ]
+      Permission = [
+        "aoss:CreateCollectionItems",
+        "aoss:DeleteCollectionItems",
+        "aoss:UpdateCollectionItems",
+        "aoss:DescribeCollectionItems"
+      ]
+      ResourceType = "collection"
+    }, {
+      Resource = [
+        "index/${var.project_name}-kb-${var.environment}/*"
+      ]
+      Permission = [
+        "aoss:CreateIndex",
+        "aoss:DeleteIndex",
+        "aoss:UpdateIndex",
+        "aoss:DescribeIndex",
+        "aoss:ReadDocument",
+        "aoss:WriteDocument"
+      ]
+      ResourceType = "index"
+    }]
+    Principal = [
+      aws_iam_role.bedrock_kb.arn,
+      "arn:aws:iam::${data.aws_caller_identity.current.account_id}:user/cottondev"
+    ]
+  }])
+  
+  depends_on = [
+    aws_iam_role.bedrock_kb
+  ]
 }
 
 # Bedrock Knowledge Base
@@ -180,7 +185,7 @@ resource "aws_bedrockagent_knowledge_base" "autocorp" {
   knowledge_base_configuration {
     type = "VECTOR"
     vector_knowledge_base_configuration {
-      embedding_model_arn = "arn:aws:bedrock:${data.aws_region.current.name}::foundation-model/amazon.titan-embed-text-v1"
+      embedding_model_arn = "arn:aws:bedrock:${data.aws_region.current.name}::foundation-model/${var.embedding_model}"
     }
   }
   
@@ -188,11 +193,11 @@ resource "aws_bedrockagent_knowledge_base" "autocorp" {
     type = "OPENSEARCH_SERVERLESS"
     opensearch_serverless_configuration {
       collection_arn    = aws_opensearchserverless_collection.knowledge_base.arn
-      vector_index_name = "${var.project_name}-kb-index"
+      vector_index_name = "bedrock-knowledge-base-default-index"
       field_mapping {
-        vector_field   = "embedding"
-        text_field     = "text"
-        metadata_field = "metadata"
+        vector_field   = "bedrock-knowledge-base-default-vector"
+        text_field     = "AMAZON_BEDROCK_TEXT_CHUNK"
+        metadata_field = "AMAZON_BEDROCK_METADATA"
       }
     }
   }
@@ -232,8 +237,8 @@ resource "aws_bedrockagent_data_source" "autocorp" {
     chunking_configuration {
       chunking_strategy = "FIXED_SIZE"
       fixed_size_chunking_configuration {
-        max_tokens         = 300
-        overlap_percentage = 20
+        max_tokens         = var.chunk_size_tokens
+        overlap_percentage = var.chunk_overlap_percentage
       }
     }
   }

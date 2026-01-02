@@ -1,0 +1,1 @@
+The Axle replacement service requires Axle Bearing as a component. When booking Axle replacement, Axle Bearing is included as a necessary material. Service: Axle replacement. Part: Axle Bearing. Quantity: 1.

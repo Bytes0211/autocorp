@@ -1,0 +1,1 @@
+The Spare tire inspection service requires Seat Belt Pretensioner as a component. When booking Spare tire inspection, Seat Belt Pretensioner is included as a necessary material. Service: Spare tire inspection. Part: Seat Belt Pretensioner. Quantity: 1.

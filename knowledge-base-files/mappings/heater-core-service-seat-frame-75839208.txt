@@ -1,0 +1,1 @@
+The Heater core service service requires Seat Frame as a component. When booking Heater core service, Seat Frame is included as a necessary material. Service: Heater core service. Part: Seat Frame. Quantity: 1.

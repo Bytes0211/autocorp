@@ -1,0 +1,1 @@
+The Battery replacement service requires High-Voltage Battery Pack as a component. When booking Battery replacement, High-Voltage Battery Pack is included as a necessary material. Service: Battery replacement. Part: High-Voltage Battery Pack. Quantity: 1.
