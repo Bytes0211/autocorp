@@ -1,6 +1,19 @@
 # AutoCorp Cloud Data Lake Pipeline
 
-**A modern AWS data lakehouse platform implementing end-to-end data engineering with CDC replication, serverless ETL, and open table formats.**
+## Why This Project Matters
+
+AutoCorp simulates a real enterprise data platform with CDC ingestion, lakehouse storage, serverless ETL, analytics, and AI‑powered search. It demonstrates my ability to architect and deliver production‑grade cloud systems end‑to‑end.
+
+## Key Skills Demonstrated
+
+- AWS data engineering (S3, Glue, DMS, DataSync, Athena)
+- Lakehouse architecture with Apache Hudi
+- IaC with Terraform (multi‑env, modules, 119 resources)
+- Serverless backend (Lambda + API Gateway)
+- RAG with Bedrock Nova Pro + OpenSearch
+- Data quality engineering
+- PySpark ETL
+- Next.js  frontend
 
 ## Project Overview
 
@@ -138,12 +151,12 @@ graph TB
 | **Analytics Layer (Phase 4)** |
 | **AWS Athena** | Serverless SQL queries | 5 named queries, sub-30s performance | ✅ Operational |
 | **AWS CloudWatch** | Monitoring & alerts | Dashboard + 3 alarms (Glue, Athena, Cost) | ✅ Operational |
-| **AI/ML Layer (Phase 5 - 95% Complete)** |
+| **AI/ML Layer (Phase 5 - Complete)** |
 | **Amazon Bedrock** | AI foundation models | Nova Pro (LLM) + Titan Embeddings + Knowledge Base (1,584 docs) | ✅ Operational |
 | **OpenSearch Serverless** | Vector database for RAG | 2GB collection with semantic search | ✅ Operational |
 | **AWS Lambda** | Serverless API functions | Chat + Analytics functions (Python 3.12) | ✅ Operational |
 | **API Gateway** | REST API endpoints | /chat + /analytics with CORS + API keys | ✅ Operational |
-| **AWS Amplify** | Frontend hosting | Next.js 16.1.1 + React + TypeScript | 🚀 Ready for Deploy |
+| **S3 Static Website** | Frontend hosting | Next.js 16.1.1 + React + TypeScript (static export) | ✅ Operational |
 | **Open Source** |
 | **Apache Hudi** | Open table format | ACID, upserts, time-travel | ✅ Operational |
 | **Terraform** | Infrastructure as Code | 8 modules, 119 AWS resources, 95% automated | ✅ Operational |
@@ -247,8 +260,8 @@ terraform apply
 - `developer-approach.md` - **850-line comprehensive technical architecture**
 - `IAC_FEASIBILITY_ASSESSMENT.md` - **588-line IaC analysis**
 - `PROJECT_GANTT_CHART.md` - **307-line project timeline & status**
-- `PHASE5_AI_CHATBOX.md` - **760-line AI chatbox with Bedrock & RAG (Phase 5 plan)**
-- `PHASE5_QUICK_START.md` - **Quick start guide for Phase 5 (220 lines)**
+- `DEPLOYMENT_SUMMARY.md` - **AI chatbox deployment summary with live URL**
+- `frontend/autocorp-chatbox/IMPLEMENTATION.md` - **Frontend implementation guide**
 - `terraform/README.md` - **297-line deployment guide**
 - `DATABASE_STATUS.md` - Database schema and statistics
 - `SALES_SYSTEM_USAGE.md` - SQL query examples (10+ queries)
@@ -576,14 +589,17 @@ See **`PROJECT_GANTT_CHART.md`** (307 lines) for:
    - Best practices and monitoring guidance
 
 ### AI & Machine Learning (Phase 5)
-8. **`PHASE5_AI_CHATBOX.md`** (760 lines) - AI chatbox implementation plan
-   - Amazon Bedrock Nova Pro integration
-   - RAG (Retrieval-Augmented Generation) architecture  
-   - Next.js + AWS Amplify frontend
-   - Lambda + API Gateway backend
-   - Complete implementation guide (8-10 days)
+8. **`DEPLOYMENT_SUMMARY.md`** - AI chatbox deployment summary
+   - Live URL and deployment details
+   - Infrastructure deployed (S3 static hosting)
+   - Testing checklist and redeployment script
 
-9. **`docs/parts_selection_and_correction.md`** (253 lines) - Parts selection guide
+9. **`frontend/autocorp-chatbox/IMPLEMENTATION.md`** - Frontend implementation guide
+   - React component code (ChatBox, MessageList, InputBar, ChatHeader)
+   - API client integration with Bedrock
+   - AWS deployment instructions
+
+10. **`docs/parts_selection_and_correction.md`** (253 lines) - Parts selection guide
    - How RAG retrieval works for service queries
    - Complete data flow: PostgreSQL → Enrichment → S3 → Bedrock
    - 7-step correction process for incorrect part mappings
