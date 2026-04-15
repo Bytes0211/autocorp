@@ -684,7 +684,7 @@ See **`PROJECT_GANTT_CHART.md`** (307 lines) for:
 
 ## License
 
-Internal project - All rights reserved
+MIT License — see [LICENSE](LICENSE) for details.
 
 ## Contact
 
